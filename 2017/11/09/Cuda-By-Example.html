@@ -1,0 +1,4200 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+<title>GPU高性能编程CUDA实战-读书简记 | 冰蓝记录思考的地方</title>
+<meta name="author" content="lanbing510">
+
+  <meta name="keywords" content="并发，GPU，CUDA，编程，读书笔记">
+
+
+
+<!--Https -> Http, Https Will Reuslt In Errors With Busuanzi -->
+<script type="text/javascript">
+var enforce = "";
+if ((enforce == window.location.host) && (window.location.protocol != "http:"))
+{
+	window.location = window.location.toString().replace(/^https:/, "http:");
+}
+</script>
+
+<link rel="shortcut icon" href="/public/img/lanbing510.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/public/css/bootstrap.css">
+<link rel="stylesheet" href="/public/css/font-awesome.css">
+<link rel="stylesheet" href="/public/js/prettify/prettify.css">
+<link rel="stylesheet" href="/public/css/base.css">
+<link href="/pages/atom.xml" rel="alternate" title="冰蓝记录思考的地方" type="application/atom+xml">
+
+<!--Search-->
+<link rel="stylesheet" href="/search/css/cb-search.css">
+<!--Img ZoomInOut-->
+<link rel="stylesheet" href="/public/css/zoomify.css">
+
+<link href="/public/css/sobook.css" rel="stylesheet" type="text/css">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69504483-1', 'lanbing510.info');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?f7af973bd7ac60f787c1952fceb43202";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-lg-3 col-sm-13 col-xs-13 aside visible-md visible-lg">
+  <div class="row">
+    <div class="col-md-2 col-xs-2 aside1">
+      <br>
+      <a class="pjaxlink" href="/"><img src="/public/img/lanbing510.png" class="img-ronuded avatar" style="border-width:0px; border-color:#000"></a>
+      <br><br><br><br>
+      <ul class="nav nav-pills nav-stacked">
+             <!-- 这里是aside1的科研、技术...-->
+         <li><a href="#技术" data-toggle="tab">技术</a></li>
+             <!-- 这里是aside1的科研、技术...-->
+         <li><a href="#读书" data-toggle="tab">读书</a></li>
+             <!-- 这里是aside1的科研、技术...-->
+         <li><a href="#杂烩" data-toggle="tab">杂烩</a></li>
+             <!-- 这里是aside1的科研、技术...-->
+         <li><a href="#科研" data-toggle="tab">科研</a></li>
+        
+        <li><a href="#tags" data-toggle="tab">标签</a></li>  
+        <li><a class="pjaxlink" href="/pages/archive.html">归档</a></li>
+        <li><a class="pjaxlink" href="/pages/about.html">关于</a></li>  
+      </ul>
+      <div class="aside1_bottom">
+        <table class="table table-condensed">
+          <tr>
+            <td><a href="/pages/atom.xml" target="_blank"><i class="fa fa-rss fa-lg" style="color:#fff;"></i></a></td>
+            <td><a href="mailto:1004764271@qq.com"><i class="fa fa-envelope-o fa-lg" style="color:#fff;"></i></a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-10 col-xs-10 aside2">
+      <div class="row">
+        <div class="tab-content"> 
+           
+            <div class="tab-pane" id="技术">
+              <div class="list-group">
+                <!--<h2 class="center">技术</h2>-->  <!--原来aside2上面的大标题-->
+                
+                  <a href="/2018/09/04/Sedentary-Reminder.html" class="list-group-item-lay pjaxlink">健康工作—智能久坐提醒软件</a>
+                
+                  <a href="/2018/07/17/DQN.html" class="list-group-item-lay pjaxlink">学习DQN（Deep Q-Learning Network）</a>
+                
+                  <a href="/2017/12/14/Wechat-RSS-Huginn.html" class="list-group-item-lay pjaxlink">高效工作—优雅的阅读微信公众号</a>
+                
+                  <a href="/2017/08/01/Run-SSD.html" class="list-group-item-lay pjaxlink">配置SSD进行目标检测</a>
+                
+                  <a href="/2017/03/14/DoubanBackup.html" class="list-group-item-lay pjaxlink">豆瓣离线备份-Shell脚本</a>
+                
+                  <a href="/2016/11/17/Ubuntu-CUDA.html" class="list-group-item-lay pjaxlink">Ubuntu下搭建CUDA开发环境</a>
+                
+                  <a href="/2016/08/18/Keyboard-Shortcut.html" class="list-group-item-lay pjaxlink">高效工作—快捷键整理</a>
+                
+                  <a href="/2016/03/15/Lianjia-Spider.html" class="list-group-item-lay pjaxlink">链家爬虫</a>
+                
+                  <a href="/2016/01/29/Python-File.html" class="list-group-item-lay pjaxlink">Python的文件操作与输入输出</a>
+                
+                  <a href="/2016/01/08/Python-DicSet.html" class="list-group-item-lay pjaxlink">Python的映射和集合类型</a>
+                
+                  <a href="/2015/12/21/Python-Sequence.html" class="list-group-item-lay pjaxlink">Python序列相关知识总结</a>
+                
+                  <a href="/2015/12/11/Wget.html" class="list-group-item-lay pjaxlink">使用Wget下载整个网站</a>
+                
+                  <a href="/2015/12/04/CSDN-BlogBackup-Python.html" class="list-group-item-lay pjaxlink">Python实现CSDN博客的完整备份</a>
+                
+                  <a href="/2015/12/01/Arm-Environment-Problems.html" class="list-group-item-lay pjaxlink">嵌入式ARM下常用环境的配置及常见问题汇总</a>
+                
+                  <a href="/2015/11/28/Ubuntu-Softwares.html" class="list-group-item-lay pjaxlink">Ubuntu下常用软件的安装使用及常见问题汇总</a>
+                
+                  <a href="/2015/10/31/Self-Wrote-Tools.html" class="list-group-item-lay pjaxlink">自己造的轮子们 开源</a>
+                
+                  <a href="/2015/10/25/Multithreading.html" class="list-group-item-lay pjaxlink">多线程编程中的几个概念</a>
+                
+                  <a href="/2015/09/21/ClassifyPictures.html" class="list-group-item-lay pjaxlink">按拍摄日期一键归类照片 Python</a>
+                
+                  <a href="/2015/08/25/System-Install.html" class="list-group-item-lay pjaxlink">装机相关问题汇总</a>
+                
+                  <a href="/2015/08/07/NormalizedCut-CPlus-Codes.html" class="list-group-item-lay pjaxlink">Normalized Cut的C++源码</a>
+                
+                  <a href="/2015/05/15/Cygwin.html" class="list-group-item-lay pjaxlink">Windows下Cygwin的使用</a>
+                
+                  <a href="/2015/04/01/Windows-Tips.html" class="list-group-item-lay pjaxlink">Windows系统下的一些经验技巧</a>
+                
+                  <a href="/2014/12/18/License-Plate-Detection-Recognition.html" class="list-group-item-lay pjaxlink">车牌检测及识别 OpenALPR</a>
+                
+                  <a href="/2014/12/16/Theano-GPU.html" class="list-group-item-lay pjaxlink">Theano利用GPU进行深度学习加速的配置及使用</a>
+                
+                  <a href="/2014/12/05/UpperBody-Detection.html" class="list-group-item-lay pjaxlink">Upper-Body Detection源码配置及使用</a>
+                
+                  <a href="/2014/12/03/Linux-Opencv.html" class="list-group-item-lay pjaxlink">Linux下Opencv的安装及配置使用</a>
+                
+                  <a href="/2014/12/03/Linux-Matlab.html" class="list-group-item-lay pjaxlink">Linux下Matlab的安装及配置使用</a>
+                
+                  <a href="/2014/12/03/Arm-Opencv.html" class="list-group-item-lay pjaxlink">Opencv交叉编译及Arm平台移植</a>
+                
+                  <a href="/2014/11/19/Human-Body-Detection.html" class="list-group-item-lay pjaxlink">ICF，DPM等行人检测算法实践</a>
+                
+                  <a href="/2014/11/14/Python-Problems.html" class="list-group-item-lay pjaxlink">Python使用过程中常见问题汇总</a>
+                
+                  <a href="/2014/11/05/Git-Commands.html" class="list-group-item-lay pjaxlink">Git常用命令总结</a>
+                
+                  <a href="/2014/09/20/Regular-Expression.html" class="list-group-item-lay pjaxlink">正则表达式及在Python中的使用</a>
+                
+                  <a href="/2014/08/31/ImageTranslation-Using-UDP.html" class="list-group-item-lay pjaxlink">利用UDP协议进行图像传输</a>
+                
+                  <a href="/2014/08/06/TesseractOCR.html" class="list-group-item-lay pjaxlink">使用Tesseract-OCR进行文字识别</a>
+                
+                  <a href="/2014/07/18/Arm-USBWifi.html" class="list-group-item-lay pjaxlink">移植Wifi模块RT3070到ARM平台</a>
+                
+                  <a href="/2014/04/14/QT-Linux-Arm.html" class="list-group-item-lay pjaxlink">Linux下PC版及ARM版QT环境配置，ARM移植及触摸屏支持</a>
+                
+                  <a href="/2013/04/06/Opencv-Problems.html" class="list-group-item-lay pjaxlink">Opencv使用时的常见问题汇总</a>
+                
+                  <a href="/2013/04/05/Latex-Experiences.html" class="list-group-item-lay pjaxlink">使用Latex的一些经验技巧汇总</a>
+                
+                  <a href="/2012/04/16/CCPlus-Problems.html" class="list-group-item-lay pjaxlink">C++使用时的常见问题汇总</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="读书">
+              <div class="list-group">
+                <!--<h2 class="center">读书</h2>-->  <!--原来aside2上面的大标题-->
+                
+                  <a href="/2025/05/21/Ren-Xing.html" class="list-group-item-lay pjaxlink">你不可不知的人性-读书简记</a>
+                
+                  <a href="/2025/02/26/SaiNieKa.html" class="list-group-item-lay pjaxlink">与塞涅卡共进早餐：斯多葛哲学的人生艺术-读书简记</a>
+                
+                  <a href="/2025/02/16/Artist-Of-Life.html" class="list-group-item-lay pjaxlink">生活的艺术家-读书简记</a>
+                
+                  <a href="/2025/01/18/Good-Inside.html" class="list-group-item-lay pjaxlink">看见孩子-读书简记</a>
+                
+                  <a href="/2024/11/23/Miao-Dong-Jin-Rong.html" class="list-group-item-lay pjaxlink">秒懂金融-读书简记</a>
+                
+                  <a href="/2024/11/07/The-Education-Of-A-Value-Investor.html" class="list-group-item-lay pjaxlink">与巴菲特共进午餐时，我顿悟到的5个真理-读书简记</a>
+                
+                  <a href="/2024/10/13/Hai-Zi-De-Pin-Ge.html" class="list-group-item-lay pjaxlink">孩子的品格：写给父母的积极心理学-读书简记</a>
+                
+                  <a href="/2024/09/01/Jiayouqintong.html" class="list-group-item-lay pjaxlink">家有琴童-读书简记</a>
+                
+                  <a href="/2024/05/30/Outlive.html" class="list-group-item-lay pjaxlink">超越百岁：长寿的科学与艺术-读书简记</a>
+                
+                  <a href="/2024/05/24/Zhi-Chang-Dong-Wu.html" class="list-group-item-lay pjaxlink">职场动物进化手册-读书简记</a>
+                
+                  <a href="/2024/03/26/A-New-Theory-of-Intelligence.html" class="list-group-item-lay pjaxlink">千脑智能-读书简记</a>
+                
+                  <a href="/2024/03/16/Zen-And-The-Art-Of-Motorcycle-Maintenance.html" class="list-group-item-lay pjaxlink">禅与摩托车维修艺术-读书简记</a>
+                
+                  <a href="/2024/02/11/Methods-Of-Notes.html" class="list-group-item-lay pjaxlink">笔记的方法-读书简记</a>
+                
+                  <a href="/2024/02/03/MGRDSXY-GuanLiJinJie.html" class="list-group-item-lay pjaxlink">每个人的商学院 管理进阶-读书简记</a>
+                
+                  <a href="/2023/12/24/Xinjingjueyin.html" class="list-group-item-lay pjaxlink">心经抉隐-读书简记</a>
+                
+                  <a href="/2023/12/23/Hit-Refresh.html" class="list-group-item-lay pjaxlink">刷新：重新发现商业与未来-读书简记</a>
+                
+                  <a href="/2023/12/23/Cognitive-Awakening.html" class="list-group-item-lay pjaxlink">认知觉醒-读书简记</a>
+                
+                  <a href="/2023/12/18/MGRDSXY-GuanLiJiChu.html" class="list-group-item-lay pjaxlink">每个人的商学院 管理基础-读书简记</a>
+                
+                  <a href="/2023/12/14/The-Book-You-Wish-Your-Parents-Had-Read.html" class="list-group-item-lay pjaxlink">真希望我父母读过这本书-读书简记</a>
+                
+                  <a href="/2023/12/09/Wanting.html" class="list-group-item-lay pjaxlink">模仿欲望-读书简记</a>
+                
+                  <a href="/2023/12/03/HaMaXianSheng.html" class="list-group-item-lay pjaxlink">蛤蟆先生去看心理医生-读书简记</a>
+                
+                  <a href="/2023/11/30/Zhi-Shen-Shi-Nei.html" class="list-group-item-lay pjaxlink">置身事内：中国政府与经济发展-读书简记</a>
+                
+                  <a href="/2023/11/17/Pao-Bu-Sheng-Jing.html" class="list-group-item-lay pjaxlink">跑步圣经（第2版）-读书简记</a>
+                
+                  <a href="/2023/11/10/Cosmos.html" class="list-group-item-lay pjaxlink">宇宙-读书简记</a>
+                
+                  <a href="/2023/10/11/Ten-Headspace-Guide.html" class="list-group-item-lay pjaxlink">十分钟冥想-读书简记</a>
+                
+                  <a href="/2023/09/05/When-We-Talk-About-Run.html" class="list-group-item-lay pjaxlink">当我谈跑步时，我谈些什么-读书简记</a>
+                
+                  <a href="/2023/08/22/SteveJobs-Zen-Investments.html" class="list-group-item-lay pjaxlink">乔布斯、禅与投资-读书简记</a>
+                
+                  <a href="/2023/08/13/Atomic-Habits.html" class="list-group-item-lay pjaxlink">掌控习惯-读书简记</a>
+                
+                  <a href="/2023/08/01/MaoZeDong.html" class="list-group-item-lay pjaxlink">毛泽东选集（全四卷）-读书简记</a>
+                
+                  <a href="/2023/07/25/JZTZSZ.html" class="list-group-item-lay pjaxlink">价值投资实战-读书简记</a>
+                
+                  <a href="/2023/07/04/AI.html" class="list-group-item-lay pjaxlink">AI未来进行式（李开复陈楸帆新书）-读书简记</a>
+                
+                  <a href="/2023/06/27/The-Psychology-Of-Money.html" class="list-group-item-lay pjaxlink">金钱心理学-读书简记</a>
+                
+                  <a href="/2023/04/28/The-Courage-To-Be-Disliked.html" class="list-group-item-lay pjaxlink">被讨厌的勇气-读书简记</a>
+                
+                  <a href="/2023/04/07/The-Great-Mental-Models.html" class="list-group-item-lay pjaxlink">思考的框架-读书简记</a>
+                
+                  <a href="/2023/03/24/The-Inner-Game-Of-Tennis.html" class="list-group-item-lay pjaxlink">身心合一的奇迹力量-读书简记</a>
+                
+                  <a href="/2023/03/23/Zero-Limits.html" class="list-group-item-lay pjaxlink">零极限-读书简记</a>
+                
+                  <a href="/2023/02/18/The-Most-Important-Thing-Illuminated.html" class="list-group-item-lay pjaxlink">投资最重要的事-读书简记</a>
+                
+                  <a href="/2023/01/28/Language-In-Thought-And-Action.html" class="list-group-item-lay pjaxlink">语言学的邀请-读书简记</a>
+                
+                  <a href="/2023/01/27/BMYY.html" class="list-group-item-lay pjaxlink">巴芒演义-读书简记</a>
+                
+                  <a href="/2022/12/04/Richer-Wiser-Happier.html" class="list-group-item-lay pjaxlink">更富有、更睿智、更快乐-读书简记</a>
+                
+                  <a href="/2022/11/28/The-Common-Sense-Of-Management.html" class="list-group-item-lay pjaxlink">管理的常识-读书简记</a>
+                
+                  <a href="/2022/09/10/How-To-Take-Smart-Notes.html" class="list-group-item-lay pjaxlink">卡片笔记写作法-读书简记</a>
+                
+                  <a href="/2022/08/15/Da-Nao-Tong-Xin-Yuan.html" class="list-group-item-lay pjaxlink">大脑通信员：认识你的神经递质-读书简记</a>
+                
+                  <a href="/2022/07/07/Scale.html" class="list-group-item-lay pjaxlink">规模-读书简记</a>
+                
+                  <a href="/2022/06/16/The-Almanack-Of-Naval-Ravikant.html" class="list-group-item-lay pjaxlink">纳瓦尔宝典-读书简记</a>
+                
+                  <a href="/2022/05/04/High-Output-Management.html" class="list-group-item-lay pjaxlink">格鲁夫给经理人的第一课（畅销版）-读书简记</a>
+                
+                  <a href="/2022/03/27/The-Effective-Executive.html" class="list-group-item-lay pjaxlink">卓有成效的管理者-读书简记</a>
+                
+                  <a href="/2022/03/20/The-Molecule-Of-More.html" class="list-group-item-lay pjaxlink">贪婪的多巴胺-读书简记</a>
+                
+                  <a href="/2022/02/04/The-Untethered-Soul.html" class="list-group-item-lay pjaxlink">清醒的活-读书简记</a>
+                
+                  <a href="/2021/03/28/A-Guide-To-The-Good-Life.html" class="list-group-item-lay pjaxlink">像哲学家一样生活：斯多葛哲学的生活艺术-读书简记</a>
+                
+                  <a href="/2021/01/11/You-Are-What-You-Eat.html" class="list-group-item-lay pjaxlink">你是你吃出来的-读书简记</a>
+                
+                  <a href="/2020/11/12/You-Can-Run-Faster.html" class="list-group-item-lay pjaxlink">你可以跑的更快-读书简记</a>
+                
+                  <a href="/2020/10/12/Danies-Running-Formula.html" class="list-group-item-lay pjaxlink">丹尼尔斯经典跑步训练法-读书简记</a>
+                
+                  <a href="/2020/09/22/Nonviolent-Communication.html" class="list-group-item-lay pjaxlink">非暴力沟通-读书简记</a>
+                
+                  <a href="/2020/05/14/Outlers.html" class="list-group-item-lay pjaxlink">异类-读书简记</a>
+                
+                  <a href="/2020/05/11/ScarCity.html" class="list-group-item-lay pjaxlink">稀缺-读书简记</a>
+                
+                  <a href="/2020/04/29/Why-We-Sleep.html" class="list-group-item-lay pjaxlink">为什么要睡觉-读书简记</a>
+                
+                  <a href="/2020/03/31/Factfulness.html" class="list-group-item-lay pjaxlink">事实-读书简记</a>
+                
+                  <a href="/2020/03/18/Sjszkldr.html" class="list-group-item-lay pjaxlink">世界上最快乐的人-读书简记</a>
+                
+                  <a href="/2020/02/22/Viruses.html" class="list-group-item-lay pjaxlink">病毒学概览-读书简记</a>
+                
+                  <a href="/2020/02/22/Immune-System.html" class="list-group-item-lay pjaxlink">免疫学概览-读书简记</a>
+                
+                  <a href="/2020/02/21/NG.html" class="list-group-item-lay pjaxlink">内观-读书简记</a>
+                
+                  <a href="/2020/02/20/GTDYS.html" class="list-group-item-lay pjaxlink">沟通的艺术-读书简记</a>
+                
+                  <a href="/2019/10/23/Your-Boundless-Life.html" class="list-group-item-lay pjaxlink">你的生命有什么可能-读书简记</a>
+                
+                  <a href="/2019/09/23/Evolution.html" class="list-group-item-lay pjaxlink">演化的故事-读书简记</a>
+                
+                  <a href="/2019/07/23/Principles-Of-Economics-2.html" class="list-group-item-lay pjaxlink">经济学原理：宏观经济学分册-读书简记</a>
+                
+                  <a href="/2019/06/18/Principles-Of-Economics-1.html" class="list-group-item-lay pjaxlink">经济学原理：微观经济学分册-读书简记</a>
+                
+                  <a href="/2019/05/29/Social-Psychology.html" class="list-group-item-lay pjaxlink">社会心理学-读书简记</a>
+                
+                  <a href="/2019/04/10/In-Search-Of-Memory.html" class="list-group-item-lay pjaxlink">追寻记忆的痕迹-读书简记</a>
+                
+                  <a href="/2019/04/02/Emotion.html" class="list-group-item-lay pjaxlink">情绪-读书简记</a>
+                
+                  <a href="/2019/02/28/The-Long-View.html" class="list-group-item-lay pjaxlink">远见：如何规划职业生涯3阶段-读书简记</a>
+                
+                  <a href="/2019/01/09/Existential-Pyschotherapy.html" class="list-group-item-lay pjaxlink">存在主义心理治疗-读书简记</a>
+                
+                  <a href="/2018/10/23/PET.html" class="list-group-item-lay pjaxlink">P·E·T父母效能训练-读书简记</a>
+                
+                  <a href="/2018/10/22/Peter-Lynch.html" class="list-group-item-lay pjaxlink">彼得·林奇的成功投资-读书简记</a>
+                
+                  <a href="/2018/10/18/USSSZN.html" class="list-group-item-lay pjaxlink">2015-2020美国居民膳食指南-读书简记</a>
+                
+                  <a href="/2018/10/18/CNSSZN.html" class="list-group-item-lay pjaxlink">中国居民膳食指南（2016）-读书简记</a>
+                
+                  <a href="/2018/09/10/Critical-Thinking.html" class="list-group-item-lay pjaxlink">批判性思维-读书简记</a>
+                
+                  <a href="/2018/08/20/Code-Complete.html" class="list-group-item-lay pjaxlink">代码大全-读书简记</a>
+                
+                  <a href="/2018/07/11/Playful-Parenting.html" class="list-group-item-lay pjaxlink">游戏力-读书简记</a>
+                
+                  <a href="/2018/06/25/Succeed.html" class="list-group-item-lay pjaxlink">成功，动机与目标-读书简记</a>
+                
+                  <a href="/2018/06/12/Genome.html" class="list-group-item-lay pjaxlink">基因组：人种自传23章-读书简记</a>
+                
+                  <a href="/2018/05/30/YOU.html" class="list-group-item-lay pjaxlink">YOU身体使用手册-读书简记</a>
+                
+                  <a href="/2018/05/22/Dtzt.html" class="list-group-item-lay pjaxlink">登天之梯-读书简记</a>
+                
+                  <a href="/2018/05/15/Xhsx.html" class="list-group-item-lay pjaxlink">为什么学生不喜欢上学-读书简记</a>
+                
+                  <a href="/2018/03/21/Sun-Quanquan.html" class="list-group-item-lay pjaxlink">请停止无效努力-读书简记</a>
+                
+                  <a href="/2018/03/21/MKJ.html" class="list-group-item-lay pjaxlink">麦肯基疗法-读书简记</a>
+                
+                  <a href="/2018/03/20/Jianqi.html" class="list-group-item-lay pjaxlink">跟简七学理财-课程简记</a>
+                
+                  <a href="/2018/03/20/Index-Fund-2017.html" class="list-group-item-lay pjaxlink">指数基金投资指南（2017中信版）-读书简记</a>
+                
+                  <a href="/2018/03/20/Index-Fund-2015.html" class="list-group-item-lay pjaxlink">指数基金投资指南（2015雪球版）-读书简记</a>
+                
+                  <a href="/2017/11/29/Brain-Rules.html" class="list-group-item-lay pjaxlink">让大脑自由：释放天赋的12条定律-读书简记</a>
+                
+                  <a href="/2017/11/11/Yang-Yu-De-Xuan-Ze.html" class="list-group-item-lay pjaxlink">养育的选择-读书简记</a>
+                
+                  <a href="/2017/11/09/Cuda-By-Example.html" class="list-group-item-lay pjaxlink">GPU高性能编程CUDA实战-读书简记</a>
+                
+                  <a href="/2017/11/04/The-Millionaire-Fastlane.html" class="list-group-item-lay pjaxlink">百万富翁快车道-读书简记</a>
+                
+                  <a href="/2017/09/30/Principles.html" class="list-group-item-lay pjaxlink">原则-读书简记</a>
+                
+                  <a href="/2017/09/30/Poor-Charlie.html" class="list-group-item-lay pjaxlink">穷查理宝典-读书简记</a>
+                
+                  <a href="/2017/09/29/Cpp-Concurrency-In-Action.html" class="list-group-item-lay pjaxlink">C++并发编程实战-读书简记</a>
+                
+                  <a href="/2017/08/29/Philosophers.html" class="list-group-item-lay pjaxlink">哲学家们都干了些什么-读书简记</a>
+                
+                  <a href="/2017/08/22/Effective-CPlus.html" class="list-group-item-lay pjaxlink">Effective C++-读书简记</a>
+                
+                  <a href="/2017/08/14/Wealth-Freedom.html" class="list-group-item-lay pjaxlink">通往财富自由之路-读书简记</a>
+                
+                  <a href="/2017/07/26/Linux-Shell.html" class="list-group-item-lay pjaxlink">Linux命令行与Shell脚本编程大全-读书简记</a>
+                
+                  <a href="/2017/06/22/Deliberate-Practice.html" class="list-group-item-lay pjaxlink">刻意练习-读书简记</a>
+                
+                  <a href="/2017/06/14/The-Non-Designers-Design-Book.html" class="list-group-item-lay pjaxlink">写给大家看的设计书-读书简记</a>
+                
+                  <a href="/2017/06/08/The-Power-Of-Habit.html" class="list-group-item-lay pjaxlink">习惯的力量-读书简记</a>
+                
+                  <a href="/2017/06/08/Good-Good-Study.html" class="list-group-item-lay pjaxlink">好好学习-读书简记</a>
+                
+                  <a href="/2017/05/01/Search-Inside-Yourself.html" class="list-group-item-lay pjaxlink">硅谷最受欢迎的情商课-读书简记</a>
+                
+                  <a href="/2017/05/01/RichDad-PoorDad.html" class="list-group-item-lay pjaxlink">富爸爸，穷爸爸-读书简记</a>
+                
+                  <a href="/2017/05/01/How-Kids-Listen-Talk.html" class="list-group-item-lay pjaxlink">如何说孩子才会听，怎么听孩子才会说-读书简记</a>
+                
+                  <a href="/2016/12/26/The-Path-of-Least-Resistance.html" class="list-group-item-lay pjaxlink">阻力最小之路-读书简记</a>
+                
+                  <a href="/2016/12/07/ProGit.html" class="list-group-item-lay pjaxlink">ProGit-读书简记</a>
+                
+                  <a href="/2016/11/27/Thinking-FastAndSlow.html" class="list-group-item-lay pjaxlink">思考：快与慢-读书简记</a>
+                
+                  <a href="/2016/04/24/C-Language-Understanding.html" class="list-group-item-lay pjaxlink">C语言深度剖析-读书简记</a>
+                
+                  <a href="/2016/04/11/Programming-Pearls.html" class="list-group-item-lay pjaxlink">编程珠玑-读书简记</a>
+                
+                  <a href="/2016/03/25/HeadFirst-Design-Patterns.html" class="list-group-item-lay pjaxlink">Head First 设计模式-读书简记</a>
+                
+                  <a href="/2016/01/03/Antifragile.html" class="list-group-item-lay pjaxlink">反脆弱-读书简记</a>
+                
+                  <a href="/2015/10/31/Booklist.html" class="list-group-item-lay pjaxlink">我的阅读书单</a>
+                
+                  <a href="/2015/06/23/Xiao-Qiang-Sheng-Zhi-Ji.html" class="list-group-item-lay pjaxlink">小强升职记-读书简记</a>
+                
+                  <a href="/2015/05/12/Right-Mindfulness.html" class="list-group-item-lay pjaxlink">观呼吸-读书简记</a>
+                
+                  <a href="/2015/04/13/Hackers-Painters.html" class="list-group-item-lay pjaxlink">黑客与画家-读书简记</a>
+                
+                  <a href="/2015/03/23/Morning-Diary.html" class="list-group-item-lay pjaxlink">晨间日记的奇迹-读书简记</a>
+                
+                  <a href="/2014/10/10/Learn-More-Study-Less.html" class="list-group-item-lay pjaxlink">如何高效学习-读书简记</a>
+                
+                  <a href="/2014/09/04/Improv-Wisdom.html" class="list-group-item-lay pjaxlink">即兴的智慧-读书简记</a>
+                
+                  <a href="/2014/08/24/The-Power-Of-Full-Engagement.html" class="list-group-item-lay pjaxlink">精力管理-读书简记</a>
+                
+                  <a href="/2014/08/15/Thinking-In-CPlus.html" class="list-group-item-lay pjaxlink">C++编程思想-读书简记</a>
+                
+                  <a href="/2014/08/03/Procrastination.html" class="list-group-item-lay pjaxlink">拖延心理学-读书简记</a>
+                
+                  <a href="/2014/05/13/Self-Contral.html" class="list-group-item-lay pjaxlink">自控力-读书简记</a>
+                
+                  <a href="/2014/03/06/Wei-Da-Shi-Ao-Chu-Lai-De.html" class="list-group-item-lay pjaxlink">伟大是熬出来的-读书简记</a>
+                
+                  <a href="/2012/08/27/Life-Cannot-Bear-Light.html" class="list-group-item-lay pjaxlink">生命不能承受之轻-读书简记</a>
+                
+                  <a href="/2012/08/17/Seven-Habits-Of-Highly-Effecitive.html" class="list-group-item-lay pjaxlink">高效能人士的七个习惯-读书简记</a>
+                
+                  <a href="/2012/08/16/No-Excuse.html" class="list-group-item-lay pjaxlink">没有任何借口-读书简记</a>
+                
+                  <a href="/2012/07/26/One-Minute-Yourself.html" class="list-group-item-lay pjaxlink">一分钟的你自己-读书简记</a>
+                
+                  <a href="/2012/04/25/Life-Without-Limits.html" class="list-group-item-lay pjaxlink">人生不设限-读书简记</a>
+                
+                  <a href="/2012/04/23/Dark-Time.html" class="list-group-item-lay pjaxlink">暗时间-读书简记</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="杂烩">
+              <div class="list-group">
+                <!--<h2 class="center">杂烩</h2>-->  <!--原来aside2上面的大标题-->
+                
+                  <a href="/2021/06/10/JumpBoat.html" class="list-group-item-lay pjaxlink">写在三十一岁-跳船简记</a>
+                
+                  <a href="/2021/03/12/The-Most-Important-Investment.html" class="list-group-item-lay pjaxlink">最重要的投资</a>
+                
+                  <a href="/2020/04/08/SoBookPlus.html" class="list-group-item-lay pjaxlink">挖掘好书神器-书海星空</a>
+                
+                  <a href="/2019/12/18/DoubanBookTop999.html" class="list-group-item-lay pjaxlink">豆瓣图书TOP 999</a>
+                
+                  <a href="/2019/12/18/DoubanBookFavoriteTop999.html" class="list-group-item-lay pjaxlink">豆瓣图书最受欢迎的TOP 999</a>
+                
+                  <a href="/2018/12/06/SoBook.html" class="list-group-item-lay pjaxlink">挖掘好书神器-好书一下</a>
+                
+                  <a href="/2018/08/29/Machine-Learning-BookList.html" class="list-group-item-lay pjaxlink">机器学习经典图书-排名榜</a>
+                
+                  <a href="/2018/08/29/Coding-BookList.html" class="list-group-item-lay pjaxlink">编程经典图书-排名榜</a>
+                
+                  <a href="/2016/04/14/ZhiHu-Good-Answers.html" class="list-group-item-lay pjaxlink">知乎上赞同数最高的999个回答</a>
+                
+                  <a href="/2012/07/18/What-You-Live-For.html" class="list-group-item-lay pjaxlink">活着，为了什么</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="科研">
+              <div class="list-group">
+                <!--<h2 class="center">科研</h2>-->  <!--原来aside2上面的大标题-->
+                
+                  <a href="/2018/11/28/RefineDet.html" class="list-group-item-lay pjaxlink">RefineDet-论文简记</a>
+                
+                  <a href="/2018/01/04/DenseNet.html" class="list-group-item-lay pjaxlink">DenseNet-论文简记</a>
+                
+                  <a href="/2017/12/11/Tensorflow-GAN.html" class="list-group-item-lay pjaxlink">TensorFlow实现生成对抗网络GAN-翻译</a>
+                
+                  <a href="/2017/12/08/Mask-RCNN.html" class="list-group-item-lay pjaxlink">Mask RCNN-论文简记</a>
+                
+                  <a href="/2017/12/08/FPN.html" class="list-group-item-lay pjaxlink">Feature Pyramid Networks for Object Detection-论文简记</a>
+                
+                  <a href="/2017/09/04/YOLOV2.html" class="list-group-item-lay pjaxlink">目标检测之YOLOv2</a>
+                
+                  <a href="/2017/08/28/YOLO-SSD.html" class="list-group-item-lay pjaxlink">目标检测之YOLO，SSD</a>
+                
+                  <a href="/2017/08/24/RCNN-FastRCNN-FasterRCNN.html" class="list-group-item-lay pjaxlink">目标检测之RCNN，SPP-NET，Fast-RCNN，Faster-RCNN</a>
+                
+                  <a href="/2017/08/21/ResNet-Keras.html" class="list-group-item-lay pjaxlink">ResNet的理解及其Keras实现</a>
+                
+                  <a href="/2017/08/18/GoogLeNet-Keras.html" class="list-group-item-lay pjaxlink">GoogLeNet的理解及其Keras实现</a>
+                
+                  <a href="/2017/07/19/VGGNet-Keras.html" class="list-group-item-lay pjaxlink">VGGNet的理解及其Keras实现</a>
+                
+                  <a href="/2017/07/18/AlexNet-Keras.html" class="list-group-item-lay pjaxlink">AlexNet的理解及其Keras实现</a>
+                
+                  <a href="/2016/08/10/Master-SVM-Algorithm.html" class="list-group-item-lay pjaxlink">理解SVM算法</a>
+                
+                  <a href="/2016/03/28/Least-Squares-Parameter-Estimation.html" class="list-group-item-lay pjaxlink">最小二乘法的参数估计</a>
+                
+                  <a href="/2016/03/04/Projective-Transformation-And-Epipolar-Genmetry.html" class="list-group-item-lay pjaxlink">视觉中的二维射影变换及多视角几何</a>
+                
+                  <a href="/2015/11/17/Master-Reinforcement-Learning-MDP.html" class="list-group-item-lay pjaxlink">强化学习与马尔科夫决策过程</a>
+                
+                  <a href="/2015/11/12/Master-EM-Algorithm.html" class="list-group-item-lay pjaxlink">理解EM算法</a>
+                
+                  <a href="/2015/10/15/RANSAC.html" class="list-group-item-lay pjaxlink">理解图像配准中的LMeds、M-estimators与RANSAC算法</a>
+                
+                  <a href="/2015/09/25/KDTree.html" class="list-group-item-lay pjaxlink">图像特征点匹配之KD-Tree</a>
+                
+                  <a href="/2015/03/27/Camera-Imaging-Model.html" class="list-group-item-lay pjaxlink">摄像机成像的几何模型</a>
+                
+                  <a href="/2015/03/26/Morphology-Processing.html" class="list-group-item-lay pjaxlink">形态学运算：膨胀，腐蚀，开运算，闭运算...</a>
+                
+                  <a href="/2014/11/07/Neural-Network.html" class="list-group-item-lay pjaxlink">神经网络的理解</a>
+                
+                  <a href="/2014/10/22/Feature-Extraction-Selection.html" class="list-group-item-lay pjaxlink">特征提取与特征选择</a>
+                
+                  <a href="/2013/04/11/Physical-Meaning-Of-The-Geometric-Moment.html" class="list-group-item-lay pjaxlink">几何矩的物理意义，由Camshift算法引起</a>
+                
+              </div>
+            </div>
+                
+          <div class="tab-pane" id="tags">
+            <div class="panel-group" id="accordion">
+              <!--<h2 class="center">标签</h2>-->
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#CCPlus">CCPlus</a>
+                      <span class="badge pull-right">8</span>
+                    </h4>
+                  </div>
+                  <div id="CCPlus" class="panel-collapse collapse">
+                    
+                      <a  href='/2017/09/29/Cpp-Concurrency-In-Action.html' class="list-group-item pjaxlink">
+                        C++并发编程实战-读书简记
+                      </a>
+                    
+                      <a  href='/2017/08/22/Effective-CPlus.html' class="list-group-item pjaxlink">
+                        Effective C++-读书简记
+                      </a>
+                    
+                      <a  href='/2016/04/11/Programming-Pearls.html' class="list-group-item pjaxlink">
+                        编程珠玑-读书简记
+                      </a>
+                    
+                      <a  href='/2015/08/07/NormalizedCut-CPlus-Codes.html' class="list-group-item pjaxlink">
+                        Normalized Cut的C++源码
+                      </a>
+                    
+                      <a  href='/2014/11/19/Human-Body-Detection.html' class="list-group-item pjaxlink">
+                        ICF，DPM等行人检测算法实践
+                      </a>
+                    
+                      <a  href='/2014/08/31/ImageTranslation-Using-UDP.html' class="list-group-item pjaxlink">
+                        利用UDP协议进行图像传输
+                      </a>
+                    
+                      <a  href='/2014/08/15/Thinking-In-CPlus.html' class="list-group-item pjaxlink">
+                        C++编程思想-读书简记
+                      </a>
+                    
+                      <a  href='/2012/04/16/CCPlus-Problems.html' class="list-group-item pjaxlink">
+                        C++使用时的常见问题汇总
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#读书笔记">读书笔记</a>
+                      <span class="badge pull-right">131</span>
+                    </h4>
+                  </div>
+                  <div id="读书笔记" class="panel-collapse collapse">
+                    
+                      <a  href='/2025/05/21/Ren-Xing.html' class="list-group-item pjaxlink">
+                        你不可不知的人性-读书简记
+                      </a>
+                    
+                      <a  href='/2025/02/26/SaiNieKa.html' class="list-group-item pjaxlink">
+                        与塞涅卡共进早餐：斯多葛哲学的人生艺术-读书简记
+                      </a>
+                    
+                      <a  href='/2025/02/16/Artist-Of-Life.html' class="list-group-item pjaxlink">
+                        生活的艺术家-读书简记
+                      </a>
+                    
+                      <a  href='/2025/01/18/Good-Inside.html' class="list-group-item pjaxlink">
+                        看见孩子-读书简记
+                      </a>
+                    
+                      <a  href='/2024/11/23/Miao-Dong-Jin-Rong.html' class="list-group-item pjaxlink">
+                        秒懂金融-读书简记
+                      </a>
+                    
+                      <a  href='/2024/11/07/The-Education-Of-A-Value-Investor.html' class="list-group-item pjaxlink">
+                        与巴菲特共进午餐时，我顿悟到的5个真理-读书简记
+                      </a>
+                    
+                      <a  href='/2024/10/13/Hai-Zi-De-Pin-Ge.html' class="list-group-item pjaxlink">
+                        孩子的品格：写给父母的积极心理学-读书简记
+                      </a>
+                    
+                      <a  href='/2024/09/01/Jiayouqintong.html' class="list-group-item pjaxlink">
+                        家有琴童-读书简记
+                      </a>
+                    
+                      <a  href='/2024/05/30/Outlive.html' class="list-group-item pjaxlink">
+                        超越百岁：长寿的科学与艺术-读书简记
+                      </a>
+                    
+                      <a  href='/2024/05/24/Zhi-Chang-Dong-Wu.html' class="list-group-item pjaxlink">
+                        职场动物进化手册-读书简记
+                      </a>
+                    
+                      <a  href='/2024/03/26/A-New-Theory-of-Intelligence.html' class="list-group-item pjaxlink">
+                        千脑智能-读书简记
+                      </a>
+                    
+                      <a  href='/2024/03/16/Zen-And-The-Art-Of-Motorcycle-Maintenance.html' class="list-group-item pjaxlink">
+                        禅与摩托车维修艺术-读书简记
+                      </a>
+                    
+                      <a  href='/2024/02/11/Methods-Of-Notes.html' class="list-group-item pjaxlink">
+                        笔记的方法-读书简记
+                      </a>
+                    
+                      <a  href='/2024/02/03/MGRDSXY-GuanLiJinJie.html' class="list-group-item pjaxlink">
+                        每个人的商学院 管理进阶-读书简记
+                      </a>
+                    
+                      <a  href='/2023/12/24/Xinjingjueyin.html' class="list-group-item pjaxlink">
+                        心经抉隐-读书简记
+                      </a>
+                    
+                      <a  href='/2023/12/23/Hit-Refresh.html' class="list-group-item pjaxlink">
+                        刷新：重新发现商业与未来-读书简记
+                      </a>
+                    
+                      <a  href='/2023/12/23/Cognitive-Awakening.html' class="list-group-item pjaxlink">
+                        认知觉醒-读书简记
+                      </a>
+                    
+                      <a  href='/2023/12/18/MGRDSXY-GuanLiJiChu.html' class="list-group-item pjaxlink">
+                        每个人的商学院 管理基础-读书简记
+                      </a>
+                    
+                      <a  href='/2023/12/14/The-Book-You-Wish-Your-Parents-Had-Read.html' class="list-group-item pjaxlink">
+                        真希望我父母读过这本书-读书简记
+                      </a>
+                    
+                      <a  href='/2023/12/09/Wanting.html' class="list-group-item pjaxlink">
+                        模仿欲望-读书简记
+                      </a>
+                    
+                      <a  href='/2023/12/03/HaMaXianSheng.html' class="list-group-item pjaxlink">
+                        蛤蟆先生去看心理医生-读书简记
+                      </a>
+                    
+                      <a  href='/2023/11/30/Zhi-Shen-Shi-Nei.html' class="list-group-item pjaxlink">
+                        置身事内：中国政府与经济发展-读书简记
+                      </a>
+                    
+                      <a  href='/2023/11/17/Pao-Bu-Sheng-Jing.html' class="list-group-item pjaxlink">
+                        跑步圣经（第2版）-读书简记
+                      </a>
+                    
+                      <a  href='/2023/11/10/Cosmos.html' class="list-group-item pjaxlink">
+                        宇宙-读书简记
+                      </a>
+                    
+                      <a  href='/2023/10/11/Ten-Headspace-Guide.html' class="list-group-item pjaxlink">
+                        十分钟冥想-读书简记
+                      </a>
+                    
+                      <a  href='/2023/09/05/When-We-Talk-About-Run.html' class="list-group-item pjaxlink">
+                        当我谈跑步时，我谈些什么-读书简记
+                      </a>
+                    
+                      <a  href='/2023/08/22/SteveJobs-Zen-Investments.html' class="list-group-item pjaxlink">
+                        乔布斯、禅与投资-读书简记
+                      </a>
+                    
+                      <a  href='/2023/08/13/Atomic-Habits.html' class="list-group-item pjaxlink">
+                        掌控习惯-读书简记
+                      </a>
+                    
+                      <a  href='/2023/08/01/MaoZeDong.html' class="list-group-item pjaxlink">
+                        毛泽东选集（全四卷）-读书简记
+                      </a>
+                    
+                      <a  href='/2023/07/25/JZTZSZ.html' class="list-group-item pjaxlink">
+                        价值投资实战-读书简记
+                      </a>
+                    
+                      <a  href='/2023/07/04/AI.html' class="list-group-item pjaxlink">
+                        AI未来进行式（李开复陈楸帆新书）-读书简记
+                      </a>
+                    
+                      <a  href='/2023/06/27/The-Psychology-Of-Money.html' class="list-group-item pjaxlink">
+                        金钱心理学-读书简记
+                      </a>
+                    
+                      <a  href='/2023/04/28/The-Courage-To-Be-Disliked.html' class="list-group-item pjaxlink">
+                        被讨厌的勇气-读书简记
+                      </a>
+                    
+                      <a  href='/2023/04/07/The-Great-Mental-Models.html' class="list-group-item pjaxlink">
+                        思考的框架-读书简记
+                      </a>
+                    
+                      <a  href='/2023/03/24/The-Inner-Game-Of-Tennis.html' class="list-group-item pjaxlink">
+                        身心合一的奇迹力量-读书简记
+                      </a>
+                    
+                      <a  href='/2023/03/23/Zero-Limits.html' class="list-group-item pjaxlink">
+                        零极限-读书简记
+                      </a>
+                    
+                      <a  href='/2023/02/18/The-Most-Important-Thing-Illuminated.html' class="list-group-item pjaxlink">
+                        投资最重要的事-读书简记
+                      </a>
+                    
+                      <a  href='/2023/01/28/Language-In-Thought-And-Action.html' class="list-group-item pjaxlink">
+                        语言学的邀请-读书简记
+                      </a>
+                    
+                      <a  href='/2023/01/27/BMYY.html' class="list-group-item pjaxlink">
+                        巴芒演义-读书简记
+                      </a>
+                    
+                      <a  href='/2022/12/04/Richer-Wiser-Happier.html' class="list-group-item pjaxlink">
+                        更富有、更睿智、更快乐-读书简记
+                      </a>
+                    
+                      <a  href='/2022/11/28/The-Common-Sense-Of-Management.html' class="list-group-item pjaxlink">
+                        管理的常识-读书简记
+                      </a>
+                    
+                      <a  href='/2022/09/10/How-To-Take-Smart-Notes.html' class="list-group-item pjaxlink">
+                        卡片笔记写作法-读书简记
+                      </a>
+                    
+                      <a  href='/2022/08/15/Da-Nao-Tong-Xin-Yuan.html' class="list-group-item pjaxlink">
+                        大脑通信员：认识你的神经递质-读书简记
+                      </a>
+                    
+                      <a  href='/2022/07/07/Scale.html' class="list-group-item pjaxlink">
+                        规模-读书简记
+                      </a>
+                    
+                      <a  href='/2022/06/16/The-Almanack-Of-Naval-Ravikant.html' class="list-group-item pjaxlink">
+                        纳瓦尔宝典-读书简记
+                      </a>
+                    
+                      <a  href='/2022/05/04/High-Output-Management.html' class="list-group-item pjaxlink">
+                        格鲁夫给经理人的第一课（畅销版）-读书简记
+                      </a>
+                    
+                      <a  href='/2022/03/27/The-Effective-Executive.html' class="list-group-item pjaxlink">
+                        卓有成效的管理者-读书简记
+                      </a>
+                    
+                      <a  href='/2022/03/20/The-Molecule-Of-More.html' class="list-group-item pjaxlink">
+                        贪婪的多巴胺-读书简记
+                      </a>
+                    
+                      <a  href='/2022/02/04/The-Untethered-Soul.html' class="list-group-item pjaxlink">
+                        清醒的活-读书简记
+                      </a>
+                    
+                      <a  href='/2021/03/28/A-Guide-To-The-Good-Life.html' class="list-group-item pjaxlink">
+                        像哲学家一样生活：斯多葛哲学的生活艺术-读书简记
+                      </a>
+                    
+                      <a  href='/2021/01/11/You-Are-What-You-Eat.html' class="list-group-item pjaxlink">
+                        你是你吃出来的-读书简记
+                      </a>
+                    
+                      <a  href='/2020/11/12/You-Can-Run-Faster.html' class="list-group-item pjaxlink">
+                        你可以跑的更快-读书简记
+                      </a>
+                    
+                      <a  href='/2020/10/12/Danies-Running-Formula.html' class="list-group-item pjaxlink">
+                        丹尼尔斯经典跑步训练法-读书简记
+                      </a>
+                    
+                      <a  href='/2020/09/22/Nonviolent-Communication.html' class="list-group-item pjaxlink">
+                        非暴力沟通-读书简记
+                      </a>
+                    
+                      <a  href='/2020/05/14/Outlers.html' class="list-group-item pjaxlink">
+                        异类-读书简记
+                      </a>
+                    
+                      <a  href='/2020/05/11/ScarCity.html' class="list-group-item pjaxlink">
+                        稀缺-读书简记
+                      </a>
+                    
+                      <a  href='/2020/04/29/Why-We-Sleep.html' class="list-group-item pjaxlink">
+                        为什么要睡觉-读书简记
+                      </a>
+                    
+                      <a  href='/2020/03/31/Factfulness.html' class="list-group-item pjaxlink">
+                        事实-读书简记
+                      </a>
+                    
+                      <a  href='/2020/03/18/Sjszkldr.html' class="list-group-item pjaxlink">
+                        世界上最快乐的人-读书简记
+                      </a>
+                    
+                      <a  href='/2020/02/22/Viruses.html' class="list-group-item pjaxlink">
+                        病毒学概览-读书简记
+                      </a>
+                    
+                      <a  href='/2020/02/22/Immune-System.html' class="list-group-item pjaxlink">
+                        免疫学概览-读书简记
+                      </a>
+                    
+                      <a  href='/2020/02/21/NG.html' class="list-group-item pjaxlink">
+                        内观-读书简记
+                      </a>
+                    
+                      <a  href='/2020/02/20/GTDYS.html' class="list-group-item pjaxlink">
+                        沟通的艺术-读书简记
+                      </a>
+                    
+                      <a  href='/2019/10/23/Your-Boundless-Life.html' class="list-group-item pjaxlink">
+                        你的生命有什么可能-读书简记
+                      </a>
+                    
+                      <a  href='/2019/09/23/Evolution.html' class="list-group-item pjaxlink">
+                        演化的故事-读书简记
+                      </a>
+                    
+                      <a  href='/2019/07/23/Principles-Of-Economics-2.html' class="list-group-item pjaxlink">
+                        经济学原理：宏观经济学分册-读书简记
+                      </a>
+                    
+                      <a  href='/2019/06/18/Principles-Of-Economics-1.html' class="list-group-item pjaxlink">
+                        经济学原理：微观经济学分册-读书简记
+                      </a>
+                    
+                      <a  href='/2019/05/29/Social-Psychology.html' class="list-group-item pjaxlink">
+                        社会心理学-读书简记
+                      </a>
+                    
+                      <a  href='/2019/04/10/In-Search-Of-Memory.html' class="list-group-item pjaxlink">
+                        追寻记忆的痕迹-读书简记
+                      </a>
+                    
+                      <a  href='/2019/04/02/Emotion.html' class="list-group-item pjaxlink">
+                        情绪-读书简记
+                      </a>
+                    
+                      <a  href='/2019/02/28/The-Long-View.html' class="list-group-item pjaxlink">
+                        远见：如何规划职业生涯3阶段-读书简记
+                      </a>
+                    
+                      <a  href='/2019/01/09/Existential-Pyschotherapy.html' class="list-group-item pjaxlink">
+                        存在主义心理治疗-读书简记
+                      </a>
+                    
+                      <a  href='/2018/10/23/PET.html' class="list-group-item pjaxlink">
+                        P·E·T父母效能训练-读书简记
+                      </a>
+                    
+                      <a  href='/2018/10/22/Peter-Lynch.html' class="list-group-item pjaxlink">
+                        彼得·林奇的成功投资-读书简记
+                      </a>
+                    
+                      <a  href='/2018/10/18/USSSZN.html' class="list-group-item pjaxlink">
+                        2015-2020美国居民膳食指南-读书简记
+                      </a>
+                    
+                      <a  href='/2018/10/18/CNSSZN.html' class="list-group-item pjaxlink">
+                        中国居民膳食指南（2016）-读书简记
+                      </a>
+                    
+                      <a  href='/2018/09/10/Critical-Thinking.html' class="list-group-item pjaxlink">
+                        批判性思维-读书简记
+                      </a>
+                    
+                      <a  href='/2018/08/20/Code-Complete.html' class="list-group-item pjaxlink">
+                        代码大全-读书简记
+                      </a>
+                    
+                      <a  href='/2018/07/11/Playful-Parenting.html' class="list-group-item pjaxlink">
+                        游戏力-读书简记
+                      </a>
+                    
+                      <a  href='/2018/06/25/Succeed.html' class="list-group-item pjaxlink">
+                        成功，动机与目标-读书简记
+                      </a>
+                    
+                      <a  href='/2018/06/12/Genome.html' class="list-group-item pjaxlink">
+                        基因组：人种自传23章-读书简记
+                      </a>
+                    
+                      <a  href='/2018/05/30/YOU.html' class="list-group-item pjaxlink">
+                        YOU身体使用手册-读书简记
+                      </a>
+                    
+                      <a  href='/2018/05/22/Dtzt.html' class="list-group-item pjaxlink">
+                        登天之梯-读书简记
+                      </a>
+                    
+                      <a  href='/2018/05/15/Xhsx.html' class="list-group-item pjaxlink">
+                        为什么学生不喜欢上学-读书简记
+                      </a>
+                    
+                      <a  href='/2018/03/21/Sun-Quanquan.html' class="list-group-item pjaxlink">
+                        请停止无效努力-读书简记
+                      </a>
+                    
+                      <a  href='/2018/03/21/MKJ.html' class="list-group-item pjaxlink">
+                        麦肯基疗法-读书简记
+                      </a>
+                    
+                      <a  href='/2018/03/20/Jianqi.html' class="list-group-item pjaxlink">
+                        跟简七学理财-课程简记
+                      </a>
+                    
+                      <a  href='/2018/03/20/Index-Fund-2017.html' class="list-group-item pjaxlink">
+                        指数基金投资指南（2017中信版）-读书简记
+                      </a>
+                    
+                      <a  href='/2018/03/20/Index-Fund-2015.html' class="list-group-item pjaxlink">
+                        指数基金投资指南（2015雪球版）-读书简记
+                      </a>
+                    
+                      <a  href='/2017/11/29/Brain-Rules.html' class="list-group-item pjaxlink">
+                        让大脑自由：释放天赋的12条定律-读书简记
+                      </a>
+                    
+                      <a  href='/2017/11/11/Yang-Yu-De-Xuan-Ze.html' class="list-group-item pjaxlink">
+                        养育的选择-读书简记
+                      </a>
+                    
+                      <a  href='/2017/11/09/Cuda-By-Example.html' class="list-group-item pjaxlink">
+                        GPU高性能编程CUDA实战-读书简记
+                      </a>
+                    
+                      <a  href='/2017/11/04/The-Millionaire-Fastlane.html' class="list-group-item pjaxlink">
+                        百万富翁快车道-读书简记
+                      </a>
+                    
+                      <a  href='/2017/09/30/Principles.html' class="list-group-item pjaxlink">
+                        原则-读书简记
+                      </a>
+                    
+                      <a  href='/2017/09/30/Poor-Charlie.html' class="list-group-item pjaxlink">
+                        穷查理宝典-读书简记
+                      </a>
+                    
+                      <a  href='/2017/09/29/Cpp-Concurrency-In-Action.html' class="list-group-item pjaxlink">
+                        C++并发编程实战-读书简记
+                      </a>
+                    
+                      <a  href='/2017/08/29/Philosophers.html' class="list-group-item pjaxlink">
+                        哲学家们都干了些什么-读书简记
+                      </a>
+                    
+                      <a  href='/2017/08/22/Effective-CPlus.html' class="list-group-item pjaxlink">
+                        Effective C++-读书简记
+                      </a>
+                    
+                      <a  href='/2017/08/14/Wealth-Freedom.html' class="list-group-item pjaxlink">
+                        通往财富自由之路-读书简记
+                      </a>
+                    
+                      <a  href='/2017/07/26/Linux-Shell.html' class="list-group-item pjaxlink">
+                        Linux命令行与Shell脚本编程大全-读书简记
+                      </a>
+                    
+                      <a  href='/2017/06/22/Deliberate-Practice.html' class="list-group-item pjaxlink">
+                        刻意练习-读书简记
+                      </a>
+                    
+                      <a  href='/2017/06/14/The-Non-Designers-Design-Book.html' class="list-group-item pjaxlink">
+                        写给大家看的设计书-读书简记
+                      </a>
+                    
+                      <a  href='/2017/06/08/The-Power-Of-Habit.html' class="list-group-item pjaxlink">
+                        习惯的力量-读书简记
+                      </a>
+                    
+                      <a  href='/2017/06/08/Good-Good-Study.html' class="list-group-item pjaxlink">
+                        好好学习-读书简记
+                      </a>
+                    
+                      <a  href='/2017/05/01/Search-Inside-Yourself.html' class="list-group-item pjaxlink">
+                        硅谷最受欢迎的情商课-读书简记
+                      </a>
+                    
+                      <a  href='/2017/05/01/RichDad-PoorDad.html' class="list-group-item pjaxlink">
+                        富爸爸，穷爸爸-读书简记
+                      </a>
+                    
+                      <a  href='/2017/05/01/How-Kids-Listen-Talk.html' class="list-group-item pjaxlink">
+                        如何说孩子才会听，怎么听孩子才会说-读书简记
+                      </a>
+                    
+                      <a  href='/2016/12/26/The-Path-of-Least-Resistance.html' class="list-group-item pjaxlink">
+                        阻力最小之路-读书简记
+                      </a>
+                    
+                      <a  href='/2016/12/07/ProGit.html' class="list-group-item pjaxlink">
+                        ProGit-读书简记
+                      </a>
+                    
+                      <a  href='/2016/11/27/Thinking-FastAndSlow.html' class="list-group-item pjaxlink">
+                        思考：快与慢-读书简记
+                      </a>
+                    
+                      <a  href='/2016/04/24/C-Language-Understanding.html' class="list-group-item pjaxlink">
+                        C语言深度剖析-读书简记
+                      </a>
+                    
+                      <a  href='/2016/04/11/Programming-Pearls.html' class="list-group-item pjaxlink">
+                        编程珠玑-读书简记
+                      </a>
+                    
+                      <a  href='/2016/03/25/HeadFirst-Design-Patterns.html' class="list-group-item pjaxlink">
+                        Head First 设计模式-读书简记
+                      </a>
+                    
+                      <a  href='/2016/01/03/Antifragile.html' class="list-group-item pjaxlink">
+                        反脆弱-读书简记
+                      </a>
+                    
+                      <a  href='/2015/06/23/Xiao-Qiang-Sheng-Zhi-Ji.html' class="list-group-item pjaxlink">
+                        小强升职记-读书简记
+                      </a>
+                    
+                      <a  href='/2015/05/12/Right-Mindfulness.html' class="list-group-item pjaxlink">
+                        观呼吸-读书简记
+                      </a>
+                    
+                      <a  href='/2015/04/13/Hackers-Painters.html' class="list-group-item pjaxlink">
+                        黑客与画家-读书简记
+                      </a>
+                    
+                      <a  href='/2015/03/23/Morning-Diary.html' class="list-group-item pjaxlink">
+                        晨间日记的奇迹-读书简记
+                      </a>
+                    
+                      <a  href='/2014/10/10/Learn-More-Study-Less.html' class="list-group-item pjaxlink">
+                        如何高效学习-读书简记
+                      </a>
+                    
+                      <a  href='/2014/09/04/Improv-Wisdom.html' class="list-group-item pjaxlink">
+                        即兴的智慧-读书简记
+                      </a>
+                    
+                      <a  href='/2014/08/24/The-Power-Of-Full-Engagement.html' class="list-group-item pjaxlink">
+                        精力管理-读书简记
+                      </a>
+                    
+                      <a  href='/2014/08/15/Thinking-In-CPlus.html' class="list-group-item pjaxlink">
+                        C++编程思想-读书简记
+                      </a>
+                    
+                      <a  href='/2014/08/03/Procrastination.html' class="list-group-item pjaxlink">
+                        拖延心理学-读书简记
+                      </a>
+                    
+                      <a  href='/2014/05/13/Self-Contral.html' class="list-group-item pjaxlink">
+                        自控力-读书简记
+                      </a>
+                    
+                      <a  href='/2014/03/06/Wei-Da-Shi-Ao-Chu-Lai-De.html' class="list-group-item pjaxlink">
+                        伟大是熬出来的-读书简记
+                      </a>
+                    
+                      <a  href='/2012/08/27/Life-Cannot-Bear-Light.html' class="list-group-item pjaxlink">
+                        生命不能承受之轻-读书简记
+                      </a>
+                    
+                      <a  href='/2012/08/17/Seven-Habits-Of-Highly-Effecitive.html' class="list-group-item pjaxlink">
+                        高效能人士的七个习惯-读书简记
+                      </a>
+                    
+                      <a  href='/2012/08/16/No-Excuse.html' class="list-group-item pjaxlink">
+                        没有任何借口-读书简记
+                      </a>
+                    
+                      <a  href='/2012/07/26/One-Minute-Yourself.html' class="list-group-item pjaxlink">
+                        一分钟的你自己-读书简记
+                      </a>
+                    
+                      <a  href='/2012/04/25/Life-Without-Limits.html' class="list-group-item pjaxlink">
+                        人生不设限-读书简记
+                      </a>
+                    
+                      <a  href='/2012/04/23/Dark-Time.html' class="list-group-item pjaxlink">
+                        暗时间-读书简记
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#精力时间管理">精力时间管理</a>
+                      <span class="badge pull-right">8</span>
+                    </h4>
+                  </div>
+                  <div id="精力时间管理" class="panel-collapse collapse">
+                    
+                      <a  href='/2015/06/23/Xiao-Qiang-Sheng-Zhi-Ji.html' class="list-group-item pjaxlink">
+                        小强升职记-读书简记
+                      </a>
+                    
+                      <a  href='/2015/05/12/Right-Mindfulness.html' class="list-group-item pjaxlink">
+                        观呼吸-读书简记
+                      </a>
+                    
+                      <a  href='/2015/03/23/Morning-Diary.html' class="list-group-item pjaxlink">
+                        晨间日记的奇迹-读书简记
+                      </a>
+                    
+                      <a  href='/2014/10/10/Learn-More-Study-Less.html' class="list-group-item pjaxlink">
+                        如何高效学习-读书简记
+                      </a>
+                    
+                      <a  href='/2014/08/24/The-Power-Of-Full-Engagement.html' class="list-group-item pjaxlink">
+                        精力管理-读书简记
+                      </a>
+                    
+                      <a  href='/2014/08/03/Procrastination.html' class="list-group-item pjaxlink">
+                        拖延心理学-读书简记
+                      </a>
+                    
+                      <a  href='/2012/08/17/Seven-Habits-Of-Highly-Effecitive.html' class="list-group-item pjaxlink">
+                        高效能人士的七个习惯-读书简记
+                      </a>
+                    
+                      <a  href='/2012/04/23/Dark-Time.html' class="list-group-item pjaxlink">
+                        暗时间-读书简记
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#记录">记录</a>
+                      <span class="badge pull-right">2</span>
+                    </h4>
+                  </div>
+                  <div id="记录" class="panel-collapse collapse">
+                    
+                      <a  href='/2021/06/10/JumpBoat.html' class="list-group-item pjaxlink">
+                        写在三十一岁-跳船简记
+                      </a>
+                    
+                      <a  href='/2012/07/18/What-You-Live-For.html' class="list-group-item pjaxlink">
+                        活着，为了什么
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Latex">Latex</a>
+                      <span class="badge pull-right">1</span>
+                    </h4>
+                  </div>
+                  <div id="Latex" class="panel-collapse collapse">
+                    
+                      <a  href='/2013/04/05/Latex-Experiences.html' class="list-group-item pjaxlink">
+                        使用Latex的一些经验技巧汇总
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Opencv">Opencv</a>
+                      <span class="badge pull-right">3</span>
+                    </h4>
+                  </div>
+                  <div id="Opencv" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/12/03/Linux-Opencv.html' class="list-group-item pjaxlink">
+                        Linux下Opencv的安装及配置使用
+                      </a>
+                    
+                      <a  href='/2014/12/03/Arm-Opencv.html' class="list-group-item pjaxlink">
+                        Opencv交叉编译及Arm平台移植
+                      </a>
+                    
+                      <a  href='/2013/04/06/Opencv-Problems.html' class="list-group-item pjaxlink">
+                        Opencv使用时的常见问题汇总
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#计算机视觉">计算机视觉</a>
+                      <span class="badge pull-right">25</span>
+                    </h4>
+                  </div>
+                  <div id="计算机视觉" class="panel-collapse collapse">
+                    
+                      <a  href='/2018/11/28/RefineDet.html' class="list-group-item pjaxlink">
+                        RefineDet-论文简记
+                      </a>
+                    
+                      <a  href='/2018/07/17/DQN.html' class="list-group-item pjaxlink">
+                        学习DQN（Deep Q-Learning Network）
+                      </a>
+                    
+                      <a  href='/2018/01/04/DenseNet.html' class="list-group-item pjaxlink">
+                        DenseNet-论文简记
+                      </a>
+                    
+                      <a  href='/2017/12/11/Tensorflow-GAN.html' class="list-group-item pjaxlink">
+                        TensorFlow实现生成对抗网络GAN-翻译
+                      </a>
+                    
+                      <a  href='/2017/12/08/Mask-RCNN.html' class="list-group-item pjaxlink">
+                        Mask RCNN-论文简记
+                      </a>
+                    
+                      <a  href='/2017/12/08/FPN.html' class="list-group-item pjaxlink">
+                        Feature Pyramid Networks for Object Detection-论文简记
+                      </a>
+                    
+                      <a  href='/2017/09/04/YOLOV2.html' class="list-group-item pjaxlink">
+                        目标检测之YOLOv2
+                      </a>
+                    
+                      <a  href='/2017/08/28/YOLO-SSD.html' class="list-group-item pjaxlink">
+                        目标检测之YOLO，SSD
+                      </a>
+                    
+                      <a  href='/2017/08/24/RCNN-FastRCNN-FasterRCNN.html' class="list-group-item pjaxlink">
+                        目标检测之RCNN，SPP-NET，Fast-RCNN，Faster-RCNN
+                      </a>
+                    
+                      <a  href='/2017/08/21/ResNet-Keras.html' class="list-group-item pjaxlink">
+                        ResNet的理解及其Keras实现
+                      </a>
+                    
+                      <a  href='/2017/08/18/GoogLeNet-Keras.html' class="list-group-item pjaxlink">
+                        GoogLeNet的理解及其Keras实现
+                      </a>
+                    
+                      <a  href='/2017/08/01/Run-SSD.html' class="list-group-item pjaxlink">
+                        配置SSD进行目标检测
+                      </a>
+                    
+                      <a  href='/2017/07/19/VGGNet-Keras.html' class="list-group-item pjaxlink">
+                        VGGNet的理解及其Keras实现
+                      </a>
+                    
+                      <a  href='/2017/07/18/AlexNet-Keras.html' class="list-group-item pjaxlink">
+                        AlexNet的理解及其Keras实现
+                      </a>
+                    
+                      <a  href='/2016/08/10/Master-SVM-Algorithm.html' class="list-group-item pjaxlink">
+                        理解SVM算法
+                      </a>
+                    
+                      <a  href='/2016/03/28/Least-Squares-Parameter-Estimation.html' class="list-group-item pjaxlink">
+                        最小二乘法的参数估计
+                      </a>
+                    
+                      <a  href='/2016/03/04/Projective-Transformation-And-Epipolar-Genmetry.html' class="list-group-item pjaxlink">
+                        视觉中的二维射影变换及多视角几何
+                      </a>
+                    
+                      <a  href='/2015/11/17/Master-Reinforcement-Learning-MDP.html' class="list-group-item pjaxlink">
+                        强化学习与马尔科夫决策过程
+                      </a>
+                    
+                      <a  href='/2015/11/12/Master-EM-Algorithm.html' class="list-group-item pjaxlink">
+                        理解EM算法
+                      </a>
+                    
+                      <a  href='/2015/10/15/RANSAC.html' class="list-group-item pjaxlink">
+                        理解图像配准中的LMeds、M-estimators与RANSAC算法
+                      </a>
+                    
+                      <a  href='/2015/09/25/KDTree.html' class="list-group-item pjaxlink">
+                        图像特征点匹配之KD-Tree
+                      </a>
+                    
+                      <a  href='/2015/03/27/Camera-Imaging-Model.html' class="list-group-item pjaxlink">
+                        摄像机成像的几何模型
+                      </a>
+                    
+                      <a  href='/2015/03/26/Morphology-Processing.html' class="list-group-item pjaxlink">
+                        形态学运算：膨胀，腐蚀，开运算，闭运算...
+                      </a>
+                    
+                      <a  href='/2014/10/22/Feature-Extraction-Selection.html' class="list-group-item pjaxlink">
+                        特征提取与特征选择
+                      </a>
+                    
+                      <a  href='/2013/04/11/Physical-Meaning-Of-The-Geometric-Moment.html' class="list-group-item pjaxlink">
+                        几何矩的物理意义，由Camshift算法引起
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#自我管理">自我管理</a>
+                      <span class="badge pull-right">6</span>
+                    </h4>
+                  </div>
+                  <div id="自我管理" class="panel-collapse collapse">
+                    
+                      <a  href='/2017/06/08/The-Power-Of-Habit.html' class="list-group-item pjaxlink">
+                        习惯的力量-读书简记
+                      </a>
+                    
+                      <a  href='/2017/06/08/Good-Good-Study.html' class="list-group-item pjaxlink">
+                        好好学习-读书简记
+                      </a>
+                    
+                      <a  href='/2017/05/01/Search-Inside-Yourself.html' class="list-group-item pjaxlink">
+                        硅谷最受欢迎的情商课-读书简记
+                      </a>
+                    
+                      <a  href='/2015/10/31/Booklist.html' class="list-group-item pjaxlink">
+                        我的阅读书单
+                      </a>
+                    
+                      <a  href='/2014/05/13/Self-Contral.html' class="list-group-item pjaxlink">
+                        自控力-读书简记
+                      </a>
+                    
+                      <a  href='/2014/03/06/Wei-Da-Shi-Ao-Chu-Lai-De.html' class="list-group-item pjaxlink">
+                        伟大是熬出来的-读书简记
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#嵌入式">嵌入式</a>
+                      <span class="badge pull-right">5</span>
+                    </h4>
+                  </div>
+                  <div id="嵌入式" class="panel-collapse collapse">
+                    
+                      <a  href='/2015/12/01/Arm-Environment-Problems.html' class="list-group-item pjaxlink">
+                        嵌入式ARM下常用环境的配置及常见问题汇总
+                      </a>
+                    
+                      <a  href='/2014/12/03/Arm-Opencv.html' class="list-group-item pjaxlink">
+                        Opencv交叉编译及Arm平台移植
+                      </a>
+                    
+                      <a  href='/2014/08/31/ImageTranslation-Using-UDP.html' class="list-group-item pjaxlink">
+                        利用UDP协议进行图像传输
+                      </a>
+                    
+                      <a  href='/2014/07/18/Arm-USBWifi.html' class="list-group-item pjaxlink">
+                        移植Wifi模块RT3070到ARM平台
+                      </a>
+                    
+                      <a  href='/2014/04/14/QT-Linux-Arm.html' class="list-group-item pjaxlink">
+                        Linux下PC版及ARM版QT环境配置，ARM移植及触摸屏支持
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Linux">Linux</a>
+                      <span class="badge pull-right">13</span>
+                    </h4>
+                  </div>
+                  <div id="Linux" class="panel-collapse collapse">
+                    
+                      <a  href='/2017/07/26/Linux-Shell.html' class="list-group-item pjaxlink">
+                        Linux命令行与Shell脚本编程大全-读书简记
+                      </a>
+                    
+                      <a  href='/2016/11/17/Ubuntu-CUDA.html' class="list-group-item pjaxlink">
+                        Ubuntu下搭建CUDA开发环境
+                      </a>
+                    
+                      <a  href='/2015/12/11/Wget.html' class="list-group-item pjaxlink">
+                        使用Wget下载整个网站
+                      </a>
+                    
+                      <a  href='/2015/12/01/Arm-Environment-Problems.html' class="list-group-item pjaxlink">
+                        嵌入式ARM下常用环境的配置及常见问题汇总
+                      </a>
+                    
+                      <a  href='/2015/11/28/Ubuntu-Softwares.html' class="list-group-item pjaxlink">
+                        Ubuntu下常用软件的安装使用及常见问题汇总
+                      </a>
+                    
+                      <a  href='/2015/05/15/Cygwin.html' class="list-group-item pjaxlink">
+                        Windows下Cygwin的使用
+                      </a>
+                    
+                      <a  href='/2014/12/05/UpperBody-Detection.html' class="list-group-item pjaxlink">
+                        Upper-Body Detection源码配置及使用
+                      </a>
+                    
+                      <a  href='/2014/12/03/Linux-Opencv.html' class="list-group-item pjaxlink">
+                        Linux下Opencv的安装及配置使用
+                      </a>
+                    
+                      <a  href='/2014/12/03/Linux-Matlab.html' class="list-group-item pjaxlink">
+                        Linux下Matlab的安装及配置使用
+                      </a>
+                    
+                      <a  href='/2014/11/19/Human-Body-Detection.html' class="list-group-item pjaxlink">
+                        ICF，DPM等行人检测算法实践
+                      </a>
+                    
+                      <a  href='/2014/08/31/ImageTranslation-Using-UDP.html' class="list-group-item pjaxlink">
+                        利用UDP协议进行图像传输
+                      </a>
+                    
+                      <a  href='/2014/07/18/Arm-USBWifi.html' class="list-group-item pjaxlink">
+                        移植Wifi模块RT3070到ARM平台
+                      </a>
+                    
+                      <a  href='/2014/04/14/QT-Linux-Arm.html' class="list-group-item pjaxlink">
+                        Linux下PC版及ARM版QT环境配置，ARM移植及触摸屏支持
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Arm">Arm</a>
+                      <span class="badge pull-right">5</span>
+                    </h4>
+                  </div>
+                  <div id="Arm" class="panel-collapse collapse">
+                    
+                      <a  href='/2015/12/01/Arm-Environment-Problems.html' class="list-group-item pjaxlink">
+                        嵌入式ARM下常用环境的配置及常见问题汇总
+                      </a>
+                    
+                      <a  href='/2014/12/03/Arm-Opencv.html' class="list-group-item pjaxlink">
+                        Opencv交叉编译及Arm平台移植
+                      </a>
+                    
+                      <a  href='/2014/08/31/ImageTranslation-Using-UDP.html' class="list-group-item pjaxlink">
+                        利用UDP协议进行图像传输
+                      </a>
+                    
+                      <a  href='/2014/07/18/Arm-USBWifi.html' class="list-group-item pjaxlink">
+                        移植Wifi模块RT3070到ARM平台
+                      </a>
+                    
+                      <a  href='/2014/04/14/QT-Linux-Arm.html' class="list-group-item pjaxlink">
+                        Linux下PC版及ARM版QT环境配置，ARM移植及触摸屏支持
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#安装配置">安装配置</a>
+                      <span class="badge pull-right">16</span>
+                    </h4>
+                  </div>
+                  <div id="安装配置" class="panel-collapse collapse">
+                    
+                      <a  href='/2017/12/14/Wechat-RSS-Huginn.html' class="list-group-item pjaxlink">
+                        高效工作—优雅的阅读微信公众号
+                      </a>
+                    
+                      <a  href='/2017/08/01/Run-SSD.html' class="list-group-item pjaxlink">
+                        配置SSD进行目标检测
+                      </a>
+                    
+                      <a  href='/2016/11/17/Ubuntu-CUDA.html' class="list-group-item pjaxlink">
+                        Ubuntu下搭建CUDA开发环境
+                      </a>
+                    
+                      <a  href='/2015/08/25/System-Install.html' class="list-group-item pjaxlink">
+                        装机相关问题汇总
+                      </a>
+                    
+                      <a  href='/2015/08/07/NormalizedCut-CPlus-Codes.html' class="list-group-item pjaxlink">
+                        Normalized Cut的C++源码
+                      </a>
+                    
+                      <a  href='/2015/05/15/Cygwin.html' class="list-group-item pjaxlink">
+                        Windows下Cygwin的使用
+                      </a>
+                    
+                      <a  href='/2015/04/01/Windows-Tips.html' class="list-group-item pjaxlink">
+                        Windows系统下的一些经验技巧
+                      </a>
+                    
+                      <a  href='/2014/12/18/License-Plate-Detection-Recognition.html' class="list-group-item pjaxlink">
+                        车牌检测及识别 OpenALPR
+                      </a>
+                    
+                      <a  href='/2014/12/05/UpperBody-Detection.html' class="list-group-item pjaxlink">
+                        Upper-Body Detection源码配置及使用
+                      </a>
+                    
+                      <a  href='/2014/12/03/Linux-Opencv.html' class="list-group-item pjaxlink">
+                        Linux下Opencv的安装及配置使用
+                      </a>
+                    
+                      <a  href='/2014/12/03/Linux-Matlab.html' class="list-group-item pjaxlink">
+                        Linux下Matlab的安装及配置使用
+                      </a>
+                    
+                      <a  href='/2014/12/03/Arm-Opencv.html' class="list-group-item pjaxlink">
+                        Opencv交叉编译及Arm平台移植
+                      </a>
+                    
+                      <a  href='/2014/11/19/Human-Body-Detection.html' class="list-group-item pjaxlink">
+                        ICF，DPM等行人检测算法实践
+                      </a>
+                    
+                      <a  href='/2014/08/06/TesseractOCR.html' class="list-group-item pjaxlink">
+                        使用Tesseract-OCR进行文字识别
+                      </a>
+                    
+                      <a  href='/2014/07/18/Arm-USBWifi.html' class="list-group-item pjaxlink">
+                        移植Wifi模块RT3070到ARM平台
+                      </a>
+                    
+                      <a  href='/2014/04/14/QT-Linux-Arm.html' class="list-group-item pjaxlink">
+                        Linux下PC版及ARM版QT环境配置，ARM移植及触摸屏支持
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#编程">编程</a>
+                      <span class="badge pull-right">27</span>
+                    </h4>
+                  </div>
+                  <div id="编程" class="panel-collapse collapse">
+                    
+                      <a  href='/2018/09/04/Sedentary-Reminder.html' class="list-group-item pjaxlink">
+                        健康工作—智能久坐提醒软件
+                      </a>
+                    
+                      <a  href='/2018/08/29/Coding-BookList.html' class="list-group-item pjaxlink">
+                        编程经典图书-排名榜
+                      </a>
+                    
+                      <a  href='/2017/11/09/Cuda-By-Example.html' class="list-group-item pjaxlink">
+                        GPU高性能编程CUDA实战-读书简记
+                      </a>
+                    
+                      <a  href='/2017/09/29/Cpp-Concurrency-In-Action.html' class="list-group-item pjaxlink">
+                        C++并发编程实战-读书简记
+                      </a>
+                    
+                      <a  href='/2017/08/22/Effective-CPlus.html' class="list-group-item pjaxlink">
+                        Effective C++-读书简记
+                      </a>
+                    
+                      <a  href='/2017/03/14/DoubanBackup.html' class="list-group-item pjaxlink">
+                        豆瓣离线备份-Shell脚本
+                      </a>
+                    
+                      <a  href='/2016/11/17/Ubuntu-CUDA.html' class="list-group-item pjaxlink">
+                        Ubuntu下搭建CUDA开发环境
+                      </a>
+                    
+                      <a  href='/2016/08/18/Keyboard-Shortcut.html' class="list-group-item pjaxlink">
+                        高效工作—快捷键整理
+                      </a>
+                    
+                      <a  href='/2016/04/24/C-Language-Understanding.html' class="list-group-item pjaxlink">
+                        C语言深度剖析-读书简记
+                      </a>
+                    
+                      <a  href='/2016/04/11/Programming-Pearls.html' class="list-group-item pjaxlink">
+                        编程珠玑-读书简记
+                      </a>
+                    
+                      <a  href='/2016/03/25/HeadFirst-Design-Patterns.html' class="list-group-item pjaxlink">
+                        Head First 设计模式-读书简记
+                      </a>
+                    
+                      <a  href='/2016/03/15/Lianjia-Spider.html' class="list-group-item pjaxlink">
+                        链家爬虫
+                      </a>
+                    
+                      <a  href='/2016/01/29/Python-File.html' class="list-group-item pjaxlink">
+                        Python的文件操作与输入输出
+                      </a>
+                    
+                      <a  href='/2016/01/08/Python-DicSet.html' class="list-group-item pjaxlink">
+                        Python的映射和集合类型
+                      </a>
+                    
+                      <a  href='/2015/12/21/Python-Sequence.html' class="list-group-item pjaxlink">
+                        Python序列相关知识总结
+                      </a>
+                    
+                      <a  href='/2015/12/04/CSDN-BlogBackup-Python.html' class="list-group-item pjaxlink">
+                        Python实现CSDN博客的完整备份
+                      </a>
+                    
+                      <a  href='/2015/10/31/Self-Wrote-Tools.html' class="list-group-item pjaxlink">
+                        自己造的轮子们 开源
+                      </a>
+                    
+                      <a  href='/2015/10/25/Multithreading.html' class="list-group-item pjaxlink">
+                        多线程编程中的几个概念
+                      </a>
+                    
+                      <a  href='/2015/09/21/ClassifyPictures.html' class="list-group-item pjaxlink">
+                        按拍摄日期一键归类照片 Python
+                      </a>
+                    
+                      <a  href='/2014/12/16/Theano-GPU.html' class="list-group-item pjaxlink">
+                        Theano利用GPU进行深度学习加速的配置及使用
+                      </a>
+                    
+                      <a  href='/2014/12/03/Linux-Opencv.html' class="list-group-item pjaxlink">
+                        Linux下Opencv的安装及配置使用
+                      </a>
+                    
+                      <a  href='/2014/12/03/Arm-Opencv.html' class="list-group-item pjaxlink">
+                        Opencv交叉编译及Arm平台移植
+                      </a>
+                    
+                      <a  href='/2014/11/14/Python-Problems.html' class="list-group-item pjaxlink">
+                        Python使用过程中常见问题汇总
+                      </a>
+                    
+                      <a  href='/2014/11/05/Git-Commands.html' class="list-group-item pjaxlink">
+                        Git常用命令总结
+                      </a>
+                    
+                      <a  href='/2014/09/20/Regular-Expression.html' class="list-group-item pjaxlink">
+                        正则表达式及在Python中的使用
+                      </a>
+                    
+                      <a  href='/2014/08/31/ImageTranslation-Using-UDP.html' class="list-group-item pjaxlink">
+                        利用UDP协议进行图像传输
+                      </a>
+                    
+                      <a  href='/2014/08/15/Thinking-In-CPlus.html' class="list-group-item pjaxlink">
+                        C++编程思想-读书简记
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#开源">开源</a>
+                      <span class="badge pull-right">6</span>
+                    </h4>
+                  </div>
+                  <div id="开源" class="panel-collapse collapse">
+                    
+                      <a  href='/2017/03/14/DoubanBackup.html' class="list-group-item pjaxlink">
+                        豆瓣离线备份-Shell脚本
+                      </a>
+                    
+                      <a  href='/2016/03/15/Lianjia-Spider.html' class="list-group-item pjaxlink">
+                        链家爬虫
+                      </a>
+                    
+                      <a  href='/2015/12/04/CSDN-BlogBackup-Python.html' class="list-group-item pjaxlink">
+                        Python实现CSDN博客的完整备份
+                      </a>
+                    
+                      <a  href='/2015/10/31/Self-Wrote-Tools.html' class="list-group-item pjaxlink">
+                        自己造的轮子们 开源
+                      </a>
+                    
+                      <a  href='/2015/09/21/ClassifyPictures.html' class="list-group-item pjaxlink">
+                        按拍摄日期一键归类照片 Python
+                      </a>
+                    
+                      <a  href='/2014/08/31/ImageTranslation-Using-UDP.html' class="list-group-item pjaxlink">
+                        利用UDP协议进行图像传输
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Python">Python</a>
+                      <span class="badge pull-right">10</span>
+                    </h4>
+                  </div>
+                  <div id="Python" class="panel-collapse collapse">
+                    
+                      <a  href='/2017/03/14/DoubanBackup.html' class="list-group-item pjaxlink">
+                        豆瓣离线备份-Shell脚本
+                      </a>
+                    
+                      <a  href='/2016/03/15/Lianjia-Spider.html' class="list-group-item pjaxlink">
+                        链家爬虫
+                      </a>
+                    
+                      <a  href='/2016/01/29/Python-File.html' class="list-group-item pjaxlink">
+                        Python的文件操作与输入输出
+                      </a>
+                    
+                      <a  href='/2016/01/08/Python-DicSet.html' class="list-group-item pjaxlink">
+                        Python的映射和集合类型
+                      </a>
+                    
+                      <a  href='/2015/12/21/Python-Sequence.html' class="list-group-item pjaxlink">
+                        Python序列相关知识总结
+                      </a>
+                    
+                      <a  href='/2015/12/04/CSDN-BlogBackup-Python.html' class="list-group-item pjaxlink">
+                        Python实现CSDN博客的完整备份
+                      </a>
+                    
+                      <a  href='/2015/09/21/ClassifyPictures.html' class="list-group-item pjaxlink">
+                        按拍摄日期一键归类照片 Python
+                      </a>
+                    
+                      <a  href='/2014/12/16/Theano-GPU.html' class="list-group-item pjaxlink">
+                        Theano利用GPU进行深度学习加速的配置及使用
+                      </a>
+                    
+                      <a  href='/2014/11/14/Python-Problems.html' class="list-group-item pjaxlink">
+                        Python使用过程中常见问题汇总
+                      </a>
+                    
+                      <a  href='/2014/09/20/Regular-Expression.html' class="list-group-item pjaxlink">
+                        正则表达式及在Python中的使用
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#机器学习">机器学习</a>
+                      <span class="badge pull-right">21</span>
+                    </h4>
+                  </div>
+                  <div id="机器学习" class="panel-collapse collapse">
+                    
+                      <a  href='/2018/11/28/RefineDet.html' class="list-group-item pjaxlink">
+                        RefineDet-论文简记
+                      </a>
+                    
+                      <a  href='/2018/08/29/Machine-Learning-BookList.html' class="list-group-item pjaxlink">
+                        机器学习经典图书-排名榜
+                      </a>
+                    
+                      <a  href='/2018/07/17/DQN.html' class="list-group-item pjaxlink">
+                        学习DQN（Deep Q-Learning Network）
+                      </a>
+                    
+                      <a  href='/2018/01/04/DenseNet.html' class="list-group-item pjaxlink">
+                        DenseNet-论文简记
+                      </a>
+                    
+                      <a  href='/2017/12/11/Tensorflow-GAN.html' class="list-group-item pjaxlink">
+                        TensorFlow实现生成对抗网络GAN-翻译
+                      </a>
+                    
+                      <a  href='/2017/12/08/Mask-RCNN.html' class="list-group-item pjaxlink">
+                        Mask RCNN-论文简记
+                      </a>
+                    
+                      <a  href='/2017/12/08/FPN.html' class="list-group-item pjaxlink">
+                        Feature Pyramid Networks for Object Detection-论文简记
+                      </a>
+                    
+                      <a  href='/2017/09/04/YOLOV2.html' class="list-group-item pjaxlink">
+                        目标检测之YOLOv2
+                      </a>
+                    
+                      <a  href='/2017/08/28/YOLO-SSD.html' class="list-group-item pjaxlink">
+                        目标检测之YOLO，SSD
+                      </a>
+                    
+                      <a  href='/2017/08/24/RCNN-FastRCNN-FasterRCNN.html' class="list-group-item pjaxlink">
+                        目标检测之RCNN，SPP-NET，Fast-RCNN，Faster-RCNN
+                      </a>
+                    
+                      <a  href='/2017/08/21/ResNet-Keras.html' class="list-group-item pjaxlink">
+                        ResNet的理解及其Keras实现
+                      </a>
+                    
+                      <a  href='/2017/08/18/GoogLeNet-Keras.html' class="list-group-item pjaxlink">
+                        GoogLeNet的理解及其Keras实现
+                      </a>
+                    
+                      <a  href='/2017/08/01/Run-SSD.html' class="list-group-item pjaxlink">
+                        配置SSD进行目标检测
+                      </a>
+                    
+                      <a  href='/2017/07/19/VGGNet-Keras.html' class="list-group-item pjaxlink">
+                        VGGNet的理解及其Keras实现
+                      </a>
+                    
+                      <a  href='/2017/07/18/AlexNet-Keras.html' class="list-group-item pjaxlink">
+                        AlexNet的理解及其Keras实现
+                      </a>
+                    
+                      <a  href='/2016/08/10/Master-SVM-Algorithm.html' class="list-group-item pjaxlink">
+                        理解SVM算法
+                      </a>
+                    
+                      <a  href='/2015/11/17/Master-Reinforcement-Learning-MDP.html' class="list-group-item pjaxlink">
+                        强化学习与马尔科夫决策过程
+                      </a>
+                    
+                      <a  href='/2015/11/12/Master-EM-Algorithm.html' class="list-group-item pjaxlink">
+                        理解EM算法
+                      </a>
+                    
+                      <a  href='/2014/12/16/Theano-GPU.html' class="list-group-item pjaxlink">
+                        Theano利用GPU进行深度学习加速的配置及使用
+                      </a>
+                    
+                      <a  href='/2014/11/07/Neural-Network.html' class="list-group-item pjaxlink">
+                        神经网络的理解
+                      </a>
+                    
+                      <a  href='/2014/10/22/Feature-Extraction-Selection.html' class="list-group-item pjaxlink">
+                        特征提取与特征选择
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#模式识别">模式识别</a>
+                      <span class="badge pull-right">19</span>
+                    </h4>
+                  </div>
+                  <div id="模式识别" class="panel-collapse collapse">
+                    
+                      <a  href='/2018/11/28/RefineDet.html' class="list-group-item pjaxlink">
+                        RefineDet-论文简记
+                      </a>
+                    
+                      <a  href='/2018/01/04/DenseNet.html' class="list-group-item pjaxlink">
+                        DenseNet-论文简记
+                      </a>
+                    
+                      <a  href='/2017/12/11/Tensorflow-GAN.html' class="list-group-item pjaxlink">
+                        TensorFlow实现生成对抗网络GAN-翻译
+                      </a>
+                    
+                      <a  href='/2017/12/08/Mask-RCNN.html' class="list-group-item pjaxlink">
+                        Mask RCNN-论文简记
+                      </a>
+                    
+                      <a  href='/2017/12/08/FPN.html' class="list-group-item pjaxlink">
+                        Feature Pyramid Networks for Object Detection-论文简记
+                      </a>
+                    
+                      <a  href='/2017/09/04/YOLOV2.html' class="list-group-item pjaxlink">
+                        目标检测之YOLOv2
+                      </a>
+                    
+                      <a  href='/2017/08/28/YOLO-SSD.html' class="list-group-item pjaxlink">
+                        目标检测之YOLO，SSD
+                      </a>
+                    
+                      <a  href='/2017/08/24/RCNN-FastRCNN-FasterRCNN.html' class="list-group-item pjaxlink">
+                        目标检测之RCNN，SPP-NET，Fast-RCNN，Faster-RCNN
+                      </a>
+                    
+                      <a  href='/2017/08/21/ResNet-Keras.html' class="list-group-item pjaxlink">
+                        ResNet的理解及其Keras实现
+                      </a>
+                    
+                      <a  href='/2017/08/18/GoogLeNet-Keras.html' class="list-group-item pjaxlink">
+                        GoogLeNet的理解及其Keras实现
+                      </a>
+                    
+                      <a  href='/2017/07/19/VGGNet-Keras.html' class="list-group-item pjaxlink">
+                        VGGNet的理解及其Keras实现
+                      </a>
+                    
+                      <a  href='/2017/07/18/AlexNet-Keras.html' class="list-group-item pjaxlink">
+                        AlexNet的理解及其Keras实现
+                      </a>
+                    
+                      <a  href='/2016/08/10/Master-SVM-Algorithm.html' class="list-group-item pjaxlink">
+                        理解SVM算法
+                      </a>
+                    
+                      <a  href='/2016/03/04/Projective-Transformation-And-Epipolar-Genmetry.html' class="list-group-item pjaxlink">
+                        视觉中的二维射影变换及多视角几何
+                      </a>
+                    
+                      <a  href='/2015/11/17/Master-Reinforcement-Learning-MDP.html' class="list-group-item pjaxlink">
+                        强化学习与马尔科夫决策过程
+                      </a>
+                    
+                      <a  href='/2015/11/12/Master-EM-Algorithm.html' class="list-group-item pjaxlink">
+                        理解EM算法
+                      </a>
+                    
+                      <a  href='/2015/03/27/Camera-Imaging-Model.html' class="list-group-item pjaxlink">
+                        摄像机成像的几何模型
+                      </a>
+                    
+                      <a  href='/2014/11/07/Neural-Network.html' class="list-group-item pjaxlink">
+                        神经网络的理解
+                      </a>
+                    
+                      <a  href='/2014/10/22/Feature-Extraction-Selection.html' class="list-group-item pjaxlink">
+                        特征提取与特征选择
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Git">Git</a>
+                      <span class="badge pull-right">2</span>
+                    </h4>
+                  </div>
+                  <div id="Git" class="panel-collapse collapse">
+                    
+                      <a  href='/2016/12/07/ProGit.html' class="list-group-item pjaxlink">
+                        ProGit-读书简记
+                      </a>
+                    
+                      <a  href='/2014/11/05/Git-Commands.html' class="list-group-item pjaxlink">
+                        Git常用命令总结
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Matlab">Matlab</a>
+                      <span class="badge pull-right">1</span>
+                    </h4>
+                  </div>
+                  <div id="Matlab" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/12/03/Linux-Matlab.html' class="list-group-item pjaxlink">
+                        Linux下Matlab的安装及配置使用
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#图像特征点匹配">图像特征点匹配</a>
+                      <span class="badge pull-right">3</span>
+                    </h4>
+                  </div>
+                  <div id="图像特征点匹配" class="panel-collapse collapse">
+                    
+                      <a  href='/2016/03/28/Least-Squares-Parameter-Estimation.html' class="list-group-item pjaxlink">
+                        最小二乘法的参数估计
+                      </a>
+                    
+                      <a  href='/2015/10/15/RANSAC.html' class="list-group-item pjaxlink">
+                        理解图像配准中的LMeds、M-estimators与RANSAC算法
+                      </a>
+                    
+                      <a  href='/2015/09/25/KDTree.html' class="list-group-item pjaxlink">
+                        图像特征点匹配之KD-Tree
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#设计模式">设计模式</a>
+                      <span class="badge pull-right">1</span>
+                    </h4>
+                  </div>
+                  <div id="设计模式" class="panel-collapse collapse">
+                    
+                      <a  href='/2016/03/25/HeadFirst-Design-Patterns.html' class="list-group-item pjaxlink">
+                        Head First 设计模式-读书简记
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#分享">分享</a>
+                      <span class="badge pull-right">12</span>
+                    </h4>
+                  </div>
+                  <div id="分享" class="panel-collapse collapse">
+                    
+                      <a  href='/2021/03/12/The-Most-Important-Investment.html' class="list-group-item pjaxlink">
+                        最重要的投资
+                      </a>
+                    
+                      <a  href='/2020/04/08/SoBookPlus.html' class="list-group-item pjaxlink">
+                        挖掘好书神器-书海星空
+                      </a>
+                    
+                      <a  href='/2020/04/08/SoBookPlus.html' class="list-group-item pjaxlink">
+                        挖掘好书神器-书海星空
+                      </a>
+                    
+                      <a  href='/2019/12/18/DoubanBookTop999.html' class="list-group-item pjaxlink">
+                        豆瓣图书TOP 999
+                      </a>
+                    
+                      <a  href='/2019/12/18/DoubanBookFavoriteTop999.html' class="list-group-item pjaxlink">
+                        豆瓣图书最受欢迎的TOP 999
+                      </a>
+                    
+                      <a  href='/2018/12/06/SoBook.html' class="list-group-item pjaxlink">
+                        挖掘好书神器-好书一下
+                      </a>
+                    
+                      <a  href='/2018/09/04/Sedentary-Reminder.html' class="list-group-item pjaxlink">
+                        健康工作—智能久坐提醒软件
+                      </a>
+                    
+                      <a  href='/2018/08/29/Machine-Learning-BookList.html' class="list-group-item pjaxlink">
+                        机器学习经典图书-排名榜
+                      </a>
+                    
+                      <a  href='/2018/08/29/Coding-BookList.html' class="list-group-item pjaxlink">
+                        编程经典图书-排名榜
+                      </a>
+                    
+                      <a  href='/2017/12/14/Wechat-RSS-Huginn.html' class="list-group-item pjaxlink">
+                        高效工作—优雅的阅读微信公众号
+                      </a>
+                    
+                      <a  href='/2016/08/18/Keyboard-Shortcut.html' class="list-group-item pjaxlink">
+                        高效工作—快捷键整理
+                      </a>
+                    
+                      <a  href='/2016/04/14/ZhiHu-Good-Answers.html' class="list-group-item pjaxlink">
+                        知乎上赞同数最高的999个回答
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#技术">技术</a>
+                      <span class="badge pull-right">2</span>
+                    </h4>
+                  </div>
+                  <div id="技术" class="panel-collapse collapse">
+                    
+                      <a  href='/2017/07/26/Linux-Shell.html' class="list-group-item pjaxlink">
+                        Linux命令行与Shell脚本编程大全-读书简记
+                      </a>
+                    
+                      <a  href='/2016/12/07/ProGit.html' class="list-group-item pjaxlink">
+                        ProGit-读书简记
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#育儿育己">育儿育己</a>
+                      <span class="badge pull-right">7</span>
+                    </h4>
+                  </div>
+                  <div id="育儿育己" class="panel-collapse collapse">
+                    
+                      <a  href='/2018/10/23/PET.html' class="list-group-item pjaxlink">
+                        P·E·T父母效能训练-读书简记
+                      </a>
+                    
+                      <a  href='/2018/07/11/Playful-Parenting.html' class="list-group-item pjaxlink">
+                        游戏力-读书简记
+                      </a>
+                    
+                      <a  href='/2018/05/22/Dtzt.html' class="list-group-item pjaxlink">
+                        登天之梯-读书简记
+                      </a>
+                    
+                      <a  href='/2018/05/15/Xhsx.html' class="list-group-item pjaxlink">
+                        为什么学生不喜欢上学-读书简记
+                      </a>
+                    
+                      <a  href='/2017/11/29/Brain-Rules.html' class="list-group-item pjaxlink">
+                        让大脑自由：释放天赋的12条定律-读书简记
+                      </a>
+                    
+                      <a  href='/2017/11/11/Yang-Yu-De-Xuan-Ze.html' class="list-group-item pjaxlink">
+                        养育的选择-读书简记
+                      </a>
+                    
+                      <a  href='/2017/05/01/How-Kids-Listen-Talk.html' class="list-group-item pjaxlink">
+                        如何说孩子才会听，怎么听孩子才会说-读书简记
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Shell">Shell</a>
+                      <span class="badge pull-right">1</span>
+                    </h4>
+                  </div>
+                  <div id="Shell" class="panel-collapse collapse">
+                    
+                      <a  href='/2017/07/26/Linux-Shell.html' class="list-group-item pjaxlink">
+                        Linux命令行与Shell脚本编程大全-读书简记
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#深度学习">深度学习</a>
+                      <span class="badge pull-right">2</span>
+                    </h4>
+                  </div>
+                  <div id="深度学习" class="panel-collapse collapse">
+                    
+                      <a  href='/2018/07/17/DQN.html' class="list-group-item pjaxlink">
+                        学习DQN（Deep Q-Learning Network）
+                      </a>
+                    
+                      <a  href='/2017/08/01/Run-SSD.html' class="list-group-item pjaxlink">
+                        配置SSD进行目标检测
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#目标检测">目标检测</a>
+                      <span class="badge pull-right">5</span>
+                    </h4>
+                  </div>
+                  <div id="目标检测" class="panel-collapse collapse">
+                    
+                      <a  href='/2017/12/08/Mask-RCNN.html' class="list-group-item pjaxlink">
+                        Mask RCNN-论文简记
+                      </a>
+                    
+                      <a  href='/2017/12/08/FPN.html' class="list-group-item pjaxlink">
+                        Feature Pyramid Networks for Object Detection-论文简记
+                      </a>
+                    
+                      <a  href='/2017/09/04/YOLOV2.html' class="list-group-item pjaxlink">
+                        目标检测之YOLOv2
+                      </a>
+                    
+                      <a  href='/2017/08/28/YOLO-SSD.html' class="list-group-item pjaxlink">
+                        目标检测之YOLO，SSD
+                      </a>
+                    
+                      <a  href='/2017/08/24/RCNN-FastRCNN-FasterRCNN.html' class="list-group-item pjaxlink">
+                        目标检测之RCNN，SPP-NET，Fast-RCNN，Faster-RCNN
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#论文简记">论文简记</a>
+                      <span class="badge pull-right">2</span>
+                    </h4>
+                  </div>
+                  <div id="论文简记" class="panel-collapse collapse">
+                    
+                      <a  href='/2017/12/08/Mask-RCNN.html' class="list-group-item pjaxlink">
+                        Mask RCNN-论文简记
+                      </a>
+                    
+                      <a  href='/2017/12/08/FPN.html' class="list-group-item pjaxlink">
+                        Feature Pyramid Networks for Object Detection-论文简记
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#翻译">翻译</a>
+                      <span class="badge pull-right">1</span>
+                    </h4>
+                  </div>
+                  <div id="翻译" class="panel-collapse collapse">
+                    
+                      <a  href='/2017/12/11/Tensorflow-GAN.html' class="list-group-item pjaxlink">
+                        TensorFlow实现生成对抗网络GAN-翻译
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#经管理财">经管理财</a>
+                      <span class="badge pull-right">3</span>
+                    </h4>
+                  </div>
+                  <div id="经管理财" class="panel-collapse collapse">
+                    
+                      <a  href='/2018/03/20/Jianqi.html' class="list-group-item pjaxlink">
+                        跟简七学理财-课程简记
+                      </a>
+                    
+                      <a  href='/2018/03/20/Index-Fund-2017.html' class="list-group-item pjaxlink">
+                        指数基金投资指南（2017中信版）-读书简记
+                      </a>
+                    
+                      <a  href='/2018/03/20/Index-Fund-2015.html' class="list-group-item pjaxlink">
+                        指数基金投资指南（2015雪球版）-读书简记
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#书单">书单</a>
+                      <span class="badge pull-right">7</span>
+                    </h4>
+                  </div>
+                  <div id="书单" class="panel-collapse collapse">
+                    
+                      <a  href='/2021/03/12/The-Most-Important-Investment.html' class="list-group-item pjaxlink">
+                        最重要的投资
+                      </a>
+                    
+                      <a  href='/2020/04/08/SoBookPlus.html' class="list-group-item pjaxlink">
+                        挖掘好书神器-书海星空
+                      </a>
+                    
+                      <a  href='/2019/12/18/DoubanBookTop999.html' class="list-group-item pjaxlink">
+                        豆瓣图书TOP 999
+                      </a>
+                    
+                      <a  href='/2019/12/18/DoubanBookFavoriteTop999.html' class="list-group-item pjaxlink">
+                        豆瓣图书最受欢迎的TOP 999
+                      </a>
+                    
+                      <a  href='/2018/12/06/SoBook.html' class="list-group-item pjaxlink">
+                        挖掘好书神器-好书一下
+                      </a>
+                    
+                      <a  href='/2018/08/29/Machine-Learning-BookList.html' class="list-group-item pjaxlink">
+                        机器学习经典图书-排名榜
+                      </a>
+                    
+                      <a  href='/2018/08/29/Coding-BookList.html' class="list-group-item pjaxlink">
+                        编程经典图书-排名榜
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="col-md-13 col-lg-13 col-sm-13 col-xs-13 aside3">
+        <div id="container">
+          <div id="pjax">
+            <div class="row">
+  <div class="col-md-13 aside3-title">
+    <br>
+    <h2 id="#identifier">GPU高性能编程CUDA实战-读书简记</h2>
+    2017年11月09日
+  </div>
+  <div class="col-md-13 aside3-content">
+    <hr>
+    <div id="content">
+      <h3>写在前面</h3>
+
+<p><hr></p>
+
+<p>GPU高性能编程CUDA实战对于没有接触过GPU编程的人是非常不错的一本入门书，脉络清晰，例子由浅入深。下文是一些笔记，代码占了很大部分（代码很好的解释了用法），方便用到的时候查阅复习。</p>
+
+<h3>第1篇 CUDA C简介</h3>
+
+<p><hr></p>
+
+<p>本篇主要对CUDA C编程进行了简介，介绍了如何查询支持CUDA的设备的信息。</p>
+
+<p><hr></p>
+
+<p>代码Enum GPU主要涉及到了设备属性的查询。</p>
+
+<p><a class="collapsecode btn btn-primary" role="button" data-toggle="collapse" href="#collapse0" aria-expanded="false" aria-controls="collapse0">
+Enum GPU
+</a></p>
+<div class="highlight"><pre><code class="language-C++" data-lang="C++">#include "../common/book.h"
+
+int main( void ) {
+    cudaDeviceProp  prop;
+
+    int count;
+    HANDLE_ERROR( cudaGetDeviceCount( &amp;count ) );
+    for (int i=0; i&lt; count; i++) {
+        HANDLE_ERROR( cudaGetDeviceProperties( &amp;prop, i ) );
+        printf( "   --- General Information for device %d ---\n", i );
+        printf( "Name:  %s\n", prop.name );
+        printf( "Compute capability:  %d.%d\n", prop.major, prop.minor );
+        printf( "Clock rate:  %d\n", prop.clockRate );
+        printf( "Device copy overlap:  " );
+        if (prop.deviceOverlap)
+            printf( "Enabled\n" );
+        else
+            printf( "Disabled\n");
+        printf( "Kernel execution timeout :  " );
+        if (prop.kernelExecTimeoutEnabled)
+            printf( "Enabled\n" );
+        else
+            printf( "Disabled\n" );
+
+        printf( "   --- Memory Information for device %d ---\n", i );
+        printf( "Total global mem:  %ld\n", prop.totalGlobalMem );
+        printf( "Total constant Mem:  %ld\n", prop.totalConstMem );
+        printf( "Max mem pitch:  %ld\n", prop.memPitch );
+        printf( "Texture Alignment:  %ld\n", prop.textureAlignment );
+
+        printf( "   --- MP Information for device %d ---\n", i );
+        printf( "Multiprocessor count:  %d\n",
+                    prop.multiProcessorCount );
+        printf( "Shared mem per mp:  %ld\n", prop.sharedMemPerBlock );
+        printf( "Registers per mp:  %d\n", prop.regsPerBlock );
+        printf( "Threads in warp:  %d\n", prop.warpSize );
+        printf( "Max threads per block:  %d\n",
+                    prop.maxThreadsPerBlock );
+        printf( "Max thread dimensions:  (%d, %d, %d)\n",
+                    prop.maxThreadsDim[0], prop.maxThreadsDim[1],
+                    prop.maxThreadsDim[2] );
+        printf( "Max grid dimensions:  (%d, %d, %d)\n",
+                    prop.maxGridSize[0], prop.maxGridSize[1],
+                    prop.maxGridSize[2] );
+        printf( "\n" );
+    }
+}
+</code></pre></div>
+<h3>第2篇 CUDA C并行编程</h3>
+
+<p><hr></p>
+
+<p>本篇主要介绍了如何使用CUDA C编写并行代码。</p>
+
+<p><hr></p>
+
+<p>代码Add Loop Long实现了使用GPU计算向量加法。其中核函数add&lt;&lt;<128,1>&gt;&gt;中第一个参数表示设备在执行核函数时是用的并行线程块的数量。其中blockIdx代表线程块的索引。将add核函数声明为__global__函数，从而可从主机上调用并在设备上运行。</p>
+
+<p><a class="collapsecode btn btn-primary" role="button" data-toggle="collapse" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+Add Loop Long
+</a></p>
+<div class="highlight"><pre><code class="language-C++" data-lang="C++">#include "../common/book.h"
+
+#define N   (32 * 1024)
+
+__global__ void add( int *a, int *b, int *c ) {
+    int tid = blockIdx.x;
+    while (tid &lt; N) {
+        c[tid] = a[tid] + b[tid];
+        tid += gridDim.x;
+    }
+}
+
+int main( void ) {
+    int *a, *b, *c;
+    int *dev_a, *dev_b, *dev_c;
+
+    // allocate the memory on the CPU
+    a = (int*)malloc( N * sizeof(int) );
+    b = (int*)malloc( N * sizeof(int) );
+    c = (int*)malloc( N * sizeof(int) );
+
+    // allocate the memory on the GPU
+    HANDLE_ERROR( cudaMalloc( (void**)&amp;dev_a, N * sizeof(int) ) );
+    HANDLE_ERROR( cudaMalloc( (void**)&amp;dev_b, N * sizeof(int) ) );
+    HANDLE_ERROR( cudaMalloc( (void**)&amp;dev_c, N * sizeof(int) ) );
+
+    // fill the arrays 'a' and 'b' on the CPU
+    for (int i=0; i&lt;N; i++) {
+        a[i] = i;
+        b[i] = 2 * i;
+    }
+
+    // copy the arrays 'a' and 'b' to the GPU
+    HANDLE_ERROR( cudaMemcpy( dev_a, a, N * sizeof(int),
+                              cudaMemcpyHostToDevice ) );
+    HANDLE_ERROR( cudaMemcpy( dev_b, b, N * sizeof(int),
+                              cudaMemcpyHostToDevice ) );
+
+    add&lt;&lt;&lt;128,1&gt;&gt;&gt;( dev_a, dev_b, dev_c );
+
+    // copy the array 'c' back from the GPU to the CPU
+    HANDLE_ERROR( cudaMemcpy( c, dev_c, N * sizeof(int),
+                              cudaMemcpyDeviceToHost ) );
+
+    // verify that the GPU did the work we requested
+    bool success = true;
+    for (int i=0; i&lt;N; i++) {
+        if ((a[i] + b[i]) != c[i]) {
+            printf( "Error:  %d + %d != %d\n", a[i], b[i], c[i] );
+            success = false;
+        }
+    }
+    if (success)    printf( "We did it!\n" );
+
+    // free the memory we allocated on the GPU
+    HANDLE_ERROR( cudaFree( dev_a ) );
+    HANDLE_ERROR( cudaFree( dev_b ) );
+    HANDLE_ERROR( cudaFree( dev_c ) );
+
+    // free the memory we allocated on the CPU
+    free( a );
+    free( b );
+    free( c );
+
+    return 0;
+}
+</code></pre></div>
+<p><hr></p>
+
+<p>代码Julia使用GPU实现了生成Julia集的算法。其中__device__声明的函数，表示将在GPU而不是主机上运行，只能从其他__device__函数或者重__global__函数中调用它们。</p>
+
+<p><a class="collapsecode btn btn-primary" role="button" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+Julia
+</a></p>
+<div class="highlight"><pre><code class="language-C++" data-lang="C++">#include "../common/book.h"
+#include "../common/cpu_bitmap.h"
+
+#define DIM 1000
+
+struct cuComplex {
+    float   r;
+    float   i;
+    cuComplex( float a, float b ) : r(a), i(b)  {}
+    __device__ float magnitude2( void ) {
+        return r * r + i * i;
+    }
+    __device__ cuComplex operator*(const cuComplex&amp; a) {
+        return cuComplex(r*a.r - i*a.i, i*a.r + r*a.i);
+    }
+    __device__ cuComplex operator+(const cuComplex&amp; a) {
+        return cuComplex(r+a.r, i+a.i);
+    }
+};
+
+__device__ int julia( int x, int y ) {
+    const float scale = 1.5;
+    float jx = scale * (float)(DIM/2 - x)/(DIM/2);
+    float jy = scale * (float)(DIM/2 - y)/(DIM/2);
+
+    cuComplex c(-0.8, 0.156);
+    cuComplex a(jx, jy);
+
+    int i = 0;
+    for (i=0; i&lt;200; i++) {
+        a = a * a + c;
+        if (a.magnitude2() &gt; 1000)
+            return 0;
+    }
+
+    return 1;
+}
+
+__global__ void kernel( unsigned char *ptr ) {
+    // map from blockIdx to pixel position
+    int x = blockIdx.x;
+    int y = blockIdx.y;
+    int offset = x + y * gridDim.x;
+
+    // now calculate the value at that position
+    int juliaValue = julia( x, y );
+    ptr[offset*4 + 0] = 255 * juliaValue;
+    ptr[offset*4 + 1] = 0;
+    ptr[offset*4 + 2] = 0;
+    ptr[offset*4 + 3] = 255;
+}
+
+// globals needed by the update routine
+struct DataBlock {
+    unsigned char   *dev_bitmap;
+};
+
+int main( void ) {
+    DataBlock   data;
+    CPUBitmap bitmap( DIM, DIM, &amp;data );
+    unsigned char    *dev_bitmap;
+
+    HANDLE_ERROR( cudaMalloc( (void**)&amp;dev_bitmap, bitmap.image_size() ) );
+    data.dev_bitmap = dev_bitmap;
+
+    dim3    grid(DIM,DIM);
+    kernel&lt;&lt;&lt;grid,1&gt;&gt;&gt;( dev_bitmap );
+
+    HANDLE_ERROR( cudaMemcpy( bitmap.get_ptr(), dev_bitmap,
+                              bitmap.image_size(),
+                              cudaMemcpyDeviceToHost ) );
+
+    HANDLE_ERROR( cudaFree( dev_bitmap ) );
+
+    bitmap.display_and_exit();
+}
+</code></pre></div>
+<h3>第3篇 线程协作</h3>
+
+<p><hr></p>
+
+<p>本篇主要介绍CUDA中的线程、不同线程间的通信机制、并行执行线程的同步机制。</p>
+
+<p><hr></p>
+
+<p>代码Add Loop Long Blocks中，核函数add&lt;&lt;<128,128>&gt;&gt;第一个参数表示使用128个线程块，第二个参数表示每个线程块中创建128个线程数量。在add核函数中，blockDim是一个常数，保存的是线程块中每一维的线程数量；gridDim保存了一个类似的值，即在线程格中每一维的线程块数量。gridDim是二维的，blockDim实际上是三维的。</p>
+
+<p>代码Ripple使用GPU实现了波纹效果。代码中使用了二维的线程块和线程数组。</p>
+
+<p><a class="collapsecode btn btn-primary" role="button" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+Add Loop Long Blocks
+</a><a class="collapsecode btn btn-primary" role="button" data-toggle="collapse" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+Ripple
+</a></p>
+<div class="highlight"><pre><code class="language-C++" data-lang="C++">#include "../common/book.h"
+
+#define N   (33 * 1024)
+
+__global__ void add( int *a, int *b, int *c ) {
+    int tid = threadIdx.x + blockIdx.x * blockDim.x;
+    while (tid &lt; N) {
+        c[tid] = a[tid] + b[tid];
+        tid += blockDim.x * gridDim.x;
+    }
+}
+
+int main( void ) {
+    int *a, *b, *c;
+    int *dev_a, *dev_b, *dev_c;
+
+    // allocate the memory on the CPU
+    a = (int*)malloc( N * sizeof(int) );
+    b = (int*)malloc( N * sizeof(int) );
+    c = (int*)malloc( N * sizeof(int) );
+
+    // allocate the memory on the GPU
+    HANDLE_ERROR( cudaMalloc( (void**)&amp;dev_a, N * sizeof(int) ) );
+    HANDLE_ERROR( cudaMalloc( (void**)&amp;dev_b, N * sizeof(int) ) );
+    HANDLE_ERROR( cudaMalloc( (void**)&amp;dev_c, N * sizeof(int) ) );
+
+    // fill the arrays 'a' and 'b' on the CPU
+    for (int i=0; i&lt;N; i++) {
+        a[i] = i;
+        b[i] = 2 * i;
+    }
+
+    // copy the arrays 'a' and 'b' to the GPU
+    HANDLE_ERROR( cudaMemcpy( dev_a, a, N * sizeof(int),
+                              cudaMemcpyHostToDevice ) );
+    HANDLE_ERROR( cudaMemcpy( dev_b, b, N * sizeof(int),
+                              cudaMemcpyHostToDevice ) );
+
+    add&lt;&lt;&lt;128,128&gt;&gt;&gt;( dev_a, dev_b, dev_c );
+
+    // copy the array 'c' back from the GPU to the CPU
+    HANDLE_ERROR( cudaMemcpy( c, dev_c, N * sizeof(int),
+                              cudaMemcpyDeviceToHost ) );
+
+    // verify that the GPU did the work we requested
+    bool success = true;
+    for (int i=0; i&lt;N; i++) {
+        if ((a[i] + b[i]) != c[i]) {
+            printf( "Error:  %d + %d != %d\n", a[i], b[i], c[i] );
+            success = false;
+        }
+    }
+    if (success)    printf( "We did it!\n" );
+
+    // free the memory we allocated on the GPU
+    HANDLE_ERROR( cudaFree( dev_a ) );
+    HANDLE_ERROR( cudaFree( dev_b ) );
+    HANDLE_ERROR( cudaFree( dev_c ) );
+
+    // free the memory we allocated on the CPU
+    free( a );
+    free( b );
+    free( c );
+
+    return 0;
+}
+</code></pre></div><div class="highlight"><pre><code class="language-C++" data-lang="C++">#include "cuda.h"
+#include "../common/book.h"
+#include "../common/cpu_anim.h"
+
+#define DIM 1024
+#define PI 3.1415926535897932f
+
+__global__ void kernel( unsigned char *ptr, int ticks ) {
+    // map from threadIdx/BlockIdx to pixel position
+    int x = threadIdx.x + blockIdx.x * blockDim.x;
+    int y = threadIdx.y + blockIdx.y * blockDim.y;
+    int offset = x + y * blockDim.x * gridDim.x;
+
+    // now calculate the value at that position
+    float fx = x - DIM/2;
+    float fy = y - DIM/2;
+    float d = sqrtf( fx * fx + fy * fy );
+    unsigned char grey = (unsigned char)(128.0f + 127.0f *
+                                         cos(d/10.0f - ticks/7.0f) /
+                                         (d/10.0f + 1.0f));    
+    ptr[offset*4 + 0] = grey;
+    ptr[offset*4 + 1] = grey;
+    ptr[offset*4 + 2] = grey;
+    ptr[offset*4 + 3] = 255;
+}
+
+struct DataBlock {
+    unsigned char   *dev_bitmap;
+    CPUAnimBitmap  *bitmap;
+};
+
+void generate_frame( DataBlock *d, int ticks ) {
+    dim3    blocks(DIM/16,DIM/16);
+    dim3    threads(16,16);
+    kernel&lt;&lt;&lt;blocks,threads&gt;&gt;&gt;( d-&gt;dev_bitmap, ticks );
+
+    HANDLE_ERROR( cudaMemcpy( d-&gt;bitmap-&gt;get_ptr(),
+                              d-&gt;dev_bitmap,
+                              d-&gt;bitmap-&gt;image_size(),
+                              cudaMemcpyDeviceToHost ) );
+}
+
+// clean up memory allocated on the GPU
+void cleanup( DataBlock *d ) {
+    HANDLE_ERROR( cudaFree( d-&gt;dev_bitmap ) ); 
+}
+
+int main( void ) {
+    DataBlock   data;
+    CPUAnimBitmap  bitmap( DIM, DIM, &amp;data );
+    data.bitmap = &amp;bitmap;
+
+    HANDLE_ERROR( cudaMalloc( (void**)&amp;data.dev_bitmap,
+                              bitmap.image_size() ) );
+
+    bitmap.anim_and_exit( (void (*)(void*,int))generate_frame,
+                            (void (*)(void*))cleanup );
+}
+</code></pre></div>
+<p><hr></p>
+
+<p>代码Dot实现了矢量的点积运算。展示了共享内存的使用。编写代码时，将CUDA C的关键字__share__添加到变量声明中，将会使这个变量驻留在共享内存中，这样线程块中的每个线程都共享这块内存，但线程却无法看到也不能修改其他线程块的变量副本。程序中，共享内存缓存中的偏移就等于线程索引，线程块索引与这个偏移无关，因为每个线程块都拥有该共享内存的私有副本。</p>
+
+<p>同时还要注意到对线程块中的线程进行同步：__syncthreads()。这个函数调用将确保线程块中的每个线程都执行完__syncthreads()前面的语句后，才会执行下一条语句。还需注意，如果将__synctheads()调用移入到if()线程块中，那么任何cacheIndex大于或等于i的线程都永远不能执行__syncthreads()。这将使处理器挂起。</p>
+
+<p><a class="collapsecode btn btn-primary" role="button" data-toggle="collapse" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+Dot
+</a></p>
+<div class="highlight"><pre><code class="language-C++" data-lang="C++">#include "../common/book.h"
+
+#define imin(a,b) (a&lt;b?a:b)
+
+const int N = 33 * 1024;
+const int threadsPerBlock = 256;
+const int blocksPerGrid =
+            imin( 32, (N+threadsPerBlock-1) / threadsPerBlock );
+
+
+__global__ void dot( float *a, float *b, float *c ) {
+    __shared__ float cache[threadsPerBlock];
+    int tid = threadIdx.x + blockIdx.x * blockDim.x;
+    int cacheIndex = threadIdx.x;
+
+    float   temp = 0;
+    while (tid &lt; N) {
+        temp += a[tid] * b[tid];
+        tid += blockDim.x * gridDim.x;
+    }
+
+    // set the cache values
+    cache[cacheIndex] = temp;
+
+    // synchronize threads in this block
+    __syncthreads();
+
+    // for reductions, threadsPerBlock must be a power of 2
+    // because of the following code
+    int i = blockDim.x/2;
+    while (i != 0) {
+        if (cacheIndex &lt; i)
+            cache[cacheIndex] += cache[cacheIndex + i];
+        __syncthreads();
+        i /= 2;
+    }
+
+    if (cacheIndex == 0)
+        c[blockIdx.x] = cache[0];
+}
+
+
+int main( void ) {
+    float   *a, *b, c, *partial_c;
+    float   *dev_a, *dev_b, *dev_partial_c;
+
+    // allocate memory on the cpu side
+    a = (float*)malloc( N*sizeof(float) );
+    b = (float*)malloc( N*sizeof(float) );
+    partial_c = (float*)malloc( blocksPerGrid*sizeof(float) );
+
+    // allocate the memory on the GPU
+    HANDLE_ERROR( cudaMalloc( (void**)&amp;dev_a,
+                              N*sizeof(float) ) );
+    HANDLE_ERROR( cudaMalloc( (void**)&amp;dev_b,
+                              N*sizeof(float) ) );
+    HANDLE_ERROR( cudaMalloc( (void**)&amp;dev_partial_c,
+                              blocksPerGrid*sizeof(float) ) );
+
+    // fill in the host memory with data
+    for (int i=0; i&lt;N; i++) {
+        a[i] = i;
+        b[i] = i*2;
+    }
+
+    // copy the arrays 'a' and 'b' to the GPU
+    HANDLE_ERROR( cudaMemcpy( dev_a, a, N*sizeof(float),
+                              cudaMemcpyHostToDevice ) );
+    HANDLE_ERROR( cudaMemcpy( dev_b, b, N*sizeof(float),
+                              cudaMemcpyHostToDevice ) ); 
+
+    dot&lt;&lt;&lt;blocksPerGrid,threadsPerBlock&gt;&gt;&gt;( dev_a, dev_b,
+                                            dev_partial_c );
+
+    // copy the array 'c' back from the GPU to the CPU
+    HANDLE_ERROR( cudaMemcpy( partial_c, dev_partial_c,
+                              blocksPerGrid*sizeof(float),
+                              cudaMemcpyDeviceToHost ) );
+
+    // finish up on the CPU side
+    c = 0;
+    for (int i=0; i&lt;blocksPerGrid; i++) {
+        c += partial_c[i];
+    }
+
+    #define sum_squares(x)  (x*(x+1)*(2*x+1)/6)
+    printf( "Does GPU value %.6g = %.6g?\n", c,
+             2 * sum_squares( (float)(N - 1) ) );
+
+    // free memory on the gpu side
+    HANDLE_ERROR( cudaFree( dev_a ) );
+    HANDLE_ERROR( cudaFree( dev_b ) );
+    HANDLE_ERROR( cudaFree( dev_partial_c ) );
+
+    // free memory on the cpu side
+    free( a );
+    free( b );
+    free( partial_c );
+}
+</code></pre></div>
+<h3>第4篇 常量内存与事件</h3>
+
+<p><hr></p>
+
+<p>本篇将介绍如何在CUDA C中使用常量内存、常量内存的特性及如何使用CUDA事件来测量应用程序的性能。</p>
+
+<p><hr></p>
+
+<p>代码Ray展示了如何使用常量内存。常量内存的声明方法与共享内存类似，在变量前加上__constant__修饰符即可。__constant__将把变量的访问限制为只读。在某些情况中，用常量内存来替换全局内存能有效减少内存宽带。其可以节约内存带宽主要有两个原因：1 对常量内存的单次操作可以广播到其他邻近线程，这将节约15次读取操作；2 常量内存的数据将缓存起来，因此对相同地址的连续读操作将不会产生额外的内存通信量。</p>
+
+<p>邻近这个词的含义是什么？首先解释线程束（Wrap）的概念。线程束可以看出是一组线程通过交织而形成的一个整体。在CUDA架构中，线程束是一个包含32个线程的ihe，这个线程集合被编织在一起，并且步调一致（Lockstep）的形式执行。在程序中的每一行，线程束中的每个线程都将在不同的数据上执行相同的指令。</p>
+
+<p>当处理常量内存时，NVIDIA硬件将把单次内存读取操作广播到每个半线程束。如果在半线程束中的每个线程都从常量内存的相同地址上读取数据，那么GPU只会产生一次请求并在随后将数据广播到每个线程。只有当16个线程每次都只需要相同的读取求情时，才值得将这个读取操作广播到16个线程。然而，如果半线程束中所有16个线程需要访问常量内存中不同的数据，那么这个16个读取操作将被串行化，从而需要16倍的时间发出请求。但如果从全局内存中读取，这些请求会同时发出。这种情况中，从常量内存读取就慢雨从全局内存中读取。</p>
+
+<p>代码Ray同时展示了如何使用CUDA事件进行计时。</p>
+
+<p><a class="collapsecode btn btn-primary" role="button" data-toggle="collapse" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+Ray
+</a></p>
+<div class="highlight"><pre><code class="language-C++" data-lang="C++">#include "cuda.h"
+#include "../common/book.h"
+#include "../common/cpu_bitmap.h"
+
+#define DIM 1024
+
+#define rnd( x ) (x * rand() / RAND_MAX)
+#define INF     2e10f
+
+struct Sphere {
+    float   r,b,g;
+    float   radius;
+    float   x,y,z;
+    __device__ float hit( float ox, float oy, float *n ) {
+        float dx = ox - x;
+        float dy = oy - y;
+        if (dx*dx + dy*dy &lt; radius*radius) {
+            float dz = sqrtf( radius*radius - dx*dx - dy*dy );
+            *n = dz / sqrtf( radius * radius );
+            return dz + z;
+        }
+        return -INF;
+    }
+};
+#define SPHERES 20
+
+__constant__ Sphere s[SPHERES];
+
+__global__ void kernel( unsigned char *ptr ) {
+    // map from threadIdx/BlockIdx to pixel position
+    int x = threadIdx.x + blockIdx.x * blockDim.x;
+    int y = threadIdx.y + blockIdx.y * blockDim.y;
+    int offset = x + y * blockDim.x * gridDim.x;
+    float   ox = (x - DIM/2);
+    float   oy = (y - DIM/2);
+
+    float   r=0, g=0, b=0;
+    float   maxz = -INF;
+    for(int i=0; i&lt;SPHERES; i++) {
+        float   n;
+        float   t = s[i].hit( ox, oy, &amp;n );
+        if (t &gt; maxz) {
+            float fscale = n;
+            r = s[i].r * fscale;
+            g = s[i].g * fscale;
+            b = s[i].b * fscale;
+            maxz = t;
+        }
+    } 
+
+    ptr[offset*4 + 0] = (int)(r * 255);
+    ptr[offset*4 + 1] = (int)(g * 255);
+    ptr[offset*4 + 2] = (int)(b * 255);
+    ptr[offset*4 + 3] = 255;
+}
+
+// globals needed by the update routine
+struct DataBlock {
+    unsigned char   *dev_bitmap;
+};
+
+int main( void ) {
+    DataBlock   data;
+    // capture the start time
+    cudaEvent_t     start, stop;
+    HANDLE_ERROR( cudaEventCreate( &amp;start ) );
+    HANDLE_ERROR( cudaEventCreate( &amp;stop ) );
+    HANDLE_ERROR( cudaEventRecord( start, 0 ) );
+
+    CPUBitmap bitmap( DIM, DIM, &amp;data );
+    unsigned char   *dev_bitmap;
+
+    // allocate memory on the GPU for the output bitmap
+    HANDLE_ERROR( cudaMalloc( (void**)&amp;dev_bitmap,
+                              bitmap.image_size() ) );
+
+    // allocate temp memory, initialize it, copy to constant
+    // memory on the GPU, then free our temp memory
+    Sphere *temp_s = (Sphere*)malloc( sizeof(Sphere) * SPHERES );
+    for (int i=0; i&lt;SPHERES; i++) {
+        temp_s[i].r = rnd( 1.0f );
+        temp_s[i].g = rnd( 1.0f );
+        temp_s[i].b = rnd( 1.0f );
+        temp_s[i].x = rnd( 1000.0f ) - 500;
+        temp_s[i].y = rnd( 1000.0f ) - 500;
+        temp_s[i].z = rnd( 1000.0f ) - 500;
+        temp_s[i].radius = rnd( 100.0f ) + 20;
+    }
+    HANDLE_ERROR( cudaMemcpyToSymbol( s, temp_s, 
+                                sizeof(Sphere) * SPHERES) );
+    free( temp_s );
+
+    // generate a bitmap from our sphere data
+    dim3    grids(DIM/16,DIM/16);
+    dim3    threads(16,16);
+    kernel&lt;&lt;&lt;grids,threads&gt;&gt;&gt;( dev_bitmap );
+
+    // copy our bitmap back from the GPU for display
+    HANDLE_ERROR( cudaMemcpy( bitmap.get_ptr(), dev_bitmap,
+                              bitmap.image_size(),
+                              cudaMemcpyDeviceToHost ) );
+
+    // get stop time, and display the timing results
+    HANDLE_ERROR( cudaEventRecord( stop, 0 ) );
+    HANDLE_ERROR( cudaEventSynchronize( stop ) );
+    float   elapsedTime;
+    HANDLE_ERROR( cudaEventElapsedTime( &amp;elapsedTime,
+                                        start, stop ) );
+    printf( "Time to generate:  %3.1f ms\n", elapsedTime );
+
+    HANDLE_ERROR( cudaEventDestroy( start ) );
+    HANDLE_ERROR( cudaEventDestroy( stop ) );
+
+    HANDLE_ERROR( cudaFree( dev_bitmap ) );
+
+    // display
+    bitmap.display_and_exit();
+}
+
+</code></pre></div>
+<h3>第5篇 纹理内存</h3>
+
+<p><hr></p>
+
+<p>本篇主要介绍纹理内存。和常量内存一样，纹理内存是另一种类型的只读内存，在特定的访问模式中，纹理内存同样能够提升性能并减少内存流量。纹理缓存是专门为那些在内存访问模式中存在大量空间局部性的图形应用程序而设计的。</p>
+
+<p><hr></p>
+
+<p>代码Heat2D对热传导进行了简单的模拟，展示了二维纹理内存的使用。使用纹理内存时，首先需要对数据声明为texture类型的引用：texture&lt;类型, 维度&gt; variable，然后需要通过cudaBindTexture()将这些变量绑定到内存缓冲区来告诉CUDA：1 我们希望将指定的缓冲区作为纹理来使用；2 我们希望将纹理引用作为纹理的名字。</p>
+
+<p><a class="collapsecode btn btn-primary" role="button" data-toggle="collapse" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+Heat2D
+</a></p>
+<div class="highlight"><pre><code class="language-C++" data-lang="C++">#include "cuda.h"
+#include "../common/book.h"
+#include "../common/cpu_anim.h"
+
+#define DIM 1024
+#define PI 3.1415926535897932f
+#define MAX_TEMP 1.0f
+#define MIN_TEMP 0.0001f
+#define SPEED   0.25f
+
+// these exist on the GPU side
+texture&lt;float,2&gt;  texConstSrc;
+texture&lt;float,2&gt;  texIn;
+texture&lt;float,2&gt;  texOut;
+
+__global__ void blend_kernel( float *dst,
+                              bool dstOut ) {
+    // map from threadIdx/BlockIdx to pixel position
+    int x = threadIdx.x + blockIdx.x * blockDim.x;
+    int y = threadIdx.y + blockIdx.y * blockDim.y;
+    int offset = x + y * blockDim.x * gridDim.x;
+
+    float   t, l, c, r, b;
+    if (dstOut) {
+        t = tex2D(texIn,x,y-1);
+        l = tex2D(texIn,x-1,y);
+        c = tex2D(texIn,x,y);
+        r = tex2D(texIn,x+1,y);
+        b = tex2D(texIn,x,y+1);
+    } else {
+        t = tex2D(texOut,x,y-1);
+        l = tex2D(texOut,x-1,y);
+        c = tex2D(texOut,x,y);
+        r = tex2D(texOut,x+1,y);
+        b = tex2D(texOut,x,y+1);
+    }
+    dst[offset] = c + SPEED * (t + b + r + l - 4 * c);
+}
+
+__global__ void copy_const_kernel( float *iptr ) {
+    // map from threadIdx/BlockIdx to pixel position
+    int x = threadIdx.x + blockIdx.x * blockDim.x;
+    int y = threadIdx.y + blockIdx.y * blockDim.y;
+    int offset = x + y * blockDim.x * gridDim.x;
+
+    float c = tex2D(texConstSrc,x,y);
+    if (c != 0)
+        iptr[offset] = c;
+}
+
+// globals needed by the update routine
+struct DataBlock {
+    unsigned char   *output_bitmap;
+    float           *dev_inSrc;
+    float           *dev_outSrc;
+    float           *dev_constSrc;
+    CPUAnimBitmap  *bitmap;
+
+    cudaEvent_t     start, stop;
+    float           totalTime;
+    float           frames;
+};
+
+void anim_gpu( DataBlock *d, int ticks ) {
+    HANDLE_ERROR( cudaEventRecord( d-&gt;start, 0 ) );
+    dim3    blocks(DIM/16,DIM/16);
+    dim3    threads(16,16);
+    CPUAnimBitmap  *bitmap = d-&gt;bitmap;
+
+    // since tex is global and bound, we have to use a flag to
+    // select which is in/out per iteration
+    volatile bool dstOut = true;
+    for (int i=0; i&lt;90; i++) {
+        float   *in, *out;
+        if (dstOut) {
+            in  = d-&gt;dev_inSrc;
+            out = d-&gt;dev_outSrc;
+        } else {
+            out = d-&gt;dev_inSrc;
+            in  = d-&gt;dev_outSrc;
+        }
+        copy_const_kernel&lt;&lt;&lt;blocks,threads&gt;&gt;&gt;( in );
+        blend_kernel&lt;&lt;&lt;blocks,threads&gt;&gt;&gt;( out, dstOut );
+        dstOut = !dstOut;
+    }
+    float_to_color&lt;&lt;&lt;blocks,threads&gt;&gt;&gt;( d-&gt;output_bitmap,
+                                        d-&gt;dev_inSrc );
+
+    HANDLE_ERROR( cudaMemcpy( bitmap-&gt;get_ptr(),
+                              d-&gt;output_bitmap,
+                              bitmap-&gt;image_size(),
+                              cudaMemcpyDeviceToHost ) );
+
+    HANDLE_ERROR( cudaEventRecord( d-&gt;stop, 0 ) );
+    HANDLE_ERROR( cudaEventSynchronize( d-&gt;stop ) );
+    float   elapsedTime;
+    HANDLE_ERROR( cudaEventElapsedTime( &amp;elapsedTime,
+                                        d-&gt;start, d-&gt;stop ) );
+    d-&gt;totalTime += elapsedTime;
+    ++d-&gt;frames;
+    printf( "Average Time per frame:  %3.1f ms\n",
+            d-&gt;totalTime/d-&gt;frames  );
+}
+
+// clean up memory allocated on the GPU
+void anim_exit( DataBlock *d ) {
+    cudaUnbindTexture( texIn );
+    cudaUnbindTexture( texOut );
+    cudaUnbindTexture( texConstSrc );
+    HANDLE_ERROR( cudaFree( d-&gt;dev_inSrc ) );
+    HANDLE_ERROR( cudaFree( d-&gt;dev_outSrc ) );
+    HANDLE_ERROR( cudaFree( d-&gt;dev_constSrc ) );
+
+    HANDLE_ERROR( cudaEventDestroy( d-&gt;start ) );
+    HANDLE_ERROR( cudaEventDestroy( d-&gt;stop ) );
+}
+
+
+int main( void ) {
+    DataBlock   data;
+    CPUAnimBitmap bitmap( DIM, DIM, &amp;data );
+    data.bitmap = &amp;bitmap;
+    data.totalTime = 0;
+    data.frames = 0;
+    HANDLE_ERROR( cudaEventCreate( &amp;data.start ) );
+    HANDLE_ERROR( cudaEventCreate( &amp;data.stop ) );
+
+    int imageSize = bitmap.image_size();
+
+    HANDLE_ERROR( cudaMalloc( (void**)&amp;data.output_bitmap,
+                               imageSize ) );
+
+    // assume float == 4 chars in size (ie rgba)
+    HANDLE_ERROR( cudaMalloc( (void**)&amp;data.dev_inSrc,
+                              imageSize ) );
+    HANDLE_ERROR( cudaMalloc( (void**)&amp;data.dev_outSrc,
+                              imageSize ) );
+    HANDLE_ERROR( cudaMalloc( (void**)&amp;data.dev_constSrc,
+                              imageSize ) );
+
+    cudaChannelFormatDesc desc = cudaCreateChannelDesc&lt;float&gt;();
+    HANDLE_ERROR( cudaBindTexture2D( NULL, texConstSrc,
+                                   data.dev_constSrc,
+                                   desc, DIM, DIM,
+                                   sizeof(float) * DIM ) );
+
+    HANDLE_ERROR( cudaBindTexture2D( NULL, texIn,
+                                   data.dev_inSrc,
+                                   desc, DIM, DIM,
+                                   sizeof(float) * DIM ) );
+
+    HANDLE_ERROR( cudaBindTexture2D( NULL, texOut,
+                                   data.dev_outSrc,
+                                   desc, DIM, DIM,
+                                   sizeof(float) * DIM ) );
+
+    // initialize the constant data
+    float *temp = (float*)malloc( imageSize );
+    for (int i=0; i&lt;DIM*DIM; i++) {
+        temp[i] = 0;
+        int x = i % DIM;
+        int y = i / DIM;
+        if ((x&gt;300) &amp;&amp; (x&lt;600) &amp;&amp; (y&gt;310) &amp;&amp; (y&lt;601))
+            temp[i] = MAX_TEMP;
+    }
+    temp[DIM*100+100] = (MAX_TEMP + MIN_TEMP)/2;
+    temp[DIM*700+100] = MIN_TEMP;
+    temp[DIM*300+300] = MIN_TEMP;
+    temp[DIM*200+700] = MIN_TEMP;
+    for (int y=800; y&lt;900; y++) {
+        for (int x=400; x&lt;500; x++) {
+            temp[x+y*DIM] = MIN_TEMP;
+        }
+    }
+    HANDLE_ERROR( cudaMemcpy( data.dev_constSrc, temp,
+                              imageSize,
+                              cudaMemcpyHostToDevice ) );    
+
+    // initialize the input data
+    for (int y=800; y&lt;DIM; y++) {
+        for (int x=0; x&lt;200; x++) {
+            temp[x+y*DIM] = MAX_TEMP;
+        }
+    }
+    HANDLE_ERROR( cudaMemcpy( data.dev_inSrc, temp,
+                              imageSize,
+                              cudaMemcpyHostToDevice ) );
+    free( temp );
+
+    bitmap.anim_and_exit( (void (*)(void*,int))anim_gpu,
+                           (void (*)(void*))anim_exit );
+}
+</code></pre></div>
+<h3>第6篇 图形交互操作</h3>
+
+<p><hr></p>
+
+<p>本篇主要介绍了CUDA C应用程序与OpenGL和DirectX这两种实时渲染API的交互操作。略。</p>
+
+<h3>第7篇 原子性</h3>
+
+<p><hr></p>
+
+<p>本篇主要介绍了原子操作性、为什么需要使用它们及如何在CUDA C核函数中执行带有原子操作的运算。</p>
+
+<p><hr></p>
+
+<p>代码Hist GPU Shmem Atomics展示了原子操作性代码的编写，实现了GPU直方图统计。代码中使用atomicAdd实现原子加法操作，通过使用两阶段算法，降低了全局内存的访问竞争程度。</p>
+
+<p>通过一些性能实验，发现当线程块数量为GPU中处理器数量的2倍时（不同于CUDA核心数，1080Ti处理器数为28，每个处理器128个CUDA核，总共3584个CUDA核心），将达到最优性能。</p>
+
+<p><a class="collapsecode btn btn-primary" role="button" data-toggle="collapse" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+Hist GPU Shmem Atomics
+</a></p>
+<div class="highlight"><pre><code class="language-C++" data-lang="C++">#include "../common/book.h"
+
+#define SIZE    (100*1024*1024)
+
+
+__global__ void histo_kernel( unsigned char *buffer,
+                              long size,
+                              unsigned int *histo ) {
+
+    // clear out the accumulation buffer called temp
+    // since we are launched with 256 threads, it is easy
+    // to clear that memory with one write per thread
+    __shared__  unsigned int temp[256];
+    temp[threadIdx.x] = 0;
+    __syncthreads();
+
+    // calculate the starting index and the offset to the next
+    // block that each thread will be processing
+    int i = threadIdx.x + blockIdx.x * blockDim.x;
+    int stride = blockDim.x * gridDim.x;
+    while (i &lt; size) {
+        atomicAdd( &amp;temp[buffer[i]], 1 );
+        i += stride;
+    }
+    // sync the data from the above writes to shared memory
+    // then add the shared memory values to the values from
+    // the other thread blocks using global memory
+    // atomic adds
+    // same as before, since we have 256 threads, updating the
+    // global histogram is just one write per thread!
+    __syncthreads();
+    atomicAdd( &amp;(histo[threadIdx.x]), temp[threadIdx.x] );
+}
+
+int main( void ) {
+    unsigned char *buffer =
+                     (unsigned char*)big_random_block( SIZE );
+
+    // capture the start time
+    // starting the timer here so that we include the cost of
+    // all of the operations on the GPU.  if the data were
+    // already on the GPU and we just timed the kernel
+    // the timing would drop from 74 ms to 15 ms.  Very fast.
+    cudaEvent_t     start, stop;
+    HANDLE_ERROR( cudaEventCreate( &amp;start ) );
+    HANDLE_ERROR( cudaEventCreate( &amp;stop ) );
+    HANDLE_ERROR( cudaEventRecord( start, 0 ) );
+
+    // allocate memory on the GPU for the file's data
+    unsigned char *dev_buffer;
+    unsigned int *dev_histo;
+    HANDLE_ERROR( cudaMalloc( (void**)&amp;dev_buffer, SIZE ) );
+    HANDLE_ERROR( cudaMemcpy( dev_buffer, buffer, SIZE,
+                              cudaMemcpyHostToDevice ) );
+
+    HANDLE_ERROR( cudaMalloc( (void**)&amp;dev_histo,
+                              256 * sizeof( int ) ) );
+    HANDLE_ERROR( cudaMemset( dev_histo, 0,
+                              256 * sizeof( int ) ) );
+
+    // kernel launch - 2x the number of mps gave best timing
+    cudaDeviceProp  prop;
+    HANDLE_ERROR( cudaGetDeviceProperties( &amp;prop, 0 ) );
+    int blocks = prop.multiProcessorCount;
+    histo_kernel&lt;&lt;&lt;blocks*2,256&gt;&gt;&gt;( dev_buffer,
+                                    SIZE, dev_histo );
+
+    unsigned int    histo[256];
+    HANDLE_ERROR( cudaMemcpy( histo, dev_histo,
+                              256 * sizeof( int ),
+                              cudaMemcpyDeviceToHost ) );
+
+    // get stop time, and display the timing results
+    HANDLE_ERROR( cudaEventRecord( stop, 0 ) );
+    HANDLE_ERROR( cudaEventSynchronize( stop ) );
+    float   elapsedTime;
+    HANDLE_ERROR( cudaEventElapsedTime( &amp;elapsedTime,
+                                        start, stop ) );
+    printf( "Time to generate:  %3.1f ms\n", elapsedTime );
+
+    long histoCount = 0;
+    for (int i=0; i&lt;256; i++) {
+        histoCount += histo[i];
+    }
+    printf( "Histogram Sum:  %ld\n", histoCount );
+
+    // verify that we have the same counts via CPU
+    for (int i=0; i&lt;SIZE; i++)
+        histo[buffer[i]]--;
+    for (int i=0; i&lt;256; i++) {
+        if (histo[i] != 0)
+            printf( "Failure at %d!\n", i );
+    }
+
+    HANDLE_ERROR( cudaEventDestroy( start ) );
+    HANDLE_ERROR( cudaEventDestroy( stop ) );
+    cudaFree( dev_histo );
+    cudaFree( dev_buffer );
+    free( buffer );
+    return 0;
+}
+</code></pre></div>
+<h3>第8篇 流</h3>
+
+<p><hr></p>
+
+<p>本篇主要介绍使用流实现任务并行来加速应用程序。</p>
+
+<p><hr></p>
+
+<p>页锁定主机内存称为固定内存或不可分页内存，操作系统不会对这块内存分页并交换到磁盘上，可确保该内存始终驻留在物理内存中，但使用固定内存时，会失去虚拟内存的所有功能。使用cudaHostAlloc()函数实现分配页锁定的主机内存。</p>
+
+<p>CUDA流在加速应用程序方面起着重要的作用。CUDA流表示一个GPU操作队列，并且该队列中的操作将以指定的顺序执行。</p>
+
+<p>代码Basic Double Stream Correct展示了流的使用。其做的第一件事是选择一个支持设备重叠（Device Overlap）功能的设备。支持设备重叠功能的GPU能够在执行一个CUDA C核函数的同时，在设备和主机间执行复制操作。其中还使用了cudaStreamSynchronize(stream)实现GPU等待流。同时需要注意代码中将操作放入流的顺序，其影响着CUDA驱动程序调度这些操作以及执行的方式。</p>
+
+<p><a class="collapsecode btn btn-primary" role="button" data-toggle="collapse" href="#collapse9" aria-expanded="false" aria-controls="collapse9">
+Basic Double Stream Correct
+</a></p>
+<div class="highlight"><pre><code class="language-C++" data-lang="C++">#include "../common/book.h"
+
+#define N   (1024*1024)
+#define FULL_DATA_SIZE   (N*20)
+
+
+__global__ void kernel( int *a, int *b, int *c ) {
+    int idx = threadIdx.x + blockIdx.x * blockDim.x;
+    if (idx &lt; N) {
+        int idx1 = (idx + 1) % 256;
+        int idx2 = (idx + 2) % 256;
+        float   as = (a[idx] + a[idx1] + a[idx2]) / 3.0f;
+        float   bs = (b[idx] + b[idx1] + b[idx2]) / 3.0f;
+        c[idx] = (as + bs) / 2;
+    }
+}
+
+
+int main( void ) {
+    cudaDeviceProp  prop;
+    int whichDevice;
+    HANDLE_ERROR( cudaGetDevice( &amp;whichDevice ) );
+    HANDLE_ERROR( cudaGetDeviceProperties( &amp;prop, whichDevice ) );
+    if (!prop.deviceOverlap) {
+        printf( "Device will not handle overlaps, so no speed up from streams\n" );
+        return 0;
+    }
+
+    cudaEvent_t     start, stop;
+    float           elapsedTime;
+
+    cudaStream_t    stream0, stream1;
+    int *host_a, *host_b, *host_c;
+    int *dev_a0, *dev_b0, *dev_c0;
+    int *dev_a1, *dev_b1, *dev_c1;
+
+    // start the timers
+    HANDLE_ERROR( cudaEventCreate( &amp;start ) );
+    HANDLE_ERROR( cudaEventCreate( &amp;stop ) );
+
+    // initialize the streams
+    HANDLE_ERROR( cudaStreamCreate( &amp;stream0 ) );
+    HANDLE_ERROR( cudaStreamCreate( &amp;stream1 ) );
+
+    // allocate the memory on the GPU
+    HANDLE_ERROR( cudaMalloc( (void**)&amp;dev_a0,
+                              N * sizeof(int) ) );
+    HANDLE_ERROR( cudaMalloc( (void**)&amp;dev_b0,
+                              N * sizeof(int) ) );
+    HANDLE_ERROR( cudaMalloc( (void**)&amp;dev_c0,
+                              N * sizeof(int) ) );
+    HANDLE_ERROR( cudaMalloc( (void**)&amp;dev_a1,
+                              N * sizeof(int) ) );
+    HANDLE_ERROR( cudaMalloc( (void**)&amp;dev_b1,
+                              N * sizeof(int) ) );
+    HANDLE_ERROR( cudaMalloc( (void**)&amp;dev_c1,
+                              N * sizeof(int) ) );
+
+    // allocate host locked memory, used to stream
+    HANDLE_ERROR( cudaHostAlloc( (void**)&amp;host_a,
+                              FULL_DATA_SIZE * sizeof(int),
+                              cudaHostAllocDefault ) );
+    HANDLE_ERROR( cudaHostAlloc( (void**)&amp;host_b,
+                              FULL_DATA_SIZE * sizeof(int),
+                              cudaHostAllocDefault ) );
+    HANDLE_ERROR( cudaHostAlloc( (void**)&amp;host_c,
+                              FULL_DATA_SIZE * sizeof(int),
+                              cudaHostAllocDefault ) );
+
+    for (int i=0; i&lt;FULL_DATA_SIZE; i++) {
+        host_a[i] = rand();
+        host_b[i] = rand();
+    }
+
+    HANDLE_ERROR( cudaEventRecord( start, 0 ) );
+    // now loop over full data, in bite-sized chunks
+    for (int i=0; i&lt;FULL_DATA_SIZE; i+= N*2) {
+        // enqueue copies of a in stream0 and stream1
+        HANDLE_ERROR( cudaMemcpyAsync( dev_a0, host_a+i,
+                                       N * sizeof(int),
+                                       cudaMemcpyHostToDevice,
+                                       stream0 ) );
+        HANDLE_ERROR( cudaMemcpyAsync( dev_a1, host_a+i+N,
+                                       N * sizeof(int),
+                                       cudaMemcpyHostToDevice,
+                                       stream1 ) );
+        // enqueue copies of b in stream0 and stream1
+        HANDLE_ERROR( cudaMemcpyAsync( dev_b0, host_b+i,
+                                       N * sizeof(int),
+                                       cudaMemcpyHostToDevice,
+                                       stream0 ) );
+        HANDLE_ERROR( cudaMemcpyAsync( dev_b1, host_b+i+N,
+                                       N * sizeof(int),
+                                       cudaMemcpyHostToDevice,
+                                       stream1 ) );
+
+        // enqueue kernels in stream0 and stream1   
+        kernel&lt;&lt;&lt;N/256,256,0,stream0&gt;&gt;&gt;( dev_a0, dev_b0, dev_c0 );
+        kernel&lt;&lt;&lt;N/256,256,0,stream1&gt;&gt;&gt;( dev_a1, dev_b1, dev_c1 );
+
+        // enqueue copies of c from device to locked memory
+        HANDLE_ERROR( cudaMemcpyAsync( host_c+i, dev_c0,
+                                       N * sizeof(int),
+                                       cudaMemcpyDeviceToHost,
+                                       stream0 ) );
+        HANDLE_ERROR( cudaMemcpyAsync( host_c+i+N, dev_c1,
+                                       N * sizeof(int),
+                                       cudaMemcpyDeviceToHost,
+                                       stream1 ) );
+    }
+    HANDLE_ERROR( cudaStreamSynchronize( stream0 ) );
+    HANDLE_ERROR( cudaStreamSynchronize( stream1 ) );
+
+    HANDLE_ERROR( cudaEventRecord( stop, 0 ) );
+
+    HANDLE_ERROR( cudaEventSynchronize( stop ) );
+    HANDLE_ERROR( cudaEventElapsedTime( &amp;elapsedTime,
+                                        start, stop ) );
+    printf( "Time taken:  %3.1f ms\n", elapsedTime );
+
+    // cleanup the streams and memory
+    HANDLE_ERROR( cudaFreeHost( host_a ) );
+    HANDLE_ERROR( cudaFreeHost( host_b ) );
+    HANDLE_ERROR( cudaFreeHost( host_c ) );
+    HANDLE_ERROR( cudaFree( dev_a0 ) );
+    HANDLE_ERROR( cudaFree( dev_b0 ) );
+    HANDLE_ERROR( cudaFree( dev_c0 ) );
+    HANDLE_ERROR( cudaFree( dev_a1 ) );
+    HANDLE_ERROR( cudaFree( dev_b1 ) );
+    HANDLE_ERROR( cudaFree( dev_c1 ) );
+    HANDLE_ERROR( cudaStreamDestroy( stream0 ) );
+    HANDLE_ERROR( cudaStreamDestroy( stream1 ) );
+
+    return 0;
+}
+</code></pre></div>
+<h3>第9篇 多GPU系统上的CUDA C</h3>
+
+<p><hr></p>
+
+<p>本篇主要介绍如何在同一个应用程序中使用多个GPU、如何分配和使用零拷贝内存、如何分配和使用可移动的固定内存。</p>
+
+<p><hr></p>
+
+<p>代码Portable展示了多个GPU的使用，同时涉及到了零拷贝内存、合并式写入内存、可移动的固定内存。</p>
+
+<p>零拷贝内存是指可以在CUDA C核函数中直接访问的主机内存，不需要复制到GPU。在分配内存时加上cudaHostAllocMapped标志即可，该标志告诉陨石时将从GPU访问这块内存。</p>
+
+<p>WriteCombined标志表示，运行时应该将内存分配为“合并式写入”内存。可以显著提升GPU读取内存的性能。然后，当CPU也要读取这块内存时，合并式写入会显得很低效。</p>
+
+<p>调用cudaHostAlloc()将返回这块内存在CPU上的指针，需调用cudaHostGetDevicePointer()来获得这块内存在GPU上的有效指针。</p>
+
+<p>通过cudaSetDeviceFlags()可实现在运行时置入能分配零拷贝内存的状态，通过传递标志cudaDeviceMapHost来表示我们希望设备映射主机内存。</p>
+
+<p>当输入内存和输出内存都只能使用一次时，那么在独立GPU上使用零拷贝内存将带来性能提升。但由于GPU不会缓存零拷贝内存的内容，如果多次读取内存，那么最终将得不偿失，还不如一开始就将数据复制到GPU。</p>
+
+<p>如果某个线程分配了固定内存，那么这些内存只是对于分配它们的线程来说是页锁定的，对于其他线程似乎是可分页的。对于这个问题的补救方案是：将固定内存分配为可移动的。这意味着在主机线程之间移动这块内存，并且每个线程都将其视为固定内存。要达到这个目标需要使用cudaHostAlloc()来分配内存，并且在调用时使用标志cudaHostAllocPortable。</p>
+
+<p>编写多GPU代码中还有一点需要注意：一旦某个线程上设置了这个设备，那么将不能再次调用cudaSetDevice()，即便传递的是相同的设备标志符号。</p>
+
+<p><a class="collapsecode btn btn-primary" role="button" data-toggle="collapse" href="#collapse10" aria-expanded="false" aria-controls="collapse10">
+Portable
+</a></p>
+<div class="highlight"><pre><code class="language-C++" data-lang="C++">#include "../common/book.h"
+
+
+#define imin(a,b) (a&lt;b?a:b)
+
+#define     N    (33*1024*1024)
+const int threadsPerBlock = 256;
+const int blocksPerGrid =
+            imin( 32, (N/2+threadsPerBlock-1) / threadsPerBlock );
+
+
+__global__ void dot( int size, float *a, float *b, float *c ) {
+    __shared__ float cache[threadsPerBlock];
+    int tid = threadIdx.x + blockIdx.x * blockDim.x;
+    int cacheIndex = threadIdx.x;
+
+    float   temp = 0;
+    while (tid &lt; size) {
+        temp += a[tid] * b[tid];
+        tid += blockDim.x * gridDim.x;
+    }
+
+    // set the cache values
+    cache[cacheIndex] = temp;
+
+    // synchronize threads in this block
+    __syncthreads();
+
+    // for reductions, threadsPerBlock must be a power of 2
+    // because of the following code
+    int i = blockDim.x/2;
+    while (i != 0) {
+        if (cacheIndex &lt; i)
+            cache[cacheIndex] += cache[cacheIndex + i];
+        __syncthreads();
+        i /= 2;
+    }
+
+    if (cacheIndex == 0)
+        c[blockIdx.x] = cache[0];
+}
+
+
+struct DataStruct {
+    int     deviceID;
+    int     size;
+    int     offset;
+    float   *a;
+    float   *b;
+    float   returnValue;
+};
+
+
+void* routine( void *pvoidData ) {
+    DataStruct  *data = (DataStruct*)pvoidData;
+    if (data-&gt;deviceID != 0) {
+        HANDLE_ERROR( cudaSetDevice( data-&gt;deviceID ) );
+        HANDLE_ERROR( cudaSetDeviceFlags( cudaDeviceMapHost ) );
+    }
+
+    int     size = data-&gt;size;
+    float   *a, *b, c, *partial_c;
+    float   *dev_a, *dev_b, *dev_partial_c;
+
+    // allocate memory on the CPU side
+    a = data-&gt;a;
+    b = data-&gt;b;
+    partial_c = (float*)malloc( blocksPerGrid*sizeof(float) );
+
+    // allocate the memory on the GPU
+    HANDLE_ERROR( cudaHostGetDevicePointer( &amp;dev_a, a, 0 ) );
+    HANDLE_ERROR( cudaHostGetDevicePointer( &amp;dev_b, b, 0 ) );
+    HANDLE_ERROR( cudaMalloc( (void**)&amp;dev_partial_c,
+                              blocksPerGrid*sizeof(float) ) );
+
+    // offset 'a' and 'b' to where this GPU is gets it data
+    dev_a += data-&gt;offset;
+    dev_b += data-&gt;offset;
+
+    dot&lt;&lt;&lt;blocksPerGrid,threadsPerBlock&gt;&gt;&gt;( size, dev_a, dev_b,
+                                            dev_partial_c );
+    // copy the array 'c' back from the GPU to the CPU
+    HANDLE_ERROR( cudaMemcpy( partial_c, dev_partial_c,
+                              blocksPerGrid*sizeof(float),
+                              cudaMemcpyDeviceToHost ) );
+
+    // finish up on the CPU side
+    c = 0;
+    for (int i=0; i&lt;blocksPerGrid; i++) {
+        c += partial_c[i];
+    }
+
+    HANDLE_ERROR( cudaFree( dev_partial_c ) );
+
+    // free memory on the CPU side
+    free( partial_c );
+
+    data-&gt;returnValue = c;
+    return 0;
+}
+
+
+int main( void ) {
+    int deviceCount;
+    HANDLE_ERROR( cudaGetDeviceCount( &amp;deviceCount ) );
+    if (deviceCount &lt; 2) {
+        printf( "We need at least two compute 1.0 or greater "
+                "devices, but only found %d\n", deviceCount );
+        return 0;
+    }
+
+    cudaDeviceProp  prop;
+    for (int i=0; i&lt;2; i++) {
+        HANDLE_ERROR( cudaGetDeviceProperties( &amp;prop, i ) );
+        if (prop.canMapHostMemory != 1) {
+            printf( "Device %d can not map memory.\n", i );
+            return 0;
+        }
+    }
+
+    float *a, *b;
+    HANDLE_ERROR( cudaSetDevice( 0 ) );
+    HANDLE_ERROR( cudaSetDeviceFlags( cudaDeviceMapHost ) );
+    HANDLE_ERROR( cudaHostAlloc( (void**)&amp;a, N*sizeof(float),
+                              cudaHostAllocWriteCombined |
+                              cudaHostAllocPortable |
+                              cudaHostAllocMapped ) );
+    HANDLE_ERROR( cudaHostAlloc( (void**)&amp;b, N*sizeof(float),
+                              cudaHostAllocWriteCombined |
+                              cudaHostAllocPortable      |
+                              cudaHostAllocMapped ) );
+
+    // fill in the host memory with data
+    for (int i=0; i&lt;N; i++) {
+        a[i] = i;
+        b[i] = i*2;
+    }
+
+    // prepare for multithread
+    DataStruct  data[2];
+    data[0].deviceID = 0;
+    data[0].offset = 0;
+    data[0].size = N/2;
+    data[0].a = a;
+    data[0].b = b;
+
+    data[1].deviceID = 1;
+    data[1].offset = N/2;
+    data[1].size = N/2;
+    data[1].a = a;
+    data[1].b = b;
+
+    CUTThread   thread = start_thread( routine, &amp;(data[1]) );
+    routine( &amp;(data[0]) );
+    end_thread( thread );
+
+
+    // free memory on the CPU side
+    HANDLE_ERROR( cudaFreeHost( a ) );
+    HANDLE_ERROR( cudaFreeHost( b ) );
+
+    printf( "Value calculated:  %f\n",
+            data[0].returnValue + data[1].returnValue );
+
+    return 0;
+}
+</code></pre></div>
+<h3>第10篇 附录</h3>
+
+<p><hr></p>
+
+<p>本篇主要附上了几个有助于理解CUDA C编程中一些概念的截图及上文代码的几个附属头文件。</p>
+
+<h4>几幅截图</h4>
+
+<p><hr></p>
+
+<p><img src="/public/img/posts/cuda0.png" width="400px"></img></p>
+
+<p><img src="/public/img/posts/cuda1.png" width="650px"></img></p>
+
+<h4>几个头文件</h4>
+
+<p><hr></p>
+
+<p><a class="collapsecode btn btn-primary" role="button" data-toggle="collapse" href="#collapse11" aria-expanded="false" aria-controls="collapse11">
+book.h
+</a><a class="collapsecode btn btn-primary" role="button" data-toggle="collapse" href="#collapse12" aria-expanded="false" aria-controls="collapse12">
+cpu_bitmap.h
+</a><a class="collapsecode btn btn-primary" role="button" data-toggle="collapse" href="#collapse13" aria-expanded="false" aria-controls="collapse13">
+cpu.anim.h
+</a></p>
+<div class="highlight"><pre><code class="language-C++" data-lang="C++">#ifndef __BOOK_H__
+#define __BOOK_H__
+#include &lt;stdio.h&gt;
+
+static void HandleError( cudaError_t err,
+                         const char *file,
+                         int line ) {
+    if (err != cudaSuccess) {
+        printf( "%s in %s at line %d\n", cudaGetErrorString( err ),
+                file, line );
+        exit( EXIT_FAILURE );
+    }
+}
+#define HANDLE_ERROR( err ) (HandleError( err, __FILE__, __LINE__ ))
+
+
+#define HANDLE_NULL( a ) {if (a == NULL) { \
+                            printf( "Host memory failed in %s at line %d\n", \
+                                    __FILE__, __LINE__ ); \
+                            exit( EXIT_FAILURE );}}
+
+template&lt; typename T &gt;
+void swap( T&amp; a, T&amp; b ) {
+    T t = a;
+    a = b;
+    b = t;
+}
+
+
+void* big_random_block( int size ) {
+    unsigned char *data = (unsigned char*)malloc( size );
+    HANDLE_NULL( data );
+    for (int i=0; i&lt;size; i++)
+        data[i] = rand();
+
+    return data;
+}
+
+int* big_random_block_int( int size ) {
+    int *data = (int*)malloc( size * sizeof(int) );
+    HANDLE_NULL( data );
+    for (int i=0; i&lt;size; i++)
+        data[i] = rand();
+
+    return data;
+}
+
+
+// a place for common kernels - starts here
+
+__device__ unsigned char value( float n1, float n2, int hue ) {
+    if (hue &gt; 360)      hue -= 360;
+    else if (hue &lt; 0)   hue += 360;
+
+    if (hue &lt; 60)
+        return (unsigned char)(255 * (n1 + (n2-n1)*hue/60));
+    if (hue &lt; 180)
+        return (unsigned char)(255 * n2);
+    if (hue &lt; 240)
+        return (unsigned char)(255 * (n1 + (n2-n1)*(240-hue)/60));
+    return (unsigned char)(255 * n1);
+}
+
+__global__ void float_to_color( unsigned char *optr,
+                              const float *outSrc ) {
+    // map from threadIdx/BlockIdx to pixel position
+    int x = threadIdx.x + blockIdx.x * blockDim.x;
+    int y = threadIdx.y + blockIdx.y * blockDim.y;
+    int offset = x + y * blockDim.x * gridDim.x;
+
+    float l = outSrc[offset];
+    float s = 1;
+    int h = (180 + (int)(360.0f * outSrc[offset])) % 360;
+    float m1, m2;
+
+    if (l &lt;= 0.5f)
+        m2 = l * (1 + s);
+    else
+        m2 = l + s - l * s;
+    m1 = 2 * l - m2;
+
+    optr[offset*4 + 0] = value( m1, m2, h+120 );
+    optr[offset*4 + 1] = value( m1, m2, h );
+    optr[offset*4 + 2] = value( m1, m2, h -120 );
+    optr[offset*4 + 3] = 255;
+}
+
+__global__ void float_to_color( uchar4 *optr,
+                              const float *outSrc ) {
+    // map from threadIdx/BlockIdx to pixel position
+    int x = threadIdx.x + blockIdx.x * blockDim.x;
+    int y = threadIdx.y + blockIdx.y * blockDim.y;
+    int offset = x + y * blockDim.x * gridDim.x;
+
+    float l = outSrc[offset];
+    float s = 1;
+    int h = (180 + (int)(360.0f * outSrc[offset])) % 360;
+    float m1, m2;
+
+    if (l &lt;= 0.5f)
+        m2 = l * (1 + s);
+    else
+        m2 = l + s - l * s;
+    m1 = 2 * l - m2;
+
+    optr[offset].x = value( m1, m2, h+120 );
+    optr[offset].y = value( m1, m2, h );
+    optr[offset].z = value( m1, m2, h -120 );
+    optr[offset].w = 255;
+}
+
+
+#if _WIN32
+    //Windows threads.
+    #include &lt;windows.h&gt;
+
+    typedef HANDLE CUTThread;
+    typedef unsigned (WINAPI *CUT_THREADROUTINE)(void *);
+
+    #define CUT_THREADPROC unsigned WINAPI
+    #define  CUT_THREADEND return 0
+
+#else
+    //POSIX threads.
+    #include &lt;pthread.h&gt;
+
+    typedef pthread_t CUTThread;
+    typedef void *(*CUT_THREADROUTINE)(void *);
+
+    #define CUT_THREADPROC void
+    #define  CUT_THREADEND
+#endif
+
+//Create thread.
+CUTThread start_thread( CUT_THREADROUTINE, void *data );
+
+//Wait for thread to finish.
+void end_thread( CUTThread thread );
+
+//Destroy thread.
+void destroy_thread( CUTThread thread );
+
+//Wait for multiple threads.
+void wait_for_threads( const CUTThread *threads, int num );
+
+#if _WIN32
+    //Create thread
+    CUTThread start_thread(CUT_THREADROUTINE func, void *data){
+        return CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)func, data, 0, NULL);
+    }
+
+    //Wait for thread to finish
+    void end_thread(CUTThread thread){
+        WaitForSingleObject(thread, INFINITE);
+        CloseHandle(thread);
+    }
+
+    //Destroy thread
+    void destroy_thread( CUTThread thread ){
+        TerminateThread(thread, 0);
+        CloseHandle(thread);
+    }
+
+    //Wait for multiple threads
+    void wait_for_threads(const CUTThread * threads, int num){
+        WaitForMultipleObjects(num, threads, true, INFINITE);
+
+        for(int i = 0; i &lt; num; i++)
+            CloseHandle(threads[i]);
+    }
+
+#else
+    //Create thread
+    CUTThread start_thread(CUT_THREADROUTINE func, void * data){
+        pthread_t thread;
+        pthread_create(&amp;thread, NULL, func, data);
+        return thread;
+    }
+
+    //Wait for thread to finish
+    void end_thread(CUTThread thread){
+        pthread_join(thread, NULL);
+    }
+
+    //Destroy thread
+    void destroy_thread( CUTThread thread ){
+        pthread_cancel(thread);
+    }
+
+    //Wait for multiple threads
+    void wait_for_threads(const CUTThread * threads, int num){
+        for(int i = 0; i &lt; num; i++)
+            end_thread( threads[i] );
+    }
+
+#endif
+
+#endif  // __BOOK_H__
+</code></pre></div><div class="highlight"><pre><code class="language-C++" data-lang="C++">#ifndef __CPU_BITMAP_H__
+#define __CPU_BITMAP_H__
+
+#include "gl_helper.h"
+
+struct CPUBitmap {
+    unsigned char    *pixels;
+    int     x, y;
+    void    *dataBlock;
+    void (*bitmapExit)(void*);
+
+    CPUBitmap( int width, int height, void *d = NULL ) {
+        pixels = new unsigned char[width * height * 4];
+        x = width;
+        y = height;
+        dataBlock = d;
+    }
+
+    ~CPUBitmap() {
+        delete [] pixels;
+    }
+
+    unsigned char* get_ptr( void ) const   { return pixels; }
+    long image_size( void ) const { return x * y * 4; }
+
+    void display_and_exit( void(*e)(void*) = NULL ) {
+        CPUBitmap**   bitmap = get_bitmap_ptr();
+        *bitmap = this;
+        bitmapExit = e;
+        // a bug in the Windows GLUT implementation prevents us from
+        // passing zero arguments to glutInit()
+        int c=1;
+        char* dummy = "";
+        glutInit( &amp;c, &amp;dummy );
+        glutInitDisplayMode( GLUT_SINGLE | GLUT_RGBA );
+        glutInitWindowSize( x, y );
+        glutCreateWindow( "bitmap" );
+        glutKeyboardFunc(Key);
+        glutDisplayFunc(Draw);
+        glutMainLoop();
+    }
+
+     // static method used for glut callbacks
+    static CPUBitmap** get_bitmap_ptr( void ) {
+        static CPUBitmap   *gBitmap;
+        return &amp;gBitmap;
+    }
+
+   // static method used for glut callbacks
+    static void Key(unsigned char key, int x, int y) {
+        switch (key) {
+            case 27:
+                CPUBitmap*   bitmap = *(get_bitmap_ptr());
+                if (bitmap-&gt;dataBlock != NULL &amp;&amp; bitmap-&gt;bitmapExit != NULL)
+                    bitmap-&gt;bitmapExit( bitmap-&gt;dataBlock );
+                exit(0);
+        }
+    }
+
+    // static method used for glut callbacks
+    static void Draw( void ) {
+        CPUBitmap*   bitmap = *(get_bitmap_ptr());
+        glClearColor( 0.0, 0.0, 0.0, 1.0 );
+        glClear( GL_COLOR_BUFFER_BIT );
+        glDrawPixels( bitmap-&gt;x, bitmap-&gt;y, GL_RGBA, GL_UNSIGNED_BYTE, bitmap-&gt;pixels );
+        glFlush();
+    }
+};
+
+#endif  // __CPU_BITMAP_H__
+</code></pre></div><div class="highlight"><pre><code class="language-C++" data-lang="C++">#ifndef __CPU_ANIM_H__
+#define __CPU_ANIM_H__
+
+#include "gl_helper.h"
+
+#include &lt;iostream&gt;
+
+
+struct CPUAnimBitmap {
+    unsigned char    *pixels;
+    int     width, height;
+    void    *dataBlock;
+    void (*fAnim)(void*,int);
+    void (*animExit)(void*);
+    void (*clickDrag)(void*,int,int,int,int);
+    int     dragStartX, dragStartY;
+
+    CPUAnimBitmap( int w, int h, void *d = NULL ) {
+        width = w;
+        height = h;
+        pixels = new unsigned char[width * height * 4];
+        dataBlock = d;
+        clickDrag = NULL;
+    }
+
+    ~CPUAnimBitmap() {
+        delete [] pixels;
+    }
+
+    unsigned char* get_ptr( void ) const   { return pixels; }
+    long image_size( void ) const { return width * height * 4; }
+
+    void click_drag( void (*f)(void*,int,int,int,int)) {
+        clickDrag = f;
+    }
+
+    void anim_and_exit( void (*f)(void*,int), void(*e)(void*) ) {
+        CPUAnimBitmap**   bitmap = get_bitmap_ptr();
+        *bitmap = this;
+        fAnim = f;
+        animExit = e;
+        // a bug in the Windows GLUT implementation prevents us from
+        // passing zero arguments to glutInit()
+        int c=1;
+        char* dummy = "";
+        glutInit( &amp;c, &amp;dummy );
+        glutInitDisplayMode( GLUT_DOUBLE | GLUT_RGBA );
+        glutInitWindowSize( width, height );
+        glutCreateWindow( "bitmap" );
+        glutKeyboardFunc(Key);
+        glutDisplayFunc(Draw);
+        if (clickDrag != NULL)
+            glutMouseFunc( mouse_func );
+        glutIdleFunc( idle_func );
+        glutMainLoop();
+    }
+
+    // static method used for glut callbacks
+    static CPUAnimBitmap** get_bitmap_ptr( void ) {
+        static CPUAnimBitmap*   gBitmap;
+        return &amp;gBitmap;
+    }
+
+    // static method used for glut callbacks
+    static void mouse_func( int button, int state,
+                            int mx, int my ) {
+        if (button == GLUT_LEFT_BUTTON) {
+            CPUAnimBitmap*   bitmap = *(get_bitmap_ptr());
+            if (state == GLUT_DOWN) {
+                bitmap-&gt;dragStartX = mx;
+                bitmap-&gt;dragStartY = my;
+            } else if (state == GLUT_UP) {
+                bitmap-&gt;clickDrag( bitmap-&gt;dataBlock,
+                                   bitmap-&gt;dragStartX,
+                                   bitmap-&gt;dragStartY,
+                                   mx, my );
+            }
+        }
+    }
+
+    // static method used for glut callbacks
+    static void idle_func( void ) {
+        static int ticks = 1;
+        CPUAnimBitmap*   bitmap = *(get_bitmap_ptr());
+        bitmap-&gt;fAnim( bitmap-&gt;dataBlock, ticks++ );
+        glutPostRedisplay();
+    }
+
+    // static method used for glut callbacks
+    static void Key(unsigned char key, int x, int y) {
+        switch (key) {
+            case 27:
+                CPUAnimBitmap*   bitmap = *(get_bitmap_ptr());
+                bitmap-&gt;animExit( bitmap-&gt;dataBlock );
+                //delete bitmap;
+                exit(0);
+        }
+    }
+
+    // static method used for glut callbacks
+    static void Draw( void ) {
+        CPUAnimBitmap*   bitmap = *(get_bitmap_ptr());
+        glClearColor( 0.0, 0.0, 0.0, 1.0 );
+        glClear( GL_COLOR_BUFFER_BIT );
+        glDrawPixels( bitmap-&gt;width, bitmap-&gt;height, GL_RGBA, GL_UNSIGNED_BYTE, bitmap-&gt;pixels );
+        glutSwapBuffers();
+    }
+};
+
+#endif  // __CPU_ANIM_H__
+</code></pre></div>
+<h3>参考</h3>
+
+<p><hr></p>
+
+<p>[1] GPU高性能编程CUDA实战</p>
+
+<p>[2] CUDA By Example，书及源码</p>
+
+<p>[3] <a href="http://www.nvidia.com/docs/IO/116711/sc11-cuda-c-basics.pdf">CUDA C/C++ Basics</a>，Cyril Zeller, NVIDIA Corporation</p>
+
+    </div>
+    <div style="font-size:18px">
+      <hr>
+        版权声明：本文为博主原创文章，转载请注明<a href="http://lanbing510.info/2017/11/09/Cuda-By-Example.html">出处</a>。
+        <span id="busuanzi_container_page_pv" style="float:right;padding-right:2px;" >
+          本文总阅读量 &nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> &nbsp;次
+        </span>
+        <p></p>
+        <hr>
+    </div>
+    <!--div class="bd-reward-stl" style="width:100%; padding:5px 0; border-radius:4px"><button id="bdRewardBtn"><span></span></button></div-->
+    <div id="disqus_thread">
+  <button type="button" name="lanbing510" class="btn btn-default show-commend">	
+  	<i class="fa fa-comment-o fa-lg" style="color: #16a095;"></i>
+  </button>
+</div>
+
+<!--div id="disqus_thread"></div-->
+<!--script>
+    var disqus_config = function () {
+        this.page.url = "http://lanbing510.info/2017/11/09/Cuda-By-Example.html";  // your page's canonical URL variable
+        this.page.identifier = "/2017/11/09/Cuda-By-Example.html"; // your page's unique identifier variable
+    };
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '//lanbing510.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript-->
+  </div>
+  <!-- 目录 -->
+  <div id="content_table" style="position:fixed;right:20px;top:120px;display:none; max-height:88%;overflow-y:auto;">
+    <div class="panel panel-success">
+      <div class="panel-body" id="nav"></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="/public/js/jquery.js"></script>
+<script type="text/javascript" src="/public/js/bootstrap.js"></script>
+<script src="/public/js/jquery.pjax.js"></script>
+<script src="/public/js/prettify/prettify.js"></script>
+<script src="/public/js/base.js"></script>
+<script>
+    $('a[href="#读书"]').tab('show');
+</script>
+
+
+<!--Busuanzi-->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--MathJax-->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<!--Use CDN Version-->
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<!--Use Local Version-->
+<!--script type="text/javascript" async
+  src="/public/mathjax/MathJax.js?config=TeX-MML-AM_CHTML">
+</script-->
+
+
+<!--Share-->
+<!--script>
+ function change_bdposition()
+ {
+   $(".bdshare-slide-button").attr('style',"left: -40px");
+ }
+ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["mshare","tsina","weixin","renren","tqq","tqf","douban","sqq","qzone","mail","fbook","twi","linkedin","copy","print"],"bdPic":"","bdStyle":"1","bdSize":"16"},"slide":{"type":"slide","bdImg":"5","bdPos":"right","bdTop":"250"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script-->
+
+
+<!--打赏-->
+<!--script type="text/javascript" src="https://zz.bdstatic.com/zzdashang/js/bd-zz-reward.js"></script-->
+
+
+<div style="position:fixed;right:15px;top:62px;">
+  <button id="content_btn" class="btn btn-primary" style="width:43px; height:34px;">
+    <i class="fa fa-lg fa-plus"></i>
+  </button>
+</div>
+<div style="position:fixed;right:15px;top:20px;">
+  <button id="nav_btn" class="btn btn-primary">
+    <i class="fa fa-lg fa-navicon"></i>
+  </button>
+</div>
+
+
+<!--Search-->
+<div class="cb-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px;
+      opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
+    <input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: fixed; top: 60px" placeholder="文章标题 文章标签" >
+
+    <div style="position: fixed; top: 16px; right: 15px;">
+        <img src="/search/img/cb-close.png"  width="38px" heigh="38px" id="cb-close-btn"/>
+    </div>
+</div>
+<div style="position: fixed; right: 15px; bottom: 20px;">
+    <img src="/search/img/cb-search.png"  id="cb-search-btn" width="38px" heigh="38px" title="双击ctrl试一下"/>
+</div>
+<script src="/search/js/bootstrap3-typeahead.min.js" ></script>
+<script src="/search/js/cb-search.js" ></script>
+
+
+<!--Img VDian-->
+<!-- <div style="position: fixed; right: 6px; bottom: 45%;display: none" id="vdian"> 
+    <a href="http://lanbing510.info/2017/04/25/Vdian.html" target="_blank">
+      <img src="/public/img/icons/book-store.png"  width="62px"  alt=""  title="徜徉在书的海洋"/>
+    </a>
+</div> -->
+
+
+<div id="goodcover"></div>
+<div id="code2">
+  <div class="close2"><a href="javascript:void(0)" id="closebt2" style="text-align: center;"><img src="/public/img/close.png"></a></div>
+  <img src="/public/img/hb.png" style="width:320px;height:480px">
+</div>
+
+
+<!--Img HongBao-->
+<div style="position: fixed; right: 15px; bottom: 45%;display: none;" id="hb"> 
+      <img id="hbclick" src="/public/img/icons/hb.png"  width="38px"  alt=""  title="领红包"/> 
+</div>
+
+
+<!--Img ZoomInOut-->
+<script src="/public/js/zoomify.js"></script>
+<script type="text/javascript">
+    $('p img').zoomify();
+</script>
+</body>
+</html>

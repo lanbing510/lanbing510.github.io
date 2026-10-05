@@ -1,0 +1,3131 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+<title>病毒学概览-读书简记 | 冰蓝记录思考的地方</title>
+<meta name="author" content="lanbing510">
+
+  <meta name="keywords" content="病毒学概览，读书简记，读书笔记">
+
+
+
+<!--Https -> Http, Https Will Reuslt In Errors With Busuanzi -->
+<script type="text/javascript">
+var enforce = "";
+if ((enforce == window.location.host) && (window.location.protocol != "http:"))
+{
+	window.location = window.location.toString().replace(/^https:/, "http:");
+}
+</script>
+
+<link rel="shortcut icon" href="/public/img/lanbing510.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/public/css/bootstrap.css">
+<link rel="stylesheet" href="/public/css/font-awesome.css">
+<link rel="stylesheet" href="/public/js/prettify/prettify.css">
+<link rel="stylesheet" href="/public/css/base.css">
+<link href="/pages/atom.xml" rel="alternate" title="冰蓝记录思考的地方" type="application/atom+xml">
+
+<!--Search-->
+<link rel="stylesheet" href="/search/css/cb-search.css">
+<!--Img ZoomInOut-->
+<link rel="stylesheet" href="/public/css/zoomify.css">
+
+<link href="/public/css/sobook.css" rel="stylesheet" type="text/css">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69504483-1', 'lanbing510.info');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?f7af973bd7ac60f787c1952fceb43202";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-lg-3 col-sm-13 col-xs-13 aside visible-md visible-lg">
+  <div class="row">
+    <div class="col-md-2 col-xs-2 aside1">
+      <br>
+      <a class="pjaxlink" href="/"><img src="/public/img/lanbing510.png" class="img-ronuded avatar" style="border-width:0px; border-color:#000"></a>
+      <br><br><br><br>
+      <ul class="nav nav-pills nav-stacked">
+             <!-- 这里是aside1的科研、技术...-->
+         <li><a href="#技术" data-toggle="tab">技术</a></li>
+             <!-- 这里是aside1的科研、技术...-->
+         <li><a href="#读书" data-toggle="tab">读书</a></li>
+             <!-- 这里是aside1的科研、技术...-->
+         <li><a href="#杂烩" data-toggle="tab">杂烩</a></li>
+             <!-- 这里是aside1的科研、技术...-->
+         <li><a href="#科研" data-toggle="tab">科研</a></li>
+        
+        <li><a href="#tags" data-toggle="tab">标签</a></li>  
+        <li><a class="pjaxlink" href="/pages/archive.html">归档</a></li>
+        <li><a class="pjaxlink" href="/pages/about.html">关于</a></li>  
+      </ul>
+      <div class="aside1_bottom">
+        <table class="table table-condensed">
+          <tr>
+            <td><a href="/pages/atom.xml" target="_blank"><i class="fa fa-rss fa-lg" style="color:#fff;"></i></a></td>
+            <td><a href="mailto:1004764271@qq.com"><i class="fa fa-envelope-o fa-lg" style="color:#fff;"></i></a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-10 col-xs-10 aside2">
+      <div class="row">
+        <div class="tab-content"> 
+           
+            <div class="tab-pane" id="技术">
+              <div class="list-group">
+                <!--<h2 class="center">技术</h2>-->  <!--原来aside2上面的大标题-->
+                
+                  <a href="/2018/09/04/Sedentary-Reminder.html" class="list-group-item-lay pjaxlink">健康工作—智能久坐提醒软件</a>
+                
+                  <a href="/2018/07/17/DQN.html" class="list-group-item-lay pjaxlink">学习DQN（Deep Q-Learning Network）</a>
+                
+                  <a href="/2017/12/14/Wechat-RSS-Huginn.html" class="list-group-item-lay pjaxlink">高效工作—优雅的阅读微信公众号</a>
+                
+                  <a href="/2017/08/01/Run-SSD.html" class="list-group-item-lay pjaxlink">配置SSD进行目标检测</a>
+                
+                  <a href="/2017/03/14/DoubanBackup.html" class="list-group-item-lay pjaxlink">豆瓣离线备份-Shell脚本</a>
+                
+                  <a href="/2016/11/17/Ubuntu-CUDA.html" class="list-group-item-lay pjaxlink">Ubuntu下搭建CUDA开发环境</a>
+                
+                  <a href="/2016/08/18/Keyboard-Shortcut.html" class="list-group-item-lay pjaxlink">高效工作—快捷键整理</a>
+                
+                  <a href="/2016/03/15/Lianjia-Spider.html" class="list-group-item-lay pjaxlink">链家爬虫</a>
+                
+                  <a href="/2016/01/29/Python-File.html" class="list-group-item-lay pjaxlink">Python的文件操作与输入输出</a>
+                
+                  <a href="/2016/01/08/Python-DicSet.html" class="list-group-item-lay pjaxlink">Python的映射和集合类型</a>
+                
+                  <a href="/2015/12/21/Python-Sequence.html" class="list-group-item-lay pjaxlink">Python序列相关知识总结</a>
+                
+                  <a href="/2015/12/11/Wget.html" class="list-group-item-lay pjaxlink">使用Wget下载整个网站</a>
+                
+                  <a href="/2015/12/04/CSDN-BlogBackup-Python.html" class="list-group-item-lay pjaxlink">Python实现CSDN博客的完整备份</a>
+                
+                  <a href="/2015/12/01/Arm-Environment-Problems.html" class="list-group-item-lay pjaxlink">嵌入式ARM下常用环境的配置及常见问题汇总</a>
+                
+                  <a href="/2015/11/28/Ubuntu-Softwares.html" class="list-group-item-lay pjaxlink">Ubuntu下常用软件的安装使用及常见问题汇总</a>
+                
+                  <a href="/2015/10/31/Self-Wrote-Tools.html" class="list-group-item-lay pjaxlink">自己造的轮子们 开源</a>
+                
+                  <a href="/2015/10/25/Multithreading.html" class="list-group-item-lay pjaxlink">多线程编程中的几个概念</a>
+                
+                  <a href="/2015/09/21/ClassifyPictures.html" class="list-group-item-lay pjaxlink">按拍摄日期一键归类照片 Python</a>
+                
+                  <a href="/2015/08/25/System-Install.html" class="list-group-item-lay pjaxlink">装机相关问题汇总</a>
+                
+                  <a href="/2015/08/07/NormalizedCut-CPlus-Codes.html" class="list-group-item-lay pjaxlink">Normalized Cut的C++源码</a>
+                
+                  <a href="/2015/05/15/Cygwin.html" class="list-group-item-lay pjaxlink">Windows下Cygwin的使用</a>
+                
+                  <a href="/2015/04/01/Windows-Tips.html" class="list-group-item-lay pjaxlink">Windows系统下的一些经验技巧</a>
+                
+                  <a href="/2014/12/18/License-Plate-Detection-Recognition.html" class="list-group-item-lay pjaxlink">车牌检测及识别 OpenALPR</a>
+                
+                  <a href="/2014/12/16/Theano-GPU.html" class="list-group-item-lay pjaxlink">Theano利用GPU进行深度学习加速的配置及使用</a>
+                
+                  <a href="/2014/12/05/UpperBody-Detection.html" class="list-group-item-lay pjaxlink">Upper-Body Detection源码配置及使用</a>
+                
+                  <a href="/2014/12/03/Linux-Opencv.html" class="list-group-item-lay pjaxlink">Linux下Opencv的安装及配置使用</a>
+                
+                  <a href="/2014/12/03/Linux-Matlab.html" class="list-group-item-lay pjaxlink">Linux下Matlab的安装及配置使用</a>
+                
+                  <a href="/2014/12/03/Arm-Opencv.html" class="list-group-item-lay pjaxlink">Opencv交叉编译及Arm平台移植</a>
+                
+                  <a href="/2014/11/19/Human-Body-Detection.html" class="list-group-item-lay pjaxlink">ICF，DPM等行人检测算法实践</a>
+                
+                  <a href="/2014/11/14/Python-Problems.html" class="list-group-item-lay pjaxlink">Python使用过程中常见问题汇总</a>
+                
+                  <a href="/2014/11/05/Git-Commands.html" class="list-group-item-lay pjaxlink">Git常用命令总结</a>
+                
+                  <a href="/2014/09/20/Regular-Expression.html" class="list-group-item-lay pjaxlink">正则表达式及在Python中的使用</a>
+                
+                  <a href="/2014/08/31/ImageTranslation-Using-UDP.html" class="list-group-item-lay pjaxlink">利用UDP协议进行图像传输</a>
+                
+                  <a href="/2014/08/06/TesseractOCR.html" class="list-group-item-lay pjaxlink">使用Tesseract-OCR进行文字识别</a>
+                
+                  <a href="/2014/07/18/Arm-USBWifi.html" class="list-group-item-lay pjaxlink">移植Wifi模块RT3070到ARM平台</a>
+                
+                  <a href="/2014/04/14/QT-Linux-Arm.html" class="list-group-item-lay pjaxlink">Linux下PC版及ARM版QT环境配置，ARM移植及触摸屏支持</a>
+                
+                  <a href="/2013/04/06/Opencv-Problems.html" class="list-group-item-lay pjaxlink">Opencv使用时的常见问题汇总</a>
+                
+                  <a href="/2013/04/05/Latex-Experiences.html" class="list-group-item-lay pjaxlink">使用Latex的一些经验技巧汇总</a>
+                
+                  <a href="/2012/04/16/CCPlus-Problems.html" class="list-group-item-lay pjaxlink">C++使用时的常见问题汇总</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="读书">
+              <div class="list-group">
+                <!--<h2 class="center">读书</h2>-->  <!--原来aside2上面的大标题-->
+                
+                  <a href="/2025/05/21/Ren-Xing.html" class="list-group-item-lay pjaxlink">你不可不知的人性-读书简记</a>
+                
+                  <a href="/2025/02/26/SaiNieKa.html" class="list-group-item-lay pjaxlink">与塞涅卡共进早餐：斯多葛哲学的人生艺术-读书简记</a>
+                
+                  <a href="/2025/02/16/Artist-Of-Life.html" class="list-group-item-lay pjaxlink">生活的艺术家-读书简记</a>
+                
+                  <a href="/2025/01/18/Good-Inside.html" class="list-group-item-lay pjaxlink">看见孩子-读书简记</a>
+                
+                  <a href="/2024/11/23/Miao-Dong-Jin-Rong.html" class="list-group-item-lay pjaxlink">秒懂金融-读书简记</a>
+                
+                  <a href="/2024/11/07/The-Education-Of-A-Value-Investor.html" class="list-group-item-lay pjaxlink">与巴菲特共进午餐时，我顿悟到的5个真理-读书简记</a>
+                
+                  <a href="/2024/10/13/Hai-Zi-De-Pin-Ge.html" class="list-group-item-lay pjaxlink">孩子的品格：写给父母的积极心理学-读书简记</a>
+                
+                  <a href="/2024/09/01/Jiayouqintong.html" class="list-group-item-lay pjaxlink">家有琴童-读书简记</a>
+                
+                  <a href="/2024/05/30/Outlive.html" class="list-group-item-lay pjaxlink">超越百岁：长寿的科学与艺术-读书简记</a>
+                
+                  <a href="/2024/05/24/Zhi-Chang-Dong-Wu.html" class="list-group-item-lay pjaxlink">职场动物进化手册-读书简记</a>
+                
+                  <a href="/2024/03/26/A-New-Theory-of-Intelligence.html" class="list-group-item-lay pjaxlink">千脑智能-读书简记</a>
+                
+                  <a href="/2024/03/16/Zen-And-The-Art-Of-Motorcycle-Maintenance.html" class="list-group-item-lay pjaxlink">禅与摩托车维修艺术-读书简记</a>
+                
+                  <a href="/2024/02/11/Methods-Of-Notes.html" class="list-group-item-lay pjaxlink">笔记的方法-读书简记</a>
+                
+                  <a href="/2024/02/03/MGRDSXY-GuanLiJinJie.html" class="list-group-item-lay pjaxlink">每个人的商学院 管理进阶-读书简记</a>
+                
+                  <a href="/2023/12/24/Xinjingjueyin.html" class="list-group-item-lay pjaxlink">心经抉隐-读书简记</a>
+                
+                  <a href="/2023/12/23/Hit-Refresh.html" class="list-group-item-lay pjaxlink">刷新：重新发现商业与未来-读书简记</a>
+                
+                  <a href="/2023/12/23/Cognitive-Awakening.html" class="list-group-item-lay pjaxlink">认知觉醒-读书简记</a>
+                
+                  <a href="/2023/12/18/MGRDSXY-GuanLiJiChu.html" class="list-group-item-lay pjaxlink">每个人的商学院 管理基础-读书简记</a>
+                
+                  <a href="/2023/12/14/The-Book-You-Wish-Your-Parents-Had-Read.html" class="list-group-item-lay pjaxlink">真希望我父母读过这本书-读书简记</a>
+                
+                  <a href="/2023/12/09/Wanting.html" class="list-group-item-lay pjaxlink">模仿欲望-读书简记</a>
+                
+                  <a href="/2023/12/03/HaMaXianSheng.html" class="list-group-item-lay pjaxlink">蛤蟆先生去看心理医生-读书简记</a>
+                
+                  <a href="/2023/11/30/Zhi-Shen-Shi-Nei.html" class="list-group-item-lay pjaxlink">置身事内：中国政府与经济发展-读书简记</a>
+                
+                  <a href="/2023/11/17/Pao-Bu-Sheng-Jing.html" class="list-group-item-lay pjaxlink">跑步圣经（第2版）-读书简记</a>
+                
+                  <a href="/2023/11/10/Cosmos.html" class="list-group-item-lay pjaxlink">宇宙-读书简记</a>
+                
+                  <a href="/2023/10/11/Ten-Headspace-Guide.html" class="list-group-item-lay pjaxlink">十分钟冥想-读书简记</a>
+                
+                  <a href="/2023/09/05/When-We-Talk-About-Run.html" class="list-group-item-lay pjaxlink">当我谈跑步时，我谈些什么-读书简记</a>
+                
+                  <a href="/2023/08/22/SteveJobs-Zen-Investments.html" class="list-group-item-lay pjaxlink">乔布斯、禅与投资-读书简记</a>
+                
+                  <a href="/2023/08/13/Atomic-Habits.html" class="list-group-item-lay pjaxlink">掌控习惯-读书简记</a>
+                
+                  <a href="/2023/08/01/MaoZeDong.html" class="list-group-item-lay pjaxlink">毛泽东选集（全四卷）-读书简记</a>
+                
+                  <a href="/2023/07/25/JZTZSZ.html" class="list-group-item-lay pjaxlink">价值投资实战-读书简记</a>
+                
+                  <a href="/2023/07/04/AI.html" class="list-group-item-lay pjaxlink">AI未来进行式（李开复陈楸帆新书）-读书简记</a>
+                
+                  <a href="/2023/06/27/The-Psychology-Of-Money.html" class="list-group-item-lay pjaxlink">金钱心理学-读书简记</a>
+                
+                  <a href="/2023/04/28/The-Courage-To-Be-Disliked.html" class="list-group-item-lay pjaxlink">被讨厌的勇气-读书简记</a>
+                
+                  <a href="/2023/04/07/The-Great-Mental-Models.html" class="list-group-item-lay pjaxlink">思考的框架-读书简记</a>
+                
+                  <a href="/2023/03/24/The-Inner-Game-Of-Tennis.html" class="list-group-item-lay pjaxlink">身心合一的奇迹力量-读书简记</a>
+                
+                  <a href="/2023/03/23/Zero-Limits.html" class="list-group-item-lay pjaxlink">零极限-读书简记</a>
+                
+                  <a href="/2023/02/18/The-Most-Important-Thing-Illuminated.html" class="list-group-item-lay pjaxlink">投资最重要的事-读书简记</a>
+                
+                  <a href="/2023/01/28/Language-In-Thought-And-Action.html" class="list-group-item-lay pjaxlink">语言学的邀请-读书简记</a>
+                
+                  <a href="/2023/01/27/BMYY.html" class="list-group-item-lay pjaxlink">巴芒演义-读书简记</a>
+                
+                  <a href="/2022/12/04/Richer-Wiser-Happier.html" class="list-group-item-lay pjaxlink">更富有、更睿智、更快乐-读书简记</a>
+                
+                  <a href="/2022/11/28/The-Common-Sense-Of-Management.html" class="list-group-item-lay pjaxlink">管理的常识-读书简记</a>
+                
+                  <a href="/2022/09/10/How-To-Take-Smart-Notes.html" class="list-group-item-lay pjaxlink">卡片笔记写作法-读书简记</a>
+                
+                  <a href="/2022/08/15/Da-Nao-Tong-Xin-Yuan.html" class="list-group-item-lay pjaxlink">大脑通信员：认识你的神经递质-读书简记</a>
+                
+                  <a href="/2022/07/07/Scale.html" class="list-group-item-lay pjaxlink">规模-读书简记</a>
+                
+                  <a href="/2022/06/16/The-Almanack-Of-Naval-Ravikant.html" class="list-group-item-lay pjaxlink">纳瓦尔宝典-读书简记</a>
+                
+                  <a href="/2022/05/04/High-Output-Management.html" class="list-group-item-lay pjaxlink">格鲁夫给经理人的第一课（畅销版）-读书简记</a>
+                
+                  <a href="/2022/03/27/The-Effective-Executive.html" class="list-group-item-lay pjaxlink">卓有成效的管理者-读书简记</a>
+                
+                  <a href="/2022/03/20/The-Molecule-Of-More.html" class="list-group-item-lay pjaxlink">贪婪的多巴胺-读书简记</a>
+                
+                  <a href="/2022/02/04/The-Untethered-Soul.html" class="list-group-item-lay pjaxlink">清醒的活-读书简记</a>
+                
+                  <a href="/2021/03/28/A-Guide-To-The-Good-Life.html" class="list-group-item-lay pjaxlink">像哲学家一样生活：斯多葛哲学的生活艺术-读书简记</a>
+                
+                  <a href="/2021/01/11/You-Are-What-You-Eat.html" class="list-group-item-lay pjaxlink">你是你吃出来的-读书简记</a>
+                
+                  <a href="/2020/11/12/You-Can-Run-Faster.html" class="list-group-item-lay pjaxlink">你可以跑的更快-读书简记</a>
+                
+                  <a href="/2020/10/12/Danies-Running-Formula.html" class="list-group-item-lay pjaxlink">丹尼尔斯经典跑步训练法-读书简记</a>
+                
+                  <a href="/2020/09/22/Nonviolent-Communication.html" class="list-group-item-lay pjaxlink">非暴力沟通-读书简记</a>
+                
+                  <a href="/2020/05/14/Outlers.html" class="list-group-item-lay pjaxlink">异类-读书简记</a>
+                
+                  <a href="/2020/05/11/ScarCity.html" class="list-group-item-lay pjaxlink">稀缺-读书简记</a>
+                
+                  <a href="/2020/04/29/Why-We-Sleep.html" class="list-group-item-lay pjaxlink">为什么要睡觉-读书简记</a>
+                
+                  <a href="/2020/03/31/Factfulness.html" class="list-group-item-lay pjaxlink">事实-读书简记</a>
+                
+                  <a href="/2020/03/18/Sjszkldr.html" class="list-group-item-lay pjaxlink">世界上最快乐的人-读书简记</a>
+                
+                  <a href="/2020/02/22/Viruses.html" class="list-group-item-lay pjaxlink">病毒学概览-读书简记</a>
+                
+                  <a href="/2020/02/22/Immune-System.html" class="list-group-item-lay pjaxlink">免疫学概览-读书简记</a>
+                
+                  <a href="/2020/02/21/NG.html" class="list-group-item-lay pjaxlink">内观-读书简记</a>
+                
+                  <a href="/2020/02/20/GTDYS.html" class="list-group-item-lay pjaxlink">沟通的艺术-读书简记</a>
+                
+                  <a href="/2019/10/23/Your-Boundless-Life.html" class="list-group-item-lay pjaxlink">你的生命有什么可能-读书简记</a>
+                
+                  <a href="/2019/09/23/Evolution.html" class="list-group-item-lay pjaxlink">演化的故事-读书简记</a>
+                
+                  <a href="/2019/07/23/Principles-Of-Economics-2.html" class="list-group-item-lay pjaxlink">经济学原理：宏观经济学分册-读书简记</a>
+                
+                  <a href="/2019/06/18/Principles-Of-Economics-1.html" class="list-group-item-lay pjaxlink">经济学原理：微观经济学分册-读书简记</a>
+                
+                  <a href="/2019/05/29/Social-Psychology.html" class="list-group-item-lay pjaxlink">社会心理学-读书简记</a>
+                
+                  <a href="/2019/04/10/In-Search-Of-Memory.html" class="list-group-item-lay pjaxlink">追寻记忆的痕迹-读书简记</a>
+                
+                  <a href="/2019/04/02/Emotion.html" class="list-group-item-lay pjaxlink">情绪-读书简记</a>
+                
+                  <a href="/2019/02/28/The-Long-View.html" class="list-group-item-lay pjaxlink">远见：如何规划职业生涯3阶段-读书简记</a>
+                
+                  <a href="/2019/01/09/Existential-Pyschotherapy.html" class="list-group-item-lay pjaxlink">存在主义心理治疗-读书简记</a>
+                
+                  <a href="/2018/10/23/PET.html" class="list-group-item-lay pjaxlink">P·E·T父母效能训练-读书简记</a>
+                
+                  <a href="/2018/10/22/Peter-Lynch.html" class="list-group-item-lay pjaxlink">彼得·林奇的成功投资-读书简记</a>
+                
+                  <a href="/2018/10/18/USSSZN.html" class="list-group-item-lay pjaxlink">2015-2020美国居民膳食指南-读书简记</a>
+                
+                  <a href="/2018/10/18/CNSSZN.html" class="list-group-item-lay pjaxlink">中国居民膳食指南（2016）-读书简记</a>
+                
+                  <a href="/2018/09/10/Critical-Thinking.html" class="list-group-item-lay pjaxlink">批判性思维-读书简记</a>
+                
+                  <a href="/2018/08/20/Code-Complete.html" class="list-group-item-lay pjaxlink">代码大全-读书简记</a>
+                
+                  <a href="/2018/07/11/Playful-Parenting.html" class="list-group-item-lay pjaxlink">游戏力-读书简记</a>
+                
+                  <a href="/2018/06/25/Succeed.html" class="list-group-item-lay pjaxlink">成功，动机与目标-读书简记</a>
+                
+                  <a href="/2018/06/12/Genome.html" class="list-group-item-lay pjaxlink">基因组：人种自传23章-读书简记</a>
+                
+                  <a href="/2018/05/30/YOU.html" class="list-group-item-lay pjaxlink">YOU身体使用手册-读书简记</a>
+                
+                  <a href="/2018/05/22/Dtzt.html" class="list-group-item-lay pjaxlink">登天之梯-读书简记</a>
+                
+                  <a href="/2018/05/15/Xhsx.html" class="list-group-item-lay pjaxlink">为什么学生不喜欢上学-读书简记</a>
+                
+                  <a href="/2018/03/21/Sun-Quanquan.html" class="list-group-item-lay pjaxlink">请停止无效努力-读书简记</a>
+                
+                  <a href="/2018/03/21/MKJ.html" class="list-group-item-lay pjaxlink">麦肯基疗法-读书简记</a>
+                
+                  <a href="/2018/03/20/Jianqi.html" class="list-group-item-lay pjaxlink">跟简七学理财-课程简记</a>
+                
+                  <a href="/2018/03/20/Index-Fund-2017.html" class="list-group-item-lay pjaxlink">指数基金投资指南（2017中信版）-读书简记</a>
+                
+                  <a href="/2018/03/20/Index-Fund-2015.html" class="list-group-item-lay pjaxlink">指数基金投资指南（2015雪球版）-读书简记</a>
+                
+                  <a href="/2017/11/29/Brain-Rules.html" class="list-group-item-lay pjaxlink">让大脑自由：释放天赋的12条定律-读书简记</a>
+                
+                  <a href="/2017/11/11/Yang-Yu-De-Xuan-Ze.html" class="list-group-item-lay pjaxlink">养育的选择-读书简记</a>
+                
+                  <a href="/2017/11/09/Cuda-By-Example.html" class="list-group-item-lay pjaxlink">GPU高性能编程CUDA实战-读书简记</a>
+                
+                  <a href="/2017/11/04/The-Millionaire-Fastlane.html" class="list-group-item-lay pjaxlink">百万富翁快车道-读书简记</a>
+                
+                  <a href="/2017/09/30/Principles.html" class="list-group-item-lay pjaxlink">原则-读书简记</a>
+                
+                  <a href="/2017/09/30/Poor-Charlie.html" class="list-group-item-lay pjaxlink">穷查理宝典-读书简记</a>
+                
+                  <a href="/2017/09/29/Cpp-Concurrency-In-Action.html" class="list-group-item-lay pjaxlink">C++并发编程实战-读书简记</a>
+                
+                  <a href="/2017/08/29/Philosophers.html" class="list-group-item-lay pjaxlink">哲学家们都干了些什么-读书简记</a>
+                
+                  <a href="/2017/08/22/Effective-CPlus.html" class="list-group-item-lay pjaxlink">Effective C++-读书简记</a>
+                
+                  <a href="/2017/08/14/Wealth-Freedom.html" class="list-group-item-lay pjaxlink">通往财富自由之路-读书简记</a>
+                
+                  <a href="/2017/07/26/Linux-Shell.html" class="list-group-item-lay pjaxlink">Linux命令行与Shell脚本编程大全-读书简记</a>
+                
+                  <a href="/2017/06/22/Deliberate-Practice.html" class="list-group-item-lay pjaxlink">刻意练习-读书简记</a>
+                
+                  <a href="/2017/06/14/The-Non-Designers-Design-Book.html" class="list-group-item-lay pjaxlink">写给大家看的设计书-读书简记</a>
+                
+                  <a href="/2017/06/08/The-Power-Of-Habit.html" class="list-group-item-lay pjaxlink">习惯的力量-读书简记</a>
+                
+                  <a href="/2017/06/08/Good-Good-Study.html" class="list-group-item-lay pjaxlink">好好学习-读书简记</a>
+                
+                  <a href="/2017/05/01/Search-Inside-Yourself.html" class="list-group-item-lay pjaxlink">硅谷最受欢迎的情商课-读书简记</a>
+                
+                  <a href="/2017/05/01/RichDad-PoorDad.html" class="list-group-item-lay pjaxlink">富爸爸，穷爸爸-读书简记</a>
+                
+                  <a href="/2017/05/01/How-Kids-Listen-Talk.html" class="list-group-item-lay pjaxlink">如何说孩子才会听，怎么听孩子才会说-读书简记</a>
+                
+                  <a href="/2016/12/26/The-Path-of-Least-Resistance.html" class="list-group-item-lay pjaxlink">阻力最小之路-读书简记</a>
+                
+                  <a href="/2016/12/07/ProGit.html" class="list-group-item-lay pjaxlink">ProGit-读书简记</a>
+                
+                  <a href="/2016/11/27/Thinking-FastAndSlow.html" class="list-group-item-lay pjaxlink">思考：快与慢-读书简记</a>
+                
+                  <a href="/2016/04/24/C-Language-Understanding.html" class="list-group-item-lay pjaxlink">C语言深度剖析-读书简记</a>
+                
+                  <a href="/2016/04/11/Programming-Pearls.html" class="list-group-item-lay pjaxlink">编程珠玑-读书简记</a>
+                
+                  <a href="/2016/03/25/HeadFirst-Design-Patterns.html" class="list-group-item-lay pjaxlink">Head First 设计模式-读书简记</a>
+                
+                  <a href="/2016/01/03/Antifragile.html" class="list-group-item-lay pjaxlink">反脆弱-读书简记</a>
+                
+                  <a href="/2015/10/31/Booklist.html" class="list-group-item-lay pjaxlink">我的阅读书单</a>
+                
+                  <a href="/2015/06/23/Xiao-Qiang-Sheng-Zhi-Ji.html" class="list-group-item-lay pjaxlink">小强升职记-读书简记</a>
+                
+                  <a href="/2015/05/12/Right-Mindfulness.html" class="list-group-item-lay pjaxlink">观呼吸-读书简记</a>
+                
+                  <a href="/2015/04/13/Hackers-Painters.html" class="list-group-item-lay pjaxlink">黑客与画家-读书简记</a>
+                
+                  <a href="/2015/03/23/Morning-Diary.html" class="list-group-item-lay pjaxlink">晨间日记的奇迹-读书简记</a>
+                
+                  <a href="/2014/10/10/Learn-More-Study-Less.html" class="list-group-item-lay pjaxlink">如何高效学习-读书简记</a>
+                
+                  <a href="/2014/09/04/Improv-Wisdom.html" class="list-group-item-lay pjaxlink">即兴的智慧-读书简记</a>
+                
+                  <a href="/2014/08/24/The-Power-Of-Full-Engagement.html" class="list-group-item-lay pjaxlink">精力管理-读书简记</a>
+                
+                  <a href="/2014/08/15/Thinking-In-CPlus.html" class="list-group-item-lay pjaxlink">C++编程思想-读书简记</a>
+                
+                  <a href="/2014/08/03/Procrastination.html" class="list-group-item-lay pjaxlink">拖延心理学-读书简记</a>
+                
+                  <a href="/2014/05/13/Self-Contral.html" class="list-group-item-lay pjaxlink">自控力-读书简记</a>
+                
+                  <a href="/2014/03/06/Wei-Da-Shi-Ao-Chu-Lai-De.html" class="list-group-item-lay pjaxlink">伟大是熬出来的-读书简记</a>
+                
+                  <a href="/2012/08/27/Life-Cannot-Bear-Light.html" class="list-group-item-lay pjaxlink">生命不能承受之轻-读书简记</a>
+                
+                  <a href="/2012/08/17/Seven-Habits-Of-Highly-Effecitive.html" class="list-group-item-lay pjaxlink">高效能人士的七个习惯-读书简记</a>
+                
+                  <a href="/2012/08/16/No-Excuse.html" class="list-group-item-lay pjaxlink">没有任何借口-读书简记</a>
+                
+                  <a href="/2012/07/26/One-Minute-Yourself.html" class="list-group-item-lay pjaxlink">一分钟的你自己-读书简记</a>
+                
+                  <a href="/2012/04/25/Life-Without-Limits.html" class="list-group-item-lay pjaxlink">人生不设限-读书简记</a>
+                
+                  <a href="/2012/04/23/Dark-Time.html" class="list-group-item-lay pjaxlink">暗时间-读书简记</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="杂烩">
+              <div class="list-group">
+                <!--<h2 class="center">杂烩</h2>-->  <!--原来aside2上面的大标题-->
+                
+                  <a href="/2021/06/10/JumpBoat.html" class="list-group-item-lay pjaxlink">写在三十一岁-跳船简记</a>
+                
+                  <a href="/2021/03/12/The-Most-Important-Investment.html" class="list-group-item-lay pjaxlink">最重要的投资</a>
+                
+                  <a href="/2020/04/08/SoBookPlus.html" class="list-group-item-lay pjaxlink">挖掘好书神器-书海星空</a>
+                
+                  <a href="/2019/12/18/DoubanBookTop999.html" class="list-group-item-lay pjaxlink">豆瓣图书TOP 999</a>
+                
+                  <a href="/2019/12/18/DoubanBookFavoriteTop999.html" class="list-group-item-lay pjaxlink">豆瓣图书最受欢迎的TOP 999</a>
+                
+                  <a href="/2018/12/06/SoBook.html" class="list-group-item-lay pjaxlink">挖掘好书神器-好书一下</a>
+                
+                  <a href="/2018/08/29/Machine-Learning-BookList.html" class="list-group-item-lay pjaxlink">机器学习经典图书-排名榜</a>
+                
+                  <a href="/2018/08/29/Coding-BookList.html" class="list-group-item-lay pjaxlink">编程经典图书-排名榜</a>
+                
+                  <a href="/2016/04/14/ZhiHu-Good-Answers.html" class="list-group-item-lay pjaxlink">知乎上赞同数最高的999个回答</a>
+                
+                  <a href="/2012/07/18/What-You-Live-For.html" class="list-group-item-lay pjaxlink">活着，为了什么</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="科研">
+              <div class="list-group">
+                <!--<h2 class="center">科研</h2>-->  <!--原来aside2上面的大标题-->
+                
+                  <a href="/2018/11/28/RefineDet.html" class="list-group-item-lay pjaxlink">RefineDet-论文简记</a>
+                
+                  <a href="/2018/01/04/DenseNet.html" class="list-group-item-lay pjaxlink">DenseNet-论文简记</a>
+                
+                  <a href="/2017/12/11/Tensorflow-GAN.html" class="list-group-item-lay pjaxlink">TensorFlow实现生成对抗网络GAN-翻译</a>
+                
+                  <a href="/2017/12/08/Mask-RCNN.html" class="list-group-item-lay pjaxlink">Mask RCNN-论文简记</a>
+                
+                  <a href="/2017/12/08/FPN.html" class="list-group-item-lay pjaxlink">Feature Pyramid Networks for Object Detection-论文简记</a>
+                
+                  <a href="/2017/09/04/YOLOV2.html" class="list-group-item-lay pjaxlink">目标检测之YOLOv2</a>
+                
+                  <a href="/2017/08/28/YOLO-SSD.html" class="list-group-item-lay pjaxlink">目标检测之YOLO，SSD</a>
+                
+                  <a href="/2017/08/24/RCNN-FastRCNN-FasterRCNN.html" class="list-group-item-lay pjaxlink">目标检测之RCNN，SPP-NET，Fast-RCNN，Faster-RCNN</a>
+                
+                  <a href="/2017/08/21/ResNet-Keras.html" class="list-group-item-lay pjaxlink">ResNet的理解及其Keras实现</a>
+                
+                  <a href="/2017/08/18/GoogLeNet-Keras.html" class="list-group-item-lay pjaxlink">GoogLeNet的理解及其Keras实现</a>
+                
+                  <a href="/2017/07/19/VGGNet-Keras.html" class="list-group-item-lay pjaxlink">VGGNet的理解及其Keras实现</a>
+                
+                  <a href="/2017/07/18/AlexNet-Keras.html" class="list-group-item-lay pjaxlink">AlexNet的理解及其Keras实现</a>
+                
+                  <a href="/2016/08/10/Master-SVM-Algorithm.html" class="list-group-item-lay pjaxlink">理解SVM算法</a>
+                
+                  <a href="/2016/03/28/Least-Squares-Parameter-Estimation.html" class="list-group-item-lay pjaxlink">最小二乘法的参数估计</a>
+                
+                  <a href="/2016/03/04/Projective-Transformation-And-Epipolar-Genmetry.html" class="list-group-item-lay pjaxlink">视觉中的二维射影变换及多视角几何</a>
+                
+                  <a href="/2015/11/17/Master-Reinforcement-Learning-MDP.html" class="list-group-item-lay pjaxlink">强化学习与马尔科夫决策过程</a>
+                
+                  <a href="/2015/11/12/Master-EM-Algorithm.html" class="list-group-item-lay pjaxlink">理解EM算法</a>
+                
+                  <a href="/2015/10/15/RANSAC.html" class="list-group-item-lay pjaxlink">理解图像配准中的LMeds、M-estimators与RANSAC算法</a>
+                
+                  <a href="/2015/09/25/KDTree.html" class="list-group-item-lay pjaxlink">图像特征点匹配之KD-Tree</a>
+                
+                  <a href="/2015/03/27/Camera-Imaging-Model.html" class="list-group-item-lay pjaxlink">摄像机成像的几何模型</a>
+                
+                  <a href="/2015/03/26/Morphology-Processing.html" class="list-group-item-lay pjaxlink">形态学运算：膨胀，腐蚀，开运算，闭运算...</a>
+                
+                  <a href="/2014/11/07/Neural-Network.html" class="list-group-item-lay pjaxlink">神经网络的理解</a>
+                
+                  <a href="/2014/10/22/Feature-Extraction-Selection.html" class="list-group-item-lay pjaxlink">特征提取与特征选择</a>
+                
+                  <a href="/2013/04/11/Physical-Meaning-Of-The-Geometric-Moment.html" class="list-group-item-lay pjaxlink">几何矩的物理意义，由Camshift算法引起</a>
+                
+              </div>
+            </div>
+                
+          <div class="tab-pane" id="tags">
+            <div class="panel-group" id="accordion">
+              <!--<h2 class="center">标签</h2>-->
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#CCPlus">CCPlus</a>
+                      <span class="badge pull-right">8</span>
+                    </h4>
+                  </div>
+                  <div id="CCPlus" class="panel-collapse collapse">
+                    
+                      <a  href='/2017/09/29/Cpp-Concurrency-In-Action.html' class="list-group-item pjaxlink">
+                        C++并发编程实战-读书简记
+                      </a>
+                    
+                      <a  href='/2017/08/22/Effective-CPlus.html' class="list-group-item pjaxlink">
+                        Effective C++-读书简记
+                      </a>
+                    
+                      <a  href='/2016/04/11/Programming-Pearls.html' class="list-group-item pjaxlink">
+                        编程珠玑-读书简记
+                      </a>
+                    
+                      <a  href='/2015/08/07/NormalizedCut-CPlus-Codes.html' class="list-group-item pjaxlink">
+                        Normalized Cut的C++源码
+                      </a>
+                    
+                      <a  href='/2014/11/19/Human-Body-Detection.html' class="list-group-item pjaxlink">
+                        ICF，DPM等行人检测算法实践
+                      </a>
+                    
+                      <a  href='/2014/08/31/ImageTranslation-Using-UDP.html' class="list-group-item pjaxlink">
+                        利用UDP协议进行图像传输
+                      </a>
+                    
+                      <a  href='/2014/08/15/Thinking-In-CPlus.html' class="list-group-item pjaxlink">
+                        C++编程思想-读书简记
+                      </a>
+                    
+                      <a  href='/2012/04/16/CCPlus-Problems.html' class="list-group-item pjaxlink">
+                        C++使用时的常见问题汇总
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#读书笔记">读书笔记</a>
+                      <span class="badge pull-right">131</span>
+                    </h4>
+                  </div>
+                  <div id="读书笔记" class="panel-collapse collapse">
+                    
+                      <a  href='/2025/05/21/Ren-Xing.html' class="list-group-item pjaxlink">
+                        你不可不知的人性-读书简记
+                      </a>
+                    
+                      <a  href='/2025/02/26/SaiNieKa.html' class="list-group-item pjaxlink">
+                        与塞涅卡共进早餐：斯多葛哲学的人生艺术-读书简记
+                      </a>
+                    
+                      <a  href='/2025/02/16/Artist-Of-Life.html' class="list-group-item pjaxlink">
+                        生活的艺术家-读书简记
+                      </a>
+                    
+                      <a  href='/2025/01/18/Good-Inside.html' class="list-group-item pjaxlink">
+                        看见孩子-读书简记
+                      </a>
+                    
+                      <a  href='/2024/11/23/Miao-Dong-Jin-Rong.html' class="list-group-item pjaxlink">
+                        秒懂金融-读书简记
+                      </a>
+                    
+                      <a  href='/2024/11/07/The-Education-Of-A-Value-Investor.html' class="list-group-item pjaxlink">
+                        与巴菲特共进午餐时，我顿悟到的5个真理-读书简记
+                      </a>
+                    
+                      <a  href='/2024/10/13/Hai-Zi-De-Pin-Ge.html' class="list-group-item pjaxlink">
+                        孩子的品格：写给父母的积极心理学-读书简记
+                      </a>
+                    
+                      <a  href='/2024/09/01/Jiayouqintong.html' class="list-group-item pjaxlink">
+                        家有琴童-读书简记
+                      </a>
+                    
+                      <a  href='/2024/05/30/Outlive.html' class="list-group-item pjaxlink">
+                        超越百岁：长寿的科学与艺术-读书简记
+                      </a>
+                    
+                      <a  href='/2024/05/24/Zhi-Chang-Dong-Wu.html' class="list-group-item pjaxlink">
+                        职场动物进化手册-读书简记
+                      </a>
+                    
+                      <a  href='/2024/03/26/A-New-Theory-of-Intelligence.html' class="list-group-item pjaxlink">
+                        千脑智能-读书简记
+                      </a>
+                    
+                      <a  href='/2024/03/16/Zen-And-The-Art-Of-Motorcycle-Maintenance.html' class="list-group-item pjaxlink">
+                        禅与摩托车维修艺术-读书简记
+                      </a>
+                    
+                      <a  href='/2024/02/11/Methods-Of-Notes.html' class="list-group-item pjaxlink">
+                        笔记的方法-读书简记
+                      </a>
+                    
+                      <a  href='/2024/02/03/MGRDSXY-GuanLiJinJie.html' class="list-group-item pjaxlink">
+                        每个人的商学院 管理进阶-读书简记
+                      </a>
+                    
+                      <a  href='/2023/12/24/Xinjingjueyin.html' class="list-group-item pjaxlink">
+                        心经抉隐-读书简记
+                      </a>
+                    
+                      <a  href='/2023/12/23/Hit-Refresh.html' class="list-group-item pjaxlink">
+                        刷新：重新发现商业与未来-读书简记
+                      </a>
+                    
+                      <a  href='/2023/12/23/Cognitive-Awakening.html' class="list-group-item pjaxlink">
+                        认知觉醒-读书简记
+                      </a>
+                    
+                      <a  href='/2023/12/18/MGRDSXY-GuanLiJiChu.html' class="list-group-item pjaxlink">
+                        每个人的商学院 管理基础-读书简记
+                      </a>
+                    
+                      <a  href='/2023/12/14/The-Book-You-Wish-Your-Parents-Had-Read.html' class="list-group-item pjaxlink">
+                        真希望我父母读过这本书-读书简记
+                      </a>
+                    
+                      <a  href='/2023/12/09/Wanting.html' class="list-group-item pjaxlink">
+                        模仿欲望-读书简记
+                      </a>
+                    
+                      <a  href='/2023/12/03/HaMaXianSheng.html' class="list-group-item pjaxlink">
+                        蛤蟆先生去看心理医生-读书简记
+                      </a>
+                    
+                      <a  href='/2023/11/30/Zhi-Shen-Shi-Nei.html' class="list-group-item pjaxlink">
+                        置身事内：中国政府与经济发展-读书简记
+                      </a>
+                    
+                      <a  href='/2023/11/17/Pao-Bu-Sheng-Jing.html' class="list-group-item pjaxlink">
+                        跑步圣经（第2版）-读书简记
+                      </a>
+                    
+                      <a  href='/2023/11/10/Cosmos.html' class="list-group-item pjaxlink">
+                        宇宙-读书简记
+                      </a>
+                    
+                      <a  href='/2023/10/11/Ten-Headspace-Guide.html' class="list-group-item pjaxlink">
+                        十分钟冥想-读书简记
+                      </a>
+                    
+                      <a  href='/2023/09/05/When-We-Talk-About-Run.html' class="list-group-item pjaxlink">
+                        当我谈跑步时，我谈些什么-读书简记
+                      </a>
+                    
+                      <a  href='/2023/08/22/SteveJobs-Zen-Investments.html' class="list-group-item pjaxlink">
+                        乔布斯、禅与投资-读书简记
+                      </a>
+                    
+                      <a  href='/2023/08/13/Atomic-Habits.html' class="list-group-item pjaxlink">
+                        掌控习惯-读书简记
+                      </a>
+                    
+                      <a  href='/2023/08/01/MaoZeDong.html' class="list-group-item pjaxlink">
+                        毛泽东选集（全四卷）-读书简记
+                      </a>
+                    
+                      <a  href='/2023/07/25/JZTZSZ.html' class="list-group-item pjaxlink">
+                        价值投资实战-读书简记
+                      </a>
+                    
+                      <a  href='/2023/07/04/AI.html' class="list-group-item pjaxlink">
+                        AI未来进行式（李开复陈楸帆新书）-读书简记
+                      </a>
+                    
+                      <a  href='/2023/06/27/The-Psychology-Of-Money.html' class="list-group-item pjaxlink">
+                        金钱心理学-读书简记
+                      </a>
+                    
+                      <a  href='/2023/04/28/The-Courage-To-Be-Disliked.html' class="list-group-item pjaxlink">
+                        被讨厌的勇气-读书简记
+                      </a>
+                    
+                      <a  href='/2023/04/07/The-Great-Mental-Models.html' class="list-group-item pjaxlink">
+                        思考的框架-读书简记
+                      </a>
+                    
+                      <a  href='/2023/03/24/The-Inner-Game-Of-Tennis.html' class="list-group-item pjaxlink">
+                        身心合一的奇迹力量-读书简记
+                      </a>
+                    
+                      <a  href='/2023/03/23/Zero-Limits.html' class="list-group-item pjaxlink">
+                        零极限-读书简记
+                      </a>
+                    
+                      <a  href='/2023/02/18/The-Most-Important-Thing-Illuminated.html' class="list-group-item pjaxlink">
+                        投资最重要的事-读书简记
+                      </a>
+                    
+                      <a  href='/2023/01/28/Language-In-Thought-And-Action.html' class="list-group-item pjaxlink">
+                        语言学的邀请-读书简记
+                      </a>
+                    
+                      <a  href='/2023/01/27/BMYY.html' class="list-group-item pjaxlink">
+                        巴芒演义-读书简记
+                      </a>
+                    
+                      <a  href='/2022/12/04/Richer-Wiser-Happier.html' class="list-group-item pjaxlink">
+                        更富有、更睿智、更快乐-读书简记
+                      </a>
+                    
+                      <a  href='/2022/11/28/The-Common-Sense-Of-Management.html' class="list-group-item pjaxlink">
+                        管理的常识-读书简记
+                      </a>
+                    
+                      <a  href='/2022/09/10/How-To-Take-Smart-Notes.html' class="list-group-item pjaxlink">
+                        卡片笔记写作法-读书简记
+                      </a>
+                    
+                      <a  href='/2022/08/15/Da-Nao-Tong-Xin-Yuan.html' class="list-group-item pjaxlink">
+                        大脑通信员：认识你的神经递质-读书简记
+                      </a>
+                    
+                      <a  href='/2022/07/07/Scale.html' class="list-group-item pjaxlink">
+                        规模-读书简记
+                      </a>
+                    
+                      <a  href='/2022/06/16/The-Almanack-Of-Naval-Ravikant.html' class="list-group-item pjaxlink">
+                        纳瓦尔宝典-读书简记
+                      </a>
+                    
+                      <a  href='/2022/05/04/High-Output-Management.html' class="list-group-item pjaxlink">
+                        格鲁夫给经理人的第一课（畅销版）-读书简记
+                      </a>
+                    
+                      <a  href='/2022/03/27/The-Effective-Executive.html' class="list-group-item pjaxlink">
+                        卓有成效的管理者-读书简记
+                      </a>
+                    
+                      <a  href='/2022/03/20/The-Molecule-Of-More.html' class="list-group-item pjaxlink">
+                        贪婪的多巴胺-读书简记
+                      </a>
+                    
+                      <a  href='/2022/02/04/The-Untethered-Soul.html' class="list-group-item pjaxlink">
+                        清醒的活-读书简记
+                      </a>
+                    
+                      <a  href='/2021/03/28/A-Guide-To-The-Good-Life.html' class="list-group-item pjaxlink">
+                        像哲学家一样生活：斯多葛哲学的生活艺术-读书简记
+                      </a>
+                    
+                      <a  href='/2021/01/11/You-Are-What-You-Eat.html' class="list-group-item pjaxlink">
+                        你是你吃出来的-读书简记
+                      </a>
+                    
+                      <a  href='/2020/11/12/You-Can-Run-Faster.html' class="list-group-item pjaxlink">
+                        你可以跑的更快-读书简记
+                      </a>
+                    
+                      <a  href='/2020/10/12/Danies-Running-Formula.html' class="list-group-item pjaxlink">
+                        丹尼尔斯经典跑步训练法-读书简记
+                      </a>
+                    
+                      <a  href='/2020/09/22/Nonviolent-Communication.html' class="list-group-item pjaxlink">
+                        非暴力沟通-读书简记
+                      </a>
+                    
+                      <a  href='/2020/05/14/Outlers.html' class="list-group-item pjaxlink">
+                        异类-读书简记
+                      </a>
+                    
+                      <a  href='/2020/05/11/ScarCity.html' class="list-group-item pjaxlink">
+                        稀缺-读书简记
+                      </a>
+                    
+                      <a  href='/2020/04/29/Why-We-Sleep.html' class="list-group-item pjaxlink">
+                        为什么要睡觉-读书简记
+                      </a>
+                    
+                      <a  href='/2020/03/31/Factfulness.html' class="list-group-item pjaxlink">
+                        事实-读书简记
+                      </a>
+                    
+                      <a  href='/2020/03/18/Sjszkldr.html' class="list-group-item pjaxlink">
+                        世界上最快乐的人-读书简记
+                      </a>
+                    
+                      <a  href='/2020/02/22/Viruses.html' class="list-group-item pjaxlink">
+                        病毒学概览-读书简记
+                      </a>
+                    
+                      <a  href='/2020/02/22/Immune-System.html' class="list-group-item pjaxlink">
+                        免疫学概览-读书简记
+                      </a>
+                    
+                      <a  href='/2020/02/21/NG.html' class="list-group-item pjaxlink">
+                        内观-读书简记
+                      </a>
+                    
+                      <a  href='/2020/02/20/GTDYS.html' class="list-group-item pjaxlink">
+                        沟通的艺术-读书简记
+                      </a>
+                    
+                      <a  href='/2019/10/23/Your-Boundless-Life.html' class="list-group-item pjaxlink">
+                        你的生命有什么可能-读书简记
+                      </a>
+                    
+                      <a  href='/2019/09/23/Evolution.html' class="list-group-item pjaxlink">
+                        演化的故事-读书简记
+                      </a>
+                    
+                      <a  href='/2019/07/23/Principles-Of-Economics-2.html' class="list-group-item pjaxlink">
+                        经济学原理：宏观经济学分册-读书简记
+                      </a>
+                    
+                      <a  href='/2019/06/18/Principles-Of-Economics-1.html' class="list-group-item pjaxlink">
+                        经济学原理：微观经济学分册-读书简记
+                      </a>
+                    
+                      <a  href='/2019/05/29/Social-Psychology.html' class="list-group-item pjaxlink">
+                        社会心理学-读书简记
+                      </a>
+                    
+                      <a  href='/2019/04/10/In-Search-Of-Memory.html' class="list-group-item pjaxlink">
+                        追寻记忆的痕迹-读书简记
+                      </a>
+                    
+                      <a  href='/2019/04/02/Emotion.html' class="list-group-item pjaxlink">
+                        情绪-读书简记
+                      </a>
+                    
+                      <a  href='/2019/02/28/The-Long-View.html' class="list-group-item pjaxlink">
+                        远见：如何规划职业生涯3阶段-读书简记
+                      </a>
+                    
+                      <a  href='/2019/01/09/Existential-Pyschotherapy.html' class="list-group-item pjaxlink">
+                        存在主义心理治疗-读书简记
+                      </a>
+                    
+                      <a  href='/2018/10/23/PET.html' class="list-group-item pjaxlink">
+                        P·E·T父母效能训练-读书简记
+                      </a>
+                    
+                      <a  href='/2018/10/22/Peter-Lynch.html' class="list-group-item pjaxlink">
+                        彼得·林奇的成功投资-读书简记
+                      </a>
+                    
+                      <a  href='/2018/10/18/USSSZN.html' class="list-group-item pjaxlink">
+                        2015-2020美国居民膳食指南-读书简记
+                      </a>
+                    
+                      <a  href='/2018/10/18/CNSSZN.html' class="list-group-item pjaxlink">
+                        中国居民膳食指南（2016）-读书简记
+                      </a>
+                    
+                      <a  href='/2018/09/10/Critical-Thinking.html' class="list-group-item pjaxlink">
+                        批判性思维-读书简记
+                      </a>
+                    
+                      <a  href='/2018/08/20/Code-Complete.html' class="list-group-item pjaxlink">
+                        代码大全-读书简记
+                      </a>
+                    
+                      <a  href='/2018/07/11/Playful-Parenting.html' class="list-group-item pjaxlink">
+                        游戏力-读书简记
+                      </a>
+                    
+                      <a  href='/2018/06/25/Succeed.html' class="list-group-item pjaxlink">
+                        成功，动机与目标-读书简记
+                      </a>
+                    
+                      <a  href='/2018/06/12/Genome.html' class="list-group-item pjaxlink">
+                        基因组：人种自传23章-读书简记
+                      </a>
+                    
+                      <a  href='/2018/05/30/YOU.html' class="list-group-item pjaxlink">
+                        YOU身体使用手册-读书简记
+                      </a>
+                    
+                      <a  href='/2018/05/22/Dtzt.html' class="list-group-item pjaxlink">
+                        登天之梯-读书简记
+                      </a>
+                    
+                      <a  href='/2018/05/15/Xhsx.html' class="list-group-item pjaxlink">
+                        为什么学生不喜欢上学-读书简记
+                      </a>
+                    
+                      <a  href='/2018/03/21/Sun-Quanquan.html' class="list-group-item pjaxlink">
+                        请停止无效努力-读书简记
+                      </a>
+                    
+                      <a  href='/2018/03/21/MKJ.html' class="list-group-item pjaxlink">
+                        麦肯基疗法-读书简记
+                      </a>
+                    
+                      <a  href='/2018/03/20/Jianqi.html' class="list-group-item pjaxlink">
+                        跟简七学理财-课程简记
+                      </a>
+                    
+                      <a  href='/2018/03/20/Index-Fund-2017.html' class="list-group-item pjaxlink">
+                        指数基金投资指南（2017中信版）-读书简记
+                      </a>
+                    
+                      <a  href='/2018/03/20/Index-Fund-2015.html' class="list-group-item pjaxlink">
+                        指数基金投资指南（2015雪球版）-读书简记
+                      </a>
+                    
+                      <a  href='/2017/11/29/Brain-Rules.html' class="list-group-item pjaxlink">
+                        让大脑自由：释放天赋的12条定律-读书简记
+                      </a>
+                    
+                      <a  href='/2017/11/11/Yang-Yu-De-Xuan-Ze.html' class="list-group-item pjaxlink">
+                        养育的选择-读书简记
+                      </a>
+                    
+                      <a  href='/2017/11/09/Cuda-By-Example.html' class="list-group-item pjaxlink">
+                        GPU高性能编程CUDA实战-读书简记
+                      </a>
+                    
+                      <a  href='/2017/11/04/The-Millionaire-Fastlane.html' class="list-group-item pjaxlink">
+                        百万富翁快车道-读书简记
+                      </a>
+                    
+                      <a  href='/2017/09/30/Principles.html' class="list-group-item pjaxlink">
+                        原则-读书简记
+                      </a>
+                    
+                      <a  href='/2017/09/30/Poor-Charlie.html' class="list-group-item pjaxlink">
+                        穷查理宝典-读书简记
+                      </a>
+                    
+                      <a  href='/2017/09/29/Cpp-Concurrency-In-Action.html' class="list-group-item pjaxlink">
+                        C++并发编程实战-读书简记
+                      </a>
+                    
+                      <a  href='/2017/08/29/Philosophers.html' class="list-group-item pjaxlink">
+                        哲学家们都干了些什么-读书简记
+                      </a>
+                    
+                      <a  href='/2017/08/22/Effective-CPlus.html' class="list-group-item pjaxlink">
+                        Effective C++-读书简记
+                      </a>
+                    
+                      <a  href='/2017/08/14/Wealth-Freedom.html' class="list-group-item pjaxlink">
+                        通往财富自由之路-读书简记
+                      </a>
+                    
+                      <a  href='/2017/07/26/Linux-Shell.html' class="list-group-item pjaxlink">
+                        Linux命令行与Shell脚本编程大全-读书简记
+                      </a>
+                    
+                      <a  href='/2017/06/22/Deliberate-Practice.html' class="list-group-item pjaxlink">
+                        刻意练习-读书简记
+                      </a>
+                    
+                      <a  href='/2017/06/14/The-Non-Designers-Design-Book.html' class="list-group-item pjaxlink">
+                        写给大家看的设计书-读书简记
+                      </a>
+                    
+                      <a  href='/2017/06/08/The-Power-Of-Habit.html' class="list-group-item pjaxlink">
+                        习惯的力量-读书简记
+                      </a>
+                    
+                      <a  href='/2017/06/08/Good-Good-Study.html' class="list-group-item pjaxlink">
+                        好好学习-读书简记
+                      </a>
+                    
+                      <a  href='/2017/05/01/Search-Inside-Yourself.html' class="list-group-item pjaxlink">
+                        硅谷最受欢迎的情商课-读书简记
+                      </a>
+                    
+                      <a  href='/2017/05/01/RichDad-PoorDad.html' class="list-group-item pjaxlink">
+                        富爸爸，穷爸爸-读书简记
+                      </a>
+                    
+                      <a  href='/2017/05/01/How-Kids-Listen-Talk.html' class="list-group-item pjaxlink">
+                        如何说孩子才会听，怎么听孩子才会说-读书简记
+                      </a>
+                    
+                      <a  href='/2016/12/26/The-Path-of-Least-Resistance.html' class="list-group-item pjaxlink">
+                        阻力最小之路-读书简记
+                      </a>
+                    
+                      <a  href='/2016/12/07/ProGit.html' class="list-group-item pjaxlink">
+                        ProGit-读书简记
+                      </a>
+                    
+                      <a  href='/2016/11/27/Thinking-FastAndSlow.html' class="list-group-item pjaxlink">
+                        思考：快与慢-读书简记
+                      </a>
+                    
+                      <a  href='/2016/04/24/C-Language-Understanding.html' class="list-group-item pjaxlink">
+                        C语言深度剖析-读书简记
+                      </a>
+                    
+                      <a  href='/2016/04/11/Programming-Pearls.html' class="list-group-item pjaxlink">
+                        编程珠玑-读书简记
+                      </a>
+                    
+                      <a  href='/2016/03/25/HeadFirst-Design-Patterns.html' class="list-group-item pjaxlink">
+                        Head First 设计模式-读书简记
+                      </a>
+                    
+                      <a  href='/2016/01/03/Antifragile.html' class="list-group-item pjaxlink">
+                        反脆弱-读书简记
+                      </a>
+                    
+                      <a  href='/2015/06/23/Xiao-Qiang-Sheng-Zhi-Ji.html' class="list-group-item pjaxlink">
+                        小强升职记-读书简记
+                      </a>
+                    
+                      <a  href='/2015/05/12/Right-Mindfulness.html' class="list-group-item pjaxlink">
+                        观呼吸-读书简记
+                      </a>
+                    
+                      <a  href='/2015/04/13/Hackers-Painters.html' class="list-group-item pjaxlink">
+                        黑客与画家-读书简记
+                      </a>
+                    
+                      <a  href='/2015/03/23/Morning-Diary.html' class="list-group-item pjaxlink">
+                        晨间日记的奇迹-读书简记
+                      </a>
+                    
+                      <a  href='/2014/10/10/Learn-More-Study-Less.html' class="list-group-item pjaxlink">
+                        如何高效学习-读书简记
+                      </a>
+                    
+                      <a  href='/2014/09/04/Improv-Wisdom.html' class="list-group-item pjaxlink">
+                        即兴的智慧-读书简记
+                      </a>
+                    
+                      <a  href='/2014/08/24/The-Power-Of-Full-Engagement.html' class="list-group-item pjaxlink">
+                        精力管理-读书简记
+                      </a>
+                    
+                      <a  href='/2014/08/15/Thinking-In-CPlus.html' class="list-group-item pjaxlink">
+                        C++编程思想-读书简记
+                      </a>
+                    
+                      <a  href='/2014/08/03/Procrastination.html' class="list-group-item pjaxlink">
+                        拖延心理学-读书简记
+                      </a>
+                    
+                      <a  href='/2014/05/13/Self-Contral.html' class="list-group-item pjaxlink">
+                        自控力-读书简记
+                      </a>
+                    
+                      <a  href='/2014/03/06/Wei-Da-Shi-Ao-Chu-Lai-De.html' class="list-group-item pjaxlink">
+                        伟大是熬出来的-读书简记
+                      </a>
+                    
+                      <a  href='/2012/08/27/Life-Cannot-Bear-Light.html' class="list-group-item pjaxlink">
+                        生命不能承受之轻-读书简记
+                      </a>
+                    
+                      <a  href='/2012/08/17/Seven-Habits-Of-Highly-Effecitive.html' class="list-group-item pjaxlink">
+                        高效能人士的七个习惯-读书简记
+                      </a>
+                    
+                      <a  href='/2012/08/16/No-Excuse.html' class="list-group-item pjaxlink">
+                        没有任何借口-读书简记
+                      </a>
+                    
+                      <a  href='/2012/07/26/One-Minute-Yourself.html' class="list-group-item pjaxlink">
+                        一分钟的你自己-读书简记
+                      </a>
+                    
+                      <a  href='/2012/04/25/Life-Without-Limits.html' class="list-group-item pjaxlink">
+                        人生不设限-读书简记
+                      </a>
+                    
+                      <a  href='/2012/04/23/Dark-Time.html' class="list-group-item pjaxlink">
+                        暗时间-读书简记
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#精力时间管理">精力时间管理</a>
+                      <span class="badge pull-right">8</span>
+                    </h4>
+                  </div>
+                  <div id="精力时间管理" class="panel-collapse collapse">
+                    
+                      <a  href='/2015/06/23/Xiao-Qiang-Sheng-Zhi-Ji.html' class="list-group-item pjaxlink">
+                        小强升职记-读书简记
+                      </a>
+                    
+                      <a  href='/2015/05/12/Right-Mindfulness.html' class="list-group-item pjaxlink">
+                        观呼吸-读书简记
+                      </a>
+                    
+                      <a  href='/2015/03/23/Morning-Diary.html' class="list-group-item pjaxlink">
+                        晨间日记的奇迹-读书简记
+                      </a>
+                    
+                      <a  href='/2014/10/10/Learn-More-Study-Less.html' class="list-group-item pjaxlink">
+                        如何高效学习-读书简记
+                      </a>
+                    
+                      <a  href='/2014/08/24/The-Power-Of-Full-Engagement.html' class="list-group-item pjaxlink">
+                        精力管理-读书简记
+                      </a>
+                    
+                      <a  href='/2014/08/03/Procrastination.html' class="list-group-item pjaxlink">
+                        拖延心理学-读书简记
+                      </a>
+                    
+                      <a  href='/2012/08/17/Seven-Habits-Of-Highly-Effecitive.html' class="list-group-item pjaxlink">
+                        高效能人士的七个习惯-读书简记
+                      </a>
+                    
+                      <a  href='/2012/04/23/Dark-Time.html' class="list-group-item pjaxlink">
+                        暗时间-读书简记
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#记录">记录</a>
+                      <span class="badge pull-right">2</span>
+                    </h4>
+                  </div>
+                  <div id="记录" class="panel-collapse collapse">
+                    
+                      <a  href='/2021/06/10/JumpBoat.html' class="list-group-item pjaxlink">
+                        写在三十一岁-跳船简记
+                      </a>
+                    
+                      <a  href='/2012/07/18/What-You-Live-For.html' class="list-group-item pjaxlink">
+                        活着，为了什么
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Latex">Latex</a>
+                      <span class="badge pull-right">1</span>
+                    </h4>
+                  </div>
+                  <div id="Latex" class="panel-collapse collapse">
+                    
+                      <a  href='/2013/04/05/Latex-Experiences.html' class="list-group-item pjaxlink">
+                        使用Latex的一些经验技巧汇总
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Opencv">Opencv</a>
+                      <span class="badge pull-right">3</span>
+                    </h4>
+                  </div>
+                  <div id="Opencv" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/12/03/Linux-Opencv.html' class="list-group-item pjaxlink">
+                        Linux下Opencv的安装及配置使用
+                      </a>
+                    
+                      <a  href='/2014/12/03/Arm-Opencv.html' class="list-group-item pjaxlink">
+                        Opencv交叉编译及Arm平台移植
+                      </a>
+                    
+                      <a  href='/2013/04/06/Opencv-Problems.html' class="list-group-item pjaxlink">
+                        Opencv使用时的常见问题汇总
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#计算机视觉">计算机视觉</a>
+                      <span class="badge pull-right">25</span>
+                    </h4>
+                  </div>
+                  <div id="计算机视觉" class="panel-collapse collapse">
+                    
+                      <a  href='/2018/11/28/RefineDet.html' class="list-group-item pjaxlink">
+                        RefineDet-论文简记
+                      </a>
+                    
+                      <a  href='/2018/07/17/DQN.html' class="list-group-item pjaxlink">
+                        学习DQN（Deep Q-Learning Network）
+                      </a>
+                    
+                      <a  href='/2018/01/04/DenseNet.html' class="list-group-item pjaxlink">
+                        DenseNet-论文简记
+                      </a>
+                    
+                      <a  href='/2017/12/11/Tensorflow-GAN.html' class="list-group-item pjaxlink">
+                        TensorFlow实现生成对抗网络GAN-翻译
+                      </a>
+                    
+                      <a  href='/2017/12/08/Mask-RCNN.html' class="list-group-item pjaxlink">
+                        Mask RCNN-论文简记
+                      </a>
+                    
+                      <a  href='/2017/12/08/FPN.html' class="list-group-item pjaxlink">
+                        Feature Pyramid Networks for Object Detection-论文简记
+                      </a>
+                    
+                      <a  href='/2017/09/04/YOLOV2.html' class="list-group-item pjaxlink">
+                        目标检测之YOLOv2
+                      </a>
+                    
+                      <a  href='/2017/08/28/YOLO-SSD.html' class="list-group-item pjaxlink">
+                        目标检测之YOLO，SSD
+                      </a>
+                    
+                      <a  href='/2017/08/24/RCNN-FastRCNN-FasterRCNN.html' class="list-group-item pjaxlink">
+                        目标检测之RCNN，SPP-NET，Fast-RCNN，Faster-RCNN
+                      </a>
+                    
+                      <a  href='/2017/08/21/ResNet-Keras.html' class="list-group-item pjaxlink">
+                        ResNet的理解及其Keras实现
+                      </a>
+                    
+                      <a  href='/2017/08/18/GoogLeNet-Keras.html' class="list-group-item pjaxlink">
+                        GoogLeNet的理解及其Keras实现
+                      </a>
+                    
+                      <a  href='/2017/08/01/Run-SSD.html' class="list-group-item pjaxlink">
+                        配置SSD进行目标检测
+                      </a>
+                    
+                      <a  href='/2017/07/19/VGGNet-Keras.html' class="list-group-item pjaxlink">
+                        VGGNet的理解及其Keras实现
+                      </a>
+                    
+                      <a  href='/2017/07/18/AlexNet-Keras.html' class="list-group-item pjaxlink">
+                        AlexNet的理解及其Keras实现
+                      </a>
+                    
+                      <a  href='/2016/08/10/Master-SVM-Algorithm.html' class="list-group-item pjaxlink">
+                        理解SVM算法
+                      </a>
+                    
+                      <a  href='/2016/03/28/Least-Squares-Parameter-Estimation.html' class="list-group-item pjaxlink">
+                        最小二乘法的参数估计
+                      </a>
+                    
+                      <a  href='/2016/03/04/Projective-Transformation-And-Epipolar-Genmetry.html' class="list-group-item pjaxlink">
+                        视觉中的二维射影变换及多视角几何
+                      </a>
+                    
+                      <a  href='/2015/11/17/Master-Reinforcement-Learning-MDP.html' class="list-group-item pjaxlink">
+                        强化学习与马尔科夫决策过程
+                      </a>
+                    
+                      <a  href='/2015/11/12/Master-EM-Algorithm.html' class="list-group-item pjaxlink">
+                        理解EM算法
+                      </a>
+                    
+                      <a  href='/2015/10/15/RANSAC.html' class="list-group-item pjaxlink">
+                        理解图像配准中的LMeds、M-estimators与RANSAC算法
+                      </a>
+                    
+                      <a  href='/2015/09/25/KDTree.html' class="list-group-item pjaxlink">
+                        图像特征点匹配之KD-Tree
+                      </a>
+                    
+                      <a  href='/2015/03/27/Camera-Imaging-Model.html' class="list-group-item pjaxlink">
+                        摄像机成像的几何模型
+                      </a>
+                    
+                      <a  href='/2015/03/26/Morphology-Processing.html' class="list-group-item pjaxlink">
+                        形态学运算：膨胀，腐蚀，开运算，闭运算...
+                      </a>
+                    
+                      <a  href='/2014/10/22/Feature-Extraction-Selection.html' class="list-group-item pjaxlink">
+                        特征提取与特征选择
+                      </a>
+                    
+                      <a  href='/2013/04/11/Physical-Meaning-Of-The-Geometric-Moment.html' class="list-group-item pjaxlink">
+                        几何矩的物理意义，由Camshift算法引起
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#自我管理">自我管理</a>
+                      <span class="badge pull-right">6</span>
+                    </h4>
+                  </div>
+                  <div id="自我管理" class="panel-collapse collapse">
+                    
+                      <a  href='/2017/06/08/The-Power-Of-Habit.html' class="list-group-item pjaxlink">
+                        习惯的力量-读书简记
+                      </a>
+                    
+                      <a  href='/2017/06/08/Good-Good-Study.html' class="list-group-item pjaxlink">
+                        好好学习-读书简记
+                      </a>
+                    
+                      <a  href='/2017/05/01/Search-Inside-Yourself.html' class="list-group-item pjaxlink">
+                        硅谷最受欢迎的情商课-读书简记
+                      </a>
+                    
+                      <a  href='/2015/10/31/Booklist.html' class="list-group-item pjaxlink">
+                        我的阅读书单
+                      </a>
+                    
+                      <a  href='/2014/05/13/Self-Contral.html' class="list-group-item pjaxlink">
+                        自控力-读书简记
+                      </a>
+                    
+                      <a  href='/2014/03/06/Wei-Da-Shi-Ao-Chu-Lai-De.html' class="list-group-item pjaxlink">
+                        伟大是熬出来的-读书简记
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#嵌入式">嵌入式</a>
+                      <span class="badge pull-right">5</span>
+                    </h4>
+                  </div>
+                  <div id="嵌入式" class="panel-collapse collapse">
+                    
+                      <a  href='/2015/12/01/Arm-Environment-Problems.html' class="list-group-item pjaxlink">
+                        嵌入式ARM下常用环境的配置及常见问题汇总
+                      </a>
+                    
+                      <a  href='/2014/12/03/Arm-Opencv.html' class="list-group-item pjaxlink">
+                        Opencv交叉编译及Arm平台移植
+                      </a>
+                    
+                      <a  href='/2014/08/31/ImageTranslation-Using-UDP.html' class="list-group-item pjaxlink">
+                        利用UDP协议进行图像传输
+                      </a>
+                    
+                      <a  href='/2014/07/18/Arm-USBWifi.html' class="list-group-item pjaxlink">
+                        移植Wifi模块RT3070到ARM平台
+                      </a>
+                    
+                      <a  href='/2014/04/14/QT-Linux-Arm.html' class="list-group-item pjaxlink">
+                        Linux下PC版及ARM版QT环境配置，ARM移植及触摸屏支持
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Linux">Linux</a>
+                      <span class="badge pull-right">13</span>
+                    </h4>
+                  </div>
+                  <div id="Linux" class="panel-collapse collapse">
+                    
+                      <a  href='/2017/07/26/Linux-Shell.html' class="list-group-item pjaxlink">
+                        Linux命令行与Shell脚本编程大全-读书简记
+                      </a>
+                    
+                      <a  href='/2016/11/17/Ubuntu-CUDA.html' class="list-group-item pjaxlink">
+                        Ubuntu下搭建CUDA开发环境
+                      </a>
+                    
+                      <a  href='/2015/12/11/Wget.html' class="list-group-item pjaxlink">
+                        使用Wget下载整个网站
+                      </a>
+                    
+                      <a  href='/2015/12/01/Arm-Environment-Problems.html' class="list-group-item pjaxlink">
+                        嵌入式ARM下常用环境的配置及常见问题汇总
+                      </a>
+                    
+                      <a  href='/2015/11/28/Ubuntu-Softwares.html' class="list-group-item pjaxlink">
+                        Ubuntu下常用软件的安装使用及常见问题汇总
+                      </a>
+                    
+                      <a  href='/2015/05/15/Cygwin.html' class="list-group-item pjaxlink">
+                        Windows下Cygwin的使用
+                      </a>
+                    
+                      <a  href='/2014/12/05/UpperBody-Detection.html' class="list-group-item pjaxlink">
+                        Upper-Body Detection源码配置及使用
+                      </a>
+                    
+                      <a  href='/2014/12/03/Linux-Opencv.html' class="list-group-item pjaxlink">
+                        Linux下Opencv的安装及配置使用
+                      </a>
+                    
+                      <a  href='/2014/12/03/Linux-Matlab.html' class="list-group-item pjaxlink">
+                        Linux下Matlab的安装及配置使用
+                      </a>
+                    
+                      <a  href='/2014/11/19/Human-Body-Detection.html' class="list-group-item pjaxlink">
+                        ICF，DPM等行人检测算法实践
+                      </a>
+                    
+                      <a  href='/2014/08/31/ImageTranslation-Using-UDP.html' class="list-group-item pjaxlink">
+                        利用UDP协议进行图像传输
+                      </a>
+                    
+                      <a  href='/2014/07/18/Arm-USBWifi.html' class="list-group-item pjaxlink">
+                        移植Wifi模块RT3070到ARM平台
+                      </a>
+                    
+                      <a  href='/2014/04/14/QT-Linux-Arm.html' class="list-group-item pjaxlink">
+                        Linux下PC版及ARM版QT环境配置，ARM移植及触摸屏支持
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Arm">Arm</a>
+                      <span class="badge pull-right">5</span>
+                    </h4>
+                  </div>
+                  <div id="Arm" class="panel-collapse collapse">
+                    
+                      <a  href='/2015/12/01/Arm-Environment-Problems.html' class="list-group-item pjaxlink">
+                        嵌入式ARM下常用环境的配置及常见问题汇总
+                      </a>
+                    
+                      <a  href='/2014/12/03/Arm-Opencv.html' class="list-group-item pjaxlink">
+                        Opencv交叉编译及Arm平台移植
+                      </a>
+                    
+                      <a  href='/2014/08/31/ImageTranslation-Using-UDP.html' class="list-group-item pjaxlink">
+                        利用UDP协议进行图像传输
+                      </a>
+                    
+                      <a  href='/2014/07/18/Arm-USBWifi.html' class="list-group-item pjaxlink">
+                        移植Wifi模块RT3070到ARM平台
+                      </a>
+                    
+                      <a  href='/2014/04/14/QT-Linux-Arm.html' class="list-group-item pjaxlink">
+                        Linux下PC版及ARM版QT环境配置，ARM移植及触摸屏支持
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#安装配置">安装配置</a>
+                      <span class="badge pull-right">16</span>
+                    </h4>
+                  </div>
+                  <div id="安装配置" class="panel-collapse collapse">
+                    
+                      <a  href='/2017/12/14/Wechat-RSS-Huginn.html' class="list-group-item pjaxlink">
+                        高效工作—优雅的阅读微信公众号
+                      </a>
+                    
+                      <a  href='/2017/08/01/Run-SSD.html' class="list-group-item pjaxlink">
+                        配置SSD进行目标检测
+                      </a>
+                    
+                      <a  href='/2016/11/17/Ubuntu-CUDA.html' class="list-group-item pjaxlink">
+                        Ubuntu下搭建CUDA开发环境
+                      </a>
+                    
+                      <a  href='/2015/08/25/System-Install.html' class="list-group-item pjaxlink">
+                        装机相关问题汇总
+                      </a>
+                    
+                      <a  href='/2015/08/07/NormalizedCut-CPlus-Codes.html' class="list-group-item pjaxlink">
+                        Normalized Cut的C++源码
+                      </a>
+                    
+                      <a  href='/2015/05/15/Cygwin.html' class="list-group-item pjaxlink">
+                        Windows下Cygwin的使用
+                      </a>
+                    
+                      <a  href='/2015/04/01/Windows-Tips.html' class="list-group-item pjaxlink">
+                        Windows系统下的一些经验技巧
+                      </a>
+                    
+                      <a  href='/2014/12/18/License-Plate-Detection-Recognition.html' class="list-group-item pjaxlink">
+                        车牌检测及识别 OpenALPR
+                      </a>
+                    
+                      <a  href='/2014/12/05/UpperBody-Detection.html' class="list-group-item pjaxlink">
+                        Upper-Body Detection源码配置及使用
+                      </a>
+                    
+                      <a  href='/2014/12/03/Linux-Opencv.html' class="list-group-item pjaxlink">
+                        Linux下Opencv的安装及配置使用
+                      </a>
+                    
+                      <a  href='/2014/12/03/Linux-Matlab.html' class="list-group-item pjaxlink">
+                        Linux下Matlab的安装及配置使用
+                      </a>
+                    
+                      <a  href='/2014/12/03/Arm-Opencv.html' class="list-group-item pjaxlink">
+                        Opencv交叉编译及Arm平台移植
+                      </a>
+                    
+                      <a  href='/2014/11/19/Human-Body-Detection.html' class="list-group-item pjaxlink">
+                        ICF，DPM等行人检测算法实践
+                      </a>
+                    
+                      <a  href='/2014/08/06/TesseractOCR.html' class="list-group-item pjaxlink">
+                        使用Tesseract-OCR进行文字识别
+                      </a>
+                    
+                      <a  href='/2014/07/18/Arm-USBWifi.html' class="list-group-item pjaxlink">
+                        移植Wifi模块RT3070到ARM平台
+                      </a>
+                    
+                      <a  href='/2014/04/14/QT-Linux-Arm.html' class="list-group-item pjaxlink">
+                        Linux下PC版及ARM版QT环境配置，ARM移植及触摸屏支持
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#编程">编程</a>
+                      <span class="badge pull-right">27</span>
+                    </h4>
+                  </div>
+                  <div id="编程" class="panel-collapse collapse">
+                    
+                      <a  href='/2018/09/04/Sedentary-Reminder.html' class="list-group-item pjaxlink">
+                        健康工作—智能久坐提醒软件
+                      </a>
+                    
+                      <a  href='/2018/08/29/Coding-BookList.html' class="list-group-item pjaxlink">
+                        编程经典图书-排名榜
+                      </a>
+                    
+                      <a  href='/2017/11/09/Cuda-By-Example.html' class="list-group-item pjaxlink">
+                        GPU高性能编程CUDA实战-读书简记
+                      </a>
+                    
+                      <a  href='/2017/09/29/Cpp-Concurrency-In-Action.html' class="list-group-item pjaxlink">
+                        C++并发编程实战-读书简记
+                      </a>
+                    
+                      <a  href='/2017/08/22/Effective-CPlus.html' class="list-group-item pjaxlink">
+                        Effective C++-读书简记
+                      </a>
+                    
+                      <a  href='/2017/03/14/DoubanBackup.html' class="list-group-item pjaxlink">
+                        豆瓣离线备份-Shell脚本
+                      </a>
+                    
+                      <a  href='/2016/11/17/Ubuntu-CUDA.html' class="list-group-item pjaxlink">
+                        Ubuntu下搭建CUDA开发环境
+                      </a>
+                    
+                      <a  href='/2016/08/18/Keyboard-Shortcut.html' class="list-group-item pjaxlink">
+                        高效工作—快捷键整理
+                      </a>
+                    
+                      <a  href='/2016/04/24/C-Language-Understanding.html' class="list-group-item pjaxlink">
+                        C语言深度剖析-读书简记
+                      </a>
+                    
+                      <a  href='/2016/04/11/Programming-Pearls.html' class="list-group-item pjaxlink">
+                        编程珠玑-读书简记
+                      </a>
+                    
+                      <a  href='/2016/03/25/HeadFirst-Design-Patterns.html' class="list-group-item pjaxlink">
+                        Head First 设计模式-读书简记
+                      </a>
+                    
+                      <a  href='/2016/03/15/Lianjia-Spider.html' class="list-group-item pjaxlink">
+                        链家爬虫
+                      </a>
+                    
+                      <a  href='/2016/01/29/Python-File.html' class="list-group-item pjaxlink">
+                        Python的文件操作与输入输出
+                      </a>
+                    
+                      <a  href='/2016/01/08/Python-DicSet.html' class="list-group-item pjaxlink">
+                        Python的映射和集合类型
+                      </a>
+                    
+                      <a  href='/2015/12/21/Python-Sequence.html' class="list-group-item pjaxlink">
+                        Python序列相关知识总结
+                      </a>
+                    
+                      <a  href='/2015/12/04/CSDN-BlogBackup-Python.html' class="list-group-item pjaxlink">
+                        Python实现CSDN博客的完整备份
+                      </a>
+                    
+                      <a  href='/2015/10/31/Self-Wrote-Tools.html' class="list-group-item pjaxlink">
+                        自己造的轮子们 开源
+                      </a>
+                    
+                      <a  href='/2015/10/25/Multithreading.html' class="list-group-item pjaxlink">
+                        多线程编程中的几个概念
+                      </a>
+                    
+                      <a  href='/2015/09/21/ClassifyPictures.html' class="list-group-item pjaxlink">
+                        按拍摄日期一键归类照片 Python
+                      </a>
+                    
+                      <a  href='/2014/12/16/Theano-GPU.html' class="list-group-item pjaxlink">
+                        Theano利用GPU进行深度学习加速的配置及使用
+                      </a>
+                    
+                      <a  href='/2014/12/03/Linux-Opencv.html' class="list-group-item pjaxlink">
+                        Linux下Opencv的安装及配置使用
+                      </a>
+                    
+                      <a  href='/2014/12/03/Arm-Opencv.html' class="list-group-item pjaxlink">
+                        Opencv交叉编译及Arm平台移植
+                      </a>
+                    
+                      <a  href='/2014/11/14/Python-Problems.html' class="list-group-item pjaxlink">
+                        Python使用过程中常见问题汇总
+                      </a>
+                    
+                      <a  href='/2014/11/05/Git-Commands.html' class="list-group-item pjaxlink">
+                        Git常用命令总结
+                      </a>
+                    
+                      <a  href='/2014/09/20/Regular-Expression.html' class="list-group-item pjaxlink">
+                        正则表达式及在Python中的使用
+                      </a>
+                    
+                      <a  href='/2014/08/31/ImageTranslation-Using-UDP.html' class="list-group-item pjaxlink">
+                        利用UDP协议进行图像传输
+                      </a>
+                    
+                      <a  href='/2014/08/15/Thinking-In-CPlus.html' class="list-group-item pjaxlink">
+                        C++编程思想-读书简记
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#开源">开源</a>
+                      <span class="badge pull-right">6</span>
+                    </h4>
+                  </div>
+                  <div id="开源" class="panel-collapse collapse">
+                    
+                      <a  href='/2017/03/14/DoubanBackup.html' class="list-group-item pjaxlink">
+                        豆瓣离线备份-Shell脚本
+                      </a>
+                    
+                      <a  href='/2016/03/15/Lianjia-Spider.html' class="list-group-item pjaxlink">
+                        链家爬虫
+                      </a>
+                    
+                      <a  href='/2015/12/04/CSDN-BlogBackup-Python.html' class="list-group-item pjaxlink">
+                        Python实现CSDN博客的完整备份
+                      </a>
+                    
+                      <a  href='/2015/10/31/Self-Wrote-Tools.html' class="list-group-item pjaxlink">
+                        自己造的轮子们 开源
+                      </a>
+                    
+                      <a  href='/2015/09/21/ClassifyPictures.html' class="list-group-item pjaxlink">
+                        按拍摄日期一键归类照片 Python
+                      </a>
+                    
+                      <a  href='/2014/08/31/ImageTranslation-Using-UDP.html' class="list-group-item pjaxlink">
+                        利用UDP协议进行图像传输
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Python">Python</a>
+                      <span class="badge pull-right">10</span>
+                    </h4>
+                  </div>
+                  <div id="Python" class="panel-collapse collapse">
+                    
+                      <a  href='/2017/03/14/DoubanBackup.html' class="list-group-item pjaxlink">
+                        豆瓣离线备份-Shell脚本
+                      </a>
+                    
+                      <a  href='/2016/03/15/Lianjia-Spider.html' class="list-group-item pjaxlink">
+                        链家爬虫
+                      </a>
+                    
+                      <a  href='/2016/01/29/Python-File.html' class="list-group-item pjaxlink">
+                        Python的文件操作与输入输出
+                      </a>
+                    
+                      <a  href='/2016/01/08/Python-DicSet.html' class="list-group-item pjaxlink">
+                        Python的映射和集合类型
+                      </a>
+                    
+                      <a  href='/2015/12/21/Python-Sequence.html' class="list-group-item pjaxlink">
+                        Python序列相关知识总结
+                      </a>
+                    
+                      <a  href='/2015/12/04/CSDN-BlogBackup-Python.html' class="list-group-item pjaxlink">
+                        Python实现CSDN博客的完整备份
+                      </a>
+                    
+                      <a  href='/2015/09/21/ClassifyPictures.html' class="list-group-item pjaxlink">
+                        按拍摄日期一键归类照片 Python
+                      </a>
+                    
+                      <a  href='/2014/12/16/Theano-GPU.html' class="list-group-item pjaxlink">
+                        Theano利用GPU进行深度学习加速的配置及使用
+                      </a>
+                    
+                      <a  href='/2014/11/14/Python-Problems.html' class="list-group-item pjaxlink">
+                        Python使用过程中常见问题汇总
+                      </a>
+                    
+                      <a  href='/2014/09/20/Regular-Expression.html' class="list-group-item pjaxlink">
+                        正则表达式及在Python中的使用
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#机器学习">机器学习</a>
+                      <span class="badge pull-right">21</span>
+                    </h4>
+                  </div>
+                  <div id="机器学习" class="panel-collapse collapse">
+                    
+                      <a  href='/2018/11/28/RefineDet.html' class="list-group-item pjaxlink">
+                        RefineDet-论文简记
+                      </a>
+                    
+                      <a  href='/2018/08/29/Machine-Learning-BookList.html' class="list-group-item pjaxlink">
+                        机器学习经典图书-排名榜
+                      </a>
+                    
+                      <a  href='/2018/07/17/DQN.html' class="list-group-item pjaxlink">
+                        学习DQN（Deep Q-Learning Network）
+                      </a>
+                    
+                      <a  href='/2018/01/04/DenseNet.html' class="list-group-item pjaxlink">
+                        DenseNet-论文简记
+                      </a>
+                    
+                      <a  href='/2017/12/11/Tensorflow-GAN.html' class="list-group-item pjaxlink">
+                        TensorFlow实现生成对抗网络GAN-翻译
+                      </a>
+                    
+                      <a  href='/2017/12/08/Mask-RCNN.html' class="list-group-item pjaxlink">
+                        Mask RCNN-论文简记
+                      </a>
+                    
+                      <a  href='/2017/12/08/FPN.html' class="list-group-item pjaxlink">
+                        Feature Pyramid Networks for Object Detection-论文简记
+                      </a>
+                    
+                      <a  href='/2017/09/04/YOLOV2.html' class="list-group-item pjaxlink">
+                        目标检测之YOLOv2
+                      </a>
+                    
+                      <a  href='/2017/08/28/YOLO-SSD.html' class="list-group-item pjaxlink">
+                        目标检测之YOLO，SSD
+                      </a>
+                    
+                      <a  href='/2017/08/24/RCNN-FastRCNN-FasterRCNN.html' class="list-group-item pjaxlink">
+                        目标检测之RCNN，SPP-NET，Fast-RCNN，Faster-RCNN
+                      </a>
+                    
+                      <a  href='/2017/08/21/ResNet-Keras.html' class="list-group-item pjaxlink">
+                        ResNet的理解及其Keras实现
+                      </a>
+                    
+                      <a  href='/2017/08/18/GoogLeNet-Keras.html' class="list-group-item pjaxlink">
+                        GoogLeNet的理解及其Keras实现
+                      </a>
+                    
+                      <a  href='/2017/08/01/Run-SSD.html' class="list-group-item pjaxlink">
+                        配置SSD进行目标检测
+                      </a>
+                    
+                      <a  href='/2017/07/19/VGGNet-Keras.html' class="list-group-item pjaxlink">
+                        VGGNet的理解及其Keras实现
+                      </a>
+                    
+                      <a  href='/2017/07/18/AlexNet-Keras.html' class="list-group-item pjaxlink">
+                        AlexNet的理解及其Keras实现
+                      </a>
+                    
+                      <a  href='/2016/08/10/Master-SVM-Algorithm.html' class="list-group-item pjaxlink">
+                        理解SVM算法
+                      </a>
+                    
+                      <a  href='/2015/11/17/Master-Reinforcement-Learning-MDP.html' class="list-group-item pjaxlink">
+                        强化学习与马尔科夫决策过程
+                      </a>
+                    
+                      <a  href='/2015/11/12/Master-EM-Algorithm.html' class="list-group-item pjaxlink">
+                        理解EM算法
+                      </a>
+                    
+                      <a  href='/2014/12/16/Theano-GPU.html' class="list-group-item pjaxlink">
+                        Theano利用GPU进行深度学习加速的配置及使用
+                      </a>
+                    
+                      <a  href='/2014/11/07/Neural-Network.html' class="list-group-item pjaxlink">
+                        神经网络的理解
+                      </a>
+                    
+                      <a  href='/2014/10/22/Feature-Extraction-Selection.html' class="list-group-item pjaxlink">
+                        特征提取与特征选择
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#模式识别">模式识别</a>
+                      <span class="badge pull-right">19</span>
+                    </h4>
+                  </div>
+                  <div id="模式识别" class="panel-collapse collapse">
+                    
+                      <a  href='/2018/11/28/RefineDet.html' class="list-group-item pjaxlink">
+                        RefineDet-论文简记
+                      </a>
+                    
+                      <a  href='/2018/01/04/DenseNet.html' class="list-group-item pjaxlink">
+                        DenseNet-论文简记
+                      </a>
+                    
+                      <a  href='/2017/12/11/Tensorflow-GAN.html' class="list-group-item pjaxlink">
+                        TensorFlow实现生成对抗网络GAN-翻译
+                      </a>
+                    
+                      <a  href='/2017/12/08/Mask-RCNN.html' class="list-group-item pjaxlink">
+                        Mask RCNN-论文简记
+                      </a>
+                    
+                      <a  href='/2017/12/08/FPN.html' class="list-group-item pjaxlink">
+                        Feature Pyramid Networks for Object Detection-论文简记
+                      </a>
+                    
+                      <a  href='/2017/09/04/YOLOV2.html' class="list-group-item pjaxlink">
+                        目标检测之YOLOv2
+                      </a>
+                    
+                      <a  href='/2017/08/28/YOLO-SSD.html' class="list-group-item pjaxlink">
+                        目标检测之YOLO，SSD
+                      </a>
+                    
+                      <a  href='/2017/08/24/RCNN-FastRCNN-FasterRCNN.html' class="list-group-item pjaxlink">
+                        目标检测之RCNN，SPP-NET，Fast-RCNN，Faster-RCNN
+                      </a>
+                    
+                      <a  href='/2017/08/21/ResNet-Keras.html' class="list-group-item pjaxlink">
+                        ResNet的理解及其Keras实现
+                      </a>
+                    
+                      <a  href='/2017/08/18/GoogLeNet-Keras.html' class="list-group-item pjaxlink">
+                        GoogLeNet的理解及其Keras实现
+                      </a>
+                    
+                      <a  href='/2017/07/19/VGGNet-Keras.html' class="list-group-item pjaxlink">
+                        VGGNet的理解及其Keras实现
+                      </a>
+                    
+                      <a  href='/2017/07/18/AlexNet-Keras.html' class="list-group-item pjaxlink">
+                        AlexNet的理解及其Keras实现
+                      </a>
+                    
+                      <a  href='/2016/08/10/Master-SVM-Algorithm.html' class="list-group-item pjaxlink">
+                        理解SVM算法
+                      </a>
+                    
+                      <a  href='/2016/03/04/Projective-Transformation-And-Epipolar-Genmetry.html' class="list-group-item pjaxlink">
+                        视觉中的二维射影变换及多视角几何
+                      </a>
+                    
+                      <a  href='/2015/11/17/Master-Reinforcement-Learning-MDP.html' class="list-group-item pjaxlink">
+                        强化学习与马尔科夫决策过程
+                      </a>
+                    
+                      <a  href='/2015/11/12/Master-EM-Algorithm.html' class="list-group-item pjaxlink">
+                        理解EM算法
+                      </a>
+                    
+                      <a  href='/2015/03/27/Camera-Imaging-Model.html' class="list-group-item pjaxlink">
+                        摄像机成像的几何模型
+                      </a>
+                    
+                      <a  href='/2014/11/07/Neural-Network.html' class="list-group-item pjaxlink">
+                        神经网络的理解
+                      </a>
+                    
+                      <a  href='/2014/10/22/Feature-Extraction-Selection.html' class="list-group-item pjaxlink">
+                        特征提取与特征选择
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Git">Git</a>
+                      <span class="badge pull-right">2</span>
+                    </h4>
+                  </div>
+                  <div id="Git" class="panel-collapse collapse">
+                    
+                      <a  href='/2016/12/07/ProGit.html' class="list-group-item pjaxlink">
+                        ProGit-读书简记
+                      </a>
+                    
+                      <a  href='/2014/11/05/Git-Commands.html' class="list-group-item pjaxlink">
+                        Git常用命令总结
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Matlab">Matlab</a>
+                      <span class="badge pull-right">1</span>
+                    </h4>
+                  </div>
+                  <div id="Matlab" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/12/03/Linux-Matlab.html' class="list-group-item pjaxlink">
+                        Linux下Matlab的安装及配置使用
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#图像特征点匹配">图像特征点匹配</a>
+                      <span class="badge pull-right">3</span>
+                    </h4>
+                  </div>
+                  <div id="图像特征点匹配" class="panel-collapse collapse">
+                    
+                      <a  href='/2016/03/28/Least-Squares-Parameter-Estimation.html' class="list-group-item pjaxlink">
+                        最小二乘法的参数估计
+                      </a>
+                    
+                      <a  href='/2015/10/15/RANSAC.html' class="list-group-item pjaxlink">
+                        理解图像配准中的LMeds、M-estimators与RANSAC算法
+                      </a>
+                    
+                      <a  href='/2015/09/25/KDTree.html' class="list-group-item pjaxlink">
+                        图像特征点匹配之KD-Tree
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#设计模式">设计模式</a>
+                      <span class="badge pull-right">1</span>
+                    </h4>
+                  </div>
+                  <div id="设计模式" class="panel-collapse collapse">
+                    
+                      <a  href='/2016/03/25/HeadFirst-Design-Patterns.html' class="list-group-item pjaxlink">
+                        Head First 设计模式-读书简记
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#分享">分享</a>
+                      <span class="badge pull-right">12</span>
+                    </h4>
+                  </div>
+                  <div id="分享" class="panel-collapse collapse">
+                    
+                      <a  href='/2021/03/12/The-Most-Important-Investment.html' class="list-group-item pjaxlink">
+                        最重要的投资
+                      </a>
+                    
+                      <a  href='/2020/04/08/SoBookPlus.html' class="list-group-item pjaxlink">
+                        挖掘好书神器-书海星空
+                      </a>
+                    
+                      <a  href='/2020/04/08/SoBookPlus.html' class="list-group-item pjaxlink">
+                        挖掘好书神器-书海星空
+                      </a>
+                    
+                      <a  href='/2019/12/18/DoubanBookTop999.html' class="list-group-item pjaxlink">
+                        豆瓣图书TOP 999
+                      </a>
+                    
+                      <a  href='/2019/12/18/DoubanBookFavoriteTop999.html' class="list-group-item pjaxlink">
+                        豆瓣图书最受欢迎的TOP 999
+                      </a>
+                    
+                      <a  href='/2018/12/06/SoBook.html' class="list-group-item pjaxlink">
+                        挖掘好书神器-好书一下
+                      </a>
+                    
+                      <a  href='/2018/09/04/Sedentary-Reminder.html' class="list-group-item pjaxlink">
+                        健康工作—智能久坐提醒软件
+                      </a>
+                    
+                      <a  href='/2018/08/29/Machine-Learning-BookList.html' class="list-group-item pjaxlink">
+                        机器学习经典图书-排名榜
+                      </a>
+                    
+                      <a  href='/2018/08/29/Coding-BookList.html' class="list-group-item pjaxlink">
+                        编程经典图书-排名榜
+                      </a>
+                    
+                      <a  href='/2017/12/14/Wechat-RSS-Huginn.html' class="list-group-item pjaxlink">
+                        高效工作—优雅的阅读微信公众号
+                      </a>
+                    
+                      <a  href='/2016/08/18/Keyboard-Shortcut.html' class="list-group-item pjaxlink">
+                        高效工作—快捷键整理
+                      </a>
+                    
+                      <a  href='/2016/04/14/ZhiHu-Good-Answers.html' class="list-group-item pjaxlink">
+                        知乎上赞同数最高的999个回答
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#技术">技术</a>
+                      <span class="badge pull-right">2</span>
+                    </h4>
+                  </div>
+                  <div id="技术" class="panel-collapse collapse">
+                    
+                      <a  href='/2017/07/26/Linux-Shell.html' class="list-group-item pjaxlink">
+                        Linux命令行与Shell脚本编程大全-读书简记
+                      </a>
+                    
+                      <a  href='/2016/12/07/ProGit.html' class="list-group-item pjaxlink">
+                        ProGit-读书简记
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#育儿育己">育儿育己</a>
+                      <span class="badge pull-right">7</span>
+                    </h4>
+                  </div>
+                  <div id="育儿育己" class="panel-collapse collapse">
+                    
+                      <a  href='/2018/10/23/PET.html' class="list-group-item pjaxlink">
+                        P·E·T父母效能训练-读书简记
+                      </a>
+                    
+                      <a  href='/2018/07/11/Playful-Parenting.html' class="list-group-item pjaxlink">
+                        游戏力-读书简记
+                      </a>
+                    
+                      <a  href='/2018/05/22/Dtzt.html' class="list-group-item pjaxlink">
+                        登天之梯-读书简记
+                      </a>
+                    
+                      <a  href='/2018/05/15/Xhsx.html' class="list-group-item pjaxlink">
+                        为什么学生不喜欢上学-读书简记
+                      </a>
+                    
+                      <a  href='/2017/11/29/Brain-Rules.html' class="list-group-item pjaxlink">
+                        让大脑自由：释放天赋的12条定律-读书简记
+                      </a>
+                    
+                      <a  href='/2017/11/11/Yang-Yu-De-Xuan-Ze.html' class="list-group-item pjaxlink">
+                        养育的选择-读书简记
+                      </a>
+                    
+                      <a  href='/2017/05/01/How-Kids-Listen-Talk.html' class="list-group-item pjaxlink">
+                        如何说孩子才会听，怎么听孩子才会说-读书简记
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Shell">Shell</a>
+                      <span class="badge pull-right">1</span>
+                    </h4>
+                  </div>
+                  <div id="Shell" class="panel-collapse collapse">
+                    
+                      <a  href='/2017/07/26/Linux-Shell.html' class="list-group-item pjaxlink">
+                        Linux命令行与Shell脚本编程大全-读书简记
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#深度学习">深度学习</a>
+                      <span class="badge pull-right">2</span>
+                    </h4>
+                  </div>
+                  <div id="深度学习" class="panel-collapse collapse">
+                    
+                      <a  href='/2018/07/17/DQN.html' class="list-group-item pjaxlink">
+                        学习DQN（Deep Q-Learning Network）
+                      </a>
+                    
+                      <a  href='/2017/08/01/Run-SSD.html' class="list-group-item pjaxlink">
+                        配置SSD进行目标检测
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#目标检测">目标检测</a>
+                      <span class="badge pull-right">5</span>
+                    </h4>
+                  </div>
+                  <div id="目标检测" class="panel-collapse collapse">
+                    
+                      <a  href='/2017/12/08/Mask-RCNN.html' class="list-group-item pjaxlink">
+                        Mask RCNN-论文简记
+                      </a>
+                    
+                      <a  href='/2017/12/08/FPN.html' class="list-group-item pjaxlink">
+                        Feature Pyramid Networks for Object Detection-论文简记
+                      </a>
+                    
+                      <a  href='/2017/09/04/YOLOV2.html' class="list-group-item pjaxlink">
+                        目标检测之YOLOv2
+                      </a>
+                    
+                      <a  href='/2017/08/28/YOLO-SSD.html' class="list-group-item pjaxlink">
+                        目标检测之YOLO，SSD
+                      </a>
+                    
+                      <a  href='/2017/08/24/RCNN-FastRCNN-FasterRCNN.html' class="list-group-item pjaxlink">
+                        目标检测之RCNN，SPP-NET，Fast-RCNN，Faster-RCNN
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#论文简记">论文简记</a>
+                      <span class="badge pull-right">2</span>
+                    </h4>
+                  </div>
+                  <div id="论文简记" class="panel-collapse collapse">
+                    
+                      <a  href='/2017/12/08/Mask-RCNN.html' class="list-group-item pjaxlink">
+                        Mask RCNN-论文简记
+                      </a>
+                    
+                      <a  href='/2017/12/08/FPN.html' class="list-group-item pjaxlink">
+                        Feature Pyramid Networks for Object Detection-论文简记
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#翻译">翻译</a>
+                      <span class="badge pull-right">1</span>
+                    </h4>
+                  </div>
+                  <div id="翻译" class="panel-collapse collapse">
+                    
+                      <a  href='/2017/12/11/Tensorflow-GAN.html' class="list-group-item pjaxlink">
+                        TensorFlow实现生成对抗网络GAN-翻译
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#经管理财">经管理财</a>
+                      <span class="badge pull-right">3</span>
+                    </h4>
+                  </div>
+                  <div id="经管理财" class="panel-collapse collapse">
+                    
+                      <a  href='/2018/03/20/Jianqi.html' class="list-group-item pjaxlink">
+                        跟简七学理财-课程简记
+                      </a>
+                    
+                      <a  href='/2018/03/20/Index-Fund-2017.html' class="list-group-item pjaxlink">
+                        指数基金投资指南（2017中信版）-读书简记
+                      </a>
+                    
+                      <a  href='/2018/03/20/Index-Fund-2015.html' class="list-group-item pjaxlink">
+                        指数基金投资指南（2015雪球版）-读书简记
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#书单">书单</a>
+                      <span class="badge pull-right">7</span>
+                    </h4>
+                  </div>
+                  <div id="书单" class="panel-collapse collapse">
+                    
+                      <a  href='/2021/03/12/The-Most-Important-Investment.html' class="list-group-item pjaxlink">
+                        最重要的投资
+                      </a>
+                    
+                      <a  href='/2020/04/08/SoBookPlus.html' class="list-group-item pjaxlink">
+                        挖掘好书神器-书海星空
+                      </a>
+                    
+                      <a  href='/2019/12/18/DoubanBookTop999.html' class="list-group-item pjaxlink">
+                        豆瓣图书TOP 999
+                      </a>
+                    
+                      <a  href='/2019/12/18/DoubanBookFavoriteTop999.html' class="list-group-item pjaxlink">
+                        豆瓣图书最受欢迎的TOP 999
+                      </a>
+                    
+                      <a  href='/2018/12/06/SoBook.html' class="list-group-item pjaxlink">
+                        挖掘好书神器-好书一下
+                      </a>
+                    
+                      <a  href='/2018/08/29/Machine-Learning-BookList.html' class="list-group-item pjaxlink">
+                        机器学习经典图书-排名榜
+                      </a>
+                    
+                      <a  href='/2018/08/29/Coding-BookList.html' class="list-group-item pjaxlink">
+                        编程经典图书-排名榜
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="col-md-13 col-lg-13 col-sm-13 col-xs-13 aside3">
+        <div id="container">
+          <div id="pjax">
+            <div class="row">
+  <div class="col-md-13 aside3-title">
+    <br>
+    <h2 id="#identifier">病毒学概览-读书简记</h2>
+    2020年02月22日
+  </div>
+  <div class="col-md-13 aside3-content">
+    <hr>
+    <div id="content">
+      <h3>第一篇 彻底理解病毒的思维</h3>
+
+<p><hr></p>
+
+<h3>第一章 组织方法</h3>
+
+<p><hr></p>
+
+<h4>摘录</h4>
+
+<p><hr></p>
+
+<p>每个病毒必须解决的四个问题</p>
+
+<p>1 感染宿主细胞</p>
+
+<p>每种病毒所必须解决的第一个问题就是如何进入并感染它的靶细胞。这个“决定”很重要，部分是因为一个病毒选择进入的路线，将会决定它必须克服哪种宿主的防御系统才能获得最后的胜利。病毒主要使用4种进化出的感染途径：病毒可以被吸入，也可以被摄入，也能通过母亲传播给小孩，而且也能通过亲密的物理接触而获得。每种途径都有它们自己的一套抵抗宿主防御的机制。</p>
+
+<p>病毒一般喜欢感染大型器官。</p>
+
+<p>2 宿主细胞内的增殖</p>
+
+<p>每个病毒必须解决的第二个问题是如何在它的靶细胞中增殖。</p>
+
+<p>3 逃避宿主防御</p>
+
+<p>人类已经进化出了可以检测病毒入侵者并能严厉处理它们的复杂机制。所以，每种成功的病毒必须解决的第三个问题就是如何长期逃避宿主的抗病毒防御系统，以便能够坚持到感染下一个宿主，或者在原始宿主中建立起一个潜伏的或者长期的感染——以后再从这个原始宿主进行传播。</p>
+
+<p>4 传播到新宿主</p>
+
+<p>每个病毒所必须解决的第四个问题就是如何从个感染者传播到另一个。</p>
+
+<h4>一般原则</h4>
+
+<p><hr></p>
+
+<p>在这章中，我们谈到了一些原理，这些原理可以应用到大多数病毒，并且在许多情况下，对所有病毒都适用。我将把每章中讨论的这些原理都列举在其后面。</p>
+
+<p>1 病毒是包裹在一个保护性外壳中的RNA或者DNA片段。这些简单的有机体已经进化成为能在其所感染的细胞内部进行增殖，在其外部也能生存的寄生物。</p>
+
+<p>2 现在可以干扰人类的病毒都起源于那些组成植物、人类、鸟类和动物的细胞。</p>
+
+<p>3 每种病毒必须解决的4个基本问题是：怎么感染它的人类宿主，怎么在宿主中增殖，怎么逃避宿主的防御措施，以及怎么把感染传播到下一个宿主。</p>
+
+<p>4 病毒进化出了4种主要的感染途径：病毒可以被吸入，病毒可以被摄入，病毒可以从母亲传递到孩子，病毒也可以通过亲密的物理接触而获得。</p>
+
+<p>5 大多数病毒对于它们所要感染的细胞非常挑剔不是任何细胞都可以被感染。</p>
+
+<p>6 一种病毒的增殖策略必须有两部分：一部分是复制它的遗传信息，另一部分是生产能翻译病毒蛋白质的信使RNA。</p>
+
+<p>7 病毒不需要完全逃避开宿主的防御措施。病毒逃避宿主防御的时间只要长到它能传播到另一个宿主，或者能在这段时间内在原始的宿主内建立起一个潜在的或者长期的感染即可—只要不死，以后再传播也不迟。</p>
+
+<h3>第二章 宿主防御</h3>
+
+<p><hr></p>
+
+<h4>摘录</h4>
+
+<p><hr></p>
+
+<p>人类有三种主要类型的防御机制：物理屏障、先天免疫系统、适应免疫系统。</p>
+
+<p>屏障防御：病毒必须克服的第一道防线是一个物理屏障：成片的细胞覆盖在我们身体表面，并且还衬于其内部空腔的底部。</p>
+
+<p>先天防御系统：先天免疫系统包括三种主要武器，它们可被单独或者一起使用来打败入侵的病毒。它们就是：专职吞噬细胞、蛋白质的补体系统和干扰素警告系统。</p>
+
+<p>适应免疫系统：适应免疫系统的武器包括抗体（由B细胞所产生）和杀伤细胞。从病毒的角度来看，抗体和杀伤性细胞防御的最重要特点很可能是在最初的攻击期间，需要一个星期或更长的时间来调用这些武器。</p>
+
+<h4>一般原则</h4>
+
+<p><hr></p>
+
+<p>1 把我们身体与外界环境隔离开来的物理屏障大大减少了入侵者的数量，漏网的入侵者必定会遭遇下一层防御系统一先天免疫系统。</p>
+
+<p>2 先天免疫系统包括三种可被单独或者一起使用来打败入侵病毒的主要武器，它们就是：专职吞噬细胞、蛋白质的补体系统和干扰素警告系统。</p>
+
+<p>3 先天性免疫系统之所以重要，源于其两个特性：分别是对病毒性感染的反应非常迅速，及其“广谱性”——使其成为能被用来防御不同病毒的相同武器。</p>
+
+<p>4 补体系统大约由20种不同的蛋白质组成，它们互助协作摧毁入侵者，并且为其他免疫系统战士发出身体受到攻击的信号。</p>
+
+<p>5 不同类型的抗体都是“专家”，当病毒通过不同的途径进入人体时，它们对防御病毒格外有用。</p>
+
+<p>6 当一个杀伤细胞侦察到一个被病毒感染的细胞时，它会消灭这个细胞以及在它里面的病毒。</p>
+
+<p>7 有些病毒繁殖非常迅速，以致适应免疫系统的调用会发生长时间的延迟，这就意味着感染初期实质上是一个“赠品”—至少就适应免疫系统而言。这些病毒能复制并且能在抗体和杀伤细胞被部署前“离开现场”。</p>
+
+<p>8 记忆B细胞和T细胞是能对原始感染做出响应的武器的“升级”版。因此，它们可以更好地保护我们免受相同病毒的后继攻击。</p>
+
+<h3>第三章 干抗秦防御系统</h3>
+
+<p><hr></p>
+
+<h4>摘录</h4>
+
+<p><hr></p>
+
+<p>总之，当模式识别受体感觉到病毒的存在，它们就会触发干扰素的生成，这就激活了干扰素刺激基因（ISGs）的表达——从而导致了能干扰病毒増殖的蛋白质的合成。</p>
+
+<h4>一般原则</h4>
+
+<p><hr></p>
+
+<p>1 病毒攻击早期最重要的宿主防御是干扰素系统。</p>
+
+<p>2 模式识别受体能区别正常细胞分子和独特的病毒分子，而且还能触发千扰素的产生。</p>
+
+<p>3 一旦IFN-或IFN-B被生成，就被运出宿主细胞并且结合到附近细胞表面的干扰素受体上。这些1型干扰素总是结合到产生它们的细胞表面受体上。</p>
+
+<p>4 当模式识别受体感觉到病毒的存在，最终的结果是生成干扰素和激活干扰素刺激基因（ISGs）——这个基因编码能干扰病毒复制的蛋白质。</p>
+
+<p>5 尽管干扰素防御被快速地激活了，但它不能立即起作用，而是会有所延迟。事实上，如果立即生产IFNB和IFN-a，人体内大概就没有病毒存在了。</p>
+
+<p>6 每一种被研究的病毒都能激活干扰素防御系统，而且每一个能成功的病毒都已经进化出多种方式来颠覆这种防御。</p>
+
+<h3>第二篇 病毒游行</h3>
+
+<p><hr></p>
+
+<h3>第四章 流感病毒：一和“挂车头卖狗肉”的病毒</h3>
+
+<p><hr></p>
+
+<h4>摘录</h4>
+
+<p><hr></p>
+
+<p>你的秘诀是什么：数量，完全是数量。一个酣畅淋漓的喷嚏至少可以驱逐包含10000个流感病毒的微滴。</p>
+
+<h4>采访者总结</h4>
+
+<p><hr></p>
+
+<p>流感病毒感染上下呼吸道的上皮细胞，快速地增殖，最终杀死受感染的宿主细胞。之后利用呼吸道黏液中的酶准备入口，病毒结合到它的靶细胞上残留的唾液酸残基上，然后通过受体介导的内吞作用被带入细胞。</p>
+
+<p>甲型流感病毒的基因是由8个片段的单链RNA组成。这种病毒携带其自身的RNA聚合酶，这种聚合酶被用来复制其负链基因组来制造mRNA，并且流感病毒的复制是发生在受感染细胞的细胞核中。作为其快速增殖策略的一部分，流感病毒从细胞mRNA上移除其帽子结构，并将它们粘到自己的5末端。这个“抢帽子”策略可以帮助将细胞的蛋白制造机器的注意力聚集在病毒的mRNA上。当新的病毒基因片段合成后，它们被病毒编码的蛋白质包裹，并且一旦需要，基因片段就会聚集在一起，这种病毒就会在细胞表面出芽。当它们退出时，新造出来的病毒需要个包裹，这个可以用插入了病毒血细胞凝集素和神经氨酸苷酶蛋白的细胞膜的一部分来制造。</p>
+
+<p>在病毒复制期间所产生的双链RNA和末端带有5三磷酸的RNA，如果被细胞模式识别受体探测到，就会导致干扰素的产生。为了减少干扰素的产量及其效力，流感病毒编码了一种多功能蛋白NS1。这种蛋白质可以中断流感RNA的信号识别途径。此外，NS1在干扰素防御细胞里通过从视觉上隐藏病毒的双链RNA从而降低了干扰素的效果。而且帽子抢劫活动把5三磷酸盖在了新合成的病毒RNA上，否则会惊醒干扰素系统。这个策略允许流感病毒延迟干扰索防御系统，以便使其有足够长的时间来完成感染。</p>
+
+<p>感染了溶解病毒而死亡的细胞是通知适应免疫系统的信号之一，其结果是在流感病毒感染过程中产生了病毒特异性的B细胞和T细胞。然而，流感病毒复制得如此迅速，以致在这种防御系统被充分调动时，病毒已经生产复制出了巨大的数量，并且已经在感染其他宿主的路上了。不仅这样，聪明的病毒还“超越”了适应免疫系统，它充分利用能警告这种防御的细胞死亡来彰显优越性：它借助在摧毁呼吸道细胞时和感染免疫反应时所触发的打喷嚏和咳嗽反应进行病毒的传播。事实上，通常所有与流感感染都紧密相关的症状，从喉咙痛到肺炎，都是病毒的“决定”增殖的结果，因为这将引起干扰素的产生和上下呼吸道细胞的破坏。</p>
+
+<p>杀伤细胞和抗流感病毒抗体最终可以摧毁留在宿主中的任何病毒，并且保留受害者对相同流感病毒株再次感染的免疫力。然而，在感染期间，易于出错的流感病毒RNA聚合酶会在病毒遗传密码中制造小错误，并且这种“抗原漂移”也可以产生新的病毒株此外，对于人类甲型流感病毒的基因片段，鸟或动物的基因片段的交换在病毒基因组的所谓的“抗原转变”方面能导致更巨大的变化。这两种机制在一起可以创造一种新的流感病毒株，导致它们不再被其先前感染的适应免疫系统所识别，这样流感病毒就可以反复感染同一个人了。</p>
+
+<h4>一般原则</h4>
+
+<p><hr></p>
+
+<p>在这次访谈中，我们已经确定了一些原理，虽然这些原理是通过对流感病毒生活方式的审查而被阐明的，但它们也适用于许多其他病毒。所以这些通用的病毒学原理是值得记住的。</p>
+
+<p>1 病毒的衣壳必须足够坚固，以保护病毒基因组免受细胞外环境的干扰，然而，一旦病毒进入其靶细胞，其衣壳必须至少部分解聚来完成其基因信息的复制。</p>
+
+<p>2 单链RNA病毒的基因组可以是“正链”也可以是“负链”。正链病毒RNA被定义为可以翻译成蛋白质的RNA，所以它是病毒信使RNA的同义词。负链RNA是“相反”链，所以它必须合成互补的链来生成病毒信使RNA。</p>
+
+<p>3 人类细胞没有可以复制RNA分子的RNA聚合酶，所以每一个病毒都有一个RNA基因组，它必须编码自身的聚合酶。</p>
+
+<p>4 有包膜的病毒总是安排病毒蛋白插入到细胞膜中，然后借此出芽。这些“额外”蛋白中的一个或者多个将形成“插销”并占用病毒打算感染的下一个细胞表面的“插座”（受体）。</p>
+
+<p>5 所有病毒最害怕的宿主防御系统是千扰素系统，并且病毒已经进化出三种方式来保护自己免受这种防御。病毒可以编码一些蛋白质，要不妨碍它们的检测，阻止干扰素的产生，要不就在千扰素被生成后钝化其效果。</p>
+
+<p>6 病毒用来逃避宿主防御的策略不需要100%有效，它们仅仅需要持续足够长的时间让病毒繁殖即可。</p>
+
+<p>思考题</p>
+
+<p>1 为什么流感病毒“选择”感染人类的呼吸道上皮细胞。</p>
+
+<p>2 流感病毒是如何保护自己免受干扰素防御系统的?</p>
+
+<p>3 为什么“抢帽子”游戏对于流感病毒的生活方式非常重要?</p>
+
+<p>4 当流感病毒第一次感染人类宿主时，它是如何保卫自己免受人类适应免疫系统的武器攻击的呢?</p>
+
+<p>5 病毒如何维持一群没有免疫力的人类宿主?</p>
+
+<p>6 病毒杀死受其感染的宿主细胞的利弊分别是什么?</p>
+
+<p>7 病毒生活方式的哪些特点应对一个流感感染的病理结果负责?8 引起病毒流行和大流行的原因是什么?它们有何不同?</p>
+
+<h3>第五章 鼻病毒：一种投降的病毒</h3>
+
+<p><hr></p>
+
+<h4>摘录</h4>
+
+<p><hr></p>
+
+<p><img src="/public/img/posts/viruses/image00043.jpg" width=500px/></p>
+
+<h4>采访者的总结</h4>
+
+<p><hr></p>
+
+<p>鼻病毒以巨大的数目入侵呼吸道，顺着黏膜纤毛活动梯到达比体温稍低的那部分呼吸道，穿透黏膜屏障，与底层上皮细胞的受体结合，并直接把遗传信息注入靶细胞的细胞质。鼻病毒基因组是一个单一的正链RNA，它能被快速地翻译成一条长的多聚蛋白，然后又可以自我剪切成更小的蛋白质。</p>
+
+<p>病毒mRNA包含内部核糖体进入位点，它允许没有帽子的病毒RNA被翻译（帽子是细胞mRNA翻译的前提条件）。这个新颖的特性使病毒可以干扰细胞蛋白质的合成，并引起细胞蛋白合成机器更偏爱合成病毒蛋白。这种快速关闭细胞蛋白质合成的原因之就是为什么细胞感染鼻病毒后只产生很少的干扰素。</p>
+
+<p>新产生的病毒RNA是穿着一个蛋白质衣壳，并且通过受感染的细胞破裂而释放出来的。整个增殖过程仅仅需要大约7小时。鼻病毒的靶细胞是上呼吸道，它们会杀死少数这些细胞，并迅速向先天免疫系统投降。结果时常造成中和抗体不能产生足够多的数量来抵御相同病毒的再次感染。此外，鼻病毒变异很迅速，所以新毒株不断地产生。鼻病毒能如此成功的个主要的原因是它能够避免适应免疫系统和反复感染同一个宿主。因为鼻病毒感染过于迅速，并且产生的干扰素又非常少，所以最常见的症状就是流鼻涕和打喷嚏——当然这也帮助了鼻病毒向下一个受害者的传播。</p>
+
+<h4>一般原则</h4>
+
+<p><hr></p>
+
+<p>1 几乎所有人类的RNA病毒基因组都在细胞质中复制，而不是在细胞核中—一流感病毒却是一个出名的例外。</p>
+
+<p>2 所有的RNA聚合酶都是容易出错的，因为它们不能校对自己的工作。</p>
+
+<p>3 病毒是完全依靠细胞的翻译机器来合成病毒蛋白的。</p>
+
+<p>4 很多病毒改变了它们宿主的翻译机器来使它更愿意生产病毒蛋白而不是细胞蛋白。</p>
+
+<p>5 每一个病毒至少在某种程度上都能激活干扰素防御系统。</p>
+
+<p>6 在短短几个小时内复制出来的病毒通常能杀死这些被感染的细胞。</p>
+
+<p>思考题</p>
+
+<p>1 流感病毒和鼻病毒在感染、复制、逃避宿主防御以及传播上使用的策略主要有哪些不同?</p>
+
+<p>2 流感病毒和鼻病毒在病毒蛋白生产方面是如何对宿主翻译装置聚焦的呢?</p>
+
+<p>3 不分段的病毒不能利用抗原转变来避开适应免疫系统，为什么呢?</p>
+
+<h3>第六章 麻疹病毒：一种“特洛伊木马”病毒</h3>
+
+<p><hr></p>
+
+<h4>采访者的总结</h4>
+
+<p><hr></p>
+
+<p>尽管麻疹病毒是通过呼吸途径进行传播，但它的感染策略不同于流感病毒和鼻病毒。麻疹病毒绕过排列在呼吸道上的上皮细胞，感染哨兵树突细胞，这些哨兵本打算去向适应免疫系统发出警告，告诉它们这儿被入侵了。这个病毒于是利用正常工作的免疫系统，把这些树突细胞当作特洛伊木马从而把自己带进附近的淋巴结。在这里病毒感染其他免疫系统细胞，通过淋巴和血液系统，建立一个灵敏的系统感染。通过“游走系统”，病毒能够产生很多新的病毒，以便有更多的数量去侵染先前避开的呼吸道上皮细胞。这些细胞的感染会引发咳嗽和打喷嚏反应，这样会把病毒传播到它的下一个宿主。这种感染的策略会帮助麻疹病毒成为世界上最具感染力的病毒之一。</p>
+
+<p>麻疹病毒是负链RNA病毒，但是不同于流感病毒，麻疹的基因是不分段的。它是一个单链RNA，它会进入到被这个病毒感染的细胞质里。在感染的初期，麻疹聚合酶用基因组的RNA通过“停止和开始机制来制造6种不同的mRNA分子。然后在感染后期，这些停止位点被病毒蛋白掩盖，就合成了全长的模板，这个模板被复制用来合成新病毒的基因。这些基因然后在病毒编码的蛋白质里隐藏起来，它被包裹在一个包膜里作为病毒的萌芽从被感染的细胞中释放出去。</p>
+
+<p>麻疹病毒有多种方式来处理干扰素防御：阻碍干扰素的产生，然后保护自己免受由于泄露所产生的干扰素的影响。麻疹病毒杀死它们感染的细胞，并且它的干扰素循环途径给了适应免疫系统大量的时间去激活。正是这种杀伤细胞领导的防御最终使人体摆脱了病毒。然而，因为免疫系统的细胞在病毒感染期间被破坏或者受伤，免疫反应也会被抑制。这种适应免疫系统的抑制是病毒通过赢得时间来完成它的感染的种方法。另外，麻疹感染的细胞可以通过融合来感染相邻的细胞，当它们从一个细胞穿到另一个细胞的时候通常可以避免抗病毒抗体的阻拦。</p>
+
+<p>尽管病毒有一个容易出错的聚合酶，但是它的包被蛋白对结构的变化很敏感，以致于会产生新的毒株的突变是不可能的。单一麻疹病毒株的感染会导致形成免疫力，并且人类是这类病毒的唯一天然宿主。所以，需要提供很多易受感染的人来供养麻疹病毒。</p>
+
+<h4>一般原则</h4>
+
+<p><hr></p>
+
+<p>1 即使病毒使用同一个进入口也可以导致不同类型的感染和不同的病理结果，因为它们已经进化出不同的策略去处理它们感染、繁殖，逃避宿主的抵御和传播的问题。</p>
+
+<p>2、病毒通常有两个策略进入细胞并且脱去外被。第一个策略是病毒结合到细胞表面的受体上“在门口检查它的外被”，然后往细胞质中注入它部分裸露的基因。第二个策略被叫做“受体介导的胞吞”。在这个过程中，病毒结合到细胞表面的受体上，完全地被细胞质膜的一部分包裹（叫做内涵体），然后被带入细胞（内吞）。</p>
+
+<p>3 对于一个病毒结合并且进入细胞是不够的。为了高效的繁殖，病毒的繁殖类型必须要与环境相兼容并且可以利用特殊细胞类型的生物合成机器。</p>
+
+<p>4 每一个病毒至少要编码一个蛋白来复制它的基因组。</p>
+
+<p>思考题</p>
+
+<p>1 尽管麻疹、流感、鼻病毒都是RNA病毒，并且它们都攻击呼吸道细胞，但这三类病毒已经进化出不同的繁殖方式，讨论一下它们的相同点和不同点。</p>
+
+<p>2 你认为为什么麻疹病毒进化出屏蔽内部聚合酶停止位点的策略而不是进化出把mRNA分子连接在一起形成一个模板的方法来生产基因组的RNA?</p>
+
+<p>3 流感病毒和麻疹病毒都可以感染树突细胞，但感染的结果是不相同的。为什么每个病毒和宿主的生活方式都那么重要?</p>
+
+<h3>第七章 轮狀病毒：一和间谍病毒</h3>
+
+<p><hr></p>
+
+<h4>采访者的总结</h4>
+
+<p><hr></p>
+
+<p>轮状病毒用3个蛋白质衣壳来遮掩它们的分段的双链RNA基因，从而保护它免受消化道恶劣条件的影响。结果，这个病毒非常熟悉这个环境，以致于它能控制一种肠道酶的功能来帮助它准备进入靶细胞的入口—排列在肠上的绒毛上皮细胞。这个病毒通过受体介导的内吞作用进入这些细胞。</p>
+
+<p>轮状病毒编码一种蛋白，它能干扰多腺苷化的细胞mRNA的翻译。通过抑制细胞蛋白质的合成，病毒可以快速地复制，并在每个被感染的细胞中产生大量的新病毒。因为它的双链RNA基因组会立即激活干扰素系统，所以当它还在它的两层衣壳内时，这个聪明的病毒就复制它的遗传信息到单链RNA上。随后，单链病毒RNA被封闭在内蛋白壳里，而且只有当单链RNA片段的复制发生了才能产生一个新的双链基因组。这个秘密复制战略帮助病毒避免被一直留心观察双链RNA的细胞传感器发现。然后，为了更稳妥地免于干扰素防御，这个狡猾的病毒产生一种蛋白质来降解干扰素生产所需的转录因子。</p>
+
+<p>轮状病毒迅速增殖，杀死它感染的细胞，并且只引起急性感染。由于肇事逃逸的生活方式，适应免疫系统通常在轮状病毒感染期间是不活跃的。此外，易于出错的病毒聚合酶能通过抗原转变产生多样的病毒株，并且它的分段的基因组有能力让病毒与动物的轮状病毒交换基因片段，从而导致抗原转变。因此，宿主遭遇这种病毒的免疫记忆并不能持续很长时间，并且轮状病毒能返回来再次感染大龄儿童和成年人。</p>
+
+<p>一个病毒蛋白引起的腹泻，保证了新制造病毒在被宿主防御系统破坏之前快速地“冲出”宿主。轮状病毒在水里具有传染性，并且它的三层衣壳结构使它耐干燥，所以它所拥有的完美特性使它成为一个成功的肠病毒。</p>
+
+<h4>一般原则</h4>
+
+<p><hr></p>
+
+<p>1 双链RNA病毒和负链RNA病毒必须携带它们的聚合酶分子进入被感染的细胞。在它们感染其靶细胞后，正链RNA病毒可以产生它们自己的聚合酶。</p>
+
+<p>2 肠病毒必须以某种方法保护自己不受胃酸性pH以及小肠中存在的消化酶的影响。</p>
+
+<p>3 包膜病毒通常对胃中pH低的地方比较敏感。此外，在肠道中胆汁作为一种清洁剂，它能破坏大多数包膜病毒的包膜——因为其包膜含有脂质。因此，消化道不是包膜病毒的首选途径。</p>
+
+<p>思考题</p>
+
+<p>1 轮状病毒为什么不用它的正链去合成蛋白质?为什么它必须先复制成它的负链，然后再合成mRNA。</p>
+
+<p>2 这种病毒是怎样逃离干扰素系统的?</p>
+
+<p>3 轮状病毒是如何对付适应免疫系统的?</p>
+
+<p>4 为什么这么多病毒能破坏细胞蛋白质的合成?</p>
+
+<h3>第八章 腺病毒：一和有计划的病毒</h3>
+
+<p><hr></p>
+
+<h4>采访者的总结</h4>
+
+<p><hr></p>
+
+<p>肠道腺病毒通过粪口途径传播，感染并杀死排列在小肠的上皮细胞，而不引起传播性的感染。腺病毒基因组是一个线性、双链DNA分子，它被包裹在个单一的蛋白质衣壳里。病毒基因的转录在一个精心有序的序列上开始。这种“组装安排”确保了腺病毒有效的增殖，并且当它们被需要的时候，就恰好有不同的病毒蛋白可供使用。</p>
+
+<p>腺病毒通过受体介导的内吞作用进入细胞，并使用一个新颖的DNA复制策略来分开病毒和宿主DNA复制。这样可以使病毒DNA在一定时间里完成很多次的复制循环，而通常进入细胞的病毒DNA只能复制一次。因为病毒的很多靶向细胞处于静息状态，所以病毒编码一种蛋白来冲击这些细胞使它们进入“复制模式”。结果，细胞认为它将要复制它自己的DNA并且分裂，所以它生产了所有病毒增殖所需要的原材料。</p>
+
+<p>在感染早期腺病毒合成两种蛋白质来干扰细胞mRNA从核内向外的运输。这帮助确保了早期病毒蛋白的及时产生。然后，在感染后期，当需要大量的病毒蛋白来构建衣壳时，腺病毒会编码一种蛋白来干扰细胞mRNA的翻译并让其集中于病毒mRNA的蛋白合成。腺病毒的增殖相对缓慢：一个被感染的细胞大约需要两天的时间来生产够一次破裂细胞的新生病毒。因此，这些病毒需要一个多星期来感染足够多的细胞来确保它们可以成功地传播到下一个宿主。由于这种悠闲的时间安排，病毒不仅需要保护自己免受到宿主先天防御（例如，干扰素）的攻击还要防备适应免疫系统。为了对抗这些防御，腺病毒需要产生大量的防御性蛋白。事实上，大约四分之一的腺病毒基因组致力于保护对策。例如，腺病毒合成的 VA RNA，作为一个诱饵来阻止干扰素诱发抗病毒蛋白。腺病毒还编码一个蛋白质通过被感染细胞表面的Ⅰ型MHC分子来干扰病毒蛋白的展示，使杀伤细胞“看不见”这些细胞。</p>
+
+<p>腺病毒的感染极度地扰乱了细胞的各项进程，而且这种失调通常能通过细胞凋亡触发细胞自杀。为了防止发生这样的事，腺病毒编码了两种蛋白质来扰乱细胞凋亡程序。在许多新病毒合成后，腺病毒会产生种“死亡蛋白”来促进病毒从被感染细胞中随着粪便被“自由释放。</p>
+
+<p>最终，宿主的免疫系统严厉地处理了这个肠道腺病毒的感染，病毒也被从宿主体内驱逐出去了（清除）。而且因为腺病毒不能“温和地走进那个良夜”，适应免疫系统变成完全激活的状态，而且对腺病毒株感染的免疫力可以持续很长时间。然而，尽管远非像大多数RNA聚合酶那样容易出错，腺病毒DNA聚合酶还是容易出错的，而且这赐予了病毒突变产生不同毒株的机会，使其再次感染成为可能。</p>
+
+<h4>一般原则</h4>
+
+<p><hr></p>
+
+<p>1 所有DNA病毒的基因组在被感染细胞的細胞核里复制，细胞DNA也在那里进行合成。</p>
+
+<p>2 没有病毒像人类细胞那样几乎用相同的策略来复制DNA。DNA病毒必须以某种方法分开它们所感染的细胞与它们自己的复制循环，以便能在细胞DNA只能复制一次的时间内发生病毒DNA的多轮复制。</p>
+
+<p>3 不能快速繁殖的病毒必须抑制细胞凋亡（自杀）反应，从而至少给它们留下足够长的时间来进行繁殖和传播。</p>
+
+<p>4 在最初的感染期间，适应免疫系统最重要的武器是杀伤细胞，它能对病毒展开攻击。这些杀手能识别感染细胞表面的Ⅰ型MHC分子展现的病毒蛋白，并且还能破坏那些细胞和它内部包含的病毒。</p>
+
+<p>5 当一个病毒希望对一个先前感染过的人做一个回访时，免疫系统最强大的武器病毒特异性的抗体就能在它进入其靶细胞并且发起一次感染前把这些病毒中和了。</p>
+
+<p>思考题</p>
+
+<p>1 腺病毒基因在一段特殊的时间序列上被转录。请举例说明为什幺基因有序地表达对腺病毒的生活方式至关重要。</p>
+
+<p>2 腺病毒复制DNA的方法与细胞复制DNA的方法有所不同。描述一下这种新颖的复制策略。</p>
+
+<p>3 腺病毒用新策略复制其DNA对它的生活方式至关重要至少有两个原因。它们是什么呢?</p>
+
+<p>4 腺病毒如何克服细胞凋亡的自杀防御?</p>
+
+<p>5 腺病毒如何保护它自己免受千扰素系统的影响?</p>
+
+<p>6 腺病毒如何保护它自己免受适应免疫系统的影响?</p>
+
+<h3>第九章 甲型肝类病毒：一种绕道病毒</h3>
+
+<p><hr></p>
+
+<h4>采访者的总结</h4>
+
+<p><hr></p>
+
+<p>甲肝病毒像鼻病毒一样是一个有着单一蛋白质衣壳的单链、正链RNA病毒。尽管鼻病毒和甲肝病毒是同一个家庭的成员，并且它们也以类似的方式复制基因组，鼻病毒是一种呼吸道病毒，而甲肝病毒是通过粪-口途径进行传播。甲肝病毒的感染策略首先是被“吃”下去，然后启动有限的肠道感染。这种病毒不会杀死被感染的细胞，而这种对肠细胞“温柔”感染的诡计让免疫系统合成了IgA抗体。然后甲肝病毒使用这些IgA抗体作为一个“出租车服务”带它去它真正想去的地方——肝甲。</p>
+
+<p>病毒结合到它的靶细胞，并且它的基因组被直接释放到细胞质中。然后它用一个内部核糖体进入位点来促进它的基因组翻译从而产生一个单一的、长的多聚蛋白—它随后被切成更小的病毒蛋白。当甲肝病毒感染肝细胞时，它会阻止感染细胞发出被感染信号的能力，以致于被感染细胞只产生很少的干扰素。并且由于IgA抗体在肝中是没有用的，所以适应免疫系统必须“重新启动”来制造更适合处理肝感染的武器——IgG抗体和杀伤细胞。这种诡计为感染的肝细胞产生足够的新病毒争取到了时间，它很“自然”地被携带到胆汁返回到消化道随着粪便被排出。</p>
+
+<p>本质内容就是甲肝病毒以它自己的方式通过消化道时绕道通过了肝，在这种行为过程中，它能逃避宿主的防御这么长时间，以致于它成为了世界上领军的致病病毒之且适应免疫系统达到全力运行，肝中的感染便很容易地被解决，通常这样对肝也不会有重大损伤。并且因为甲肝病毒只有一种血清类型，所以人类不会再次被感染。</p>
+
+<h4>一般原则</h4>
+
+<p><hr></p>
+
+<p>1 病毒设计的细微变化能引起其进入途径和其引起的疾病的主要差异。</p>
+
+<p>2 通过粪-口途径传播的病毒通常都能抗干燥并能在这些对象中生存很长一段时间。</p>
+
+<p>3 只有建立慢性感染的病毒才能有效地通过血液交换或血液制品被传播。</p>
+
+<p>思考题</p>
+
+<p>1 甲肝病毒的生活方式与我们讨论过的其他两种肠病毒——轮状病毒和鼻病毒有什么重要不同?</p>
+
+<p>2 肝炎病毒是怎样在肠道和肝之间来回穿梭的呢?</p>
+
+<p>3 从宿主的角度来看，为什么肝对于甲肝病毒是一个“好”的器官靶标?为什么病毒选择这个器官?</p>
+
+<p>4 甲肝病毒的感染不会引起腹泻。为什么这对于它们是有利的呢?（线索：腹泻患者通常在哪里闲逛?）</p>
+
+<p>5 只有建立慢性感染的病毒才能有效地通过交换血液或血液制品传播，这是为什么?</p>
+
+<h3>第十章 乙型肝炎病毒：一和骗子病毒</h3>
+
+<p><hr></p>
+
+<h4>采访者的总结</h4>
+
+<p><hr></p>
+
+<p>乙肝病毒的天然感染途径是通过已感染母亲传给出生时的婴儿。然而，因为这是一种世界上最具感染性的病毒之一，所以从被感染个体传递到另外个人血液的过程中的任何一个场景都能感染它的靶细胞——肝细胞。乙肝病毒是一种DNA病毒，它的复制策略相当奇特，其中涉及了一个通过RNA中间体的反转录来产生病毒DNA过程。结果通常产生蛋白质衣壳封闭的一条双螺旋的DNA基因组，外面还包裹着来源于内质网的包膜。</p>
+
+<p>乙肝病毒是温和病毒，所以在感染早期，没有细胞死亡来激活免疫应答。此外，这种病毒还会编码蛋白质去有效阻止干扰素的产生。感染后期，病毒抗体产生，它们就会释放大量的空病毒微囊来转移抗体的攻击目标。通过使用这些逃避策略，肝细胞制造出来的大量病毒被倾倒在血流中，这在患者体內会建立个强健的急性感染。尽管由T细胞引发的免疫系统在大多数成人患者体内会最终消灭这些病毒，但在少数成人患者及大多数孩童患者中，这种病毒会建立慢性感染。这种感染可以持续一生，在这期间，被感染的个体不断产生具有传染性的病毒，同时，免疫系统也在全力地抑制这种病毒。慢性乙肝感染还会导致肝硬化和肝癌的发生。</p>
+
+<h4>一般原则</h4>
+
+<p><hr></p>
+
+<p>1 病毒更易感染大的器官（如肝），不仅因为这些器官含有大量的靶细胞，还因为许多细胞被感染并不会让器官的功能衰退。</p>
+
+<p>2 病毒在女性生育年龄之前，必须要在她们体内建立起慢性感染，这样才能垂直传播给她们的孩子。</p>
+
+<p>思考题</p>
+
+<p>1 乙肝病毒的哪一个复制特点是独一无二的?</p>
+
+<p>2 为什么乙肝病毒会制造出那么多的空病毒微囊?</p>
+
+<p>3 乙肝病毒的哪些特征能确保其在慢性感染期间可以有效传播?</p>
+
+<p>4 和乙肝病毒感染者握手有可能被传染吗?</p>
+
+<h3>第十一章 丙型肝类病毒：一位逃大师</h3>
+
+<p><hr></p>
+
+<h4>采访者的总结</h4>
+
+<p><hr></p>
+
+<p>内肝病毒是正向单链RNA病毒，它的基因组被封闭在蛋白质衣壳中，这个蛋白质衣壳表面还包被着一层来自被感染细胞的包膜。它感染肝细胞，但不杀死它们。该病毒利用一系列复杂的细胞受体来识别靶细胞，然后将自身包膜与细胞膜融合，随即包含病毒基因组的蛋白质衣壳被释放到细胞质中。在那里病毒RNA利用内部核糖体进入位点合成了一条长链状的多聚蛋白。这条长链蛋白会裂开从而产生病毒增殖所需的蛋白质。</p>
+
+<p>这种病毒可引起急性或是慢性的感染，并用三种策略来逃避干扰素防御：它抑制干扰素的产生，它还阻碍干扰素激活基因的表达，并能降低其表达产物的功能。它能领先适应免疫系统一步，使用自己易出错的RNA聚合酶去引发突变，使之产生免疫系统不曾见过的蛋白质。此外，丙肝病毒可通过细胞接触传播来躲避体液中抗体的攻击。该病毒可以在出生时通过母婴垂直传播，或者通过其他涉及交换血液或血液产品的途径传播。</p>
+
+<h4>一般原则</h4>
+
+<p><hr></p>
+
+<p>1 只有能引起长期感染的病毒才与人类癌症有关。</p>
+
+<p>通常，病毒感染的病理结果是意想不到的，并且对病毒生存不利。</p>
+
+<p>思考题</p>
+
+<p>1 丙肝病毒、鼻病毒釆用类似的复制策略，其中的三个不同之处是什么?</p>
+
+<p>2 丙肝病毒如何设法逃离免疫防御?</p>
+
+<p>3 为什么丙肝病毒的“全身性感染”会适得其反?</p>
+
+<h3>第十二章 HTLV-I：一和部落病毒</h3>
+
+<p><hr></p>
+
+<h4>采访者的总结</h4>
+
+<p><hr></p>
+
+<p>HTLV-I是一种非常古老的病毒，它可以通过哺乳进行母婴传播（垂直传播），也可以在成人之间进行性传播。这种既可以感染辅助T细胞，也可以感染树突细胞的病毒，有一个单链RNA基因组。该基因组由蛋白衣壳包裹，表面还包被着一层由源自细胞的包膜。在感染时，这个反转录病毒利用自身的反转录酶将它的单链RNA转变成双链DNA。然后再利用另一种自身的病毒酶将该DNA整合到细胞染色体中。这两种酶存在于病毒蛋白质衣壳中，所以病毒一旦进入细胞，这两种酶就可以立即进行工作。</p>
+
+<p>一旦病毒基因被整合到细胞染色体中，这种“前病毒”DNA就会在细胞分裂时被传代到子细胞中。整合在细胞染色体中的前病毒还可以产生少数几个病毒蛋白，来躲避杀伤细胞的侦测。HTLV-Ⅰ编码的蛋白可以阻碍I型MHC分子展示的病毒蛋白。另外病毒基因组RNA还可进行细胞接触式的传播这帮助病毒在受感染宿主中传播期间避免能摧毁其抗体的标记。</p>
+
+<p>HTLV-1一般通过被感染的细胞在人与人之间传播，而不是通过病毒颗粒。除了通过哺乳传播和性传播这两种自然传播方式外，被感染的细胞还可以通过受污染的针头或不洁净的输血来传播。HTLV-Ⅰ在感染期间不会杀死宿主细胞，并且这种全身性感染在很大程度上没有症状。也许是这种长期与宿主“友好”相处的生存方式，使得该病毒与人类在数千年的时间内共同进化。</p>
+
+<h4>一般原则</h4>
+
+<p><hr></p>
+
+<p>1 反转录病毒感染细胞时，它们会产生能整合到细胞DNA中的DNA前病毒。在那儿，当细胞增殖时，它们会随着细胞的染色体一直“静悄悄地”传代下去。</p>
+
+<p>2 直到反转录病毒的前病毒DNA整合到细胞染色体中，新病毒基因组和病毒mRNA才会被合成。结果，用于产生前病毒DNA和整合前病毒DNA到细胞染色体的病毒酶会和病毒基因组一起被包被到衣壳内。</p>
+
+<p>思考题</p>
+
+<p>1 反转录病毒的复制特点是什么?</p>
+
+<p>2 把前病毒整合到细胞DNA的优势是什么?</p>
+
+<p>3 为什么HTLV-I的突变率整体上较低，即使它的反转录酶极易出错?4 为什么反转录病毒没有被规定成正链或者负链病毒?</p>
+
+<h3>第十三章 HIV-1：一秘城市病毒</h3>
+
+<p><hr></p>
+
+<h4>采访者的总结</h4>
+
+<p><hr></p>
+
+<p>HIV-1感染表面有CD4蛋白质的免疫系统细胞（如辅助T细胞和树突细胞）。当与细胞表面蛋白质嵌合，并与共受体分子结合后，病毒包膜与细胞膜融合，病毒衣壳打开，释放两条单链RNA基因组到胞质中。这两条RNA由病毒编码的反转录酶转录成前病毒（双链DNA）。前病毒进入受感染细胞的细胞核，这里病毒整合酶将其插入细胞染色体中。被整合进去的前病毒由细胞DNA聚合酶转录出病毒mRNA和新病毒基因组。然后在细胞质中，两条这样的单链RNA基因组由一个蛋白衣壳包裹在一起，然后这些病毒在细胞膜上岀芽时，再从细胞膜上携带一块膜作为自身的包膜。</p>
+
+<p>HIV1快速建立起整合有前病毒基因组的被感染细胞的潜在仓库。在这种潜伏状态下，免疫系统很难检测出病毒。潜伏性被感染细胞不停地产生新病毒去额外感染CD4*细胞。HIV-1也会通过细胞接触传播，成功躲避了抗体攻击。重要的是，易出错的病毒反转录酶使得这种病毒每感染一个细胞就会发生一次基因突变，而且这些突变通常都会比适应免疫系统领先步。除了这些抵抗措施，病毒也在轮番进攻，为达到目的强占免疫系统的武器，并且禁用或者监督销毁这些武器。HIV1可通过性交传播，并且在其他性病的协助下更易传播。病毒还可通过受污染的针头及血液高效地传播到新的宿主体内。HV-1通常会建立一种终身慢性感染，和免疫系统不断地战斗。不幸的是，往往都是HIV-1获得胜利。</p>
+
+<h4>一般原则</h4>
+
+<p><hr></p>
+
+<p>1 能在性成熟前杀死他们宿主的病毒不能通过母婴垂直传播来维持在人群中。</p>
+
+<p>2 反转录病毒一般不易感染休眠细胞，也不易在其中繁殖。</p>
+
+<p>思考题</p>
+
+<p>1 HIV-1“古老的”传播方式是什么（脑筋急转弯!）?</p>
+
+<p>2 HIV-1如何在“城市社会”中传播?</p>
+
+<p>3 HV-1怎样躲开宿主的防御?</p>
+
+<p>4 讨论HV-1是如何利用让免疫功能来传播并维持病毒感染的步骤从而使得免疫系统转而攻击宿主自身。</p>
+
+<p>5 HV-1很好地适应了它的人类宿主吗?</p>
+
+<h3>第十四章 单纯疱疹病毒：一种隐藏的病毒</h3>
+
+<p><hr></p>
+
+<h4>采访者的总结</h4>
+
+<p><hr></p>
+
+<p>单纯疱疹病毒依赖于“两个细胞”战略在人类中生存。感染者的上皮细胞产生的病毒通过感染者与他人的亲密接触扩散到新的宿主。在新的受害者的上皮细胞经过了短暂的复制，然后病毒感染邻近的神经元，并在其中建立潜伏性感染——病毒的“沉默”感染可以时不时地被激活，从而感染更多的上皮细胞，并扩散到新的宿主。这其中有相当复杂的生活方式的存在，是因为单纯疱疹有非常大的，线性双链DNA病毒基因组，它可编码超过80个蛋白质。这个基因组能丰富到甚至允许单纯疱疹病毒在静息细胞中增殖。</p>
+
+<p>病毒基因组由蛋白质衣壳保护，外面包围一层外被蛋白质（内膜），最外面是一层封闭的由宿主细胞衍生的包膜。当病毒包膜与靶细胞质膜融合，有内膜包裹的衣壳被释放到细胞质中。然后病毒DNA基因组“注入”到细胞的细胞核中，在那里病毒进行“滚环”复制。这种复制方法与细胞染色体DNA复制的相似度很小。</p>
+
+<p>单纯疱疹病毒将大约一半的遗传信息用来逃避宿主防御。除了建立一个潜在的，几乎检测不到的神经细胞感染体系，病毒还编码干扰补体及抗体的调理作用的蛋白质。病毒蛋白也可以保护自己免受干扰素系统的影响，并制约Ⅰ型MHC分子给杀伤细胞提呈病毒蛋白的能力。</p>
+
+<p>尽管单纯疱疹病毒拥有这些对策，免疫系统还是通常需要不到两周的时间就会摧毁所有被感染上皮细胞。强烈的免疫反应使得病毒“撤退”到附近安全的神经细胞中，并且由于上皮细胞的破坏，身体会出现水泡这种明显的单纯疱疹感染的特征。之后，人体免疫防御“放松下来”，病毒在神经细胞中开始少量复制，开始对附近上皮细胞的又一轮感染，这种“英勇行为”将在患者体内持续一生。因为是免疫系统在“控制”感染，所以一个拥有不成熟免疫系统或是免疫系统缺陷的人患上此病可以危及生命。</p>
+
+<p>病毒通常通过性交或口交在宿主之间传播。但是，当两个人的上皮细胞足够近时，也可以发生传染。事实上，单纯疱疹感染的病理后果之一是眼部疱疹，这是当一个人触破了他唇上的水疱，然后把病毒揉进了自己的眼睛。</p>
+
+<h4>一般原则</h4>
+
+<p><hr></p>
+
+<p>1 病毒有两种方法去解决无法感染静息细胞的难题。一些病毒通过产生一些蛋白质，刺激细胞增殖。其他病毒提供一些在静息细胞中缺少或含量短缺的増殖所需要的蛋白质。</p>
+
+<p>2 大多数病毒（甚至那些有双链DNA基因组的病毒）的基因组在病毒增殖时会产生一些双链RNA—这些RNA可以警告细胞模式识别受体病毒的存在。</p>
+
+<p>思考题</p>
+
+<p>1 我们已经知道了另一个能够感染静息细胞的DNA病毒——腺病毒。比较一下单纯疱疹病毒和腺病毒所使用的解决“静息细胞问题”的策略。</p>
+
+<p>2  HTLV-I和HSV都能够建立潜伏性感染。比较一下这些病毒所使用的完成这一壮举的策略。</p>
+
+<p>3 我们已经讨论了三种病毒—麻疹病毒、甲型肝炎病毒、单纯疱疹病毒，它们都需要多种细胞来进行繁殖。比较一下这三种病毒的生活方式。</p>
+
+<h3>第十五章 人类乳头瘤病毒：一种非常安静的病毒</h3>
+
+<p><hr></p>
+
+<h4>采访者的总结</h4>
+
+<p><hr></p>
+
+<p>HPV通过能把人体与外界联系隔开的皮肤以及黏膜上的裂缝或撕口进入人体。该病毒的目标是基底干细胞，这些细胞缓慢增殖以更新不断磨损的皮肤层或黏膜上皮。这个小的、双链DNA病毒进入细胞，利用细胞的复制机制少量拷贝自己的基因组——但并不形成完整的病毒。干细胞分裂后，其中一个子细胞成为基底干细胞，为这些病毒基因提供了一个安全的避风港，病毒最后停留于细胞内。另一个子细胞携带得到的病毒基因组，分化成角化细胞或鳞状上皮细胞并随着底层基底干细胞的增殖被推到表面。</p>
+
+<p>“搭顺风车”的病毒基因组在这场旅行中并不是被动的。事实上，在它们上升的过程中，病毒基因组的转录会增加而且会产生病毒蛋白。其中一些病毒蛋白会使上皮细胞保持增殖的模式，于是大量完整的病毒粒被生产。而且当细胞到达表面时，这些病毒粒会被释放。这样下去，HPV利用上皮细胞的不同成熟阶段作为未来新病毒产生的贮藏室（基底干细胞），并且作为其新病毒的生产工厂（分化的上皮细胞）。这种独创的巧妙机制将新制好的病毒粒输送到身体表面，以方便它们传播到新的宿主。</p>
+
+<p>HPV的感染是很安静的。在基底干细胞中暴发场小规模病毒DNA复制的热潮后，该病毒以游离基因的形式在细胞每分裂一次时，就复制一次。巧妙的是，病毒RNA只通过病毒DNA两条链中的一条链转录，所以这种病毒通常会成功躲避宿主的干扰素防御。此外，该病毒不会杀死宿主细胞。事实上，虽然病毒蛋白在宿主细胞迁移过程中会触发该细胞“计划外的”增殖，但病毒蛋白会阻止细胞程序性死亡，以免这些细胞被破坏。几乎没有病毒蛋白会在基底干细胞内合成，这使适应免疫系统很难察觉到有感染存在。此外，当被感染的细胞向表皮迁移时，它们会逐渐远离免疫细胞巡逻的位置。结果是上皮细胞的迁移可以使病毒蛋白大量增殖，并且不必担心适应免疫系统的存在。最后，会有十多个不同的HPV基因型可以感染人类的生殖器，所以即使适应性免疫系统开始攻击一种基因型的HPV，但也会经常存在有该免疫系统识别不了的基因型的侵染。</p>
+
+<p>大多数HPV感染是无症状的。生殖器疣是HPV感染中最明显的症状，但也只有很小一部分患者会显现该症状。生殖器疣可以通过口交或母婴垂直传播至呼吸道，如果不治疗，这些疣是很危险的。感染了某些致癌型HPV会有可能发展成宫颈癌。虽然只有不到百分之一的感染了此种HPV的女性会发展成宫颈癌，但是由于HPV导致的宫颈癌是目前世界上第二大常见的女性癌症。</p>
+
+<h4>一般原则</h4>
+
+<p><hr></p>
+
+<p>1 整合在宿主基因组里的病毒DNA会在细胞分裂时忠诚地传播给子代细胞，相比之下，游离在靶细胞的细胞核内的病毒DNA在细胞增殖时会有被丢掉的危险。</p>
+
+<p>思考题</p>
+
+<p>1 讨论人类乳头瘤病毒在感染基底干细胞和病毒粒子释放到皮肤表面的这段时间里都发生了什么?</p>
+
+<p>2 当基底上皮细胞离开基底膜，停止增殖并致力于生产角蛋白时，人类乳头瘤病毒是如何避免被基底上皮细胞“困住的”呢?</p>
+
+<p>3 感染过程中病毒“旅行中”的哪些特征能帮助它避免被免疫系统检测到呢?</p>
+
+<h3>第三篇 在臭虫游行的另一边</h3>
+
+<p><hr></p>
+
+<h3>第十六章 新兴的病毒</h3>
+
+<p><hr></p>
+
+<h4>一般原则</h4>
+
+<p><hr></p>
+
+<p>1 新病毒的出现有以下几种情况：当技术进步可以检测到人类中存在的病毒时；当人类的生活方式改变后，会使现有病毒在人类中蔓延时；当人类“翻起石头”，会将自身暴露在本来与动物宿主和谐相处的病毒面前时；当已经存在的病毒突变，产生了可以干扰人类的相似病毒时。</p>
+
+<p>2 相同的病毒可以在不同的物种之间引起非常大的病理差异，即使在非常相近的大猩猩和人类之间也一样。</p>
+
+<p>3 以鸟类或动物为天然宿主的病毒感染了人类，这类病毒就被称作人畜共患病毒，大多数新兴病毒是人畜共患病毒。</p>
+
+<p>4 真正可怕的病毒会有以下几个特征：以人类为天然宿主、很易通过偶然接触传播、有较长的传染性潜伏期。这种病毒很有可能是从现有的高突变病毒株中进化出来的。</p>
+
+<h3>第十七章 病毒相天的癌症</h3>
+
+<p><hr></p>
+
+<h4>一般原则</h4>
+
+<p><hr></p>
+
+<p>1 一些病毒编码的蛋白会干扰细胞正常运行的控制系统。因此，感染这些致癌病毒的其中一个就会增加受感染细胞癌变的风险。</p>
+
+<p>2 没有病毒会“引起”癌症。病毒感染仅作为一个风险因素—就像吸烟扮演的角色一样。</p>
+
+<p>3 只有引起长期感染的病毒才会增加雁患癌症的风险。可是，并不是所有导致长期感染的病毒都与人类癌症有关联（如，单纯疱疹病毒）。</p>
+
+<p>4 与癌症相关的病毒的标志是，感染这种病毒的小部分人会得癌症，而且他们中的大多数人有病毒感染的迹象。</p>
+
+<p>第十八章 疫苗</p>
+
+<h4>一般原则</h4>
+
+<p><hr></p>
+
+<p>1 任何接种疫苗的目的就是产生记忆B细胞或T细胞，如果接种疫苗的人以后真的被暴露在“病毒环境”中，那么这些细胞将会为其提供保护。</p>
+
+<p>2 由灭活病毒制成的疫苗的一个重要的特点就是：虽然化学处理肯定会使大多数的病毒瘫痪，但是它不能保证能杀死全部。</p>
+
+<p>3 亚基疫苗的优势在于：因为只有一个或几个病毒蛋白存在，所以接种疲苗导致感染的可能性为零。</p>
+
+<p>4 为了有效地产生记忆杀伤细胞，疫苗必须能真正地感染细胞。</p>
+
+<p>5 由减弱（虚弱）微生物所产生的疫苗可以产生记忆杀伤细胞。此外，他们通常会提供终身免疫。</p>
+
+<p>6 虽然载体疫苗能感染细胞并且还能产生记忆杀伤细胞，但疫苗不可能引起疾病—因为只有少数致病病毒基因被疫苗“携带”进去。</p>
+
+<p>思考题</p>
+
+<p>1 回顾疫苗的各种类型，并讨论是否每种类型都可以用来保护人们防御“天外来毒”。</p>
+
+<h3>第十九章 抗病毒药</h3>
+
+<p><hr></p>
+
+<h4>一般原则</h4>
+
+<p><hr></p>
+
+<p>1 病毒是依赖人类细胞的生理机制来繁殖的。因此，很难找到能杀死病毒，但又不损伤人类细胞的药物。</p>
+
+<p>2 因为个体病毒已经用很多方法解决了它们的常见问题，因此很难想象有可能生产出广谱抗病毒的药物。</p>
+
+<h3>汇总表</h3>
+
+<p><hr></p>
+
+<p><img src="/public/img/posts/viruses/image00100.jpg" /></p>
+
+<p><img src="/public/img/posts/viruses/image00101.jpg" /></p>
+
+<p><img src="/public/img/posts/viruses/image00102.jpg" /></p>
+
+<p><img src="/public/img/posts/viruses/image00103.jpg" /></p>
+
+<p><img src="/public/img/posts/viruses/image00104.jpg" /></p>
+
+    </div>
+    <div style="font-size:18px">
+      <hr>
+        版权声明：本文为博主原创文章，转载请注明<a href="http://lanbing510.info/2020/02/22/Viruses.html">出处</a>。
+        <span id="busuanzi_container_page_pv" style="float:right;padding-right:2px;" >
+          本文总阅读量 &nbsp;<span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> &nbsp;次
+        </span>
+        <p></p>
+        <hr>
+    </div>
+    <!--div class="bd-reward-stl" style="width:100%; padding:5px 0; border-radius:4px"><button id="bdRewardBtn"><span></span></button></div-->
+    <div id="disqus_thread">
+  <button type="button" name="lanbing510" class="btn btn-default show-commend">	
+  	<i class="fa fa-comment-o fa-lg" style="color: #16a095;"></i>
+  </button>
+</div>
+
+<!--div id="disqus_thread"></div-->
+<!--script>
+    var disqus_config = function () {
+        this.page.url = "http://lanbing510.info/2020/02/22/Viruses.html";  // your page's canonical URL variable
+        this.page.identifier = "/2020/02/22/Viruses.html"; // your page's unique identifier variable
+    };
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '//lanbing510.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript-->
+  </div>
+  <!-- 目录 -->
+  <div id="content_table" style="position:fixed;right:20px;top:120px;display:none; max-height:88%;overflow-y:auto;">
+    <div class="panel panel-success">
+      <div class="panel-body" id="nav"></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="/public/js/jquery.js"></script>
+<script type="text/javascript" src="/public/js/bootstrap.js"></script>
+<script src="/public/js/jquery.pjax.js"></script>
+<script src="/public/js/prettify/prettify.js"></script>
+<script src="/public/js/base.js"></script>
+<script>
+    $('a[href="#读书"]').tab('show');
+</script>
+
+
+<!--Busuanzi-->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!--MathJax-->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<!--Use CDN Version-->
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<!--Use Local Version-->
+<!--script type="text/javascript" async
+  src="/public/mathjax/MathJax.js?config=TeX-MML-AM_CHTML">
+</script-->
+
+
+<!--Share-->
+<!--script>
+ function change_bdposition()
+ {
+   $(".bdshare-slide-button").attr('style',"left: -40px");
+ }
+ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["mshare","tsina","weixin","renren","tqq","tqf","douban","sqq","qzone","mail","fbook","twi","linkedin","copy","print"],"bdPic":"","bdStyle":"1","bdSize":"16"},"slide":{"type":"slide","bdImg":"5","bdPos":"right","bdTop":"250"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script-->
+
+
+<!--打赏-->
+<!--script type="text/javascript" src="https://zz.bdstatic.com/zzdashang/js/bd-zz-reward.js"></script-->
+
+
+<div style="position:fixed;right:15px;top:62px;">
+  <button id="content_btn" class="btn btn-primary" style="width:43px; height:34px;">
+    <i class="fa fa-lg fa-plus"></i>
+  </button>
+</div>
+<div style="position:fixed;right:15px;top:20px;">
+  <button id="nav_btn" class="btn btn-primary">
+    <i class="fa fa-lg fa-navicon"></i>
+  </button>
+</div>
+
+
+<!--Search-->
+<div class="cb-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px;
+      opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
+    <input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: fixed; top: 60px" placeholder="文章标题 文章标签" >
+
+    <div style="position: fixed; top: 16px; right: 15px;">
+        <img src="/search/img/cb-close.png"  width="38px" heigh="38px" id="cb-close-btn"/>
+    </div>
+</div>
+<div style="position: fixed; right: 15px; bottom: 20px;">
+    <img src="/search/img/cb-search.png"  id="cb-search-btn" width="38px" heigh="38px" title="双击ctrl试一下"/>
+</div>
+<script src="/search/js/bootstrap3-typeahead.min.js" ></script>
+<script src="/search/js/cb-search.js" ></script>
+
+
+<!--Img VDian-->
+<!-- <div style="position: fixed; right: 6px; bottom: 45%;display: none" id="vdian"> 
+    <a href="http://lanbing510.info/2017/04/25/Vdian.html" target="_blank">
+      <img src="/public/img/icons/book-store.png"  width="62px"  alt=""  title="徜徉在书的海洋"/>
+    </a>
+</div> -->
+
+
+<div id="goodcover"></div>
+<div id="code2">
+  <div class="close2"><a href="javascript:void(0)" id="closebt2" style="text-align: center;"><img src="/public/img/close.png"></a></div>
+  <img src="/public/img/hb.png" style="width:320px;height:480px">
+</div>
+
+
+<!--Img HongBao-->
+<div style="position: fixed; right: 15px; bottom: 45%;display: none;" id="hb"> 
+      <img id="hbclick" src="/public/img/icons/hb.png"  width="38px"  alt=""  title="领红包"/> 
+</div>
+
+
+<!--Img ZoomInOut-->
+<script src="/public/js/zoomify.js"></script>
+<script type="text/javascript">
+    $('p img').zoomify();
+</script>
+</body>
+</html>
