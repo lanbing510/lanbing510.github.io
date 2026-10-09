@@ -18,43 +18,53 @@
 
 &lt;p&gt;把评价人数也算进去，再看一遍：评分 9 分以上、评价人数过万，三百多万本里只剩 404 本。去掉漫画、绘本和教材，再把同一本书的不同版本合并，剩下 &lt;strong&gt;262 本&lt;/strong&gt;。这些书不是「有人说好」，而是上万人一起说好。下面是全部名单。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/galaxy.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-先放一张图。这是「书海星空」，把 44 万本书之间「读过这本的人也喜欢」的关系画成一张可以漫游的星图：每个点是一本书，大小是被推荐的次数，颜色是评分。中间那颗是《围城》，周围是和它最常被一起读的书。榜单看完，可以从任何一本出发，顺着星图找下一本。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/galaxy.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;先放一张图。这是「书海星空」，把 44 万本书之间「读过这本的人也喜欢」的关系画成一张可以漫游的星图：每个点是一本书，大小是被推荐的次数，颜色是评分。中间那颗是《围城》，周围是和它最常被一起读的书。榜单看完，可以从任何一本出发，顺着星图找下一本。&lt;/p&gt;
 
 &lt;h2&gt;筛法：一层一层剩下 262 本&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/funnel.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-每一层的条件都很简单：有评分、9 分以上、评价过万、不是漫画绘本教材、同书合并。门槛不高，但剩下的很少。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/funnel.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;每一层的条件都很简单：有评分、9 分以上、评价过万、不是漫画绘本教材、同书合并。门槛不高，但剩下的很少。&lt;/p&gt;
 
 &lt;h2&gt;Top 30&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/grid.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/panel_1.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-榜首是《红楼梦》，9.7 分、47 万人评价，在前十里分数并列最高、评价人数最多。第 2 名是这次刷新数据后新进榜的《哈利·波特》全集，9.7 分、14.1 万人评价。前十里鲁迅占了两席（《坟》《野草》），《三体全集》是前十里唯一的中国当代小说。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/grid.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/panel_2.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-11 到 20 名里历史和社科的比例明显上来了：《艺术的故事》《筚路维艰》《东晋门阀政治》《奥斯维辛》。《银河帝国：基地七部曲》《魔戒》两套幻想小说也在这一档，评价人数都在一两万。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/panel_1.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;榜首是《红楼梦》，9.7 分、47 万人评价，在前十里分数并列最高、评价人数最多。第 2 名是这次刷新数据后新进榜的《哈利·波特》全集，9.7 分、14.1 万人评价。前十里鲁迅占了两席（《坟》《野草》），《三体全集》是前十里唯一的中国当代小说。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/panel_2.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;11 到 20 名里历史和社科的比例明显上来了：《艺术的故事》《筚路维艰》《东晋门阀政治》《奥斯维辛》。《银河帝国：基地七部曲》《魔戒》两套幻想小说也在这一档，评价人数都在一两万。&lt;/p&gt;
 
 &lt;p&gt;第 19 名有一本评价人数极其突出的书：《活着》，92.7 万人评价，是全榜人数最多的书，9.4 分。它的好书指数比不过前面评分 9.5 的书，但如果按「多少人读过并且认可」来看，它是第一。紧随其后的第 20 名是 31.5 万人评价的《1984》。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/panel_3.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-21 到 30 名文学和史学大约各占一半：老舍《四世同堂》、雷马克《西线无战事》、费兰特「那不勒斯四部曲」，以及《邓小平时代》《天朝的崩溃》《国史大纲》。奥威尔的《动物庄园》在第 24 名，另一个译本《动物农场》（18.4 万人评价）在第 42 名：两个译名在豆瓣是两个条目，所以都上了榜。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/panel_3.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;21 到 30 名文学和史学大约各占一半：老舍《四世同堂》、雷马克《西线无战事》、费兰特「那不勒斯四部曲」，以及《邓小平时代》《天朝的崩溃》《国史大纲》。奥威尔的《动物庄园》在第 24 名，另一个译本《动物农场》（18.4 万人评价）在第 42 名：两个译名在豆瓣是两个条目，所以都上了榜。&lt;/p&gt;
 
 &lt;h2&gt;第 31 ～ 100 本&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/compact_1.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-这一段开始出现大量「每个人书架上都有」的书：《百年孤独》《飘》《白夜行》《三体Ⅱ》，《活着》之外的余华（《许三观卖血记》）、老舍（《茶馆》《骆驼祥子》）、鲁迅的《呐喊》《彷徨》。也有不少社科：《乡土中国》《规训与惩罚》《中国国家治理的制度逻辑》《叫魂》。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/compact_1.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;这一段开始出现大量「每个人书架上都有」的书：《百年孤独》《飘》《白夜行》《三体Ⅱ》，《活着》之外的余华（《许三观卖血记》）、老舍（《茶馆》《骆驼祥子》）、鲁迅的《呐喊》《彷徨》。也有不少社科：《乡土中国》《规训与惩罚》《中国国家治理的制度逻辑》《叫魂》。&lt;/p&gt;
 
 &lt;h2&gt;第 101 ～ 262 本&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/compact_2.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/compact_3.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-后半段的分数都在 9.0 ～ 9.2 之间，差别很小，顺序不必太当真。但「评价过万且 9 分以上」这个门槛本身已经筛掉了 99.99% 的书，能进这 262 本的，没有一本是凑数的。《围城》《小王子》这类人人读过的书也在这一段（第 186、114 名）：评价人数几十万，分数恰好在 9.0 上下。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/compact_2.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/compact_3.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;后半段的分数都在 9.0 ～ 9.2 之间，差别很小，顺序不必太当真。但「评价过万且 9 分以上」这个门槛本身已经筛掉了 99.99% 的书，能进这 262 本的，没有一本是凑数的。《围城》《小王子》这类人人读过的书也在这一段（第 186、114 名）：评价人数几十万，分数恰好在 9.0 上下。&lt;/p&gt;
 
 &lt;h2&gt;为什么不直接按评分排&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/hist.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-榜单按「好书指数」排，不按原始评分。好书指数是评分和评价人数的贝叶斯平均：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/hist.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;榜单按「好书指数」排，不按原始评分。好书指数是评分和评价人数的贝叶斯平均：&lt;/p&gt;
 
 &lt;p&gt;好书指数 = v/(v+m) × 评分 + m/(v+m) × C&lt;/p&gt;
 
@@ -68,19 +78,21 @@
 
 &lt;p&gt;&lt;a href=&quot;https://wanshutiaoyi.com/?min_score=9&amp;min_votes=10000&amp;sort=quality&amp;exclude=%E6%BC%AB%E7%94%BB&amp;utm_source=blog&amp;utm_campaign=total&quot;&gt;评分 ≥ 9，评价 ≥ 10000，排除「漫画」，按好书指数排序&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/search_total.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-常用的几种筛法：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/search_total.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;按领域&lt;/strong&gt;：加一个标签（心理学、历史、经济学、科幻……），评价人数 ≥ 1000，按好书指数排。1000 人是个经验阈值，低于它的 9 分基本不可信。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;只看新书&lt;/strong&gt;：年份 2022 以后，评分 ≥ 8.8，评价 ≥ 500。分数已经有几百人支撑、但还没进大众视野的书。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;反着找&lt;/strong&gt;：评分很高、人数不多的冷门书，再去「喜欢这本书的人也喜欢」里看有没有你读过的，比看分数准。&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;常用的几种筛法：&lt;/p&gt;
+
+&lt;p&gt;1. &lt;strong&gt;按领域&lt;/strong&gt;：加一个标签（心理学、历史、经济学、科幻……），评价人数 ≥ 1000，按好书指数排。1000 人是个经验阈值，低于它的 9 分基本不可信。&lt;/p&gt;
+
+&lt;p&gt;2. &lt;strong&gt;只看新书&lt;/strong&gt;：年份 2022 以后，评分 ≥ 8.8，评价 ≥ 500。分数已经有几百人支撑、但还没进大众视野的书。&lt;/p&gt;
+
+&lt;p&gt;3. &lt;strong&gt;反着找&lt;/strong&gt;：评分很高、人数不多的冷门书，再去「喜欢这本书的人也喜欢」里看有没有你读过的，比看分数准。&lt;/p&gt;
 
 &lt;p&gt;2020 年之后新出的书，单独放在「新书雷达」里，按人气或评分排：&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/new_radar.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-每本书的详情页有评分分布（五星到一星的占比，一眼能看出是不是「一边倒」）、简介，以及「喜欢这本书的人也喜欢」：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/new_radar.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;每本书的详情页有评分分布（五星到一星的占比，一眼能看出是不是「一边倒」）、简介，以及「喜欢这本书的人也喜欢」：&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/book_detail.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
@@ -109,50 +121,81 @@
 
 &lt;p&gt;文学作品也在混进来。原始排序里排第 5 的是托尔斯泰的《伊凡·伊里奇之死》，10,937 人评 9.2 分——是本好书，但它是小说；排第 11 的《灯塔》是一本法国漫画。读者顺手给自己喜欢的书打上「心理学」标签，标签又不经编辑审核，这就是后果。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/psychology/grid.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-这份榜单的筛选条件是：带「心理学」标签、评价人数 ≥ 1,000、按好书指数排序。好书指数是贝叶斯平均——v/(v+m)×评分 + m/(v+m)×C，m 取 500，C≈8.01（全站有评分图书均分），和 IMDb Top 250 用的是同一类方法。同一本书有多个版本时，只算评价人数最多的那一版。上面提到的灵修、占星、文学书，都是我从原始结果里人工剔除掉的，剔除之后剩下的这 30 本才是真正讲心理学的。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/psychology/grid.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;这份榜单的筛选条件是：带「心理学」标签、评价人数 ≥ 1,000、按好书指数排序。好书指数是贝叶斯平均——v/(v+m)×评分 + m/(v+m)×C，m 取 500，C≈8.01（全站有评分图书均分），和 IMDb Top 250 用的是同一类方法。同一本书有多个版本时，只算评价人数最多的那一版。上面提到的灵修、占星、文学书，都是我从原始结果里人工剔除掉的，剔除之后剩下的这 30 本才是真正讲心理学的。&lt;/p&gt;
 
 &lt;h2&gt;Top 1～10&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/psychology/panel_1.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-1. &lt;a href=&quot;https://wanshutiaoyi.com/book/26304954&quot;&gt;存在主义心理治疗&lt;/a&gt; — 亚隆心理治疗经典，专业但不难读
-2. &lt;a href=&quot;https://wanshutiaoyi.com/book/26593221&quot;&gt;精神分析诊断&lt;/a&gt; — 麦克威廉斯讲人格结构诊断，咨询师案头书
-3. &lt;a href=&quot;https://wanshutiaoyi.com/book/26585065&quot;&gt;亲密关系（第6版）&lt;/a&gt; — 两性关系研究，适合谈恋爱的人
-4. &lt;a href=&quot;https://wanshutiaoyi.com/book/26418475&quot;&gt;逃避自由&lt;/a&gt; — 弗洛姆社会心理学经典，讲自由的代价
-5. &lt;a href=&quot;https://wanshutiaoyi.com/book/5248516&quot;&gt;改变心理学的40项研究&lt;/a&gt; — 心理学史经典实验合集，入门友好
-6. &lt;a href=&quot;https://wanshutiaoyi.com/book/4864832&quot;&gt;为什么学生不喜欢上学?&lt;/a&gt; — 认知科学讲教育，适合家长和老师
-7. &lt;a href=&quot;https://wanshutiaoyi.com/book/3143537&quot;&gt;津巴多普通心理学&lt;/a&gt; — 大部头教材，系统但厚重
-8. &lt;a href=&quot;https://wanshutiaoyi.com/book/26365755&quot;&gt;精神分析案例解析（万千心理）&lt;/a&gt; — 同一作者的案例概念化教材，配合上一本读
-9. &lt;a href=&quot;https://wanshutiaoyi.com/book/26841312&quot;&gt;给心理治疗师的礼物&lt;/a&gt; — 亚隆写给治疗师的实践建议
-10. &lt;a href=&quot;https://wanshutiaoyi.com/book/26578693&quot;&gt;登天之梯&lt;/a&gt; — 儿童创伤精神科医生的临床故事，写给父母和老师&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/psychology/panel_1.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;1. &lt;a href=&quot;https://wanshutiaoyi.com/book/26304954&quot;&gt;存在主义心理治疗&lt;/a&gt; — 亚隆心理治疗经典，专业但不难读&lt;/p&gt;
+
+&lt;p&gt;2. &lt;a href=&quot;https://wanshutiaoyi.com/book/26593221&quot;&gt;精神分析诊断&lt;/a&gt; — 麦克威廉斯讲人格结构诊断，咨询师案头书&lt;/p&gt;
+
+&lt;p&gt;3. &lt;a href=&quot;https://wanshutiaoyi.com/book/26585065&quot;&gt;亲密关系（第6版）&lt;/a&gt; — 两性关系研究，适合谈恋爱的人&lt;/p&gt;
+
+&lt;p&gt;4. &lt;a href=&quot;https://wanshutiaoyi.com/book/26418475&quot;&gt;逃避自由&lt;/a&gt; — 弗洛姆社会心理学经典，讲自由的代价&lt;/p&gt;
+
+&lt;p&gt;5. &lt;a href=&quot;https://wanshutiaoyi.com/book/5248516&quot;&gt;改变心理学的40项研究&lt;/a&gt; — 心理学史经典实验合集，入门友好&lt;/p&gt;
+
+&lt;p&gt;6. &lt;a href=&quot;https://wanshutiaoyi.com/book/4864832&quot;&gt;为什么学生不喜欢上学?&lt;/a&gt; — 认知科学讲教育，适合家长和老师&lt;/p&gt;
+
+&lt;p&gt;7. &lt;a href=&quot;https://wanshutiaoyi.com/book/3143537&quot;&gt;津巴多普通心理学&lt;/a&gt; — 大部头教材，系统但厚重&lt;/p&gt;
+
+&lt;p&gt;8. &lt;a href=&quot;https://wanshutiaoyi.com/book/26365755&quot;&gt;精神分析案例解析（万千心理）&lt;/a&gt; — 同一作者的案例概念化教材，配合上一本读&lt;/p&gt;
+
+&lt;p&gt;9. &lt;a href=&quot;https://wanshutiaoyi.com/book/26841312&quot;&gt;给心理治疗师的礼物&lt;/a&gt; — 亚隆写给治疗师的实践建议&lt;/p&gt;
+
+&lt;p&gt;10. &lt;a href=&quot;https://wanshutiaoyi.com/book/26578693&quot;&gt;登天之梯&lt;/a&gt; — 儿童创伤精神科医生的临床故事，写给父母和老师&lt;/p&gt;
 
 &lt;h2&gt;Top 11～20&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/psychology/panel_2.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-11. &lt;a href=&quot;https://wanshutiaoyi.com/book/2285530&quot;&gt;弗洛伊德及其后继者&lt;/a&gt; — 精神分析流派梳理，学术性强
-12. &lt;a href=&quot;https://wanshutiaoyi.com/book/6952036&quot;&gt;对伪心理学说不 (第8版)&lt;/a&gt; — 教你识别伪心理学，批判思维训练
-13. &lt;a href=&quot;https://wanshutiaoyi.com/book/1476651&quot;&gt;社会心理学&lt;/a&gt; — 迈尔斯教材，本科入门标配
-14. &lt;a href=&quot;https://wanshutiaoyi.com/book/25753137&quot;&gt;心理治疗中的依恋&lt;/a&gt; — 依恋理论用到成人治疗里，专业向
-15. &lt;a href=&quot;https://wanshutiaoyi.com/book/26304087&quot;&gt;孩子：挑战&lt;/a&gt; — 阿德勒派育儿经典，适合父母
-16. &lt;a href=&quot;https://wanshutiaoyi.com/book/2328458&quot;&gt;社会性动物&lt;/a&gt; — 社会心理学奠基之作，常被引用
-17. &lt;a href=&quot;https://wanshutiaoyi.com/book/2328178&quot;&gt;态度改变与社会影响&lt;/a&gt; — 社会心理学经典，讲说服与态度
-18. &lt;a href=&quot;https://wanshutiaoyi.com/book/25768266&quot;&gt;人的自我寻求&lt;/a&gt; — 罗洛·梅讲现代人的孤独与焦虑，存在主义取向
-19. &lt;a href=&quot;https://wanshutiaoyi.com/book/5980113&quot;&gt;伯恩斯新情绪疗法&lt;/a&gt; — 认知行为疗法自助书，治抑郁焦虑
-20. &lt;a href=&quot;https://wanshutiaoyi.com/book/26796536&quot;&gt;身体从未忘记&lt;/a&gt; — 讲创伤如何留在身体里，创伤研究必读&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/psychology/panel_2.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;11. &lt;a href=&quot;https://wanshutiaoyi.com/book/2285530&quot;&gt;弗洛伊德及其后继者&lt;/a&gt; — 精神分析流派梳理，学术性强&lt;/p&gt;
+
+&lt;p&gt;12. &lt;a href=&quot;https://wanshutiaoyi.com/book/6952036&quot;&gt;对伪心理学说不 (第8版)&lt;/a&gt; — 教你识别伪心理学，批判思维训练&lt;/p&gt;
+
+&lt;p&gt;13. &lt;a href=&quot;https://wanshutiaoyi.com/book/1476651&quot;&gt;社会心理学&lt;/a&gt; — 迈尔斯教材，本科入门标配&lt;/p&gt;
+
+&lt;p&gt;14. &lt;a href=&quot;https://wanshutiaoyi.com/book/25753137&quot;&gt;心理治疗中的依恋&lt;/a&gt; — 依恋理论用到成人治疗里，专业向&lt;/p&gt;
+
+&lt;p&gt;15. &lt;a href=&quot;https://wanshutiaoyi.com/book/26304087&quot;&gt;孩子：挑战&lt;/a&gt; — 阿德勒派育儿经典，适合父母&lt;/p&gt;
+
+&lt;p&gt;16. &lt;a href=&quot;https://wanshutiaoyi.com/book/2328458&quot;&gt;社会性动物&lt;/a&gt; — 社会心理学奠基之作，常被引用&lt;/p&gt;
+
+&lt;p&gt;17. &lt;a href=&quot;https://wanshutiaoyi.com/book/2328178&quot;&gt;态度改变与社会影响&lt;/a&gt; — 社会心理学经典，讲说服与态度&lt;/p&gt;
+
+&lt;p&gt;18. &lt;a href=&quot;https://wanshutiaoyi.com/book/25768266&quot;&gt;人的自我寻求&lt;/a&gt; — 罗洛·梅讲现代人的孤独与焦虑，存在主义取向&lt;/p&gt;
+
+&lt;p&gt;19. &lt;a href=&quot;https://wanshutiaoyi.com/book/5980113&quot;&gt;伯恩斯新情绪疗法&lt;/a&gt; — 认知行为疗法自助书，治抑郁焦虑&lt;/p&gt;
+
+&lt;p&gt;20. &lt;a href=&quot;https://wanshutiaoyi.com/book/26796536&quot;&gt;身体从未忘记&lt;/a&gt; — 讲创伤如何留在身体里，创伤研究必读&lt;/p&gt;
 
 &lt;h2&gt;Top 21～30&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/psychology/panel_3.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-21. &lt;a href=&quot;https://wanshutiaoyi.com/book/27018914&quot;&gt;诊疗椅上的谎言&lt;/a&gt; — 亚隆的心理治疗小说，比《当尼采哭泣》更贴近临床
-22. &lt;a href=&quot;https://wanshutiaoyi.com/book/1218321&quot;&gt;个人形成论&lt;/a&gt; — 罗杰斯人本主义心理学代表作
-23. &lt;a href=&quot;https://wanshutiaoyi.com/book/26683297&quot;&gt;进化心理学(第4版)&lt;/a&gt; — 用进化论解释人类行为，视角独特
-24. &lt;a href=&quot;https://wanshutiaoyi.com/book/2125973&quot;&gt;心理学导论&lt;/a&gt; — 英文教材译本，评价人数刚过千
-25. &lt;a href=&quot;https://wanshutiaoyi.com/book/26907984&quot;&gt;红书&lt;/a&gt; — 荣格秘密手稿，图文并茂但小众
-26. &lt;a href=&quot;https://wanshutiaoyi.com/book/27018918&quot;&gt;当尼采哭泣&lt;/a&gt; — 亚隆写的心理治疗小说，好读易入门
-27. &lt;a href=&quot;https://wanshutiaoyi.com/book/6511362&quot;&gt;我们时代的神经症人格&lt;/a&gt; — 霍妮经典，讲现代人焦虑的根源
-28. &lt;a href=&quot;https://wanshutiaoyi.com/book/26721477&quot;&gt;创伤与复原&lt;/a&gt; — 赫尔曼创伤研究奠基之作，讲复原的三个阶段
-29. &lt;a href=&quot;https://wanshutiaoyi.com/book/33429926&quot;&gt;追寻记忆的痕迹&lt;/a&gt; — 诺奖得主坎德尔自传，讲记忆的神经机制
-30. &lt;a href=&quot;https://wanshutiaoyi.com/book/3026879&quot;&gt;爱的艺术&lt;/a&gt; — 弗洛姆谈爱与关系，大众读物&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/psychology/panel_3.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;21. &lt;a href=&quot;https://wanshutiaoyi.com/book/27018914&quot;&gt;诊疗椅上的谎言&lt;/a&gt; — 亚隆的心理治疗小说，比《当尼采哭泣》更贴近临床&lt;/p&gt;
+
+&lt;p&gt;22. &lt;a href=&quot;https://wanshutiaoyi.com/book/1218321&quot;&gt;个人形成论&lt;/a&gt; — 罗杰斯人本主义心理学代表作&lt;/p&gt;
+
+&lt;p&gt;23. &lt;a href=&quot;https://wanshutiaoyi.com/book/26683297&quot;&gt;进化心理学(第4版)&lt;/a&gt; — 用进化论解释人类行为，视角独特&lt;/p&gt;
+
+&lt;p&gt;24. &lt;a href=&quot;https://wanshutiaoyi.com/book/2125973&quot;&gt;心理学导论&lt;/a&gt; — 英文教材译本，评价人数刚过千&lt;/p&gt;
+
+&lt;p&gt;25. &lt;a href=&quot;https://wanshutiaoyi.com/book/26907984&quot;&gt;红书&lt;/a&gt; — 荣格秘密手稿，图文并茂但小众&lt;/p&gt;
+
+&lt;p&gt;26. &lt;a href=&quot;https://wanshutiaoyi.com/book/27018918&quot;&gt;当尼采哭泣&lt;/a&gt; — 亚隆写的心理治疗小说，好读易入门&lt;/p&gt;
+
+&lt;p&gt;27. &lt;a href=&quot;https://wanshutiaoyi.com/book/6511362&quot;&gt;我们时代的神经症人格&lt;/a&gt; — 霍妮经典，讲现代人焦虑的根源&lt;/p&gt;
+
+&lt;p&gt;28. &lt;a href=&quot;https://wanshutiaoyi.com/book/26721477&quot;&gt;创伤与复原&lt;/a&gt; — 赫尔曼创伤研究奠基之作，讲复原的三个阶段&lt;/p&gt;
+
+&lt;p&gt;29. &lt;a href=&quot;https://wanshutiaoyi.com/book/33429926&quot;&gt;追寻记忆的痕迹&lt;/a&gt; — 诺奖得主坎德尔自传，讲记忆的神经机制&lt;/p&gt;
+
+&lt;p&gt;30. &lt;a href=&quot;https://wanshutiaoyi.com/book/3026879&quot;&gt;爱的艺术&lt;/a&gt; — 弗洛姆谈爱与关系，大众读物&lt;/p&gt;
 
 &lt;h2&gt;值得单独说的 3 本&lt;/h2&gt;
 
@@ -168,8 +211,9 @@
 
 &lt;p&gt;&lt;a href=&quot;https://wanshutiaoyi.com/?tag=%E5%BF%83%E7%90%86%E5%AD%A6&amp;min_votes=1000&amp;sort=quality&amp;utm_source=blog&amp;utm_campaign=psychology&quot;&gt;在万书挑一里按「心理学」标签筛&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/psychology/search_psychology.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-这个站是我一个人自费做的，不接广告，数据每天更新，自费运营至少一年，承诺至少运营到 2027 年 12 月。这份心理学榜单如果你觉得漏了什么重要的书，欢迎在评论区补充。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/psychology/search_psychology.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;这个站是我一个人自费做的，不接广告，数据每天更新，自费运营至少一年，承诺至少运营到 2027 年 12 月。这份心理学榜单如果你觉得漏了什么重要的书，欢迎在评论区补充。&lt;/p&gt;
 
 &lt;p&gt;数据来源：豆瓣图书公开页面；每本书都链接回豆瓣原页。&lt;/p&gt;
 </description>
@@ -190,50 +234,81 @@
 
 &lt;p&gt;标签是读者自己贴的，不是编辑审核的，产业史、经济学这类书只要沾上「金融」「投资」的边，就会挤进「投资」排行榜，把真正的投资书挤到后面。这份榜单是把这类标签噪声手动清理掉之后，剩下的 30 本投资理财类书。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/invest/grid.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-筛选条件是：带「投资」标签、评价人数 ≥ 1,000、按好书指数排序。好书指数是贝叶斯平均——v/(v+m)×评分 + m/(v+m)×C，m 取 500，C≈8.01，和 IMDb Top 250 同类方法；m 是用「2020 年的数据预测 2026 年同一批书的分数」回测选出来的。同一本书有多个版本时，只算评价人数最多的那一版。产业史、经济学教材这类明显跑题的条目，都在人工剔除之列。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/invest/grid.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;筛选条件是：带「投资」标签、评价人数 ≥ 1,000、按好书指数排序。好书指数是贝叶斯平均——v/(v+m)×评分 + m/(v+m)×C，m 取 500，C≈8.01，和 IMDb Top 250 同类方法；m 是用「2020 年的数据预测 2026 年同一批书的分数」回测选出来的。同一本书有多个版本时，只算评价人数最多的那一版。产业史、经济学教材这类明显跑题的条目，都在人工剔除之列。&lt;/p&gt;
 
 &lt;h2&gt;Top 1～10&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/invest/panel_1.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-1. &lt;a href=&quot;https://wanshutiaoyi.com/book/3576486&quot;&gt;小狗钱钱&lt;/a&gt; — 儿童理财启蒙童书，成年人也适合读
-2. &lt;a href=&quot;https://wanshutiaoyi.com/book/1089991&quot;&gt;期货市场技术分析&lt;/a&gt; — 墨菲技术分析圣经，专业向
-3. &lt;a href=&quot;https://wanshutiaoyi.com/book/5346110&quot;&gt;穷查理宝典&lt;/a&gt; — 芒格思维合集，投资之外也值得读
-4. &lt;a href=&quot;https://wanshutiaoyi.com/book/30194663&quot;&gt;股市真规则&lt;/a&gt; — 多尔西讲护城河选股法，偏基本面
-5. &lt;a href=&quot;https://wanshutiaoyi.com/book/25926542&quot;&gt;一本书读懂财报&lt;/a&gt; — 肖星讲财报入门，适合零基础
-6. &lt;a href=&quot;https://wanshutiaoyi.com/book/5243775&quot;&gt;聪明的投资者&lt;/a&gt; — 格雷厄姆价值投资圣经，巴菲特推荐
-7. &lt;a href=&quot;https://wanshutiaoyi.com/book/1087737&quot;&gt;日本蜡烛图技术&lt;/a&gt; — 尼森讲 K 线分析，技术分析经典
-8. &lt;a href=&quot;https://wanshutiaoyi.com/book/30164963&quot;&gt;巴菲特致股东的信 (第4版)&lt;/a&gt; — 巴菲特历年股东信精选，一手资料
-9. &lt;a href=&quot;https://wanshutiaoyi.com/book/2335844&quot;&gt;Margin of Safety&lt;/a&gt; — 克拉曼绝版经典，二手书曾被炒上千美元
-10. &lt;a href=&quot;https://wanshutiaoyi.com/book/6974582&quot;&gt;股票作手回忆录&lt;/a&gt; — 利弗莫尔传记，经典叙事&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/invest/panel_1.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;1. &lt;a href=&quot;https://wanshutiaoyi.com/book/3576486&quot;&gt;小狗钱钱&lt;/a&gt; — 儿童理财启蒙童书，成年人也适合读&lt;/p&gt;
+
+&lt;p&gt;2. &lt;a href=&quot;https://wanshutiaoyi.com/book/1089991&quot;&gt;期货市场技术分析&lt;/a&gt; — 墨菲技术分析圣经，专业向&lt;/p&gt;
+
+&lt;p&gt;3. &lt;a href=&quot;https://wanshutiaoyi.com/book/5346110&quot;&gt;穷查理宝典&lt;/a&gt; — 芒格思维合集，投资之外也值得读&lt;/p&gt;
+
+&lt;p&gt;4. &lt;a href=&quot;https://wanshutiaoyi.com/book/30194663&quot;&gt;股市真规则&lt;/a&gt; — 多尔西讲护城河选股法，偏基本面&lt;/p&gt;
+
+&lt;p&gt;5. &lt;a href=&quot;https://wanshutiaoyi.com/book/25926542&quot;&gt;一本书读懂财报&lt;/a&gt; — 肖星讲财报入门，适合零基础&lt;/p&gt;
+
+&lt;p&gt;6. &lt;a href=&quot;https://wanshutiaoyi.com/book/5243775&quot;&gt;聪明的投资者&lt;/a&gt; — 格雷厄姆价值投资圣经，巴菲特推荐&lt;/p&gt;
+
+&lt;p&gt;7. &lt;a href=&quot;https://wanshutiaoyi.com/book/1087737&quot;&gt;日本蜡烛图技术&lt;/a&gt; — 尼森讲 K 线分析，技术分析经典&lt;/p&gt;
+
+&lt;p&gt;8. &lt;a href=&quot;https://wanshutiaoyi.com/book/30164963&quot;&gt;巴菲特致股东的信 (第4版)&lt;/a&gt; — 巴菲特历年股东信精选，一手资料&lt;/p&gt;
+
+&lt;p&gt;9. &lt;a href=&quot;https://wanshutiaoyi.com/book/2335844&quot;&gt;Margin of Safety&lt;/a&gt; — 克拉曼绝版经典，二手书曾被炒上千美元&lt;/p&gt;
+
+&lt;p&gt;10. &lt;a href=&quot;https://wanshutiaoyi.com/book/6974582&quot;&gt;股票作手回忆录&lt;/a&gt; — 利弗莫尔传记，经典叙事&lt;/p&gt;
 
 &lt;h2&gt;Top 11～20&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/invest/panel_2.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-11. &lt;a href=&quot;https://wanshutiaoyi.com/book/24092345&quot;&gt;证券分析&lt;/a&gt; — 格雷厄姆/多德价值投资原典，门槛高
-12. &lt;a href=&quot;https://wanshutiaoyi.com/book/26376773&quot;&gt;金融怪杰&lt;/a&gt; — 施瓦格访谈十几位顶级交易员，交易类经典
-13. &lt;a href=&quot;https://wanshutiaoyi.com/book/1182173&quot;&gt;炒股的智慧&lt;/a&gt; — 陈江挺讲交易心理，国内早期畅销书
-14. &lt;a href=&quot;https://wanshutiaoyi.com/book/10799082&quot;&gt;投资最重要的事&lt;/a&gt; — 霍华德·马克斯讲风险意识，偏理念
-15. &lt;a href=&quot;https://wanshutiaoyi.com/book/1958714&quot;&gt;彼得·林奇的成功投资&lt;/a&gt; — 传奇基金经理讲选股，案例丰富
-16. &lt;a href=&quot;https://wanshutiaoyi.com/book/26290085&quot;&gt;手把手教你读财报&lt;/a&gt; — 唐朝讲财报实战，国内作者
-17. &lt;a href=&quot;https://wanshutiaoyi.com/book/5921785&quot;&gt;乱世华尔街&lt;/a&gt; — 渔阳讲 2008 年金融危机，叙事性强
-18. &lt;a href=&quot;https://wanshutiaoyi.com/book/25829645&quot;&gt;股市进阶之道&lt;/a&gt; — 李杰讲商业模式分析，国内作者力作
-19. &lt;a href=&quot;https://wanshutiaoyi.com/book/3107581&quot;&gt;史丹·温斯坦称傲牛熊市的秘密&lt;/a&gt; — 温斯坦讲阶段理论，评价刚过千
-20. &lt;a href=&quot;https://wanshutiaoyi.com/book/26274190&quot;&gt;股票魔法师&lt;/a&gt; — 米勒维尼讲趋势模板与止损，偏技术面&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/invest/panel_2.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;11. &lt;a href=&quot;https://wanshutiaoyi.com/book/24092345&quot;&gt;证券分析&lt;/a&gt; — 格雷厄姆/多德价值投资原典，门槛高&lt;/p&gt;
+
+&lt;p&gt;12. &lt;a href=&quot;https://wanshutiaoyi.com/book/26376773&quot;&gt;金融怪杰&lt;/a&gt; — 施瓦格访谈十几位顶级交易员，交易类经典&lt;/p&gt;
+
+&lt;p&gt;13. &lt;a href=&quot;https://wanshutiaoyi.com/book/1182173&quot;&gt;炒股的智慧&lt;/a&gt; — 陈江挺讲交易心理，国内早期畅销书&lt;/p&gt;
+
+&lt;p&gt;14. &lt;a href=&quot;https://wanshutiaoyi.com/book/10799082&quot;&gt;投资最重要的事&lt;/a&gt; — 霍华德·马克斯讲风险意识，偏理念&lt;/p&gt;
+
+&lt;p&gt;15. &lt;a href=&quot;https://wanshutiaoyi.com/book/1958714&quot;&gt;彼得·林奇的成功投资&lt;/a&gt; — 传奇基金经理讲选股，案例丰富&lt;/p&gt;
+
+&lt;p&gt;16. &lt;a href=&quot;https://wanshutiaoyi.com/book/26290085&quot;&gt;手把手教你读财报&lt;/a&gt; — 唐朝讲财报实战，国内作者&lt;/p&gt;
+
+&lt;p&gt;17. &lt;a href=&quot;https://wanshutiaoyi.com/book/5921785&quot;&gt;乱世华尔街&lt;/a&gt; — 渔阳讲 2008 年金融危机，叙事性强&lt;/p&gt;
+
+&lt;p&gt;18. &lt;a href=&quot;https://wanshutiaoyi.com/book/25829645&quot;&gt;股市进阶之道&lt;/a&gt; — 李杰讲商业模式分析，国内作者力作&lt;/p&gt;
+
+&lt;p&gt;19. &lt;a href=&quot;https://wanshutiaoyi.com/book/3107581&quot;&gt;史丹·温斯坦称傲牛熊市的秘密&lt;/a&gt; — 温斯坦讲阶段理论，评价刚过千&lt;/p&gt;
+
+&lt;p&gt;20. &lt;a href=&quot;https://wanshutiaoyi.com/book/26274190&quot;&gt;股票魔法师&lt;/a&gt; — 米勒维尼讲趋势模板与止损，偏技术面&lt;/p&gt;
 
 &lt;h2&gt;Top 21～30&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/invest/panel_3.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-21. &lt;a href=&quot;https://wanshutiaoyi.com/book/24385064&quot;&gt;一个农民的亿万传奇&lt;/a&gt; — 傅海棠讲期货基本面交易，国内实战派
-22. &lt;a href=&quot;https://wanshutiaoyi.com/book/27088810&quot;&gt;资本回报&lt;/a&gt; — 钱塞勒讲资本周期，从供给端看行业投资
-23. &lt;a href=&quot;https://wanshutiaoyi.com/book/5914480&quot;&gt;富可敌国&lt;/a&gt; — 马拉比写对冲基金史，索罗斯到桥水都在里面
-24. &lt;a href=&quot;https://wanshutiaoyi.com/book/24325274&quot;&gt;海龟交易法则&lt;/a&gt; — 费思讲趋势交易系统，量化向
-25. &lt;a href=&quot;https://wanshutiaoyi.com/book/4100680&quot;&gt;巴菲特的护城河&lt;/a&gt; — 多尔西讲竞争优势分析，基本面入门
-26. &lt;a href=&quot;https://wanshutiaoyi.com/book/1007459&quot;&gt;怎样选择成长股&lt;/a&gt; — 费舍讲成长股投资，巴菲特早期师承
-27. &lt;a href=&quot;https://wanshutiaoyi.com/book/3027464&quot;&gt;专业投机原理&lt;/a&gt; — 斯波朗迪讲风险控制，交易心理向
-28. &lt;a href=&quot;https://wanshutiaoyi.com/book/11525290&quot;&gt;走出幻觉走向成熟&lt;/a&gt; — 讲交易心理与认知，国内作者
-29. &lt;a href=&quot;https://wanshutiaoyi.com/book/1058131&quot;&gt;金融炼金术&lt;/a&gt; — 索罗斯讲反身性理论，偏哲学抽象
-30. &lt;a href=&quot;https://wanshutiaoyi.com/book/2189613&quot;&gt;战胜华尔街&lt;/a&gt; — 林奇另一本选股实战&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/invest/panel_3.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;21. &lt;a href=&quot;https://wanshutiaoyi.com/book/24385064&quot;&gt;一个农民的亿万传奇&lt;/a&gt; — 傅海棠讲期货基本面交易，国内实战派&lt;/p&gt;
+
+&lt;p&gt;22. &lt;a href=&quot;https://wanshutiaoyi.com/book/27088810&quot;&gt;资本回报&lt;/a&gt; — 钱塞勒讲资本周期，从供给端看行业投资&lt;/p&gt;
+
+&lt;p&gt;23. &lt;a href=&quot;https://wanshutiaoyi.com/book/5914480&quot;&gt;富可敌国&lt;/a&gt; — 马拉比写对冲基金史，索罗斯到桥水都在里面&lt;/p&gt;
+
+&lt;p&gt;24. &lt;a href=&quot;https://wanshutiaoyi.com/book/24325274&quot;&gt;海龟交易法则&lt;/a&gt; — 费思讲趋势交易系统，量化向&lt;/p&gt;
+
+&lt;p&gt;25. &lt;a href=&quot;https://wanshutiaoyi.com/book/4100680&quot;&gt;巴菲特的护城河&lt;/a&gt; — 多尔西讲竞争优势分析，基本面入门&lt;/p&gt;
+
+&lt;p&gt;26. &lt;a href=&quot;https://wanshutiaoyi.com/book/1007459&quot;&gt;怎样选择成长股&lt;/a&gt; — 费舍讲成长股投资，巴菲特早期师承&lt;/p&gt;
+
+&lt;p&gt;27. &lt;a href=&quot;https://wanshutiaoyi.com/book/3027464&quot;&gt;专业投机原理&lt;/a&gt; — 斯波朗迪讲风险控制，交易心理向&lt;/p&gt;
+
+&lt;p&gt;28. &lt;a href=&quot;https://wanshutiaoyi.com/book/11525290&quot;&gt;走出幻觉走向成熟&lt;/a&gt; — 讲交易心理与认知，国内作者&lt;/p&gt;
+
+&lt;p&gt;29. &lt;a href=&quot;https://wanshutiaoyi.com/book/1058131&quot;&gt;金融炼金术&lt;/a&gt; — 索罗斯讲反身性理论，偏哲学抽象&lt;/p&gt;
+
+&lt;p&gt;30. &lt;a href=&quot;https://wanshutiaoyi.com/book/2189613&quot;&gt;战胜华尔街&lt;/a&gt; — 林奇另一本选股实战&lt;/p&gt;
 
 &lt;h2&gt;值得单独说的 3 本&lt;/h2&gt;
 
@@ -249,8 +324,9 @@
 
 &lt;p&gt;&lt;a href=&quot;https://wanshutiaoyi.com/?tag=%E6%8A%95%E8%B5%84&amp;min_votes=1000&amp;sort=quality&amp;utm_source=blog&amp;utm_campaign=invest&quot;&gt;在万书挑一里按「投资」标签筛&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/invest/search_invest.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-这个站是我一个人自费做的，不接广告，数据每天更新，自费运营至少一年，承诺至少运营到 2027 年 12 月。这份投资理财榜单如果你觉得漏了什么重要的书，欢迎在评论区补充。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/invest/search_invest.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;这个站是我一个人自费做的，不接广告，数据每天更新，自费运营至少一年，承诺至少运营到 2027 年 12 月。这份投资理财榜单如果你觉得漏了什么重要的书，欢迎在评论区补充。&lt;/p&gt;
 
 &lt;p&gt;数据来源：豆瓣图书公开页面；每本书都链接回豆瓣原页。&lt;/p&gt;
 </description>
@@ -271,50 +347,81 @@
 
 &lt;p&gt;这不是孤例，只是最典型的一个。标签是读者自己贴的，不是编辑审核的，越热门的标签越容易被蹭。这份榜单是把类似的噪声手动清理掉之后，剩下的 30 本。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/history/grid.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-筛选条件是：带「历史」标签、评价人数 ≥ 1,000、按好书指数排序。好书指数是贝叶斯平均——v/(v+m)×评分 + m/(v+m)×C，m 取 500，C≈8.01，和 IMDb Top 250 同类方法。同一本书有多个版本时，只算评价人数最多的那一版。漫画这种明显跑题的条目，都在人工剔除之列。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/history/grid.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;筛选条件是：带「历史」标签、评价人数 ≥ 1,000、按好书指数排序。好书指数是贝叶斯平均——v/(v+m)×评分 + m/(v+m)×C，m 取 500，C≈8.01，和 IMDb Top 250 同类方法。同一本书有多个版本时，只算评价人数最多的那一版。漫画这种明显跑题的条目，都在人工剔除之列。&lt;/p&gt;
 
 &lt;h2&gt;Top 1～10&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/history/panel_1.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-1. &lt;a href=&quot;https://wanshutiaoyi.com/book/26545308&quot;&gt;南京大屠杀&lt;/a&gt; — 张纯如纪实史学，沉重但必读
-2. &lt;a href=&quot;https://wanshutiaoyi.com/book/1077847&quot;&gt;史记（全十册）&lt;/a&gt; — 中华书局版，文言原典，专业向
-3. &lt;a href=&quot;https://wanshutiaoyi.com/book/6790302&quot;&gt;资治通鉴&lt;/a&gt; — 司马光编年体通史，古典必读但门槛高
-4. &lt;a href=&quot;https://wanshutiaoyi.com/book/3162991&quot;&gt;艺术的故事&lt;/a&gt; — 贡布里希艺术史入门，跨学科经典
-5. &lt;a href=&quot;https://wanshutiaoyi.com/book/26171466&quot;&gt;筚路维艰&lt;/a&gt; — 萧冬连讲中国改革史，学术严谨
-6. &lt;a href=&quot;https://wanshutiaoyi.com/book/10758290&quot;&gt;东晋门阀政治&lt;/a&gt; — 田余庆断代史名著，专业性强
-7. &lt;a href=&quot;https://wanshutiaoyi.com/book/26861418&quot;&gt;奥斯维辛&lt;/a&gt; — 劳伦斯·里斯二战史，史料详实
-8. &lt;a href=&quot;https://wanshutiaoyi.com/book/20424526&quot;&gt;邓小平时代&lt;/a&gt; — 傅高义当代史巨著，国际视角
-9. &lt;a href=&quot;https://wanshutiaoyi.com/book/25935941&quot;&gt;天朝的崩溃&lt;/a&gt; — 茅海建讲鸦片战争，史学考据扎实
-10. &lt;a href=&quot;https://wanshutiaoyi.com/book/1046492&quot;&gt;國史大綱（上下）&lt;/a&gt; — 钱穆通史代表作，传统史学视角&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/history/panel_1.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;1. &lt;a href=&quot;https://wanshutiaoyi.com/book/26545308&quot;&gt;南京大屠杀&lt;/a&gt; — 张纯如纪实史学，沉重但必读&lt;/p&gt;
+
+&lt;p&gt;2. &lt;a href=&quot;https://wanshutiaoyi.com/book/1077847&quot;&gt;史记（全十册）&lt;/a&gt; — 中华书局版，文言原典，专业向&lt;/p&gt;
+
+&lt;p&gt;3. &lt;a href=&quot;https://wanshutiaoyi.com/book/6790302&quot;&gt;资治通鉴&lt;/a&gt; — 司马光编年体通史，古典必读但门槛高&lt;/p&gt;
+
+&lt;p&gt;4. &lt;a href=&quot;https://wanshutiaoyi.com/book/3162991&quot;&gt;艺术的故事&lt;/a&gt; — 贡布里希艺术史入门，跨学科经典&lt;/p&gt;
+
+&lt;p&gt;5. &lt;a href=&quot;https://wanshutiaoyi.com/book/26171466&quot;&gt;筚路维艰&lt;/a&gt; — 萧冬连讲中国改革史，学术严谨&lt;/p&gt;
+
+&lt;p&gt;6. &lt;a href=&quot;https://wanshutiaoyi.com/book/10758290&quot;&gt;东晋门阀政治&lt;/a&gt; — 田余庆断代史名著，专业性强&lt;/p&gt;
+
+&lt;p&gt;7. &lt;a href=&quot;https://wanshutiaoyi.com/book/26861418&quot;&gt;奥斯维辛&lt;/a&gt; — 劳伦斯·里斯二战史，史料详实&lt;/p&gt;
+
+&lt;p&gt;8. &lt;a href=&quot;https://wanshutiaoyi.com/book/20424526&quot;&gt;邓小平时代&lt;/a&gt; — 傅高义当代史巨著，国际视角&lt;/p&gt;
+
+&lt;p&gt;9. &lt;a href=&quot;https://wanshutiaoyi.com/book/25935941&quot;&gt;天朝的崩溃&lt;/a&gt; — 茅海建讲鸦片战争，史学考据扎实&lt;/p&gt;
+
+&lt;p&gt;10. &lt;a href=&quot;https://wanshutiaoyi.com/book/1046492&quot;&gt;國史大綱（上下）&lt;/a&gt; — 钱穆通史代表作，传统史学视角&lt;/p&gt;
 
 &lt;h2&gt;Top 11～20&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/history/panel_2.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-11. &lt;a href=&quot;https://wanshutiaoyi.com/book/1055304&quot;&gt;中国历史地图集（全八册）&lt;/a&gt; — 谭其骧编，工具书式参考
-12. &lt;a href=&quot;https://wanshutiaoyi.com/book/1017795&quot;&gt;隋唐制度渊源略论稿 唐代政治史述论稿&lt;/a&gt; — 陈寅恪名著，门槛较高
-13. &lt;a href=&quot;https://wanshutiaoyi.com/book/6895949&quot;&gt;联合政府与一党训政&lt;/a&gt; — 邓野讲国共历史，学术向
-14. &lt;a href=&quot;https://wanshutiaoyi.com/book/1014763&quot;&gt;三国志&lt;/a&gt; — 陈寿正史，文言原典
-15. &lt;a href=&quot;https://wanshutiaoyi.com/book/26377063&quot;&gt;魏晋之际的政治权力与家族网络&lt;/a&gt; — 仇鹿鸣讲魏晋政治，年轻学者力作
-16. &lt;a href=&quot;https://wanshutiaoyi.com/book/4146127&quot;&gt;春秋左传注（全四册）&lt;/a&gt; — 杨伯峻注本，文言古典
-17. &lt;a href=&quot;https://wanshutiaoyi.com/book/27615361&quot;&gt;昨日的世界&lt;/a&gt; — 茨威格回忆录，文学性强的历史见证
-18. &lt;a href=&quot;https://wanshutiaoyi.com/book/6311230&quot;&gt;秦汉魏晋史探微&lt;/a&gt; — 田余庆断代史论文集，专业向
-19. &lt;a href=&quot;https://wanshutiaoyi.com/book/26021455&quot;&gt;中国古代文化常识（插图修订第4版）&lt;/a&gt; — 王力主编，国学常识普及
-20. &lt;a href=&quot;https://wanshutiaoyi.com/book/5372471&quot;&gt;党员、党权与党争&lt;/a&gt; — 王奇生讲国民党史，学术扎实&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/history/panel_2.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;11. &lt;a href=&quot;https://wanshutiaoyi.com/book/1055304&quot;&gt;中国历史地图集（全八册）&lt;/a&gt; — 谭其骧编，工具书式参考&lt;/p&gt;
+
+&lt;p&gt;12. &lt;a href=&quot;https://wanshutiaoyi.com/book/1017795&quot;&gt;隋唐制度渊源略论稿 唐代政治史述论稿&lt;/a&gt; — 陈寅恪名著，门槛较高&lt;/p&gt;
+
+&lt;p&gt;13. &lt;a href=&quot;https://wanshutiaoyi.com/book/6895949&quot;&gt;联合政府与一党训政&lt;/a&gt; — 邓野讲国共历史，学术向&lt;/p&gt;
+
+&lt;p&gt;14. &lt;a href=&quot;https://wanshutiaoyi.com/book/1014763&quot;&gt;三国志&lt;/a&gt; — 陈寿正史，文言原典&lt;/p&gt;
+
+&lt;p&gt;15. &lt;a href=&quot;https://wanshutiaoyi.com/book/26377063&quot;&gt;魏晋之际的政治权力与家族网络&lt;/a&gt; — 仇鹿鸣讲魏晋政治，年轻学者力作&lt;/p&gt;
+
+&lt;p&gt;16. &lt;a href=&quot;https://wanshutiaoyi.com/book/4146127&quot;&gt;春秋左传注（全四册）&lt;/a&gt; — 杨伯峻注本，文言古典&lt;/p&gt;
+
+&lt;p&gt;17. &lt;a href=&quot;https://wanshutiaoyi.com/book/27615361&quot;&gt;昨日的世界&lt;/a&gt; — 茨威格回忆录，文学性强的历史见证&lt;/p&gt;
+
+&lt;p&gt;18. &lt;a href=&quot;https://wanshutiaoyi.com/book/6311230&quot;&gt;秦汉魏晋史探微&lt;/a&gt; — 田余庆断代史论文集，专业向&lt;/p&gt;
+
+&lt;p&gt;19. &lt;a href=&quot;https://wanshutiaoyi.com/book/26021455&quot;&gt;中国古代文化常识（插图修订第4版）&lt;/a&gt; — 王力主编，国学常识普及&lt;/p&gt;
+
+&lt;p&gt;20. &lt;a href=&quot;https://wanshutiaoyi.com/book/5372471&quot;&gt;党员、党权与党争&lt;/a&gt; — 王奇生讲国民党史，学术扎实&lt;/p&gt;
 
 &lt;h2&gt;Top 21～30&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/history/panel_3.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-21. &lt;a href=&quot;https://wanshutiaoyi.com/book/6533042&quot;&gt;南明史&lt;/a&gt; — 顾诚讲南明抗清，史料考据细密
-22. &lt;a href=&quot;https://wanshutiaoyi.com/book/20441569&quot;&gt;被淹没和被拯救的&lt;/a&gt; — 莱维讲集中营，幸存者视角
-23. &lt;a href=&quot;https://wanshutiaoyi.com/book/3674537&quot;&gt;明朝那些事儿（1-9）&lt;/a&gt; — 当年明月通俗史，好读入门首选
-24. &lt;a href=&quot;https://wanshutiaoyi.com/book/1003479&quot;&gt;中国历代政治得失&lt;/a&gt; — 钱穆讲历代制度，篇幅短好读
-25. &lt;a href=&quot;https://wanshutiaoyi.com/book/30147582&quot;&gt;近代中国社会的新陈代谢&lt;/a&gt; — 陈旭麓讲近代转型，经典教材
-26. &lt;a href=&quot;https://wanshutiaoyi.com/book/25912076&quot;&gt;叫魂&lt;/a&gt; — 孔飞力讲清代谣言恐慌，社会史经典
-27. &lt;a href=&quot;https://wanshutiaoyi.com/book/26820347&quot;&gt;红星照耀中国&lt;/a&gt; — 斯诺讲长征延安，外国记者视角
-28. &lt;a href=&quot;https://wanshutiaoyi.com/book/33408126&quot;&gt;征服与革命中的阿拉伯人&lt;/a&gt; — 罗根写奥斯曼以来五百年阿拉伯史，读懂中东的入门
-29. &lt;a href=&quot;https://wanshutiaoyi.com/book/26897412&quot;&gt;中苏关系史纲&lt;/a&gt; — 沈志华等基于解密档案写中苏关系，学术向
-30. &lt;a href=&quot;https://wanshutiaoyi.com/book/25985021&quot;&gt;人类简史&lt;/a&gt; — 赫拉利讲人类发展史，大众向畅销&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/history/panel_3.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;21. &lt;a href=&quot;https://wanshutiaoyi.com/book/6533042&quot;&gt;南明史&lt;/a&gt; — 顾诚讲南明抗清，史料考据细密&lt;/p&gt;
+
+&lt;p&gt;22. &lt;a href=&quot;https://wanshutiaoyi.com/book/20441569&quot;&gt;被淹没和被拯救的&lt;/a&gt; — 莱维讲集中营，幸存者视角&lt;/p&gt;
+
+&lt;p&gt;23. &lt;a href=&quot;https://wanshutiaoyi.com/book/3674537&quot;&gt;明朝那些事儿（1-9）&lt;/a&gt; — 当年明月通俗史，好读入门首选&lt;/p&gt;
+
+&lt;p&gt;24. &lt;a href=&quot;https://wanshutiaoyi.com/book/1003479&quot;&gt;中国历代政治得失&lt;/a&gt; — 钱穆讲历代制度，篇幅短好读&lt;/p&gt;
+
+&lt;p&gt;25. &lt;a href=&quot;https://wanshutiaoyi.com/book/30147582&quot;&gt;近代中国社会的新陈代谢&lt;/a&gt; — 陈旭麓讲近代转型，经典教材&lt;/p&gt;
+
+&lt;p&gt;26. &lt;a href=&quot;https://wanshutiaoyi.com/book/25912076&quot;&gt;叫魂&lt;/a&gt; — 孔飞力讲清代谣言恐慌，社会史经典&lt;/p&gt;
+
+&lt;p&gt;27. &lt;a href=&quot;https://wanshutiaoyi.com/book/26820347&quot;&gt;红星照耀中国&lt;/a&gt; — 斯诺讲长征延安，外国记者视角&lt;/p&gt;
+
+&lt;p&gt;28. &lt;a href=&quot;https://wanshutiaoyi.com/book/33408126&quot;&gt;征服与革命中的阿拉伯人&lt;/a&gt; — 罗根写奥斯曼以来五百年阿拉伯史，读懂中东的入门&lt;/p&gt;
+
+&lt;p&gt;29. &lt;a href=&quot;https://wanshutiaoyi.com/book/26897412&quot;&gt;中苏关系史纲&lt;/a&gt; — 沈志华等基于解密档案写中苏关系，学术向&lt;/p&gt;
+
+&lt;p&gt;30. &lt;a href=&quot;https://wanshutiaoyi.com/book/25985021&quot;&gt;人类简史&lt;/a&gt; — 赫拉利讲人类发展史，大众向畅销&lt;/p&gt;
 
 &lt;h2&gt;值得单独说的 3 本&lt;/h2&gt;
 
@@ -330,8 +437,9 @@
 
 &lt;p&gt;&lt;a href=&quot;https://wanshutiaoyi.com/?tag=%E5%8E%86%E5%8F%B2&amp;min_votes=1000&amp;sort=quality&amp;utm_source=blog&amp;utm_campaign=history&quot;&gt;在万书挑一里按「历史」标签筛&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/history/search_history.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;
-这个站是我一个人自费做的，不接广告，数据每天更新，自费运营至少一年，承诺至少运营到 2027 年 12 月。这份历史榜单如果你觉得漏了什么重要的书，欢迎在评论区补充。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/history/search_history.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;这个站是我一个人自费做的，不接广告，数据每天更新，自费运营至少一年，承诺至少运营到 2027 年 12 月。这份历史榜单如果你觉得漏了什么重要的书，欢迎在评论区补充。&lt;/p&gt;
 
 &lt;p&gt;数据来源：豆瓣图书公开页面；每本书都链接回豆瓣原页。&lt;/p&gt;
 </description>
