@@ -35,6 +35,17 @@ body, html {
 
 }
 
+/* 点击新标签页链接(好书)后原页面链接保留焦点, 会套上 Bootstrap 的 #eee 底+焦点框; 保持深色, 键盘导航仍有细框 */
+.aside1 > .nav > li > a:focus {
+  color: #fff;
+  background-color: transparent;
+  outline: none;
+}
+.aside1 > .nav > li > a:focus-visible {
+  outline: 1px solid #888;
+  outline-offset: -1px;
+}
+
 .aside1> .nav > li > a:hover {
   color:#fff;
   background-color: #444;
