@@ -676,17 +676,44 @@
 
 &lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/tags.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
-&lt;h3&gt;三、新书雷达&lt;/h3&gt;
+&lt;h3&gt;三、高级筛选：按评分形态挖书（赞助者）&lt;/h3&gt;
 
-&lt;p&gt;2020 年之后新收录的书单独放在「新书雷达」里，可以按人气或评分排。数据每周增量更新，新书会陆续补进来。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/adv.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;同样是 8.5 分，一本是众口一词，一本是粉丝和黑子吵出来的。高级筛选把这些差别拿出来当筛选条件：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;评分形态&lt;/strong&gt;：「口碑一致」是 4、5 星合计占 85% 以上，几乎没人说不好；「两极分化」是 5 星多、1~2 星也不少；「分高但虚」是 8.5 分以上但 5 星不到 45%。也可以自己设 5 星占比下限、1~2 星占比上限。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;评价人数上限&lt;/strong&gt;：只看 3000 人以内的，专挖还没被大众发现的书。上图就是「历史 · 口碑一致 · 200 到 3000 人」，出来的是谭其骧、陈寅恪、杨伯峻这一类。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;被推荐次数&lt;/strong&gt;：被多少本书的「喜欢这本书的人也喜欢」列出。它比评价人数更能看出一本书是不是经典，也可以直接按它排序。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;出品方、译者、丛书、页数&lt;/strong&gt;：按理想国、后浪、读库这类出品方筛，按译者筛，只看 200 页以内的周末读物。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;星系&lt;/strong&gt;：只看书海星空里某一个星系的书，比如只看「推理·悬疑」，按好书指数排。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;不想自己调参数，可以看每天自动更新的&lt;a href=&quot;https://wanshutiaoyi.com/gems&quot;&gt;冷门高分榜&lt;/a&gt;：评价 200 到 3000 人、豆瓣 8.8 分以上的近年好书。&lt;/p&gt;
+
+&lt;h3&gt;四、新书雷达&lt;/h3&gt;
+
+&lt;p&gt;2020 年之后新收录的书单独放在「新书雷达」里，可以按人气或评分排。数据每天增量更新，新书会陆续补进来。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/new_radar.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
-&lt;h3&gt;四、书海星空&lt;/h3&gt;
+&lt;h3&gt;五、书海星空&lt;/h3&gt;
 
-&lt;p&gt;当年的书海星空也搬了进来：44 万本书之间「读过这本的人也喜欢」的关系画成一张可以漫游的星图，每个点是一本书，大小是被推荐的次数，颜色是评分。从任何一本出发，都能顺着星图找到下一本。&lt;/p&gt;
+&lt;p&gt;当年的书海星空也搬了进来，而且整个重做了：49.5 万本书之间 430 万条「读过这本的人也喜欢」的关系，画成一张能飞进去逛的三维星图。读者口味相近的书自己聚成了 34 个星系，历史·人文、推理·悬疑、科幻·奇幻……每个点是一本书，点越大被越多的书推荐，离得越近两本书的读者越重合。&lt;/p&gt;
 
-&lt;h3&gt;五、详情页&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;星系导览&lt;/strong&gt;：一键飞进任何一个星系，看它的代表作，也能跳到按好书指数排好的书单。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;顺藤摸瓜&lt;/strong&gt;：选中一本书，列出同作者的其它书、本星系最值得读的书，以及它通往其它星系的「桥」。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;年份播放&lt;/strong&gt;：按下播放，看星空从 1900 年开始一年年亮起来。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;足迹&lt;/strong&gt;：逛过的书连成一条路线，可以保存、回放，生成链接分享给朋友。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/galaxy_santi.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;详细的玩法见&lt;a href=&quot;/2026/10/10/WanShuTiaoYiGalaxy.html&quot;&gt;书海星空漫游指南&lt;/a&gt;，里面有动图。&lt;/p&gt;
+
+&lt;h3&gt;六、详情页&lt;/h3&gt;
 
 &lt;p&gt;每本书的详情页有评分分布（五星到一星的占比，一眼能看出是不是「一边倒」）、简介，以及「喜欢这本书的人也喜欢」。&lt;/p&gt;
 
@@ -707,6 +734,8 @@
 &lt;li&gt;&lt;a href=&quot;/2026/10/06/WanShuTiaoYiPsychology.html&quot;&gt;心理学：评价过千的 616 本里，最值得读的 30 本&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;/2026/10/06/WanShuTiaoYiHistory.html&quot;&gt;历史：评价过千的 1,130 本里，最值得读的 30 本&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;/2026/10/06/WanShuTiaoYiInvest.html&quot;&gt;投资理财：评价过千的只有 122 本，最值得读的 30 本&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/2026/10/09/WanShuTiaoYiParenting.html&quot;&gt;育儿：评价过千的育儿书只有 60 本，最值得读的 30 本&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/2026/10/10/WanShuTiaoYiGalaxy.html&quot;&gt;书海星空漫游指南：在 355 万本书里，找一片属于你的星空&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;/2026/10/09/WanShuTiaoYiParenting.html&quot;&gt;育儿：评价过千的育儿书只有 60 本，最值得读的 30 本&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
