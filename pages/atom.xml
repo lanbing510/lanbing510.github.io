@@ -6,75 +6,57 @@
     <description>My personal blog</description>
     
       <item>
-        <title>烧掉 69 亿 Token，五个大模型给 17 万本书重新打了一遍标签</title>
+        <title>烧掉 138 亿 Token，五个大模型给 32 万本书重新打了一遍标签</title>
         <link>https://www.lanbing510.info/2026/10/14/WanShuTiaoYiAITags.html</link>
         <guid isPermaLink="true">https://www.lanbing510.info/2026/10/14/WanShuTiaoYiAITags.html</guid>
         <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
-        <description>&lt;p&gt;豆瓣的标签，是读者在收藏一本书时随手填的。这么多年下来，攒成了 50 万个标签。&lt;/p&gt;
+        <description>&lt;p&gt;在豆瓣搜「思维」标签，评价过千的书里排第一的是《孙子兵法》。&lt;/p&gt;
 
-&lt;p&gt;它们帮过很多人找书，但如果你真想按主题找一本好书，很快就会发现问题。&lt;/p&gt;
+&lt;p&gt;《置身事内》有 11 万人评价，却一个豆瓣标签都没有，按任何标签都筛不出来。&lt;/p&gt;
 
-&lt;p&gt;我拿万书挑一的书库（400 万本豆瓣图书）把这些标签挨个翻了一遍，又动用了五个大模型，把评价最多的 17 万本书从头读了一遍，按统一标准重新分类。&lt;/p&gt;
+&lt;p&gt;这两件事，是我做这次改造的起点：用五个大模型，把豆瓣上所有有评分的 32 万本书逐本读了一遍，按同一套标准重新打标签。&lt;/p&gt;
 
-&lt;p&gt;结论先说：&lt;strong&gt;同一个词在豆瓣标签和 AI 标签下搜，结果是两个世界。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;先看结果。同一个「#思维」，两套标签筛出来的是两个世界：&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/ai_tags/compare.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
-&lt;h2&gt;豆瓣标签的三个问题&lt;/h2&gt;
+&lt;h2&gt;豆瓣标签出了什么问题&lt;/h2&gt;
 
-&lt;h3&gt;一、标签是书架，不是分类&lt;/h3&gt;
+&lt;p&gt;豆瓣标签是读者收藏一本书时随手填的，攒了这么多年，有 50 万个。它帮过很多人找书，但想按主题找书，会撞上三个问题。&lt;/p&gt;
 
-&lt;p&gt;在豆瓣上带「思维」标签、评价过千的书里，按好书指数排第一的是《孙子兵法》，后面是《人类简史》和《矛盾论》。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第一，它记的常常是书架，不是书。&lt;/strong&gt; 有 3,251 本书被打了「已购」，2,976 本打了「图书馆」，还有「想读」「2019」「电子书」。&lt;/p&gt;
 
-&lt;p&gt;带「历史」标签的，第一名是《红楼梦》。带「成长」标签的，第一名是《哈利·波特》。带「育儿」标签的，排在最前面的是一套绘本和一本 DK 百科。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;第二，同一个意思有好几种写法。&lt;/strong&gt; 「心理学」至少有五种：心理学、心理、psychology、Psychology、心理學。按哪个搜，都会漏掉另外几个。&lt;/p&gt;
 
-&lt;p&gt;读者给《孙子兵法》打「思维」，没有错，读它确实让人想问题更周全。但你搜「思维」想找的，大概是讲怎么思考的书，不是兵书。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/ai_tags/fig_shelf.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
-&lt;p&gt;还有更直白的。豆瓣上有 3,251 本书被打了「已购」，2,554 本打了「想读」，2,976 本打了「图书馆」，1,616 本打了「电子书」，1,640 本打了「2019」。这些是读者的书架记录，不是书的内容。&lt;/p&gt;
+&lt;p&gt;带「历史」标签的书，第一名是《红楼梦》；带「成长」的，第一名是《哈利·波特》。读者这么标都有自己的道理，可你想找的并不是这些书。&lt;/p&gt;
 
-&lt;h3&gt;二、同一件事，有五种写法&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;第三个问题最要命：新书没有标签了。&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;「心理学」这个意思，豆瓣上至少有五个标签：心理学、心理、心理學、psychology、Psychology。「科幻」有科幻、科幻小说、SF、sci-fi、科幻小說。「日本文学」有日本文学、日本文學、日本小说，还有一个更宽的「日本」，下面挂了 4.6 万本书，有小说、有旅游指南、有料理书。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/ai_tags/fig_cliff.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
-&lt;p&gt;50 万个标签里，有 48.9 万个挂的书不到 20 本。标签之间没有层级，没有边界，也没有人来维护。&lt;/p&gt;
+&lt;p&gt;2010 年以前出版的书几乎都有标签。之后逐年变少，2019 年出版的书只有 17% 还有标签，2020 年以后断崖式下跌。豆瓣上有评分、2020 年后出版的 53,301 本书里，&lt;strong&gt;52,486 本（98%）一个豆瓣标签都没有&lt;/strong&gt;。&lt;/p&gt;
 
-&lt;h3&gt;三、2020 年以后，几乎没有了&lt;/h3&gt;
+&lt;p&gt;《置身事内》《我在北京送快递》《长安的荔枝》，这些近几年的好书，在豆瓣标签里是隐形的。&lt;/p&gt;
 
-&lt;p&gt;这一条最要命。&lt;/p&gt;
+&lt;h2&gt;这次怎么做的&lt;/h2&gt;
 
-&lt;p&gt;我统计了评价人数 50 以上的书：2010~2014 年出版的，有 90% 没有标签；2015~2019 年 95%；&lt;strong&gt;2020 年以后出版的，99.9% 没有标签&lt;/strong&gt;，2023 年以后是 100%。&lt;/p&gt;
+&lt;p&gt;我调动了 Claude、DeepSeek、通义千问等五个顶级大模型，前后累计消耗约 &lt;strong&gt;138 亿 Token&lt;/strong&gt;，让它们像图书编目员一样，把 32 万本书逐本读一遍：读简介、参考读者的标签和书单，再按同一套标准下判断。多个模型交叉判定，意见一致才算数。&lt;/p&gt;
 
-&lt;p&gt;豆瓣已经不再给新书生成标签了。《置身事内》《我在北京送快递》《长安的荔枝》这些近几年的好书，在豆瓣标签里是隐形的：你按任何标签都筛不出它们。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/ai_tags/fig_scale.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
-&lt;h2&gt;这次做了什么&lt;/h2&gt;
+&lt;p&gt;每本书最后有四层标签：&lt;strong&gt;主题&lt;/strong&gt;（22 个大类、194 个小类）、&lt;strong&gt;形式&lt;/strong&gt;（长篇小说、通俗读物、学术专著、古籍原典……）、&lt;strong&gt;受众&lt;/strong&gt;（大众、入门、进阶、专业研究、少儿）、&lt;strong&gt;关键词&lt;/strong&gt;（全库归并成 1.7 万多个规范词）。&lt;/p&gt;
 
-&lt;p&gt;一句话：&lt;strong&gt;动用 Claude Fable 5、Claude Opus、Claude Sonnet、DeepSeek、通义千问 Qwen 五个大模型，把 17 万本书逐本读了一遍，按同一套标准重新分类。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;拿《置身事内》看：&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Claude Fable 5 与 Opus&lt;/strong&gt; 负责最难的部分：设计整套分类体系，审读模型的判断，逐条分析错误，把规则一轮轮改到位&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;DeepSeek 与 Qwen&lt;/strong&gt; 负责逐本精读：两个不同家族的模型各自独立判断，&lt;strong&gt;两个都同意才算数&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Claude Sonnet&lt;/strong&gt; 负责大量的核查与统计工作&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/ai_tags/fig_layers.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
-&lt;p&gt;前后累计消耗约 &lt;strong&gt;69 亿 Token&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2&gt;准不准，靠考试&lt;/h2&gt;
 
-&lt;p&gt;最后给每本书打上四层标签：&lt;/p&gt;
+&lt;p&gt;模型说自己准不算数。我人工标注了 500 本书作标准答案，上线前定了硬门槛，不达标不上线。在其中无偏抽样的 400 本上：&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;主题&lt;/strong&gt;：22 个大类、195 个小类，比如「心理学 › 认知心理学」「经济与金融 › 中国经济」&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;形式&lt;/strong&gt;：长篇小说、非虚构叙事、通俗读物、学术专著、古籍原典、实用指南……&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;受众&lt;/strong&gt;：大众、入门、进阶、专业研究、少儿&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;关键词&lt;/strong&gt;：每本 3~8 个，全库归并成 17,088 个规范词。比如《置身事内》是：地方政治、土地财政、中国经济、财税改革、城市化、产业政策&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;准不准，不靠模型自己说。&lt;/strong&gt; 我人工标注了 500 本书作为标准答案，上线前定了硬性门槛：不达标不上线。最终在其中随机抽样的 400 本上，进入筛选的部分：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;主题大类准确率 96.4%&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;主题小类准确率 91.0%&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;形式准确率 97.6%&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;受众准确率 93.2%&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/ai_tags/fig_exam.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
 &lt;h2&gt;效果：同一个词，两个世界&lt;/h2&gt;
 
@@ -116,13 +98,9 @@
 
 &lt;p&gt;AI 标签少了 276 本，因为它只收真正讲「思维方法」的书。&lt;/p&gt;
 
-&lt;p&gt;再看一本书的两套标签。《孙子兵法》在豆瓣上的标签是：孙子兵法、兵法、哲学、中国古典、经典、思维、古籍、中国、国学、军事、历史、名著、文化、思想、古典、管理……&lt;/p&gt;
-
-&lt;p&gt;AI 给它的是：&lt;strong&gt;政治与军事 › 兵法与军事理论&lt;/strong&gt;，形式「古籍原典」，受众「进阶」，关键词「兵法、战争、先秦军事、战略思维」。&lt;/p&gt;
+&lt;p&gt;《孙子兵法》也没被冷落，它去了该去的地方：&lt;strong&gt;政治与军事 › 兵法与军事理论&lt;/strong&gt;。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/ai_tags/detail.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;而 2020 年以后的新书，在评价 50 人以上的 28,912 本里，&lt;strong&gt;28,274 本已经有了 AI 分类和关键词&lt;/strong&gt;。而它们几乎都没有豆瓣标签。&lt;/p&gt;
 
 &lt;h2&gt;怎么用&lt;/h2&gt;
 
@@ -130,26 +108,24 @@
 
 &lt;ul&gt;
 &lt;li&gt;搜 &lt;code&gt;#认知科学&lt;/code&gt;、&lt;code&gt;#土地财政&lt;/code&gt;、&lt;code&gt;#历史小说&lt;/code&gt; 这样的词，按 AI 关键词和分类匹配&lt;/li&gt;
-&lt;li&gt;不加 # 直接搜关键词也会用上 AI 标签：搜「土地财政」，以前只能搜到书名里带这四个字的 7 本，现在是 22 本，包括《置身事内》&lt;/li&gt;
+&lt;li&gt;不加 # 直接搜也会用上 AI 标签：搜「土地财政」，以前只能搜到书名里带这四个字的 7 本，现在是 22 本，包括《置身事内》&lt;/li&gt;
 &lt;li&gt;筛选里可以按主题、形式、受众组合筛，比如「心理学 + 通俗读物 + 入门」&lt;/li&gt;
 &lt;li&gt;切到「豆瓣」，就是原来按读者标签搜的结果&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;两个模式可以随时切换，同一个词各搜一遍，差别一眼就能看出来。&lt;/p&gt;
+&lt;p&gt;同一个词两边各搜一遍，差别一眼就能看出来。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://wanshutiaoyi.com/tag/%E6%80%9D%E7%BB%B4?min_votes=1000&amp;utm_source=blog&amp;utm_campaign=ai_tags&quot;&gt;在万书挑一里试试 #思维&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2&gt;待更新&lt;/h2&gt;
+&lt;h2&gt;接下来&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;继续烧 Token，扩大覆盖&lt;/strong&gt;：这一轮覆盖的是评价 50 人以上的 17 万本书。下一轮准备把评价 10 人以上的书也处理掉，再增加约 15 万本，冷门好书也能按 AI 标签找到&lt;/li&gt;
-&lt;li&gt;大约 12% 的书模型之间意见不一致，暂时不参与筛选，详情页标「AI 推测」，后续会再用更强的模型复核&lt;/li&gt;
-&lt;li&gt;跨界的书最难分，比如《碳水的胜利》算历史还是饮食？这类书会随着复核和大家的反馈逐步修正&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;冷门书也覆盖了&lt;/strong&gt;：豆瓣上只要有评分（10 人以上评价）的书都已处理，冷门好书也能按 AI 标签找到&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;复核意见不一致的书&lt;/strong&gt;：约 11% 的书两个模型对主题大类意见不同，比如《碳水的胜利》算历史还是饮食，后续会请更强的模型再投一票&lt;/li&gt;
+&lt;li&gt;每本书的详情页都有「这本书不该在这里？」按钮，发现分错了点一下告诉我，我会定期修正&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;每本书的详情页都有一个「这本书不该在这里？」按钮。你发现分错了，点一下告诉我，我会定期修正。&lt;/p&gt;
-
-&lt;p&gt;豆瓣标签是几千万读者一起攒下来的，它记录的是「读者怎么看这本书」，这个价值 AI 替代不了，所以我把它保留在开关的另一边。AI 标签做的是另一件事：&lt;strong&gt;按统一的标准，告诉你这本书讲的是什么。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;豆瓣标签记录的是「读者怎么看这本书」，这个价值 AI 替代不了，所以我把它保留在开关的另一边。AI 标签做的是另一件事：&lt;strong&gt;按统一的标准，告诉你这本书讲的是什么。&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;这个站是我一个人自费做的，不接广告，数据每天更新，承诺至少运营到 2027 年 12 月。分类哪里不对，欢迎在评论区告诉我。&lt;/p&gt;
 </description>
@@ -295,7 +271,7 @@
 
 &lt;p&gt;以前这份书单是按豆瓣读者贴的标签筛的：思维、逻辑、决策、认知科学这几个词读者各写各的，统计起来全靠我自己手动合并，筛出来的书里还混进去兵法、语录这些跟认知思维不沾边的，得我自己一本本拿掉。&lt;/p&gt;
 
-&lt;p&gt;万书挑一最近上线了 AI 标签，五个大模型把评价 50 人以上的 17 万本书逐本读了一遍，按统一的标准分了主题、形式、受众和关键词，模型之间判断不一致的书不进筛选。这次我把「认知科学」「逻辑」「批判性思维」「决策」四个 AI 标签合在一起，评价过千的候选一共 135 本，比豆瓣标签口径的 465 本少了不少——少掉的大多是像《孙子兵法》《毛泽东选集》这类被读者顺手贴了「思维」标签、但内容根本不讲思维方法的书，这次根本没被分进这个类目，不用我再一本本挑出来。&lt;/p&gt;
+&lt;p&gt;万书挑一最近上线了 AI 标签，五个大模型把豆瓣上有评分的 32 万本书逐本读了一遍，按统一的标准分了主题、形式、受众和关键词，模型之间判断不一致的书不进筛选。这次我把「认知科学」「逻辑」「批判性思维」「决策」四个 AI 标签合在一起，评价过千的候选一共 135 本，比豆瓣标签口径的 465 本少了不少——少掉的大多是像《孙子兵法》《毛泽东选集》这类被读者顺手贴了「思维」标签、但内容根本不讲思维方法的书，这次根本没被分进这个类目，不用我再一本本挑出来。&lt;/p&gt;
 
 &lt;p&gt;AI 标签还有一个好处：2020 年以后出的新书，豆瓣基本不会再给它们贴标签，以前这些书搜任何标签都找不到。这次榜单新进的 8 本里，有 3 本是 2020 年以后出版的：《这才是心理学》（2020）、《打开心智》（2022）、《大脑喜欢听你这样说》（2023）。后两本在豆瓣上一个标签都没有，按标签筛是找不到的。&lt;/p&gt;
 
@@ -652,7 +628,7 @@
 
 &lt;h2&gt;这次换了口径：AI 标签怎么挑书&lt;/h2&gt;
 
-&lt;p&gt;这批 AI 标签是五个大模型——Claude Fable 5、Claude Opus、Claude Sonnet、DeepSeek、通义千问——把评价 50 人以上的约 17 万本书逐本读了一遍，按统一标准打的分类，模型之间判断不一致的书暂时不参与筛选，抽检下来一级分类准确率 96.4%。跟豆瓣标签比，它靠的是读内容，不是读者当时随手点了哪个标签，所以不会因为有人写&amp;quot;心理&amp;quot;有人写&amp;quot;心理学&amp;quot;就分成两类，也不会因为一本书没人贴标签就在筛选里直接消失。&lt;/p&gt;
+&lt;p&gt;这批 AI 标签是五个大模型——Claude Fable 5、Claude Opus、Claude Sonnet、DeepSeek、通义千问——把豆瓣上有评分的约 32 万本书逐本读了一遍，按统一标准打的分类，模型之间判断不一致的书暂时不参与筛选，抽检下来一级分类准确率 96.4%。跟豆瓣标签比，它靠的是读内容，不是读者当时随手点了哪个标签，所以不会因为有人写&amp;quot;心理&amp;quot;有人写&amp;quot;心理学&amp;quot;就分成两类，也不会因为一本书没人贴标签就在筛选里直接消失。&lt;/p&gt;
 
 &lt;p&gt;新书是最直接的例子。评价人数 50 以上、2020 年以后出版的书，99.9% 在豆瓣上没有标签，豆瓣已经不再给新书生成标签了。这份榜单里有 8 本书是 2020 年后出的：《看见孩子》(2023)、《要有光》(2025)、《陶渊明也烦恼》(2021)、《家庭的觉醒》(2020)、《真希望我父母读过这本书》(2020)、《少年发声》(2021)、《心理抚养》(2021)、《自驱型成长》(2020)。按豆瓣标签搜，这 8 本基本是隐形的；AI 标签读的是内容，不管出版年份，新书也能分进来。&lt;/p&gt;
 
@@ -1323,7 +1299,7 @@
 &lt;li&gt;&lt;a href=&quot;/2026/10/10/WanShuTiaoYiGalaxy.html&quot;&gt;书海星空漫游指南：在 355 万本书里，找一片属于你的星空&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;/2026/10/11/WanShuTiaoYiCognition.html&quot;&gt;认知与思维：AI 标签筛出评价过千的 135 本，最值得读的 30 本&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;/2026/10/12/WanShuTiaoYiEcon.html&quot;&gt;经济学：AI 标签筛出评价过千的 213 本，最值得读的 30 本&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/2026/10/14/WanShuTiaoYiAITags.html&quot;&gt;AI 标签：烧掉 69 亿 Token，五个大模型给 17 万本书重新打了一遍标签&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/2026/10/14/WanShuTiaoYiAITags.html&quot;&gt;AI 标签：烧掉 138 亿 Token，五个大模型给 32 万本书重新打了一遍标签&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
       </item>
