@@ -259,21 +259,21 @@
       </item>
     
       <item>
-        <title>豆瓣评价过千的小说有 6515 本，最值得读的是这 40 本（另附 9 本冷门遗珠）</title>
+        <title>豆瓣评价过千的小说有 6528 本，最值得读的是这 40 本（另附 9 本冷门遗珠）</title>
         <link>https://lanbing510.info/2026/10/17/WanShuTiaoYiNovel.html</link>
         <guid isPermaLink="true">https://lanbing510.info/2026/10/17/WanShuTiaoYiNovel.html</guid>
         <pubDate>Sat, 17 Oct 2026 00:00:00 +0000</pubDate>
         <description>&lt;p&gt;豆瓣上评价人数最多的小说是《活着》，92.7 万人，9.4 分。第二到第四名是《追风筝的人》《小王子》《解忧杂货店》，都是七八十万人的量级，但分数从 9.1 一路掉到 8.5。&lt;/p&gt;
 
-&lt;p&gt;人多不等于好。《解忧杂货店》有 78.9 万人评价，按分数在评价过千的小说里排不进前一千；村上春树评分最高的小说是《世界尽头与冷酷仙境》，8.6 分；东野圭吾写了上百本，最后只有一本进了这份榜单，还是压着线进的。&lt;/p&gt;
+&lt;p&gt;人多不等于好。《解忧杂货店》有 78.9 万人评价，按分数在评价过千的小说里排不进前一千；村上春树评分最高的小说是《世界尽头与冷酷仙境》，8.6 分；东野圭吾写了上百本，一本也没进这份榜单。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/novel/fig_data.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/novel/fig_data_v2.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
 &lt;h2&gt;怎么挑的&lt;/h2&gt;
 
-&lt;p&gt;万书挑一的书库里，豆瓣评价过千、AI 判定为「长篇小说」或「短篇集」的书一共 &lt;strong&gt;6,515 本&lt;/strong&gt;（同一部作品的多个版本只算一本，漫画和画册不算）。其中 9 分以上的 384 本，评价过 10 万人的 92 本。&lt;/p&gt;
+&lt;p&gt;万书挑一的书库里，豆瓣评价过千、AI 判定为「长篇小说」或「短篇集」的书一共 &lt;strong&gt;6,528 本&lt;/strong&gt;（同一部作品的多个版本只算一本，漫画和画册不算）。其中 9 分以上的 384 本，评价过 10 万人的 92 本。&lt;/p&gt;
 
-&lt;p&gt;排序用的是好书指数，也就是评分和评价人数的贝叶斯平均：评价人数少的书，分数会被往全站均值 8.01 拉，几百人打出来的 9.8 分不会压过几万人打出来的 9.4 分。&lt;/p&gt;
+&lt;p&gt;排序用的是好书指数，也就是评分和评价人数的贝叶斯平均：评价人数少的书，分数会被往全站均值 8.0 拉，几百人打出来的 9.8 分不会压过几万人打出来的 9.4 分。&lt;/p&gt;
 
 &lt;p&gt;为了不让一份榜单全是《红楼梦》《三国演义》这种人人都知道的书，按 AI 主题分成四组，每组取前 10：&lt;/p&gt;
 
@@ -284,65 +284,65 @@
 &lt;li&gt;&lt;strong&gt;类型小说&lt;/strong&gt;：科幻、推理、奇幻、武侠、历史小说&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;同一组里每位作者只留一本，外文原版不算（和中译本重复）。儿童文学单独成类，没放进来——否则《哈利·波特》会以 9.7 分排在类型小说第一。&lt;/p&gt;
+&lt;p&gt;同一组里每位作者只留一本，外文原版不算（和中译本重复）。同一部书有多个版本时，取评价过万人的版本里好书指数最高的那一版：《西游记》读的人最多的人文全二册只有 9.1 分，而岳麓书社版 1.9 万人打出 9.3 分，排名按后者算；只有几百上千人评价的版本不算，免得冷门版本靠少数人的高分挤进来。儿童文学单独成类，没放进来——否则《哈利·波特》会以 9.7 分排在类型小说第一。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/novel/grid.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/novel/grid_v2.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
 &lt;h2&gt;中文小说&lt;/h2&gt;
 
-&lt;p&gt;这一组里古典小说只有《红楼梦》《三国演义》两本，其余八本都是二十世纪以来的作品。&lt;/p&gt;
+&lt;p&gt;这一组里古典小说有《红楼梦》《三国演义》《西游记》三本，其余七本都是二十世纪以来的作品。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/novel/panel_1_1.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/novel/panel_1_1_v2.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
-&lt;p&gt;1. &lt;a href=&quot;https://wanshutiaoyi.com/book/1007305&quot;&gt;红楼梦&lt;/a&gt; — 46.9 万人打出 9.7 分，评价过万的小说里只有它和《哈利·波特》到了这个分数&lt;/p&gt;
+&lt;p&gt;1. &lt;a href=&quot;https://wanshutiaoyi.com/book/30137806&quot;&gt;红楼梦&lt;/a&gt; — 人民文学出版社 2018 版 9.8 分；读的人最多的 1982 版有 46.9 万人评价，也有 9.7 分&lt;/p&gt;
 
-&lt;p&gt;2. &lt;a href=&quot;https://wanshutiaoyi.com/book/4913064&quot;&gt;活着&lt;/a&gt; — 豆瓣评价人数最多的小说，92.7 万人&lt;/p&gt;
+&lt;p&gt;2. &lt;a href=&quot;https://wanshutiaoyi.com/book/26710670&quot;&gt;呐喊&lt;/a&gt; — 鲁迅的第一本小说集，《狂人日记》《孔乙己》《阿Q正传》都在里面&lt;/p&gt;
 
-&lt;p&gt;3. &lt;a href=&quot;https://wanshutiaoyi.com/book/2046909&quot;&gt;故事新编&lt;/a&gt; — 鲁迅改写神话和历史的八篇小说，女娲、后羿、大禹、老子、庄子都在里面&lt;/p&gt;
+&lt;p&gt;3. &lt;a href=&quot;https://wanshutiaoyi.com/book/1483894&quot;&gt;三国演义&lt;/a&gt; — 岳麓书社 1986 版 2.2 万人打出 9.5 分&lt;/p&gt;
 
-&lt;p&gt;4. &lt;a href=&quot;https://wanshutiaoyi.com/book/3183775&quot;&gt;四世同堂&lt;/a&gt; — 老舍写北平沦陷八年里的一条胡同、一个四世同堂的家&lt;/p&gt;
+&lt;p&gt;4. &lt;a href=&quot;https://wanshutiaoyi.com/book/4913064&quot;&gt;活着&lt;/a&gt; — 豆瓣评价人数最多的小说，92.7 万人&lt;/p&gt;
 
-&lt;p&gt;5. &lt;a href=&quot;https://wanshutiaoyi.com/book/1019568&quot;&gt;三国演义&lt;/a&gt; — 18.6 万人评&lt;/p&gt;
+&lt;p&gt;5. &lt;a href=&quot;https://wanshutiaoyi.com/book/3183775&quot;&gt;四世同堂&lt;/a&gt; — 老舍写北平沦陷八年里的一条胡同、一个四世同堂的家&lt;/p&gt;
 
-&lt;p&gt;6. &lt;a href=&quot;https://wanshutiaoyi.com/book/26905337&quot;&gt;檀香刑&lt;/a&gt; — 莫言写清末高密的一场酷刑，猫腔从头唱到尾&lt;/p&gt;
+&lt;p&gt;6. &lt;a href=&quot;https://wanshutiaoyi.com/book/11524204&quot;&gt;围城&lt;/a&gt; — 钱锺书唯一的长篇，人民文学 1991 版 11.5 万人评&lt;/p&gt;
 
-&lt;p&gt;7. &lt;a href=&quot;https://wanshutiaoyi.com/book/1760432&quot;&gt;受戒&lt;/a&gt; — 汪曾祺的短篇集，书名就是他最有名的那篇&lt;/p&gt;
+&lt;p&gt;7. &lt;a href=&quot;https://wanshutiaoyi.com/book/26905337&quot;&gt;檀香刑&lt;/a&gt; — 莫言写清末高密的一场酷刑，猫腔从头唱到尾&lt;/p&gt;
 
-&lt;p&gt;8. &lt;a href=&quot;https://wanshutiaoyi.com/book/35498437&quot;&gt;传奇&lt;/a&gt; — 张爱玲 1944 年的小说集，《倾城之恋》《金锁记》出自这里&lt;/p&gt;
+&lt;p&gt;8. &lt;a href=&quot;https://wanshutiaoyi.com/book/1760432&quot;&gt;受戒&lt;/a&gt; — 汪曾祺的短篇集，书名就是他最有名的那篇&lt;/p&gt;
 
-&lt;p&gt;9. &lt;a href=&quot;https://wanshutiaoyi.com/book/27614904&quot;&gt;房思琪的初恋乐园&lt;/a&gt; — 林奕含唯一的小说，42.9 万人评&lt;/p&gt;
+&lt;p&gt;9. &lt;a href=&quot;https://wanshutiaoyi.com/book/1061803&quot;&gt;西游记&lt;/a&gt; — 岳麓书社 1994 版 1.9 万人评 9.3 分；读的人最多的人文全二册 10.5 万人，9.1 分&lt;/p&gt;
 
-&lt;p&gt;10. &lt;a href=&quot;https://wanshutiaoyi.com/book/10564071&quot;&gt;白鹿原&lt;/a&gt; — 陈忠实写关中白、鹿两家半个世纪&lt;/p&gt;
+&lt;p&gt;10. &lt;a href=&quot;https://wanshutiaoyi.com/book/35498437&quot;&gt;传奇&lt;/a&gt; — 张爱玲 1944 年的小说集，《倾城之恋》《金锁记》出自这里&lt;/p&gt;
 
 &lt;h2&gt;欧美经典&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/novel/panel_2_1.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/novel/panel_2_1_v2.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
 &lt;p&gt;1. &lt;a href=&quot;https://wanshutiaoyi.com/book/25887924&quot;&gt;卡拉马佐夫兄弟&lt;/a&gt; — 陀思妥耶夫斯基最后一部长篇，9.6 分&lt;/p&gt;
 
-&lt;p&gt;2. &lt;a href=&quot;https://wanshutiaoyi.com/book/3815131&quot;&gt;一九八四&lt;/a&gt; — 「老大哥在看着你」的出处，9.5 分&lt;/p&gt;
+&lt;p&gt;2. &lt;a href=&quot;https://wanshutiaoyi.com/book/4908879&quot;&gt;动物农场&lt;/a&gt; — 奥威尔，上海译文 2010 版 8.5 万人 9.5 分；他的《一九八四》也是 9.5，同一作者只留一本&lt;/p&gt;
 
-&lt;p&gt;3. &lt;a href=&quot;https://wanshutiaoyi.com/book/35272817&quot;&gt;西线无战事&lt;/a&gt; — 一战德国士兵的视角，雷马克 1929 年出版&lt;/p&gt;
+&lt;p&gt;3. &lt;a href=&quot;https://wanshutiaoyi.com/book/27107109&quot;&gt;百年孤独&lt;/a&gt; — 南海出版公司 2017 版 9.5 分；读的人最多的那一版有 48 万人评价&lt;/p&gt;
 
-&lt;p&gt;4. &lt;a href=&quot;https://wanshutiaoyi.com/book/27204805&quot;&gt;那不勒斯故事四部曲&lt;/a&gt; — 埃莱娜·费兰特写两个那不勒斯女孩六十年的友谊&lt;/p&gt;
+&lt;p&gt;4. &lt;a href=&quot;https://wanshutiaoyi.com/book/25897657&quot;&gt;悲惨世界&lt;/a&gt; — 雨果，人民文学 2015 版 2.5 万人 9.5 分&lt;/p&gt;
 
-&lt;p&gt;5. &lt;a href=&quot;https://wanshutiaoyi.com/book/34933180&quot;&gt;酒吧长谈&lt;/a&gt; — 略萨，利马一家酒吧里四个小时的对话，聊出整个奥德里亚独裁时代&lt;/p&gt;
+&lt;p&gt;5. &lt;a href=&quot;https://wanshutiaoyi.com/book/35272817&quot;&gt;西线无战事&lt;/a&gt; — 一战德国士兵的视角，雷马克 1929 年出版&lt;/p&gt;
 
-&lt;p&gt;6. &lt;a href=&quot;https://wanshutiaoyi.com/book/25837845&quot;&gt;战争与和平&lt;/a&gt; — 托尔斯泰&lt;/p&gt;
+&lt;p&gt;6. &lt;a href=&quot;https://wanshutiaoyi.com/book/27204805&quot;&gt;那不勒斯故事四部曲&lt;/a&gt; — 埃莱娜·费兰特写两个那不勒斯女孩六十年的友谊&lt;/p&gt;
 
-&lt;p&gt;7. &lt;a href=&quot;https://wanshutiaoyi.com/book/1017749&quot;&gt;乱世佳人&lt;/a&gt; — 也就是《飘》，这个版本 9.4 分&lt;/p&gt;
+&lt;p&gt;7. &lt;a href=&quot;https://wanshutiaoyi.com/book/34933180&quot;&gt;酒吧长谈&lt;/a&gt; — 略萨，利马一家酒吧里四个小时的对话，聊出整个奥德里亚独裁时代&lt;/p&gt;
 
-&lt;p&gt;8. &lt;a href=&quot;https://wanshutiaoyi.com/book/6082808&quot;&gt;百年孤独&lt;/a&gt; — 48 万人评，欧美组里评价人数最多的一本&lt;/p&gt;
+&lt;p&gt;8. &lt;a href=&quot;https://wanshutiaoyi.com/book/25837845&quot;&gt;战争与和平&lt;/a&gt; — 托尔斯泰&lt;/p&gt;
 
-&lt;p&gt;9. &lt;a href=&quot;https://wanshutiaoyi.com/book/35268657&quot;&gt;大地之上&lt;/a&gt; — 米斯特里写 1975 年紧急状态下的印度，四个人挤在一间公寓里过日子&lt;/p&gt;
+&lt;p&gt;9. &lt;a href=&quot;https://wanshutiaoyi.com/book/1017749&quot;&gt;乱世佳人&lt;/a&gt; — 也就是《飘》，这个版本 9.4 分&lt;/p&gt;
 
-&lt;p&gt;10. &lt;a href=&quot;https://wanshutiaoyi.com/book/3025618&quot;&gt;我们的祖先&lt;/a&gt; — 卡尔维诺三部曲：分成两半的子爵、树上的男爵、不存在的骑士&lt;/p&gt;
+&lt;p&gt;10. &lt;a href=&quot;https://wanshutiaoyi.com/book/35268657&quot;&gt;大地之上&lt;/a&gt; — 米斯特里写 1975 年紧急状态下的印度，四个人挤在一间公寓里过日子&lt;/p&gt;
 
 &lt;h2&gt;日本与亚洲&lt;/h2&gt;
 
 &lt;p&gt;这一组最出人意料：前两名都是韩国小说，日本的村上春树、东野圭吾都不在里面。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/novel/panel_3_1.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/novel/panel_3_1_v2.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
 &lt;p&gt;1. &lt;a href=&quot;https://wanshutiaoyi.com/book/27593378&quot;&gt;少年来了&lt;/a&gt; — 韩江写 1980 年的光州，她 2024 年拿了诺贝尔文学奖&lt;/p&gt;
 
@@ -362,11 +362,11 @@
 
 &lt;p&gt;9. &lt;a href=&quot;https://wanshutiaoyi.com/book/27611824&quot;&gt;如父如子&lt;/a&gt; — 是枝裕和同名电影的小说版，两个抱错了孩子的家庭&lt;/p&gt;
 
-&lt;p&gt;10. &lt;a href=&quot;https://wanshutiaoyi.com/book/25756955&quot;&gt;爱与黑暗的故事&lt;/a&gt; — 阿摩司·奥兹的自传体小说，母亲的死和以色列的建国写在一起&lt;/p&gt;
+&lt;p&gt;10. &lt;a href=&quot;https://wanshutiaoyi.com/book/30230525&quot;&gt;情书&lt;/a&gt; — 岩井俊二自己把同名电影写成的小说，一封寄给已故恋人的信&lt;/p&gt;
 
 &lt;h2&gt;类型小说&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/novel/panel_4_1.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/novel/panel_4_1_v2.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
 &lt;p&gt;1. &lt;a href=&quot;https://wanshutiaoyi.com/book/6518605&quot;&gt;三体全集&lt;/a&gt; — 22 万人评出 9.5 分；单看第一部只有 8.9，越往后越高&lt;/p&gt;
 
@@ -380,19 +380,19 @@
 
 &lt;p&gt;6. &lt;a href=&quot;https://wanshutiaoyi.com/book/4038615&quot;&gt;阿加莎·克里斯蒂「波洛」系列&lt;/a&gt; — 推理组的第一名&lt;/p&gt;
 
-&lt;p&gt;7. &lt;a href=&quot;https://wanshutiaoyi.com/book/30471298&quot;&gt;2001：太空漫游&lt;/a&gt; — 克拉克和库布里克的电影同时写成&lt;/p&gt;
+&lt;p&gt;7. &lt;a href=&quot;https://wanshutiaoyi.com/book/6969074&quot;&gt;天龙八部&lt;/a&gt; — 金庸，广州出版社 2011 版 9.4 分，40 本里唯一的武侠&lt;/p&gt;
 
-&lt;p&gt;8. &lt;a href=&quot;https://wanshutiaoyi.com/book/2263077&quot;&gt;福尔摩斯探案集&lt;/a&gt; — 群众出版社 1979 年那一版，9.4 分&lt;/p&gt;
+&lt;p&gt;8. &lt;a href=&quot;https://wanshutiaoyi.com/book/30471298&quot;&gt;2001：太空漫游&lt;/a&gt; — 克拉克和库布里克的电影同时写成&lt;/p&gt;
 
-&lt;p&gt;9. &lt;a href=&quot;https://wanshutiaoyi.com/book/1418999&quot;&gt;银河英雄传说&lt;/a&gt; — 田中芳树，杨威利和莱因哈特的太空歌剧&lt;/p&gt;
+&lt;p&gt;9. &lt;a href=&quot;https://wanshutiaoyi.com/book/2263077&quot;&gt;福尔摩斯探案集&lt;/a&gt; — 群众出版社 1979 年那一版，9.4 分&lt;/p&gt;
 
-&lt;p&gt;10. &lt;a href=&quot;https://wanshutiaoyi.com/book/10554308&quot;&gt;白夜行&lt;/a&gt; — 54.4 万人评，东野圭吾唯一进榜的一本&lt;/p&gt;
+&lt;p&gt;10. &lt;a href=&quot;https://wanshutiaoyi.com/book/1418999&quot;&gt;银河英雄传说&lt;/a&gt; — 田中芳树，杨威利和莱因哈特的太空歌剧&lt;/p&gt;
 
 &lt;h2&gt;冷门遗珠&lt;/h2&gt;
 
 &lt;p&gt;上面四组大多是名著。下面这 9 本分数都在 9 分以上，但评价人数只有一两千，同一部作品的其他版本也没有过万人评的。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/novel/panel_5_1.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/novel/panel_5_1_v2.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
 &lt;p&gt;1. &lt;a href=&quot;https://wanshutiaoyi.com/book/26305373&quot;&gt;慈禧全传&lt;/a&gt; — 高阳的六部长篇，从咸丰驾崩写到慈禧去世&lt;/p&gt;
 
@@ -418,11 +418,11 @@
 
 &lt;p&gt;&lt;a href=&quot;https://wanshutiaoyi.com/?form=form.novel&amp;form=form.stories&amp;min_votes=1000&amp;sort=quality&amp;utm_source=blog&amp;utm_campaign=novel&quot;&gt;在万书挑一里筛小说&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;如果你在豆瓣标过很多小说，也可以一键把书架导入万书挑一，看看自己读过的小说在 6,515 本里排在哪、在「书海星空」里落在哪片星系：&lt;a href=&quot;https://wanshutiaoyi.com/me/import?utm_source=blog&amp;utm_campaign=novel&quot;&gt;导入豆瓣书架&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;如果你在豆瓣标过很多小说，也可以一键把书架导入万书挑一，看看自己读过的小说在 6,528 本里排在哪、在「书海星空」里落在哪片星系：&lt;a href=&quot;https://wanshutiaoyi.com/me/import?utm_source=blog&amp;utm_campaign=novel&quot;&gt;导入豆瓣书架&lt;/a&gt;。&lt;/p&gt;
 
 &lt;p&gt;这个站是我一个人自费做的，不接广告，数据每天更新，承诺至少运营到 2027 年 12 月。这 40 本里你最想把哪本换掉、换成什么，欢迎在评论区说。&lt;/p&gt;
 
-&lt;p&gt;数据来源：豆瓣图书公开页面（2026-10-17）；小说的判定与分组来自万书挑一的 AI 标签；每本书都链接回站内书页。&lt;/p&gt;
+&lt;p&gt;数据来源：豆瓣图书公开页面（2026-10-18）；小说的判定与分组来自万书挑一的 AI 标签；每本书都链接回站内书页。&lt;/p&gt;
 </description>
       </item>
     
