@@ -6,7 +6,7 @@
     <description>My personal blog</description>
     
       <item>
-        <title>豆瓣上评价过千的哲学书有 363 本，我按难度把其中 35 本排成了一张读书路线图</title>
+        <title>豆瓣上评价过千的哲学书有 383 本，我按难度把其中 40 本排成了一张读书路线图</title>
         <link>https://lanbing510.info/2026/10/20/WanShuTiaoYiPhilosophy.html</link>
         <guid isPermaLink="true">https://lanbing510.info/2026/10/20/WanShuTiaoYiPhilosophy.html</guid>
         <pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate>
@@ -14,122 +14,132 @@
 
 &lt;p&gt;所以这次没有按分数排一个前 30 名，而是把书按难度分成三站，排成一张路线图：先读什么，接着读什么，最后去啃哪几部原著。&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/philosophy/route.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/philosophy/route_v2.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
 &lt;h2&gt;这张图是怎么来的&lt;/h2&gt;
 
 &lt;p&gt;豆瓣上带「哲学」标签、评价过千的书有 732 本，但标签是读者自己贴的。按评分和人数排，最前面是《卡拉马佐夫兄弟》《毛泽东选集》《孙子兵法》《金刚经·心经》《哥德尔、艾舍尔、巴赫》《罪与罚》，小说、兵法、佛经都混了进来。&lt;/p&gt;
 
-&lt;p&gt;这次用的是万书挑一的 AI 标签：多个大模型读过简介和目录，判断一本书主要讲什么、写给什么人看。按这套标签，评价过千的哲学书是 363 本（同一部书的多个版本只算一本）。AI 同时给每本书判了读者层次：面向大众或入门的 136 本，进阶的 116 本，专业研究的 111 本。&lt;/p&gt;
+&lt;p&gt;这次用的是万书挑一的 AI 标签：多个大模型读过简介和目录，判断一本书主要讲什么、写给什么人看。按这套标签，AI 有把握判为哲学、评价过千的书是 383 本（同一部书的多个版本只算一本）。AI 同时给每本书判了读者层次：面向大众或入门的 139 本，进阶的 131 本，专业研究的 113 本。&lt;/p&gt;
 
-&lt;p&gt;我在这个基础上挑了 35 本，逐本审了难度，分成三站。马克思主义经典另成一类，这次没有放进来。&lt;/p&gt;
+&lt;p&gt;我在这个基础上挑了 37 本，又人工补了 3 本：《苏菲的世界》《论自由》，AI 拿不太准它们算不算哲学，没进书池；《第二性》被 AI 归到了性别研究。每本书的难度都逐本审过，有几本和 AI 的判断不一样，比如 AI 把《理想国》判成专业研究，我放在了第二站。马克思主义经典另成一类，这次没有放进来。&lt;/p&gt;
 
-&lt;p&gt;图里的连线不是我画的。豆瓣每本书的页面上有一栏「喜欢读这本书的人也喜欢」，两本书只要出现在对方这一栏里，就连一条线。35 本书之间一共有 48 条这样的线，其中 26 条跨了站，可以当成真实读者走过的路。&lt;/p&gt;
+&lt;p&gt;图里的连线不是我画的。豆瓣每本书的页面上有一栏「喜欢读这本书的人也喜欢」，两本书只要出现在对方这一栏里，就连一条线。40 本书之间一共有 58 条这样的线，其中 34 条跨了站，可以当成真实读者走过的路。&lt;/p&gt;
 
 &lt;p&gt;几条线挺有意思：&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;《人生的智慧》是第一站最好读的书之一，可它那一栏「也喜欢」的 10 本里，有 4 本在第三站：《作为意志和表象的世界》《理想国》《查拉图斯特拉如是说》《规训与惩罚》。读叔本华随笔的人，不少人后来真去读了大部头。&lt;/li&gt;
-&lt;li&gt;《大问题》连着《哲学的故事》《刘擎西方现代思想讲义》《谈谈方法》《逻辑哲学论》，从入门书一步跨到了维特根斯坦。&lt;/li&gt;
+&lt;li&gt;《人生的智慧》是第一站最好读的书之一，它那一栏「也喜欢」的 10 本里，有 4 本是这份书单里的原著：《理想国》《作为意志和表象的世界》《查拉图斯特拉如是说》《规训与惩罚》，后三本都在第三站。&lt;/li&gt;
+&lt;li&gt;罗素的《西方哲学史》上卷和第三站的 5 本书连着：《纯粹理性批判》《作为意志和表象的世界》《逻辑哲学论》《存在与时间》《正义论》。读完一本好的哲学史，下一步往哪走，读者已经用脚投了票。&lt;/li&gt;
 &lt;li&gt;有几组是「先读好读的一本，再读原著」：《谈谈方法》和《第一哲学沉思集》都是笛卡尔，《维特根斯坦传》连着《逻辑哲学论》，《论语译注》连着朱熹的《四书章句集注》，桑德尔的《公正》连着罗尔斯的《正义论》。&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2&gt;第一站：零基础也能读&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/philosophy/station_1.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/philosophy/station_1_v2.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
-&lt;p&gt;这一站全是讲座、故事和通识课，不需要任何基础。评价人数最多的是刘擎的《西方现代思想讲义》，47,221 人；最近出的是朱锐的《哲学家的最后一课》，2025 年才出版。&lt;/p&gt;
+&lt;p&gt;这一站全是小说、讲座、故事和通识课，不需要任何基础。评价人数最多的是《苏菲的世界》，112,090 人；其次是刘擎的《西方现代思想讲义》，47,221 人；最近出的是朱锐的《哲学家的最后一课》，2025 年才出版。&lt;/p&gt;
 
-&lt;p&gt;1. &lt;a href=&quot;https://wanshutiaoyi.com/book/25961458&quot;&gt;大问题&lt;/a&gt; — 不按年代讲，一个问题一个问题地讲：什么是真实、我能知道什么、怎样才算好生活&lt;/p&gt;
+&lt;p&gt;1. &lt;a href=&quot;https://wanshutiaoyi.com/book/1045818&quot;&gt;苏菲的世界&lt;/a&gt; — 一个少女收到神秘来信的小说，把从苏格拉底到萨特的西方哲学史讲了一遍；人工补入&lt;/p&gt;
 
-&lt;p&gt;2. &lt;a href=&quot;https://wanshutiaoyi.com/book/35313227&quot;&gt;刘擎西方现代思想讲义&lt;/a&gt; — 刘擎讲 19 位现代思想家，从虚无主义聊到全球化，整份书单评价人数最多&lt;/p&gt;
+&lt;p&gt;2. &lt;a href=&quot;https://wanshutiaoyi.com/book/25961458&quot;&gt;大问题&lt;/a&gt; — 不按年代讲，一个问题一个问题地讲：什么是真实、我能知道什么、怎样才算好生活&lt;/p&gt;
 
-&lt;p&gt;3. &lt;a href=&quot;https://wanshutiaoyi.com/book/3261600&quot;&gt;人生的智慧&lt;/a&gt; — 叔本华谈幸福和人生，箴言体，哲学原著里最好读的一本&lt;/p&gt;
+&lt;p&gt;3. &lt;a href=&quot;https://wanshutiaoyi.com/book/35313227&quot;&gt;刘擎西方现代思想讲义&lt;/a&gt; — 刘擎讲 19 位现代思想家，从虚无主义聊到全球化，整份书单评价人数最多&lt;/p&gt;
 
-&lt;p&gt;4. &lt;a href=&quot;https://wanshutiaoyi.com/book/14439405&quot;&gt;哲学的故事&lt;/a&gt; — 杜兰特用讲故事的笔法写从柏拉图到杜威的哲学家生平与思想&lt;/p&gt;
+&lt;p&gt;4. &lt;a href=&quot;https://wanshutiaoyi.com/book/3261600&quot;&gt;人生的智慧&lt;/a&gt; — 叔本华谈幸福和人生，箴言体，哲学原著里最好读的一本&lt;/p&gt;
 
-&lt;p&gt;5. &lt;a href=&quot;https://wanshutiaoyi.com/book/27170538&quot;&gt;存在主义咖啡馆&lt;/a&gt; — 萨特、波伏瓦、加缪那一代人的故事，顺带把存在主义讲明白&lt;/p&gt;
+&lt;p&gt;5. &lt;a href=&quot;https://wanshutiaoyi.com/book/14439405&quot;&gt;哲学的故事&lt;/a&gt; — 杜兰特用讲故事的笔法写从柏拉图到杜威的哲学家生平与思想&lt;/p&gt;
 
-&lt;p&gt;6. &lt;a href=&quot;https://wanshutiaoyi.com/book/1021273&quot;&gt;中国哲学简史&lt;/a&gt; — 冯友兰在美国讲中国哲学的讲稿，从孔子一路讲到近代，篇幅不长&lt;/p&gt;
+&lt;p&gt;6. &lt;a href=&quot;https://wanshutiaoyi.com/book/27170538&quot;&gt;存在主义咖啡馆&lt;/a&gt; — 萨特、波伏瓦、加缪那一代人的故事，顺带把存在主义讲明白&lt;/p&gt;
 
-&lt;p&gt;7. &lt;a href=&quot;https://wanshutiaoyi.com/book/19977858&quot;&gt;朱光潜谈美&lt;/a&gt; — 朱光潜谈美的书信体小书，美学入门最薄的一本&lt;/p&gt;
+&lt;p&gt;7. &lt;a href=&quot;https://wanshutiaoyi.com/book/1021273&quot;&gt;中国哲学简史&lt;/a&gt; — 冯友兰在美国讲中国哲学的讲稿，从孔子一路讲到近代，篇幅不长&lt;/p&gt;
 
-&lt;p&gt;8. &lt;a href=&quot;https://wanshutiaoyi.com/book/27139938&quot;&gt;哲学·科学·常识&lt;/a&gt; — 陈嘉映讲哲学和科学到底是什么关系，中文写的哲学书里难得的清楚&lt;/p&gt;
+&lt;p&gt;8. &lt;a href=&quot;https://wanshutiaoyi.com/book/19977858&quot;&gt;朱光潜谈美&lt;/a&gt; — 朱光潜 1932 年写的美学入门小书，从「我们对于一棵古松的三种态度」讲起&lt;/p&gt;
 
-&lt;p&gt;9. &lt;a href=&quot;https://wanshutiaoyi.com/book/5408882&quot;&gt;公正&lt;/a&gt; — 桑德尔的哈佛公开课，用电车难题这类两难案例讲几种正义观&lt;/p&gt;
+&lt;p&gt;9. &lt;a href=&quot;https://wanshutiaoyi.com/book/27139938&quot;&gt;哲学·科学·常识&lt;/a&gt; — 陈嘉映讲哲学和科学到底是什么关系，中文写的哲学书里难得的清楚&lt;/p&gt;
 
-&lt;p&gt;10. &lt;a href=&quot;https://wanshutiaoyi.com/book/33436180&quot;&gt;牛津大学哲学通识课：政治哲学&lt;/a&gt; — 牛津通识系列，薄薄一本把政治哲学的几个核心问题讲清楚&lt;/p&gt;
+&lt;p&gt;10. &lt;a href=&quot;https://wanshutiaoyi.com/book/5408882&quot;&gt;公正&lt;/a&gt; — 桑德尔的哈佛公开课，用电车难题这类两难案例讲几种正义观&lt;/p&gt;
 
-&lt;p&gt;11. &lt;a href=&quot;https://wanshutiaoyi.com/book/37269363&quot;&gt;哲学家的最后一课&lt;/a&gt; — 朱锐教授病中讲的最后一门哲学课，2025 年出版的新书&lt;/p&gt;
+&lt;p&gt;11. &lt;a href=&quot;https://wanshutiaoyi.com/book/33436180&quot;&gt;牛津大学哲学通识课：政治哲学&lt;/a&gt; — 牛津通识系列，薄薄一本把政治哲学的几个核心问题讲清楚&lt;/p&gt;
+
+&lt;p&gt;12. &lt;a href=&quot;https://wanshutiaoyi.com/book/37269363&quot;&gt;哲学家的最后一课&lt;/a&gt; — 朱锐生命最后的对谈和他在人大开的最后一门哲学课，谈死亡与生命&lt;/p&gt;
 
 &lt;h2&gt;第二站：系统梳理 + 好读的原著&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/philosophy/station_2.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/philosophy/station_2_v2.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
-&lt;p&gt;这一站分两部分：一本哲学史教材把脉络理清，再加上一批篇幅不长、读得下去的原著。柏拉图的《会饮篇》只有 84 页，笛卡尔的《谈谈方法》不到一百页，都适合当第一本原著。&lt;/p&gt;
+&lt;p&gt;这一站分两部分：先用一本哲学史把脉络理清，再读一批读得下去的原著。柏拉图的《会饮篇》只有 84 页，笛卡尔的《谈谈方法》95 页，萨特的《存在主义是一种人道主义》113 页，都适合当第一本原著。&lt;/p&gt;
 
-&lt;p&gt;12. &lt;a href=&quot;https://wanshutiaoyi.com/book/25926462&quot;&gt;西方哲学史（修订版）&lt;/a&gt; — 邓晓芒、赵林的高校教材，从古希腊讲到近现代，脉络最清楚&lt;/p&gt;
+&lt;p&gt;13. &lt;a href=&quot;https://wanshutiaoyi.com/book/25926462&quot;&gt;西方哲学史（修订版）&lt;/a&gt; — 邓晓芒、赵林的高校教材，从古希腊讲到近现代，脉络最清楚&lt;/p&gt;
 
-&lt;p&gt;13. &lt;a href=&quot;https://wanshutiaoyi.com/book/21570668&quot;&gt;会饮篇&lt;/a&gt; — 柏拉图讨论「爱是什么」的对话，读柏拉图最好的起点&lt;/p&gt;
+&lt;p&gt;14. &lt;a href=&quot;https://wanshutiaoyi.com/book/1008189&quot;&gt;西方哲学史（上卷）&lt;/a&gt; — 罗素写的哲学史，观点鲜明、文笔好，分上下两卷，这里是上卷&lt;/p&gt;
 
-&lt;p&gt;14. &lt;a href=&quot;https://wanshutiaoyi.com/book/1053009&quot;&gt;游叙弗伦 苏格拉底的申辩 克力同&lt;/a&gt; — 苏格拉底受审到赴死前的三篇对话，一个人怎样为哲学而死&lt;/p&gt;
+&lt;p&gt;15. &lt;a href=&quot;https://wanshutiaoyi.com/book/21570668&quot;&gt;会饮篇&lt;/a&gt; — 柏拉图讨论「爱是什么」的对话，读柏拉图最好的起点&lt;/p&gt;
 
-&lt;p&gt;15. &lt;a href=&quot;https://wanshutiaoyi.com/book/1071023&quot;&gt;谈谈方法&lt;/a&gt; — 笛卡尔「我思故我在」的出处，不到一百页&lt;/p&gt;
+&lt;p&gt;16. &lt;a href=&quot;https://wanshutiaoyi.com/book/1053009&quot;&gt;游叙弗伦 苏格拉底的申辩 克力同&lt;/a&gt; — 苏格拉底受审到赴死前的三篇对话，一个人怎样为哲学而死&lt;/p&gt;
 
-&lt;p&gt;16. &lt;a href=&quot;https://wanshutiaoyi.com/book/11232671&quot;&gt;悲剧的诞生&lt;/a&gt; — 尼采的第一部书，酒神与日神，比他后期的书好进入&lt;/p&gt;
+&lt;p&gt;17. &lt;a href=&quot;https://wanshutiaoyi.com/book/1004821&quot;&gt;理想国&lt;/a&gt; — 柏拉图论正义与理想城邦，对话体，篇幅长但读得下去，西方哲学几乎所有问题的起点&lt;/p&gt;
 
-&lt;p&gt;17. &lt;a href=&quot;https://wanshutiaoyi.com/book/24257403&quot;&gt;西西弗神话&lt;/a&gt; — 加缪谈荒谬与反抗：人生没有意义，那还要不要推石头&lt;/p&gt;
+&lt;p&gt;18. &lt;a href=&quot;https://wanshutiaoyi.com/book/1071023&quot;&gt;谈谈方法&lt;/a&gt; — 笛卡尔「我思故我在」的出处，不到一百页&lt;/p&gt;
 
-&lt;p&gt;18. &lt;a href=&quot;https://wanshutiaoyi.com/book/6152040&quot;&gt;维特根斯坦传&lt;/a&gt; — 公认最好的哲学家传记之一，读完再碰维特根斯坦会容易很多&lt;/p&gt;
+&lt;p&gt;19. &lt;a href=&quot;https://wanshutiaoyi.com/book/24257403&quot;&gt;西西弗神话&lt;/a&gt; — 加缪谈荒谬与反抗：人生没有意义，那还要不要推石头&lt;/p&gt;
 
-&lt;p&gt;19. &lt;a href=&quot;https://wanshutiaoyi.com/book/1059258&quot;&gt;道德经&lt;/a&gt; — 老子五千言，道家的源头，这一版附清代黄元吉的讲解&lt;/p&gt;
+&lt;p&gt;20. &lt;a href=&quot;https://wanshutiaoyi.com/book/10608319&quot;&gt;存在主义是一种人道主义&lt;/a&gt; — 萨特的一篇演讲，一百来页讲清「存在先于本质」，存在主义最短的入口&lt;/p&gt;
 
-&lt;p&gt;20. &lt;a href=&quot;https://wanshutiaoyi.com/book/2046236&quot;&gt;庄子&lt;/a&gt; — 逍遥游、齐物论，中国哲学里文采最好的一部&lt;/p&gt;
+&lt;p&gt;21. &lt;a href=&quot;https://wanshutiaoyi.com/book/6152040&quot;&gt;维特根斯坦传&lt;/a&gt; — 公认最好的哲学家传记之一，读完再碰维特根斯坦会容易很多&lt;/p&gt;
 
-&lt;p&gt;21. &lt;a href=&quot;https://wanshutiaoyi.com/book/4098263&quot;&gt;论语译注&lt;/a&gt; — 杨伯峻的注本，读《论语》最常用的版本&lt;/p&gt;
+&lt;p&gt;22. &lt;a href=&quot;https://wanshutiaoyi.com/book/20376550&quot;&gt;科学革命的结构&lt;/a&gt; — 库恩提出「范式」，改变了人们对科学进步的理解&lt;/p&gt;
 
-&lt;p&gt;22. &lt;a href=&quot;https://wanshutiaoyi.com/book/3007268&quot;&gt;传习录&lt;/a&gt; — 王阳明语录，心学入门必读&lt;/p&gt;
+&lt;p&gt;23. &lt;a href=&quot;https://wanshutiaoyi.com/book/1253292&quot;&gt;老子今注今译&lt;/a&gt; — 陈鼓应的注译本，原文、注释、今译、引述齐全，读《老子》最常用的版本之一&lt;/p&gt;
 
-&lt;p&gt;23. &lt;a href=&quot;https://wanshutiaoyi.com/book/1051943&quot;&gt;尼各马可伦理学&lt;/a&gt; — 亚里士多德谈幸福和德性，伦理学的源头&lt;/p&gt;
+&lt;p&gt;24. &lt;a href=&quot;https://wanshutiaoyi.com/book/2046236&quot;&gt;庄子&lt;/a&gt; — 逍遥游、齐物论，中国哲学里文采最好的一部&lt;/p&gt;
 
-&lt;p&gt;24. &lt;a href=&quot;https://wanshutiaoyi.com/book/26389495&quot;&gt;当代政治哲学&lt;/a&gt; — 金里卡梳理功利主义、自由主义、社群主义，政治哲学教材经典&lt;/p&gt;
+&lt;p&gt;25. &lt;a href=&quot;https://wanshutiaoyi.com/book/4098263&quot;&gt;论语译注&lt;/a&gt; — 杨伯峻的注本，读《论语》最常用的版本&lt;/p&gt;
+
+&lt;p&gt;26. &lt;a href=&quot;https://wanshutiaoyi.com/book/3007268&quot;&gt;传习录&lt;/a&gt; — 王阳明语录，心学入门必读&lt;/p&gt;
+
+&lt;p&gt;27. &lt;a href=&quot;https://wanshutiaoyi.com/book/1051943&quot;&gt;尼各马可伦理学&lt;/a&gt; — 亚里士多德谈幸福和德性，伦理学的源头&lt;/p&gt;
+
+&lt;p&gt;28. &lt;a href=&quot;https://wanshutiaoyi.com/book/30394971&quot;&gt;论自由&lt;/a&gt; — 密尔论个人自由的边界，不到两百页，现代自由主义的奠基文本；人工补入&lt;/p&gt;
 
 &lt;h2&gt;第三站：硬核原著&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/philosophy/station_3.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/philosophy/station_3_v2.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
-&lt;p&gt;到这一站就是真正的大部头了。《理想国》是这份书单里评价人数第二多的书（42,275 人），却被 AI 判为专业研究级，它比看起来难读，前两站走过一遍再读更好。&lt;/p&gt;
+&lt;p&gt;到这一站就是真正的大部头了：《纯粹理性批判》760 页，《作为意志和表象的世界》740 页，《第二性》的全译本将近一千页。前两站走过一遍，再来读会顺很多。&lt;/p&gt;
 
-&lt;p&gt;25. &lt;a href=&quot;https://wanshutiaoyi.com/book/1004821&quot;&gt;理想国&lt;/a&gt; — 柏拉图论正义与理想城邦，西方哲学几乎所有问题的起点&lt;/p&gt;
+&lt;p&gt;29. &lt;a href=&quot;https://wanshutiaoyi.com/book/1076280&quot;&gt;第一哲学沉思集&lt;/a&gt; — 笛卡尔用怀疑一切的方法重建知识，近代哲学的开端&lt;/p&gt;
 
-&lt;p&gt;26. &lt;a href=&quot;https://wanshutiaoyi.com/book/1076280&quot;&gt;第一哲学沉思集&lt;/a&gt; — 笛卡尔用怀疑一切的方法重建知识，近代哲学的开端&lt;/p&gt;
+&lt;p&gt;30. &lt;a href=&quot;https://wanshutiaoyi.com/book/1216737&quot;&gt;纯粹理性批判&lt;/a&gt; — 康德追问人能知道什么，公认最难啃的经典之一&lt;/p&gt;
 
-&lt;p&gt;27. &lt;a href=&quot;https://wanshutiaoyi.com/book/1216737&quot;&gt;纯粹理性批判&lt;/a&gt; — 康德追问人能知道什么，公认最难啃的经典之一&lt;/p&gt;
+&lt;p&gt;31. &lt;a href=&quot;https://wanshutiaoyi.com/book/1004699&quot;&gt;作为意志和表象的世界&lt;/a&gt; — 叔本华的主著，意志是世界的本质，《人生的智慧》的理论底子&lt;/p&gt;
 
-&lt;p&gt;28. &lt;a href=&quot;https://wanshutiaoyi.com/book/1004699&quot;&gt;作为意志和表象的世界&lt;/a&gt; — 叔本华的主著，意志是世界的本质，《人生的智慧》的理论底子&lt;/p&gt;
+&lt;p&gt;32. &lt;a href=&quot;https://wanshutiaoyi.com/book/11232671&quot;&gt;悲剧的诞生&lt;/a&gt; — 尼采的第一部书，酒神与日神；写得激昂，但涉及大量希腊悲剧和瓦格纳，并不好读&lt;/p&gt;
 
-&lt;p&gt;29. &lt;a href=&quot;https://wanshutiaoyi.com/book/2359052&quot;&gt;查拉图斯特拉如是说&lt;/a&gt; — 尼采的诗化哲学，超人与永恒轮回&lt;/p&gt;
+&lt;p&gt;33. &lt;a href=&quot;https://wanshutiaoyi.com/book/2359052&quot;&gt;查拉图斯特拉如是说&lt;/a&gt; — 尼采的诗化哲学，超人与永恒轮回&lt;/p&gt;
 
-&lt;p&gt;30. &lt;a href=&quot;https://wanshutiaoyi.com/book/1005354&quot;&gt;逻辑哲学论&lt;/a&gt; — 前期维特根斯坦，「凡不可说的，应当保持沉默」&lt;/p&gt;
+&lt;p&gt;34. &lt;a href=&quot;https://wanshutiaoyi.com/book/1005354&quot;&gt;逻辑哲学论&lt;/a&gt; — 前期维特根斯坦，「凡不可说的，应当保持沉默」&lt;/p&gt;
 
-&lt;p&gt;31. &lt;a href=&quot;https://wanshutiaoyi.com/book/1783111&quot;&gt;存在与时间&lt;/a&gt; — 海德格尔追问「存在」，二十世纪影响最大也最难读的书之一&lt;/p&gt;
+&lt;p&gt;35. &lt;a href=&quot;https://wanshutiaoyi.com/book/1783111&quot;&gt;存在与时间&lt;/a&gt; — 海德格尔追问「存在」，二十世纪影响最大也最难读的书之一&lt;/p&gt;
 
-&lt;p&gt;32. &lt;a href=&quot;https://wanshutiaoyi.com/book/1012307&quot;&gt;规训与惩罚&lt;/a&gt; — 福柯从酷刑写到监狱，看现代社会怎样驯服人&lt;/p&gt;
+&lt;p&gt;36. &lt;a href=&quot;https://wanshutiaoyi.com/book/1012307&quot;&gt;规训与惩罚&lt;/a&gt; — 福柯从酷刑写到监狱，看现代社会怎样驯服人&lt;/p&gt;
 
-&lt;p&gt;33. &lt;a href=&quot;https://wanshutiaoyi.com/book/20376550&quot;&gt;科学革命的结构&lt;/a&gt; — 库恩提出「范式」，改变了人们对科学进步的理解&lt;/p&gt;
+&lt;p&gt;37. &lt;a href=&quot;https://wanshutiaoyi.com/book/25822104&quot;&gt;第二性&lt;/a&gt; — 波伏瓦的女性主义哲学经典，「女人不是天生的」，郑克鲁全译本近千页；AI 归在性别研究，人工补入&lt;/p&gt;
 
-&lt;p&gt;34. &lt;a href=&quot;https://wanshutiaoyi.com/book/10582727&quot;&gt;四书章句集注&lt;/a&gt; — 朱熹给四书作的注，理学的核心文本，这版是简体校勘新版&lt;/p&gt;
+&lt;p&gt;38. &lt;a href=&quot;https://wanshutiaoyi.com/book/10582727&quot;&gt;四书章句集注&lt;/a&gt; — 朱熹给四书作的注，理学的核心文本，中华书局新编诸子集成本&lt;/p&gt;
 
-&lt;p&gt;35. &lt;a href=&quot;https://wanshutiaoyi.com/book/1028268&quot;&gt;正义论&lt;/a&gt; — 罗尔斯的「无知之幕」，当代政治哲学绕不开的一本&lt;/p&gt;
+&lt;p&gt;39. &lt;a href=&quot;https://wanshutiaoyi.com/book/26389495&quot;&gt;当代政治哲学&lt;/a&gt; — 金里卡梳理功利主义、自由主义、社群主义，政治哲学教材经典&lt;/p&gt;
+
+&lt;p&gt;40. &lt;a href=&quot;https://wanshutiaoyi.com/book/1028268&quot;&gt;正义论&lt;/a&gt; — 罗尔斯的「无知之幕」，当代政治哲学绕不开的一本&lt;/p&gt;
 
 &lt;h2&gt;按兴趣挑一条线&lt;/h2&gt;
 
 &lt;p&gt;图里每本书右上角有个小圆点，蓝色是西方哲学，红色是中国哲学，绿色是伦理和政治哲学。只想走其中一条，可以这样读：&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;西方：《大问题》或《哲学的故事》打底，读《西方哲学史》理脉络，再从《会饮篇》《谈谈方法》进原著，最后挑一位哲学家深入，比如维特根斯坦：传记、《逻辑哲学论》、《哲学研究》。&lt;/li&gt;
-&lt;li&gt;中国：冯友兰的《中国哲学简史》先读，然后是《论语译注》《道德经》《庄子》《传习录》，儒、道、心学一条线；想再深一步，读朱熹的《四书章句集注》。&lt;/li&gt;
-&lt;li&gt;伦理和政治：桑德尔的《公正》和牛津通识课《政治哲学》入门，《尼各马可伦理学》和金里卡的《当代政治哲学》进阶，最后是罗尔斯的《正义论》。&lt;/li&gt;
+&lt;li&gt;西方：《苏菲的世界》或《大问题》打底，读一本哲学史理脉络（罗素的好读，邓晓芒、赵林的更系统），再从《会饮篇》《谈谈方法》进原著，最后挑一位哲学家深入，比如维特根斯坦：传记、《逻辑哲学论》、《哲学研究》。&lt;/li&gt;
+&lt;li&gt;中国：冯友兰的《中国哲学简史》先读，然后是《论语译注》《老子今注今译》《庄子》《传习录》，儒、道、心学一条线；想再深一步，读朱熹的《四书章句集注》。&lt;/li&gt;
+&lt;li&gt;伦理和政治：桑德尔的《公正》和牛津通识课《政治哲学》入门，《尼各马可伦理学》和密尔的《论自由》进阶，最后是金里卡的《当代政治哲学》和罗尔斯的《正义论》。&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2&gt;自己动手筛&lt;/h2&gt;
