@@ -6,37 +6,44 @@
     <description>My personal blog</description>
     
       <item>
-        <title>豆瓣上评价过千的健康书有 150 本，养生类六成不到 8 分：吃、睡、看病、生老病死，值得读的 34 本在这</title>
+        <title>豆瓣评价过千的健康书有 150 本，养生书六成不到 8 分：值得读的是这 42 本</title>
         <link>https://lanbing510.info/2026/10/23/WanShuTiaoYiHealth.html</link>
         <guid isPermaLink="true">https://lanbing510.info/2026/10/23/WanShuTiaoYiHealth.html</guid>
         <pubDate>Fri, 23 Oct 2026 00:00:00 +0000</pubDate>
         <description>&lt;p&gt;健康书大概是书店里最好卖、也最难挑的一类。同样讲睡觉，有的书是神经科学家写的研究综述，有的是把几条经验凑成一本「XX 天改变你的睡眠」。封面上都写着「权威」「畅销百万」，光看书名分不出来。&lt;/p&gt;
 
-&lt;p&gt;我用万书挑一的书库查了一遍。484 万本豆瓣图书里，AI 判定主题是「医学健康」、评价人数过千的有 156 本，同书合并后 &lt;strong&gt;150 本&lt;/strong&gt;。其中 9 分以上 20 本，不到 8 分的 53 本，差不多三分之一。&lt;/p&gt;
+&lt;p&gt;我用万书挑一的书库查了一遍。489 万本豆瓣图书里，AI 判定主题是「医学健康」、评价人数过千的有 156 本，同书合并后 &lt;strong&gt;150 本&lt;/strong&gt;。其中 9 分以上 20 本，不到 8 分的 53 本，差不多三分之一。&lt;/p&gt;
 
-&lt;p&gt;低分书集中在一类：养生保健与营养。这一类 34 本，平均 7.65 分，&lt;strong&gt;21 本不到 8 分&lt;/strong&gt;，是四大类里唯一平均分不到 8 的。而写医生、病人和生死的「医学人文」类平均 8.41 分，35 本里只有 7 本不到 8 分。&lt;/p&gt;
+&lt;p&gt;低分书集中在一类：养生保健与营养。这一类 34 本，平均 7.65 分，&lt;strong&gt;21 本不到 8 分&lt;/strong&gt;，是四大类里唯一平均分不到 8 的。写医生、病人和生死的「医学人文」类平均 8.41 分，35 本里只有 7 本不到 8 分。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/health/fig_data.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
-&lt;p&gt;同一个话题，读者给的分能差一两分。讲睡眠的《我们为什么要睡觉？》1.2 万人评出 8.4，《睡眠革命》9,271 人评出 7.3，《斯坦福高效睡眠法》只有 6.5；讲减肥的《肥胖代码》8.3，同样人气很高的《轻断食》6.8；讲长寿的《超越百岁》8.4，《抗老生活》6.7。人数都在一千以上，不是几十个人刷出来的分。&lt;/p&gt;
+&lt;p&gt;同一个话题，读者给的分能差一两分。讲睡眠的《我们为什么要睡觉？》1.2 万人评出 8.4，《睡眠革命》9,271 人评出 7.3，《斯坦福高效睡眠法》只有 6.5；讲减肥的《肥胖代码》8.3，人气更高的《轻断食》6.8；讲长寿的《超越百岁》8.4，《抗老生活》6.7。这些书的评价人数都过了一千，不是几十个人刷出来的分。&lt;/p&gt;
+
+&lt;p&gt;低分养生书也不是被一星打下来的。《斯坦福高效睡眠法》打三星的占 48.7%，一星只有 2.3%；《轻断食》三星占 44.8%，《抗老生活》51.4%。多数读者的评价就是「一般」。高分书正相反：《最好的告别》五星占 59.0%，《你是你吃出来的》48.1%。&lt;/p&gt;
 
 &lt;p&gt;所以这份书单不看销量，看读者打分。&lt;/p&gt;
+
+&lt;h2&gt;先说结论：按需要挑一本&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;想吃得健康一点：《你是你吃出来的》&lt;/li&gt;
+&lt;li&gt;睡不好：《我们为什么要睡觉？》&lt;/li&gt;
+&lt;li&gt;腰背疼、久坐：《腰背维修师》&lt;/li&gt;
+&lt;li&gt;家里有人得了重病：《病人家属，请来一下》&lt;/li&gt;
+&lt;li&gt;女儿到了青春期：《女孩之书》&lt;/li&gt;
+&lt;li&gt;准备要孩子、孩子还小：《海蒂怀孕大百科》《美国儿科学会育儿百科》&lt;/li&gt;
+&lt;li&gt;父母老了：《最好的告别》&lt;/li&gt;
+&lt;li&gt;只想读一本当闲书：《肠子的小心思》&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2&gt;怎么挑的&lt;/h2&gt;
 
 &lt;p&gt;候选池就是上面这 150 本：AI 主题「医学健康」、评价 ≥ 1000，按好书指数排序。好书指数是评分和评价人数的贝叶斯平均，v/(v+m)×评分 + m/(v+m)×C，m 取 500，C≈7.99，几十个人打出来的高分会被往均值拉。&lt;/p&gt;
 
-&lt;p&gt;然后按读者最常关心的问题分成六组：吃、动和睡、看病、女性孕产与孩子、认识身体和疾病、老病死，每组挑 5 到 6 本，组内按好书指数排。&lt;/p&gt;
+&lt;p&gt;然后按读者最常问的问题分成七组：吃、动和睡、看病、女性孕产与孩子、认识身体和疾病、中医、老病死。每组挑 5 到 7 本，组内按好书指数排。中医自成体系，单独一组，不和其他组放在一起比。&lt;/p&gt;
 
-&lt;p&gt;有三类书分数够但没收：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;中医书。&lt;/strong&gt; 如果直接按好书指数排，池子里前三名都是李辛的书（《经典中医启蒙》9.3、《儿童健康讲记》9.3、《精神健康讲记》9.2），王冰注的《黄帝内经》在第 6 名。中医是另一套体系，和这份书单的其他书没法放在一起比，想看的可以在站内筛「中医中药」。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;法医图鉴。&lt;/strong&gt; 《尸体变化图鉴》9.2 分排第 4，是法医学工具书，不算健康读物。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;英文原版和重复版本。&lt;/strong&gt; 《Being Mortal》《When Breath Becomes Air》和中文版重复；《癌症传》是《众病之王》的新版。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;另外补了一本池子外的书：《女孩之书》讲青春期的身体，AI 把它判在了「家庭教育」，不在医学健康池里，但放在女性一组最合适。&lt;/p&gt;
+&lt;p&gt;没收的主要是两类：《尸体变化图鉴》9.2 分，是法医学工具书，不算健康读物；《Being Mortal》《When Breath Becomes Air》是英文原版，和中文版重复，《癌症传》是《众病之王》的新版。另外补了一本池子外的书：《女孩之书》讲青春期的身体，AI 把它判在了「家庭教育」，不在医学健康池里，放在女性一组。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/health/grid.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
@@ -60,7 +67,7 @@
 
 &lt;h2&gt;动和睡&lt;/h2&gt;
 
-&lt;p&gt;运动类评价过千的书很少，整个池子里只有 4 本主题是运动健身。这一组把睡眠也放了进来。&lt;/p&gt;
+&lt;p&gt;运动类评价过千的书很少，整个池子里主题是运动健身的只有 4 本。这一组把睡眠也放了进来。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/health/panel_2.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
@@ -76,27 +83,29 @@
 
 &lt;h2&gt;看病&lt;/h2&gt;
 
-&lt;p&gt;生了病、或者家里人生了病，最需要的是知道该问医生什么。这一组有三本是讲癌症的。&lt;/p&gt;
+&lt;p&gt;生了病、或者家里人生了病，最需要的是知道该问医生什么。这一组有三本讲癌症，一本讲抑郁症。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/health/panel_3.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
-&lt;p&gt;1. &lt;a href=&quot;https://wanshutiaoyi.com/book/36014677&quot;&gt;癌症密码&lt;/a&gt; — 也是冯子新写的，从进化的角度解释癌症为什么难治。9.0 分&lt;/p&gt;
+&lt;p&gt;1. &lt;a href=&quot;https://wanshutiaoyi.com/book/26592648&quot;&gt;癌症·真相&lt;/a&gt; — 「菠萝」李治中是做癌症药物研发的，用大白话讲癌症是什么、哪些说法是谣言。6,383 人评出 8.8&lt;/p&gt;
 
-&lt;p&gt;2. &lt;a href=&quot;https://wanshutiaoyi.com/book/26592648&quot;&gt;癌症·真相&lt;/a&gt; — 「菠萝」李治中是做癌症药物研发的，用大白话讲癌症是什么、哪些说法是谣言。6,383 人评出 8.8&lt;/p&gt;
+&lt;p&gt;2. &lt;a href=&quot;https://wanshutiaoyi.com/book/36014677&quot;&gt;癌症密码&lt;/a&gt; — 也是冯子新写的，从进化的角度解释癌症为什么难治。9.0 分&lt;/p&gt;
 
-&lt;p&gt;3. &lt;a href=&quot;https://wanshutiaoyi.com/book/34842793&quot;&gt;薄世宁医学通识讲义&lt;/a&gt; — 北医三院 ICU 医生薄世宁讲疾病、治疗和医患关系，适合当一本「医学常识」入门&lt;/p&gt;
+&lt;p&gt;3. &lt;a href=&quot;https://wanshutiaoyi.com/book/35217266&quot;&gt;正午之魔&lt;/a&gt; — 安德鲁·所罗门写抑郁症：他自己的病史、各种疗法、不同国家的病人。美国国家图书奖获奖作品&lt;/p&gt;
 
-&lt;p&gt;4. &lt;a href=&quot;https://wanshutiaoyi.com/book/25768216&quot;&gt;冀连梅谈：中国人应该这样用药&lt;/a&gt; — 药师冀连梅讲抗生素、输液、儿童用药这些最常见的用药误区&lt;/p&gt;
+&lt;p&gt;4. &lt;a href=&quot;https://wanshutiaoyi.com/book/34842793&quot;&gt;薄世宁医学通识讲义&lt;/a&gt; — 北医三院 ICU 医生薄世宁讲疾病、治疗和医患关系，适合当一本「医学常识」入门&lt;/p&gt;
 
-&lt;p&gt;5. &lt;a href=&quot;https://wanshutiaoyi.com/book/35604398&quot;&gt;病人家属，请来一下&lt;/a&gt; — 医生王兴写给病人家属：怎么和医生沟通、怎么做治疗决定，也写到了临终&lt;/p&gt;
+&lt;p&gt;5. &lt;a href=&quot;https://wanshutiaoyi.com/book/25768216&quot;&gt;冀连梅谈：中国人应该这样用药&lt;/a&gt; — 药师冀连梅讲抗生素、输液、儿童用药这些最常见的用药误区&lt;/p&gt;
+
+&lt;p&gt;6. &lt;a href=&quot;https://wanshutiaoyi.com/book/35604398&quot;&gt;病人家属，请来一下&lt;/a&gt; — 医生王兴写给病人家属：怎么和医生沟通、怎么做治疗决定，也写到了临终&lt;/p&gt;
 
 &lt;h2&gt;女性、孕产与孩子&lt;/h2&gt;
 
-&lt;p&gt;六组里平均分最高的是这一组，6 本最低也有 8.3 分。&lt;/p&gt;
+&lt;p&gt;这一组 6 本最低也有 8.3 分，《女孩之书》9.4 分是整份书单里最高的。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/health/panel_4.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
-&lt;p&gt;1. &lt;a href=&quot;https://wanshutiaoyi.com/book/36344591&quot;&gt;女孩之书&lt;/a&gt; — 两位挪威医生写给青春期女孩：月经、身体发育、性。9.4 分，这份书单里分最高的一本&lt;/p&gt;
+&lt;p&gt;1. &lt;a href=&quot;https://wanshutiaoyi.com/book/36344591&quot;&gt;女孩之书&lt;/a&gt; — 两位挪威医生写给青春期女孩：月经、身体发育、性。9.4 分&lt;/p&gt;
 
 &lt;p&gt;2. &lt;a href=&quot;https://wanshutiaoyi.com/book/35218443&quot;&gt;美国儿科学会育儿百科（第7版）&lt;/a&gt; — 美国儿科学会编，从出生到 5 岁，发烧、喂养、疫苗都能查，是当工具书用的&lt;/p&gt;
 
@@ -110,7 +119,7 @@
 
 &lt;h2&gt;认识身体和疾病&lt;/h2&gt;
 
-&lt;p&gt;这一组不教你怎么做，讲的是身体为什么这样、疾病从哪来。最适合当闲书读。&lt;/p&gt;
+&lt;p&gt;这一组不教你怎么做，讲的是身体为什么这样、疾病从哪来，最适合当闲书读。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/health/panel_5.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
@@ -126,11 +135,31 @@
 
 &lt;p&gt;6. &lt;a href=&quot;https://wanshutiaoyi.com/book/30354451&quot;&gt;皮肤的秘密&lt;/a&gt; — 德国皮肤科医生写的皮肤科普，8,914 人评价&lt;/p&gt;
 
-&lt;h2&gt;老、病、死&lt;/h2&gt;
+&lt;h2&gt;中医&lt;/h2&gt;
 
-&lt;p&gt;这是整个池子里读者最多、分也最高的一类。评价过万的 11 本健康书里，有 5 本讲医生、病人或者死亡，前两名都在这一组。&lt;/p&gt;
+&lt;p&gt;如果把 150 本直接按好书指数排，前三名都是中医书，而且是同一个作者：李辛的《经典中医启蒙》《儿童健康讲记》《精神健康讲记》，9.2 到 9.3 分，评价三千到五千多人。王冰注的《黄帝内经》排第 6。池子里的 16 本中医书平均 8.36 分，只比医学人文类低一点。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/health/panel_6.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;1. &lt;a href=&quot;https://wanshutiaoyi.com/book/30230380&quot;&gt;经典中医启蒙&lt;/a&gt; — 李辛讲中医的基本观念：精、气、神，经络，怎么看一个人的状态。评价 5,760 人，这一组最多&lt;/p&gt;
+
+&lt;p&gt;2. &lt;a href=&quot;https://wanshutiaoyi.com/book/26671406&quot;&gt;儿童健康讲记&lt;/a&gt; — 李辛讲孩子的体质、常见病和养育方式，不少读者是家长&lt;/p&gt;
+
+&lt;p&gt;3. &lt;a href=&quot;https://wanshutiaoyi.com/book/34939373&quot;&gt;精神健康讲记&lt;/a&gt; — 李辛从中医的角度讲焦虑、抑郁这些情绪和精神问题&lt;/p&gt;
+
+&lt;p&gt;4. &lt;a href=&quot;https://wanshutiaoyi.com/book/1254942&quot;&gt;黄帝内经&lt;/a&gt; — 唐代王冰注本，原典&lt;/p&gt;
+
+&lt;p&gt;5. &lt;a href=&quot;https://wanshutiaoyi.com/book/1060298&quot;&gt;思考中医&lt;/a&gt; — 刘力红以《伤寒论》为线索讲中医的思维方式，2003 年出版&lt;/p&gt;
+
+&lt;p&gt;6. &lt;a href=&quot;https://wanshutiaoyi.com/book/21330892&quot;&gt;黄帝内经·四气调神&lt;/a&gt; — 徐文兵和梁冬的对谈，讲《黄帝内经》里春夏秋冬怎么养生&lt;/p&gt;
+
+&lt;p&gt;持相反观点的书也在池子里：方舟子的《批评中医》，1,291 人评出 8.5 分。&lt;/p&gt;
+
+&lt;h2&gt;老、病、死&lt;/h2&gt;
+
+&lt;p&gt;这是整个池子里读者最多的一类。评价过万的 11 本健康书里，有 5 本讲医生、病人或者死亡，人数最多的两本都在这一组。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/health/panel_7.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
 
 &lt;p&gt;1. &lt;a href=&quot;https://wanshutiaoyi.com/book/30277179&quot;&gt;打开一颗心&lt;/a&gt; — 英国心脏外科医生斯蒂芬·韦斯塔比写他做过的手术，和那些没能救回来的病人。1.5 万人评出 9.1&lt;/p&gt;
 
@@ -140,11 +169,13 @@
 
 &lt;p&gt;4. &lt;a href=&quot;https://wanshutiaoyi.com/book/35217694&quot;&gt;照护&lt;/a&gt; — 哈佛医学人类学家凯博文照顾患阿尔茨海默病的妻子十年，从医生变成照护者&lt;/p&gt;
 
-&lt;p&gt;5. &lt;a href=&quot;https://wanshutiaoyi.com/book/35307875&quot;&gt;好好告别&lt;/a&gt; — 英国姑息治疗医生凯瑟琳·曼尼克斯讲人临终前会经历什么，读完对死亡会少一些恐惧&lt;/p&gt;
+&lt;p&gt;5. &lt;a href=&quot;https://wanshutiaoyi.com/book/30293663&quot;&gt;绝对笑喷之弃业医生日志&lt;/a&gt; — 英国前产科医生亚当·凯的值班日记，好笑，也看得出医生有多累。2.3 万人评价&lt;/p&gt;
 
-&lt;p&gt;6. &lt;a href=&quot;https://wanshutiaoyi.com/book/36696538&quot;&gt;超越百岁&lt;/a&gt; — 医生彼得·阿提亚讲怎么延长健康的寿命：运动、营养、睡眠和心理，以及几种慢性病的早期预防&lt;/p&gt;
+&lt;p&gt;6. &lt;a href=&quot;https://wanshutiaoyi.com/book/35307875&quot;&gt;好好告别&lt;/a&gt; — 英国姑息治疗医生凯瑟琳·曼尼克斯讲人临终前会经历什么，读完对死亡会少一些恐惧&lt;/p&gt;
 
-&lt;p&gt;另外有两本评价人数很多、但没收进来的：亚当·凯的《绝对笑喷之弃业医生日志》（2.3 万人，8.6 分）和陶勇的《目光》（1.9 万人，8.6 分），都是医生写自己的职业经历，篇幅所限没放。&lt;/p&gt;
+&lt;p&gt;7. &lt;a href=&quot;https://wanshutiaoyi.com/book/36696538&quot;&gt;超越百岁&lt;/a&gt; — 医生彼得·阿提亚讲怎么延长健康的寿命：运动、营养、睡眠和心理，以及几种慢性病的早期预防&lt;/p&gt;
+
+&lt;p&gt;这一类好书太多，还有几本分数够、篇幅所限没放：陶勇的《目光》（1.9 万人，8.6）、韦斯塔比的另一本《刀锋人生》（8.9）、安妮·法迪曼的《要命还是要灵魂》（8.9）。&lt;/p&gt;
 
 &lt;h2&gt;自己动手筛&lt;/h2&gt;
 
@@ -152,13 +183,11 @@
 
 &lt;p&gt;&lt;a href=&quot;https://wanshutiaoyi.com/tag/%E5%8C%BB%E5%AD%A6%E5%81%A5%E5%BA%B7?min_votes=1000&amp;sort=quality&amp;utm_source=blog&amp;utm_campaign=health&quot;&gt;AI 主题「医学健康」，评价过千，按好书指数排&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;想看更窄的方向，可以换成「运动健身」「孕产与儿童健康」「医学人文」这些二级主题；把评价门槛降到 300，运动类会多出《豹式健身》（9.2 分，484 人）、《量化健身》（8.7 分，894 人）这样评价还不到千的书。&lt;/p&gt;
-
-&lt;p&gt;挑之前，可以先打开书的详情页看一眼评分分布。养生类的低分书不是被一星打下来的：《斯坦福高效睡眠法》打三星的占 48.7%，一星只有 2.3%；《轻断食》三星 44.8%，《抗老生活》三星 51.6%。多数读者的评价是「一般」。高分书正相反，《最好的告别》五星占 59.0%，《你是你吃出来的》48.1%。&lt;/p&gt;
+&lt;p&gt;想看更窄的方向，可以换成「运动健身」「孕产与儿童健康」「医学人文」「中医中药」这些二级主题。把评价门槛降到 300，运动类会多出《豹式健身》（9.2 分，484 人）、《量化健身：原理解析》（8.7 分，894 人）这样评价还不到一千的书。每本书的详情页都有五星到一星的分布，挑之前看一眼，比只看总分有用。&lt;/p&gt;
 
 &lt;p&gt;这个站是我一个人自费做的，不接广告，不挂购书链接，数据每天更新，承诺至少运营到 2027 年 12 月。你读过最有用的一本健康书是哪本？欢迎在评论区说。&lt;/p&gt;
 
-&lt;p&gt;数据来源：豆瓣图书公开页面（2026-10-22）；主题分类来自万书挑一的 AI 标签；每本书都链接回站内书页。&lt;/p&gt;
+&lt;p&gt;数据来源：豆瓣图书公开页面（2026-10-23）；主题分类来自万书挑一的 AI 标签；每本书都链接回站内书页。&lt;/p&gt;
 </description>
       </item>
     
