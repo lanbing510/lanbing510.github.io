@@ -6,6 +6,192 @@
     <description>My personal blog</description>
     
       <item>
+        <title>答案越来越便宜，判断越来越贵</title>
+        <link>https://lanbing510.info/2026/11/05/MingBianLab.html</link>
+        <guid isPermaLink="true">https://lanbing510.info/2026/11/05/MingBianLab.html</guid>
+        <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+        <description>&lt;p&gt;先说一个这两年越来越常见的场景：&lt;/p&gt;
+
+&lt;p&gt;你问 AI 一个问题，三秒钟，它给你一篇条理清楚、语气笃定的回答。换一个 AI 再问，又是一个版本。&lt;/p&gt;
+
+&lt;p&gt;该信哪一个？哪句是事实，哪句是它的猜测？照着做了，出了问题谁来负责？&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;获取答案的成本，几乎已经降到了零。可是「从一堆答案里做出判断」这件事，一点也没有变容易&lt;/strong&gt;——甚至更难了。因为看起来像模像样的内容越来越多，真正值得信的，并没有跟着变多。&lt;/p&gt;
+
+&lt;p&gt;所以我开始做一件事：&lt;strong&gt;和你一起，练判断力。&lt;/strong&gt;我给它起了个名字，叫「明辨Lab」。&lt;/p&gt;
+
+&lt;p&gt;明辨Lab 主要在微信公众号更新，这里也会同步一部分。「万书挑一」的书单照常更新。&lt;/p&gt;
+
+&lt;h2&gt;一、为什么叫「明辨」&lt;/h2&gt;
+
+&lt;p&gt;名字出自《中庸》：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;博学之，审问之，慎思之，明辨之，笃行之。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;这五步，正好是一次完整的判断：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;博学、审问&lt;/strong&gt;，是&lt;strong&gt;信息&lt;/strong&gt;：先广泛地看，再追问它是真是假、从哪里来。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;慎思&lt;/strong&gt;，是&lt;strong&gt;认知&lt;/strong&gt;：用脑子里的框架和模型，认真地想。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;明辨&lt;/strong&gt;，是&lt;strong&gt;判断&lt;/strong&gt;：把信息和认知合在一起，分清是非对错。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;笃行&lt;/strong&gt;，是&lt;strong&gt;实践&lt;/strong&gt;：判断完了就去做，再从结果里学。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;「明辨」这个名字，取的就是第四步：前面是信息和认知，后面是行动。&lt;/p&gt;
+
+&lt;p&gt;「明」和「辨」这两个字，本身也很有意思。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/mingbianlab/fig1_mingbian.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;明&lt;/strong&gt;，古字写作「朙」。《说文解字》说：「朙，照也，从月从囧。」「囧」是窗，《说文》的解释是「窗牖丽廔闿明」，就是透光的窗户。所以「明」的本义，是&lt;strong&gt;月光照进窗户&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;我很喜欢这个画面。窗，就像一个人的认知：每个人的窗形状不同、大小不同，看出去的世界也就不同。月光，就像信息：没有光，窗再大，屋里也是黑的。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;辨&lt;/strong&gt;，《说文解字》说：「辨，判也，从刀。」左右两个「辛」合起来是「辡」，意思是「罪人相与讼」，也就是两方在争执；中间一把刀，把是非判开。&lt;/p&gt;
+
+&lt;p&gt;这把刀要切开的东西，我们每天都会碰到：&lt;strong&gt;事实和观点，信号和噪音，「听起来对」和「真的对」。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;先明，后辨：先看清，再判断。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;至于「Lab」，是实验室的意思，对应的是最后一步「笃行」。毛主席在《实践论》里有一句很有名的话：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;你要知道梨子的滋味，你就得变革梨子，亲口吃一吃。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;判断力也是这样，不是读完一篇文章就能有的，要在一次次真实的选择里去试、去错、去复盘。《实践论》把这个过程概括为：「实践、认识、再实践、再认识，这种形式，循环往复以至无穷。」所以这里的每一篇内容，我都希望你能拿去用上一次。&lt;/p&gt;
+
+&lt;h2&gt;二、一个公式：判断力 = 认知 × 信息&lt;/h2&gt;
+
+&lt;p&gt;把《中庸》的前四步压缩一下，就是这个公式，也是我这几年最常想起的一句话。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;信息&lt;/strong&gt;：你看到了什么。事实、数据、别人的经验。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;认知&lt;/strong&gt;：你怎么看它。你脑子里用来理解世界的那些框架和模型。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;为什么用乘号，而不是加号？&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/mingbianlab/fig2_area.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;把认知当成宽，信息当成高，判断力就是面积。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;只有认知、没有信息&lt;/strong&gt;：推理再严密，前提错了，结论也只能跟着错。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;只有信息、没有认知&lt;/strong&gt;：资料堆了一屋子，却抓不住重点，或者只挑自己爱听的看。&lt;/p&gt;
+
+&lt;p&gt;同样是加起来等于 10，偏科的两种只有 9，两边都有的是 25。&lt;strong&gt;而任何一边是零，面积就是零。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;这也正是「明」字里的画面：窗再大，没有月光，屋里也是黑的；月光再亮，没有窗，也照不进来。&lt;/p&gt;
+
+&lt;p&gt;还要说明一点：这里说的是判断「力」，不是判断的结果。认知和信息都到位，也照样可能判断错，因为世界有不确定性，也有运气。我们能练的，是让自己判断对的概率高一点，错了也知道错在哪。&lt;/p&gt;
+
+&lt;h2&gt;三、为什么是现在&lt;/h2&gt;
+
+&lt;p&gt;AI 是一个杠杆，它放大的是你的判断。&lt;/p&gt;
+
+&lt;p&gt;判断对的人，借助 AI，一个人能做过去一个小团队的事；判断错的人，借助 AI，能更快、更自信地走上错路。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/mingbianlab/fig3_ai.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;AI 越强，有三件事反而越重要：&lt;/p&gt;
+
+&lt;p&gt;1. &lt;strong&gt;会问。&lt;/strong&gt;问题问偏了，答案再好也没用。&lt;/p&gt;
+
+&lt;p&gt;2. &lt;strong&gt;会辨。&lt;/strong&gt;AI 会一本正经地说错，网上由机器生成的内容也越来越多。分辨真假、分清事实和观点，正在变成每个人的基本功。&lt;/p&gt;
+
+&lt;p&gt;3. &lt;strong&gt;会断。&lt;/strong&gt;AI 可以给你十个选项，但选哪一个、承担什么后果，只能是你自己。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;答案可以外包，判断不能。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2&gt;四、明辨Lab 会写什么&lt;/h2&gt;
+
+&lt;p&gt;主要是三类内容：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/mingbianlab/fig4_columns.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;h3&gt;1. 思维模型：300 多个，一个一个讲透&lt;/h3&gt;
+
+&lt;p&gt;过去一段时间，我整理了一个思维模型库：从 14 个来源收集了一千八百多条，去重、合并、逐条复核，最后留下 300 多个，分成「数字与概率」「大脑的陷阱」「选择与竞争」「思考的方法」等九棵「树」。&lt;/p&gt;
+
+&lt;p&gt;整理下来，我越来越确定一件事：我们缺的往往不是聪明，而是在关键的时候，想起该用哪一个模型。&lt;/p&gt;
+
+&lt;p&gt;每个模型，我都会讲清楚四件事：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;一句话&lt;/strong&gt;说清它是什么；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;一个真实、有出处的故事&lt;/strong&gt;，不编；&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;它在生活里怎么用&lt;/strong&gt;；&lt;/li&gt;
+&lt;li&gt;以及，&lt;strong&gt;它什么时候不适用&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;哪些模型影响力最大？一个简单的看法是：&lt;strong&gt;谁被收录得最多&lt;/strong&gt;。在这 14 个来源里，下面这四个都被 11 个来源收录，并列第一。&lt;/p&gt;
+
+&lt;p&gt;每个模型还配了一张手绘结构图，争取让你一眼就看懂：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/mingbianlab/M0003.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;可得性启发：脑子里越容易想起的例子，就越觉得它常见，哪怕实际上很罕见。&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/mingbianlab/M0001.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;确认偏误：心里先有了答案，就只找支持它的证据，看不见反对它的。&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/mingbianlab/M0002.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;第一性原理：把问题拆到最基本、确定为真的事实，再从那里重新推出答案。&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/mingbianlab/M0004.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;逆向思维：想不出怎么成功时，反过来问：怎样一定会失败？然后避开它。&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;紧随其后的是幸存者偏差、奥卡姆剃刀（10 个来源），以及复利效应、损失厌恶、机会成本、沉没成本谬误（9 个来源）。后面会一个一个讲。&lt;/p&gt;
+
+&lt;h3&gt;2. 好书&lt;/h3&gt;
+
+&lt;p&gt;模型大多是从书里来的。我会分享那些读过、反复读、真正改变过我想法的书：它讲了什么，对我有什么用，以及哪里我不同意。&lt;/p&gt;
+
+&lt;p&gt;这部分也会和我做的另一个网站&lt;strong&gt;「万书挑一」&lt;/strong&gt;联动：从几百万本书里按口碑筛出来的好书，盖茨、芒格这些人推荐过的书单，我会挑出其中的精华放到这里。&lt;/p&gt;
+
+&lt;h3&gt;3. 好信息&lt;/h3&gt;
+
+&lt;p&gt;信息的质量，比数量重要。值得读的文章、可靠的数据、值得长期关注的信息源，我会整理出来，注明出处，并说清楚它为什么值得信。&lt;/p&gt;
+
+&lt;h2&gt;五、几条约定&lt;/h2&gt;
+
+&lt;p&gt;写给你，也写给我自己：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;例子要真实，有出处。&lt;/strong&gt;不为了让道理好懂去编故事。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;事实和观点分开说。&lt;/strong&gt;哪句是数据，哪句是我的看法，标清楚。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;讲模型，也讲它的边界。&lt;/strong&gt;每个模型都写「什么时候不适用」，因为地图不是疆域。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;不替你下结论，给你下结论的工具。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;说错了就改。&lt;/strong&gt;发现错误，会在后面的文章里公开更正。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;写在最后&lt;/h2&gt;
+
+&lt;p&gt;芒格 1994 年在南加州大学商学院演讲时说过一段话，大意是：&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;你得在头脑中装进一些模型，然后把你的经验，不管是间接的还是直接的，都挂到这些模型搭成的格栅上。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;我希望明辨Lab 能成为这样一个地方：每次来，带走一个新的模型、一本好书，或者一条值得信的信息；下一次做选择的时候，能多想一步，想得更清楚一点。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;判断力 = 认知 × 信息。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;我们一起，慢慢练。&lt;/p&gt;
+
+&lt;p&gt;明辨Lab 会在微信公众号持续更新。想一起练判断力，可以微信搜索「明辨Lab」，或者扫下面的二维码。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/mingbianlab/qr_card.jpg&quot; width=&quot;360px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
         <title>盖茨、乔布斯、芒格、纳瓦尔都在读什么？我整理了他们推荐的 347 本书，每本附本人原话</title>
         <link>https://lanbing510.info/2026/11/03/WanShuTiaoYiCelebs.html</link>
         <guid isPermaLink="true">https://lanbing510.info/2026/11/03/WanShuTiaoYiCelebs.html</guid>
@@ -2944,139 +3130,6 @@
 &lt;p&gt;这个站是我一个人自费做的，不接广告，数据每天更新，自费运营至少一年，承诺至少运营到 2027 年 12 月。这份家庭教育榜单如果你觉得漏了什么重要的书，欢迎在评论区补充。&lt;/p&gt;
 
 &lt;p&gt;数据来源：豆瓣图书公开页面，AI 分类由万书挑一自己生成；每本书都链接回豆瓣原页。&lt;/p&gt;
-</description>
-      </item>
-    
-      <item>
-        <title>504 万本豆瓣图书里，上万人打出 9 分以上的只有 266 本：全部名单在这</title>
-        <link>https://lanbing510.info/2026/10/06/WanShuTiaoYiTop238.html</link>
-        <guid isPermaLink="true">https://lanbing510.info/2026/10/06/WanShuTiaoYiTop238.html</guid>
-        <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
-        <description>&lt;p&gt;豆瓣有 5,047,934 本书的条目（约 504.8 万），真正有评分的 475,585 本。9 分以上的书有 65,479 本，听起来很多，但其中 67%（43,712 本）的评价人数不到 100 人。几十个人就能把一本书「刷」到 9 分，所以只看评分，很容易被高分垃圾书骗。&lt;/p&gt;
-
-&lt;p&gt;把评价人数也算进去，再看一遍：评分 9 分以上、评价人数过万，504 万本里只剩 411 本。去掉漫画、绘本和教材，再把同一本书的不同版本合并，剩下 &lt;strong&gt;266 本&lt;/strong&gt;。这些书不是「有人说好」，而是上万人一起说好。下面是全部名单。&lt;/p&gt;
-
-&lt;p&gt;这篇文章 10 月 6 日第一次发的时候，书库是三百多万本；10 月 21 日按 469 万本重算过一次，是 261 本。这次（10 月 28 日）书库到了 504 万本，又从头算了一遍，多了 5 本、一本没少，名次挪动都不超过 5 位。&lt;/p&gt;
-
-&lt;p&gt;多出来的 5 本里有两本是我算错了：有读者在站里留言，说《1453》（9.0 分、1 万人评价）应该在榜上。一查是合并同书版本的程序有个 bug，会把书名里的数字当成「第几版」「第几册」删掉，结果「1453」「13 67」和「1984」都被删成了空书名，被当成同一本书，只留下了人数最多的《1984》。修好之后，《1453》和陈浩基的《13·67》（9.1 分、3.2 万人）都回来了。另外 3 本是上次重算之后才收进书库、或者刚刚越过门槛的：冯骥才的《一百个人的十年》（9.4 分、2.1 万人，直接排到第 29 名）、《我們最幸福》和《你好，旧时光》。谢谢这位读者。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/galaxy_v3.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;先放一张图。这是「书海星空」，把 54 万本书之间 462 万条「读过这本的人也喜欢」画成一张能飞进去逛的星图：每个点是一本书，读者重合得越多的书靠得越近，自己聚成 36 个星系，每个星系配了一个星座名。榜单看完，可以从任何一本出发，顺着星图找下一本。后面会详细讲它。&lt;/p&gt;
-
-&lt;h2&gt;筛法：一层一层剩下 266 本&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/funnel_v4.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;每一层的条件都很简单：有评分、9 分以上、评价过万、不是漫画绘本教材、同书合并。门槛不高，但剩下的很少。&lt;/p&gt;
-
-&lt;p&gt;同一本书有多个版本时，留评价人数最多的那一版。《红楼梦》在豆瓣上有好几个评价过万的版本，榜上的是人民文学出版社 1982 年那版：9.7 分，47 万人评价。&lt;/p&gt;
-
-&lt;h2&gt;Top 30&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/grid_v4.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/panel_1_v4.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;榜首是《红楼梦》，9.7 分、47 万人评价，前十里分数并列最高、评价人数最多。第 2 名是《哈利·波特》全集，9.7 分、14.1 万人评价。前十里鲁迅占了两席（《坟》《野草》），《三体全集》是前十里唯一的中国当代小说。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/panel_2_v4.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;11 到 20 名里历史和社科的比例明显上来了：《艺术的故事》《筚路维艰》《东晋门阀政治》《奥斯维辛》。《银河帝国：基地七部曲》《魔戒》两套幻想小说也在这一档，评价人数都在一两万。&lt;/p&gt;
-
-&lt;p&gt;第 19 名有一本评价人数极其突出的书：《活着》，92.7 万人评价，是全榜人数最多的书，9.4 分。它的好书指数比不过前面评分 9.5 的书，但如果按「多少人读过并且认可」来看，它是第一。紧随其后的第 20 名是 31.5 万人评价的《1984》。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/panel_3_v4.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;21 到 30 名文学和史学大约各占一半：老舍《四世同堂》、雷马克《西线无战事》、费兰特「那不勒斯四部曲」，以及《邓小平时代》《天朝的崩溃》。这次新进的《一百个人的十年》排在第 29 名，钱穆的《国史大纲》因此挪到了第 31 名。《唐诗三百首》在第 27 名。奥威尔的《动物庄园》在第 24 名，另一个译本《动物农场》（18.4 万人评价）在第 43 名：两个译名在豆瓣是两个条目，所以都上了榜。&lt;/p&gt;
-
-&lt;h2&gt;第 31 ～ 100 本&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/compact_1_v4.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;这一段开始出现大量「每个人书架上都有」的书：《百年孤独》《飘》《白夜行》《三体Ⅱ》，《活着》之外的余华（《许三观卖血记》）、老舍（《茶馆》《骆驼祥子》）、鲁迅的《呐喊》《彷徨》，还有《三国演义》。也有不少社科：《乡土中国》《规训与惩罚》《中国国家治理的制度逻辑》《叫魂》。&lt;/p&gt;
-
-&lt;h2&gt;第 101 ～ 266 本&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/compact_2_v4.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/compact_3_v4.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;后半段的分数都在 9.0 ～ 9.2 之间，差别很小，顺序不必太当真。但「评价过万且 9 分以上」这个门槛本身已经筛掉了 99.99% 的书，能进这 266 本的，没有一本是凑数的。人人读过的书不少都在这一段：《小王子》第 116 名，80 万人评价，人数仅次于《活着》；《围城》第 190 名，46 万人评价；评价人数几十万，分数恰好在 9.0 上下。&lt;/p&gt;
-
-&lt;h2&gt;为什么不直接按评分排&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/hist_v4.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;榜单按「好书指数」排，不按原始评分。好书指数是评分和评价人数的贝叶斯平均：&lt;/p&gt;
-
-&lt;p&gt;好书指数 = v/(v+m) × 评分 + m/(v+m) × C&lt;/p&gt;
-
-&lt;p&gt;v 是评价人数，m = 500，C ≈ 7.98 是全站有评分图书的平均分。评价人数越少，分数越往均值拉；人数越多，越接近原始评分。这是 IMDb Top 250 用的同一类方法，目的只有一个：把「几十个人打出来的 9.5」和「几十万人打出来的 9.4」区分开。&lt;/p&gt;
-
-&lt;p&gt;一个反直觉的事实：评价人数越多，平均分反而越高。不到 30 人评价的书平均 7.75 分，一万人以上的书平均 8.30 分。人多并不会把分「拉低」，只会把真正的好书筛出来。&lt;/p&gt;
-
-&lt;h2&gt;想按自己的标准筛？&lt;/h2&gt;
-
-&lt;p&gt;这份榜单只是「9 分 + 过万人」这一组条件。我把 504 万本书做成了一个可以随意筛的工具，叫&lt;strong&gt;万书挑一&lt;/strong&gt;（wanshutiaoyi.com），上面这个榜单就是它的一个筛选结果：&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://wanshutiaoyi.com/?min_score=9&amp;min_votes=10000&amp;sort=quality&amp;utm_source=blog&amp;utm_campaign=total&quot;&gt;评分 ≥ 9，评价 ≥ 10000，按好书指数排序&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/search_total_v3.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;站内默认同样合并同书的多个版本、不含漫画绘本杂志，筛出来的数量和顺序与这份榜单会有些小出入（站内没有按「教材」再筛一遍）。&lt;/p&gt;
-
-&lt;p&gt;常用的几种筛法：&lt;/p&gt;
-
-&lt;p&gt;1. &lt;strong&gt;按领域&lt;/strong&gt;：搜索框里输入「#」加主题（#心理学、#历史、#经济学、#科幻……），评价人数 ≥ 1000，按好书指数排。1000 人是个经验阈值，低于它的 9 分基本不可信。&lt;/p&gt;
-
-&lt;p&gt;2. &lt;strong&gt;只看新书&lt;/strong&gt;：年份 2022 以后，评分 ≥ 8.8，评价 ≥ 500。分数已经有几百人支撑、但还没进大众视野的书。&lt;/p&gt;
-
-&lt;p&gt;3. &lt;strong&gt;反着找&lt;/strong&gt;：评分很高、人数不多的冷门书，再去「喜欢这本书的人也喜欢」里看有没有你读过的，比看分数准。&lt;/p&gt;
-
-&lt;h2&gt;两周里，万书挑一多了这些&lt;/h2&gt;
-
-&lt;p&gt;第一版发出来之后，收到很多留言和反馈。这两周按大家说的，加了不少东西。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;AI 主题标签。&lt;/strong&gt; 豆瓣标签是读者随手贴的，「思维」这个标签下面会冒出一本讲音乐的书。我让几个大模型读了 32 万本书的简介和目录，重新判断每本书讲什么、写给什么人看。现在按主题找书，结果干净得多：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/tag_ai_v3.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;书的详情页。&lt;/strong&gt; 评分分布（五星到一星的占比，一眼能看出是不是「一边倒」）、AI 判的主题和关键词、好书指数、被多少本书推荐，以及「喜欢这本书的人也喜欢」。点「在星系中查看」，直接飞到它在星空里的位置：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/book_detail_v3.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;译本对比。&lt;/strong&gt; 一本外国名著往往有好几个中译本，选哪个最纠结。详情页下面会列出这本书的全部中译本，按评价人数或评分排，能看出哪个译本读者最多、哪个口碑最好。《百年孤独》有 8 个中译本、15 个中文版本：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/translations_v3.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;书海星空：AI 主题镜头。&lt;/strong&gt; 开头那张星空现在能按主题点亮：点「心理学」，整片星空只剩心理学的书在发光，其余暗下去，一眼能看出这个主题的书都聚在哪几个星系：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/lens_v3.gif&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;书海星空：飞行模式。&lt;/strong&gt; 点工具条上的「🚀 飞行」，星图就变成驾驶舱：鼠标转向，WASD 驾驶，按住 Shift 加速。速度跟着周围星星的疏密走，外围空旷的地方飞得快，一进星团就自动慢下来，书名一本本从身边掠过；准星对准一颗星，就会弹出书名和评分。手机上也能飞，电脑上体验最好：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/flight_v3.webp&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;我的书架和阅读回放。&lt;/strong&gt; 可以把豆瓣上标过的「读过 / 在读 / 想读」一键搬进来（浏览器书签按钮，在你自己的浏览器里读取，服务器不访问豆瓣）。读过的书会在星空里亮起来，还能按时间回放：镜头沿着你读书的顺序，一本本飞过去，右上角是年份。回放可以一键录成视频：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/replay_v3.gif&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;阅读年轮和分享海报。&lt;/strong&gt; 读过的书按年份长成一棵年轮，读得多的那年颜色更深；再配上星空里的阅读轨迹、读得最多的主题，生成一张海报。这是我自己的：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/total/rings_poster_h_v3.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;另外还有「精选」专栏：心理学、历史、投资、经济学、小说、哲学等分类各挑一份书单，大多是「该主题 + 评价过千 + 好书指数」筛出来、再人工剔掉噪声的结果；「新书」页专门看 2020 年以后出版的书。&lt;/p&gt;
-
-&lt;h2&gt;最后&lt;/h2&gt;
-
-&lt;p&gt;这个站是我一个人自费做的，不接广告，数据每天更新。2019 年我在知乎发过「好书一下」和「书海星空」两个旧版本，后来因为服务器到期停掉了。这次重做，先试运营一年；赞助能覆盖成本就一直做下去，覆盖不了，我也自费运营到 2027 年 12 月 31 日。&lt;/p&gt;
-
-&lt;p&gt;我的书架和阅读年轮注册就能用；书海星空（包括星空回放、录视频和带星空的海报）是赞助者权益，注册送 1 天全功能体验，够你导入书架、看一遍自己的回放。&lt;/p&gt;
-
-&lt;p&gt;有想看的领域，或者觉得榜单里漏了哪本，评论区告诉我。&lt;/p&gt;
-
-&lt;p&gt;数据来源：豆瓣图书公开页面；每本书都链接回豆瓣原页。&lt;/p&gt;
 </description>
       </item>
     
