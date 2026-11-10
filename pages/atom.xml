@@ -6,6 +6,230 @@
     <description>My personal blog</description>
     
       <item>
+        <title>第一次当经理读什么？豆瓣评价过千的商业管理书有 313 本，近一半不到 8 分，我按处境挑了 45 本</title>
+        <link>https://lanbing510.info/2026/11/10/WanShuTiaoYiMgmt.html</link>
+        <guid isPermaLink="true">https://lanbing510.info/2026/11/10/WanShuTiaoYiMgmt.html</guid>
+        <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;文中的数据和书单都来自我做的找书网站「万书挑一」：&lt;a href=&quot;https://wanshutiaoyi.com&quot;&gt;wanshutiaoyi.com&lt;/a&gt;（打不开就复制网址到浏览器打开），书名可以直接点开看详情。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;管理书大概是机场书店里摆得最满的一类，也最容易买错。同样讲带团队，有的是英特尔的安迪·格鲁夫把自己带团队的做法写成一本手册，有的是几条口号凑成一本书。书名一个比一个响亮，腰封上都印着「畅销」，光看封面分不出来。&lt;/p&gt;
+
+&lt;p&gt;我用万书挑一的书库查了一遍。509 万本豆瓣图书里，AI 判定主题是「商业与管理」、评价人数过千的有 329 本，同书合并后 313 本。其中 9 分以上 13 本，不到 8 分的 153 本，差不多一半。&lt;/p&gt;
+
+&lt;p&gt;低分书集中在三类：讲组织与领导力的 21 本里 14 本不到 8 分，讲互联网与产品的 28 本里 20 本，讲营销与品牌的 48 本里 28 本。平均分最高的反倒是销售与谈判，11 本平均 8.18 分。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/mgmt/fig_data.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;同一个话题，读者给的分能差出一两分。都讲带团队，《格鲁夫给经理人的第一课》8.7 分，评价人数更多的《可复制的领导力》7.1，《给你一个团队，你能怎么管？》6.6；都是管理入门，德鲁克的《卓有成效的管理者》1.9 万人评出 8.7，《细节决定成败》6.7；讲广告文案，奥格威的《一个广告人的自白》8.3，《爆款文案》6.9。&lt;/p&gt;
+
+&lt;p&gt;读的人多也不等于分高。《从0到1》31,195 人评价，是池子里读者第三多的书，只有 7.5 分，打三星的占 30.0%。同一本书的英文原版 Zero to One，3,262 人评出 8.3。&lt;/p&gt;
+
+&lt;p&gt;分数特别高的也要看一眼分布。按分数排，池子里第一名是 9.7 分的《数字经济时代财务管理转型与思考》，3,062 人评价，五星占 85.5%，三星和二星都是 0.0%。豆瓣上评价过千的 17,599 本书里，三星不到 0.5% 的只有 8 本。这本我没收。&lt;/p&gt;
+
+&lt;p&gt;所以这份书单既不按销量排，也不只看总分。&lt;/p&gt;
+
+&lt;h2&gt;按处境挑一本&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;刚升经理，第一次带人：《格鲁夫给经理人的第一课》&lt;/li&gt;
+&lt;li&gt;要和下属或老板谈一件难谈的事：《关键对话》&lt;/li&gt;
+&lt;li&gt;要去谈价格、谈合同：《哈佛经典谈判术》&lt;/li&gt;
+&lt;li&gt;事情太多，天天在救火：《卓有成效的管理者》《搞定》&lt;/li&gt;
+&lt;li&gt;写汇报、做 PPT 总讲不清楚：《金字塔原理》&lt;/li&gt;
+&lt;li&gt;要定明年的战略：《好战略，坏战略》&lt;/li&gt;
+&lt;li&gt;看不懂财报：《一本书读懂财报》&lt;/li&gt;
+&lt;li&gt;公司在变大，想弄清楚文化怎么定：《不拘一格》&lt;/li&gt;
+&lt;li&gt;做市场、做品牌：《定位》&lt;/li&gt;
+&lt;li&gt;准备创业：《四步创业法》《创业维艰》&lt;/li&gt;
+&lt;li&gt;想读一本商业人物传记当闲书：《史蒂夫·乔布斯传》&lt;/li&gt;
+&lt;li&gt;想知道中国企业这几十年是怎么过来的：《激荡三十年》&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;怎么挑的&lt;/h2&gt;
+
+&lt;p&gt;候选池就是上面这 313 本：AI 主题「商业与管理」、评价 ≥ 1000，按好书指数排序。好书指数是评分和评价人数的贝叶斯平均，v/(v+m)×评分 + m/(v+m)×C，m 取 500，C≈7.97，几十个人打出来的高分会被往全站均值拉。&lt;/p&gt;
+
+&lt;p&gt;然后按读者的处境分成八组：第一次当经理、沟通说服与谈判、管好自己、决策与战略、组织与文化、营销与增长、创业、企业史与商业人物。每组挑 5 到 7 本，都在 8 分以上，组内按好书指数排。&lt;/p&gt;
+
+&lt;p&gt;池子外补了 8 本。3 本是 AI 对分类把握不大，站内筛选没收进来：《激荡三十年》（池子里只剩 2014 年的新版，3,150 人评价，这里换回 3.4 万人评价过的 2007 年版）、《一本书读懂财报》《人件》。另外 5 本被 AI 分到了别的主题，但管理者几乎都会读到：《影响力》在社会心理学，《关键对话》在沟通与人际关系，《高效能人士的七个习惯》《搞定》在自我管理与效率，《金字塔原理》在思维方法与表达。《高效能人士的七个习惯》评价最多的是精华版（8.2 分，27,086 人），这里收的是完整版（8.5 分，24,119 人）。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/mgmt/grid.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;h2&gt;第一次当经理&lt;/h2&gt;
+
+&lt;p&gt;从骨干升成经理，最难的一步是把注意力从自己手上的活儿，挪到别人的产出上。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/mgmt/panel_1_1.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;1. &lt;a href=&quot;https://wanshutiaoyi.com/book/1958120&quot;&gt;格鲁夫给经理人的第一课&lt;/a&gt; — 英特尔前 CEO 安迪·格鲁夫写给经理人的手册，把管理当成一条生产线来看：一对一面谈怎么谈、会怎么开、绩效怎么评，都有具体做法。英文原名 High Output Management&lt;/p&gt;
+
+&lt;p&gt;2. &lt;a href=&quot;https://wanshutiaoyi.com/book/26901342&quot;&gt;管理的常识&lt;/a&gt; — 陈春花用 8 个基本概念讲管理到底在管什么，比如管理管的是事而不是人、管理只对绩效负责。不到 200 页，适合当入门&lt;/p&gt;
+
+&lt;p&gt;3. &lt;a href=&quot;https://wanshutiaoyi.com/book/26608585&quot;&gt;重新定义团队：谷歌如何工作&lt;/a&gt; — 谷歌前人力资源负责人拉兹洛·博克讲谷歌怎么招人、怎么评绩效、怎么给反馈，很多做法是靠数据和内部实验定下来的&lt;/p&gt;
+
+&lt;p&gt;4. &lt;a href=&quot;https://wanshutiaoyi.com/book/6536593&quot;&gt;领导梯队&lt;/a&gt; — 拉姆·查兰等人把管理者的成长分成六个层级，每升一级，领导技能、时间分配和工作理念都得跟着换。第一次带人，就是从管自己转到管别人的第一道坎&lt;/p&gt;
+
+&lt;p&gt;5. &lt;a href=&quot;https://wanshutiaoyi.com/book/1108725&quot;&gt;人件&lt;/a&gt; — 讲软件团队的管理：办公环境、赶工期、加班为什么会伤害产出。1987 年初版，带技术团队的经理值得一读&lt;/p&gt;
+
+&lt;h2&gt;沟通、说服与谈判&lt;/h2&gt;
+
+&lt;p&gt;当了经理以后，一天里大半时间在谈：和下属谈、和老板谈、和客户谈。这一组 5 本最低也有 8.1 分。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/mgmt/panel_2_1.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;1. &lt;a href=&quot;https://wanshutiaoyi.com/book/35238507&quot;&gt;哈佛经典谈判术&lt;/a&gt; — 哈佛商学院的迪帕克·马尔霍特拉和马克斯·巴泽曼写的，从准备谈判、把蛋糕做大，讲到对方不讲理的时候怎么办。9.0 分，这一组最高&lt;/p&gt;
+
+&lt;p&gt;2. &lt;a href=&quot;https://wanshutiaoyi.com/book/3002878&quot;&gt;优势谈判&lt;/a&gt; — 罗杰·道森讲谈判桌上的具体招数：怎么开价、怎么让步、怎么拿请示上级做缓冲。4,250 人评价&lt;/p&gt;
+
+&lt;p&gt;3. &lt;a href=&quot;https://wanshutiaoyi.com/book/1786387&quot;&gt;影响力&lt;/a&gt; — 社会心理学家西奥迪尼总结人为什么会答应别人的六种原理：互惠、承诺和一致、社会认同、喜好、权威、稀缺。5.1 万人评价，这份书单里人数第二多，做营销和销售的也该读&lt;/p&gt;
+
+&lt;p&gt;4. &lt;a href=&quot;https://wanshutiaoyi.com/book/10586741&quot;&gt;关键对话&lt;/a&gt; — 讲风险高、意见不一、情绪激烈的时候怎么谈。给下属提意见、和老板意见不合，都用得上&lt;/p&gt;
+
+&lt;p&gt;5. &lt;a href=&quot;https://wanshutiaoyi.com/book/30358753&quot;&gt;掌控谈话&lt;/a&gt; — 前 FBI 国际人质谈判专家克里斯·沃斯写的，讲怎么倾听、怎么表达共情、怎么用开放式问题让对方自己想办法&lt;/p&gt;
+
+&lt;h2&gt;管好自己&lt;/h2&gt;
+
+&lt;p&gt;这一组的书 AI 大多分在「自我管理」，不在管理池里。可带人的人最先缺的，往往是自己的时间和精力。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/mgmt/panel_3_1.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;1. &lt;a href=&quot;https://wanshutiaoyi.com/book/1322025&quot;&gt;卓有成效的管理者&lt;/a&gt; — 德鲁克讲知识工作者怎样做到有效：记录和管理自己的时间、想清楚自己能贡献什么、用人所长、要事优先、做有效的决策。1.9 万人评出 8.7&lt;/p&gt;
+
+&lt;p&gt;2. &lt;a href=&quot;https://wanshutiaoyi.com/book/5325618&quot;&gt;高效能人士的七个习惯&lt;/a&gt; — 史蒂芬·柯维的七个习惯：积极主动、以终为始、要事第一、双赢思维、知彼解己、统合综效、不断更新。2.4 万人评价&lt;/p&gt;
+
+&lt;p&gt;3. &lt;a href=&quot;https://wanshutiaoyi.com/book/27608239&quot;&gt;原则&lt;/a&gt; — 桥水基金创始人瑞·达利欧把自己的生活原则和工作原则一条条写下来，最后一部分讲桥水怎么用这些原则管公司。4 万人评价&lt;/p&gt;
+
+&lt;p&gt;4. &lt;a href=&quot;https://wanshutiaoyi.com/book/4849382&quot;&gt;搞定&lt;/a&gt; — 戴维·艾伦的 GTD 方法：把所有待办从脑子里倒出来，放进一个靠得住的系统，再一件一件处理&lt;/p&gt;
+
+&lt;p&gt;5. &lt;a href=&quot;https://wanshutiaoyi.com/book/4882120&quot;&gt;金字塔原理&lt;/a&gt; — 麦肯锡前顾问芭芭拉·明托讲怎么写报告：先说结论，再一层层展开理由。写汇报、做 PPT 的人用得最多&lt;/p&gt;
+
+&lt;p&gt;稻盛和夫的两本也常被问到：《活法》1.3 万人评出 8.1，AI 把它分在心灵成长，讲的更多是做人；《干法》7.5 分。&lt;/p&gt;
+
+&lt;h2&gt;决策与战略&lt;/h2&gt;
+
+&lt;p&gt;做决策要先看得懂数字，所以这一组放了一本财报书。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/mgmt/panel_4_1.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;1. &lt;a href=&quot;https://wanshutiaoyi.com/book/25926542&quot;&gt;一本书读懂财报&lt;/a&gt; — 清华经管学院教授肖星讲三张报表怎么读、怎么从报表里看出一家公司的经营状况。9,203 人评出 8.9，不是学财务的也读得懂&lt;/p&gt;
+
+&lt;p&gt;2. &lt;a href=&quot;https://wanshutiaoyi.com/book/35578814&quot;&gt;竞争优势&lt;/a&gt; — 哥伦比亚商学院教授布鲁斯·格林沃尔德和合作者贾德·卡恩认为，战略要回答的核心问题只有一个：这个行业有没有进入壁垒，你在不在壁垒里面。比五力模型简单&lt;/p&gt;
+
+&lt;p&gt;3. &lt;a href=&quot;https://wanshutiaoyi.com/book/4243770&quot;&gt;创新者的窘境&lt;/a&gt; — 克里斯坦森讲为什么管理得很好的大公司，会被一开始看起来不起眼的新技术打败。后来流行的「颠覆式创新」，说的就是这本书里的现象&lt;/p&gt;
+
+&lt;p&gt;4. &lt;a href=&quot;https://wanshutiaoyi.com/book/6718487&quot;&gt;商业模式新生代&lt;/a&gt; — 用一张「商业模式画布」的九个格子拆解一门生意：客户是谁、提供什么价值、通过什么渠道、钱从哪来。横开本，图比字多&lt;/p&gt;
+
+&lt;p&gt;5. &lt;a href=&quot;https://wanshutiaoyi.com/book/25905229&quot;&gt;竞争战略&lt;/a&gt; — 迈克尔·波特 1980 年的书，五力模型和三种基本战略（成本领先、差异化、集中）都出自这里。比较硬，适合放在后面读&lt;/p&gt;
+
+&lt;p&gt;6. &lt;a href=&quot;https://wanshutiaoyi.com/book/20261700&quot;&gt;好战略，坏战略&lt;/a&gt; — 理查德·鲁梅尔特说好战略有三个要素：诊断、指导方针、连贯的行动。把目标和口号当成战略，是坏战略最常见的样子&lt;/p&gt;
+
+&lt;p&gt;格鲁夫的另一本《只有偏执狂才能生存》名气很大，1,898 人评出 7.6，没有收。&lt;/p&gt;
+
+&lt;h2&gt;组织与文化&lt;/h2&gt;
+
+&lt;p&gt;公司从几十人变成几百人以后，靠什么让一群人一起把事做好。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/mgmt/panel_5_1.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;1. &lt;a href=&quot;https://wanshutiaoyi.com/book/1457028&quot;&gt;管理的实践&lt;/a&gt; — 德鲁克 1954 年的书，目标管理就是在这本书里提出来的。讲企业是什么、管理者该做什么、工作怎么组织。2,538 人评出 8.9，这一组最高&lt;/p&gt;
+
+&lt;p&gt;2. &lt;a href=&quot;https://wanshutiaoyi.com/book/26314955&quot;&gt;创新公司&lt;/a&gt; — 皮克斯联合创始人艾德·卡特姆写皮克斯怎么保护创造力，比如「智囊团」开会时，怎么给一部还很糟糕的片子提意见&lt;/p&gt;
+
+&lt;p&gt;3. &lt;a href=&quot;https://wanshutiaoyi.com/book/4051739&quot;&gt;第五项修炼&lt;/a&gt; — 彼得·圣吉讲「学习型组织」，五项修炼里他最看重的是系统思考&lt;/p&gt;
+
+&lt;p&gt;4. &lt;a href=&quot;https://wanshutiaoyi.com/book/35102294&quot;&gt;不拘一格&lt;/a&gt; — 奈飞创始人里德·哈斯廷斯和商学院教授艾琳·迈耶合写，讲奈飞的「自由与责任」：先把人才密度提上去，再坦诚反馈，最后才是减少管控&lt;/p&gt;
+
+&lt;p&gt;5. &lt;a href=&quot;https://wanshutiaoyi.com/book/1022936&quot;&gt;基业长青&lt;/a&gt; — 吉姆·柯林斯和杰里·波勒斯拿 18 家长盛不衰的公司和它们的对手逐一对比，看差别到底在哪&lt;/p&gt;
+
+&lt;p&gt;6. &lt;a href=&quot;https://wanshutiaoyi.com/book/1059769&quot;&gt;从优秀到卓越&lt;/a&gt; — 柯林斯又研究了 11 家从普通公司跃升为卓越公司的企业，讲第五级领导、先找对人再决定做什么这些发现&lt;/p&gt;
+
+&lt;p&gt;同一个话题还有几本名气大的书：同样讲奈飞的《奈飞文化手册》8.0 分（8,523 人），《重新定义公司》8.1，《赋能》7.5。华为相关的书，评价过千的最高是《以奋斗者为本》7.5 分；《华为团队工作法》8.2 分，但只有 902 人评价。&lt;/p&gt;
+
+&lt;h2&gt;营销与增长&lt;/h2&gt;
+
+&lt;p&gt;怎么让人知道你、记住你、最后买你的东西。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/mgmt/panel_6_1.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;1. &lt;a href=&quot;https://wanshutiaoyi.com/book/1894695&quot;&gt;营销管理&lt;/a&gt; — 菲利普·科特勒和凯文·凯勒的营销学教科书，很厚，适合当工具书查。9.0 分&lt;/p&gt;
+
+&lt;p&gt;2. &lt;a href=&quot;https://wanshutiaoyi.com/book/30186119&quot;&gt;硅谷增长黑客实战笔记&lt;/a&gt; — 曲卉在「增长黑客」概念的提出者肖恩·埃利斯手下做过增长负责人，讲增长团队怎么搭、增长实验怎么做&lt;/p&gt;
+
+&lt;p&gt;3. &lt;a href=&quot;https://wanshutiaoyi.com/book/4912165&quot;&gt;销售巨人&lt;/a&gt; — 尼尔·雷克汉姆的 SPIN 销售法：大订单销售靠的是问对四类问题，背景、难点、暗示、需求与效益&lt;/p&gt;
+
+&lt;p&gt;4. &lt;a href=&quot;https://wanshutiaoyi.com/book/1031526&quot;&gt;一个广告人的自白&lt;/a&gt; — 奥美创始人大卫·奥格威讲怎么经营广告公司、怎么写文案、怎么对待客户。9,787 人评价&lt;/p&gt;
+
+&lt;p&gt;5. &lt;a href=&quot;https://wanshutiaoyi.com/book/3320425&quot;&gt;跨越鸿沟&lt;/a&gt; — 杰弗里·摩尔讲高科技产品从早期用户走向大众市场时，中间那道最容易掉下去的鸿沟&lt;/p&gt;
+
+&lt;p&gt;6. &lt;a href=&quot;https://wanshutiaoyi.com/book/1017180&quot;&gt;定位&lt;/a&gt; — 艾·里斯和杰克·特劳特：营销的战场不在产品本身，而在顾客的脑子里，先占住一个位置。这里收的是 2002 年版，读的人更多的 2011 年机械工业版 7.9 分（11,855 人）&lt;/p&gt;
+
+&lt;h2&gt;创业&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/mgmt/panel_7_1.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;1. &lt;a href=&quot;https://wanshutiaoyi.com/book/33413106&quot;&gt;一本书看透股权架构&lt;/a&gt; — 作者李利威做过律师和注册会计师，总结了 9 种股权架构模型，拿 30 家公司的案例讲股权怎么分、怎么设计。合伙开公司之前值得读。9.1 分&lt;/p&gt;
+
+&lt;p&gt;2. &lt;a href=&quot;https://wanshutiaoyi.com/book/11516567&quot;&gt;四步创业法&lt;/a&gt; — 史蒂夫·布兰克的「客户发展」方法：先找到客户、验证需求，再大规模投入。《精益创业》的思路就是从这里来的&lt;/p&gt;
+
+&lt;p&gt;3. &lt;a href=&quot;https://wanshutiaoyi.com/book/5914587&quot;&gt;启示录&lt;/a&gt; — 硅谷产品经理马蒂·卡根讲怎么找到值得做的产品、怎么和开发团队一起把它做出来。9,098 人评价，很多产品经理拿它入门&lt;/p&gt;
+
+&lt;p&gt;4. &lt;a href=&quot;https://wanshutiaoyi.com/book/26306686&quot;&gt;创业维艰&lt;/a&gt; — 本·霍洛维茨讲当 CEO 最难的那些事：裁员、辞退高管、公司快撑不下去的时候怎么办。1 万人评价&lt;/p&gt;
+
+&lt;p&gt;5. &lt;a href=&quot;https://wanshutiaoyi.com/book/10945606&quot;&gt;精益创业&lt;/a&gt; — 埃里克·莱斯讲先做出最小可行产品，用开发、测量、学习的循环快速试错&lt;/p&gt;
+
+&lt;p&gt;《从0到1》没有收，原因前面说过；想读的话可以试试英文原版。另外两本也不错：《重来》8.2 分（8,249 人），讲小公司不融资、不扩张也能活得好；《精益创业实战》8.7 分，是《精益创业》的操作手册。&lt;/p&gt;
+
+&lt;h2&gt;企业史与商业人物&lt;/h2&gt;
+
+&lt;p&gt;这是池子里最大的一类，106 本。大多读起来不累，适合当闲书。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/mgmt/panel_8_1.jpg&quot; width=&quot;800px&quot;&gt; &lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;1. &lt;a href=&quot;https://wanshutiaoyi.com/book/24738302&quot;&gt;浪潮之巅&lt;/a&gt; — 吴军写 AT&amp;amp;T、IBM、苹果、英特尔、微软、谷歌这些科技公司的兴衰。9.2 分，去掉那本 9.7 分的书，是整个池子里最高的&lt;/p&gt;
+
+&lt;p&gt;2. &lt;a href=&quot;https://wanshutiaoyi.com/book/26287433&quot;&gt;心若菩提&lt;/a&gt; — 曹德旺的自传：14 岁辍学，卖过烟丝、贩过水果，后来做成福耀玻璃，还打赢了美国的反倾销案&lt;/p&gt;
+
+&lt;p&gt;3. &lt;a href=&quot;https://wanshutiaoyi.com/book/6798611&quot;&gt;史蒂夫·乔布斯传&lt;/a&gt; — 沃尔特·艾萨克森写的乔布斯传记，6.6 万人评价，整个池子里人数最多&lt;/p&gt;
+
+&lt;p&gt;4. &lt;a href=&quot;https://wanshutiaoyi.com/book/1970428&quot;&gt;激荡三十年&lt;/a&gt; — 吴晓波写 1978 到 2008 年的中国企业，分上下两册，上册 3.4 万人评价&lt;/p&gt;
+
+&lt;p&gt;5. &lt;a href=&quot;https://wanshutiaoyi.com/book/35009826&quot;&gt;一生的旅程&lt;/a&gt; — 迪士尼 CEO 罗伯特·艾格回顾 45 年的职业生涯，收购皮克斯、漫威、卢卡斯影业和二十一世纪福克斯的前前后后都写到了&lt;/p&gt;
+
+&lt;p&gt;6. &lt;a href=&quot;https://wanshutiaoyi.com/book/1072438&quot;&gt;大败局&lt;/a&gt; — 吴晓波写秦池、巨人、三株这些曾经红极一时的中国企业是怎么垮的。1.5 万人评价，续篇《大败局Ⅱ》8.5 分&lt;/p&gt;
+
+&lt;p&gt;7. &lt;a href=&quot;https://wanshutiaoyi.com/book/26860776&quot;&gt;鞋狗&lt;/a&gt; — 耐克创始人菲尔·奈特的自传，从代理销售日本跑鞋起步，一直写到耐克上市&lt;/p&gt;
+
+&lt;p&gt;这一类好书太多，还有几本分数够、篇幅所限没放：单伟建的《金钱博弈》（9.1 分，讲收购韩国第一银行）和回忆录《走出戈壁》（9.0），讲杠杆收购的《门口的野蛮人》（8.1）。《穷查理宝典》8.9 分、1.6 万人评价，讲的主要是投资和思维方式，更适合放进投资书单。&lt;/p&gt;
+
+&lt;h2&gt;如果只读三本&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;《卓有成效的管理者》：先把自己的时间管住。&lt;/li&gt;
+&lt;li&gt;《格鲁夫给经理人的第一课》：再学怎么带好一个团队。&lt;/li&gt;
+&lt;li&gt;《关键对话》：最难的那几次谈话，靠它撑过去。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;有时间再读一本《史蒂夫·乔布斯传》，当闲书。&lt;/p&gt;
+
+&lt;h2&gt;自己动手筛&lt;/h2&gt;
+
+&lt;p&gt;这份书单的候选池在万书挑一上就能打开：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://wanshutiaoyi.com/tag/%E5%95%86%E4%B8%9A%E4%B8%8E%E7%AE%A1%E7%90%86?min_votes=1000&amp;sort=quality&amp;utm_source=blog&amp;utm_campaign=mgmt&quot;&gt;AI 主题「商业与管理」，评价过千，按好书指数排&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;想看更窄的方向，可以换成「战略与竞争」「营销与品牌」「创业与创新」这些二级主题。每本书的详情页都有五星到一星的分布，挑之前看一眼，比只看总分有用。&lt;/p&gt;
+
+&lt;p&gt;这个站是我一个人自费做的，不接广告，不挂购书链接，数据每天更新。你读过最有用的一本管理书是哪本？欢迎在评论区说。&lt;/p&gt;
+
+&lt;p&gt;数据来源：豆瓣图书公开页面（2026-11-09）；主题分类来自万书挑一的 AI 标签；每本书都链接回站内书页。&lt;/p&gt;
+
+&lt;p&gt;公众号：明辨Lab&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
         <title>我的认知心智入门书单：从《把时间当作朋友》《暗时间》开始的 27 本书</title>
         <link>https://lanbing510.info/2026/11/09/WanShuTiaoYiCelebsCN.html</link>
         <guid isPermaLink="true">https://lanbing510.info/2026/11/09/WanShuTiaoYiCelebsCN.html</guid>
@@ -3104,129 +3328,6 @@
 &lt;p&gt;这个站是我一个人自费做的，不接广告，数据每天更新，承诺至少运营到 2027 年 12 月。觉得漏了哪本重要的书，欢迎在评论区补充。&lt;/p&gt;
 
 &lt;p&gt;数据来源：豆瓣图书公开页面；每本书都链接回豆瓣原页。&lt;/p&gt;
-</description>
-      </item>
-    
-      <item>
-        <title>经典外国文学读哪个译本？用豆瓣 2 万个版本的评分比了 10 部名著</title>
-        <link>https://lanbing510.info/2026/10/10/WanShuTiaoYiTranslations.html</link>
-        <guid isPermaLink="true">https://lanbing510.info/2026/10/10/WanShuTiaoYiTranslations.html</guid>
-        <pubDate>Sat, 10 Oct 2026 00:00:00 +0000</pubDate>
-        <description>&lt;p&gt;买一本外国名著，最先遇到的问题往往不是读不读，而是读哪个译本。《小王子》在豆瓣上有一百多个中文版本，光署名的译者就有 81 位。书店里摆在一起，封面一个比一个好看，译者名字却大多陌生。&lt;/p&gt;
-
-&lt;p&gt;我把豆瓣上的中文译本整理了一遍：同一部外文作品的不同版本归到一起，同一位译者在不同出版社、不同年份的重印算作同一个译本的多个版次，最后得到 5287 部作品、21907 个版本。然后挑了 10 部大家最常读的名著，看看各个译本的评分、评价人数和星级分布。&lt;/p&gt;
-
-&lt;p&gt;先说清楚这份数据能说明什么、不能说明什么：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;它反映的是&lt;strong&gt;读者打分&lt;/strong&gt;，不是翻译质量的专业评判。一个译本分高，可能是译得好，也可能是装帧好、注释全、读的人恰好更喜欢这本书。&lt;/li&gt;
-&lt;li&gt;评价人数相差悬殊时，分数不能直接比。几百人评的 9.4 和几十万人评的 9.1，后者更可靠。&lt;/li&gt;
-&lt;li&gt;我会在每本书下面说数据里看到了什么，但不替你选「最佳译本」。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;每张图都来自万书挑一的译本对比页，每节末尾的链接能看到全部译本。&lt;/p&gt;
-
-&lt;h2&gt;小王子：81 个译本，马振骋一家独大&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/translations/1003078.jpg&quot; width=&quot;800px&quot; alt=&quot;《小王子》译本对比&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;马振骋译本（人民文学出版社）有 80 万人评价，比后面所有译本加起来还多，9.1 分。周克希译本 4.7 万人、9.2 分，在上海译文出过 9 个版次。人数过千的译本里，评分最高的是黄荭译本，9.4 分，不过只有 3000 多人评。&lt;/p&gt;
-
-&lt;p&gt;值得注意的是差评比例。大多数译本的 1~2 星都在 1% 以下，李继宏译本是 5.5%，评分也只有 8.1，在人数靠前的译本里明显偏低。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://wanshutiaoyi.com/translations/1084336?utm_source=blog&amp;utm_campaign=translations&quot;&gt;《小王子》全部译本对比&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2&gt;月亮与六便士：傅惟慈和徐淳刚&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/translations/1814118.jpg&quot; width=&quot;800px&quot; alt=&quot;《月亮与六便士》译本对比&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;两个译本占了绝大多数读者：傅惟慈译本（上海译文）30 万人、8.9 分，徐淳刚译本（浙江文艺）23 万人、8.7 分。傅惟慈译本 1981 年就出了，一直在重印；徐淳刚译本是 2017 年的新译。其余译本都在 2 万人以下，评分集中在 8.7~8.9，差别不大。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://wanshutiaoyi.com/translations/1858513?utm_source=blog&amp;utm_campaign=translations&quot;&gt;《月亮与六便士》全部译本对比&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2&gt;百年孤独：范晔译本是唯一的授权版&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/translations/1059112.jpg&quot; width=&quot;800px&quot; alt=&quot;《百年孤独》译本对比&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;范晔译本（南海出版公司，2011）51 万人评价，9.3 分。这是《百年孤独》第一个获得授权的中文版，此前流行的黄锦炎等人的译本出版于八九十年代，没有授权，5.5 万人评价，8.9 分。现在书店能买到的基本都是范晔译本，选择其实不多。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://wanshutiaoyi.com/translations/6082808?utm_source=blog&amp;utm_campaign=translations&quot;&gt;《百年孤独》全部译本对比&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2&gt;局外人：柳鸣九译本最常见&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/translations/1052203.jpg&quot; width=&quot;800px&quot; alt=&quot;《局外人》译本对比&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;柳鸣九译本（上海译文）39 万人、9.1 分，出过 8 个版次。郭宏安译本（译林）和金祎译本人数在一两万之间，都是 8.9 分。有一个 800 多人评价的译本只有 6.5 分、1~2 星占 12.8%，和其他译本差得很远，买之前最好看一眼对比页。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://wanshutiaoyi.com/translations/4908885?utm_source=blog&amp;utm_campaign=translations&quot;&gt;《局外人》全部译本对比&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2&gt;动物农场：荣如德译本，整体分数都高&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/translations/1003419.jpg&quot; width=&quot;800px&quot; alt=&quot;《动物农场》译本对比&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;荣如德译本（上海译文）20 万人、9.3 分；和董乐山译的《一九八四》合在一起出的那版也有 8.5 万人、9.5 分。这本书各译本的分数普遍很高，隗静秋、傅惟慈等译本都在 9.2 以上，差评几乎都在 0.5% 以下。原作短、语言平实，译本之间的差距也小。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://wanshutiaoyi.com/translations/2035179?utm_source=blog&amp;utm_campaign=translations&quot;&gt;《动物农场》全部译本对比&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2&gt;傲慢与偏见：三个老译本分庭抗礼&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/translations/1045926.jpg&quot; width=&quot;800px&quot; alt=&quot;《傲慢与偏见》译本对比&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;张玲、张扬译本（人民文学）25 万人、8.9 分；孙致礼译本（译林）和王科一译本（上海译文）各有 6 万人左右，分别是 9.0 和 9.0。王科一译本 1980 年就有，在上海译文出过 13 个版次。三个译本分数几乎一样，选哪个更多是看版本装帧和注释。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://wanshutiaoyi.com/translations/1083428?utm_source=blog&amp;utm_campaign=translations&quot;&gt;《傲慢与偏见》全部译本对比&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2&gt;了不起的盖茨比：所有译本分数都不高&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/translations/1008988.jpg&quot; width=&quot;800px&quot; alt=&quot;《了不起的盖茨比》译本对比&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;姚乃强译本（人民文学）12 万人、8.4 分，邓若虚译本（南海）6.9 万人、8.7 分，巫宁坤译本（上海译文）2 万人、8.6 分。和前面几本比，这本书所有译本的 5 星占比都偏低，大多在 40%~50%。这更像是读者对原作的分歧，而不是某个译本的问题。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://wanshutiaoyi.com/translations/1008988?utm_source=blog&amp;utm_campaign=translations&quot;&gt;《了不起的盖茨比》全部译本对比&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2&gt;老人与海：读的人最多的，不是分最高的&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/translations/1017544.jpg&quot; width=&quot;800px&quot; alt=&quot;《老人与海》译本对比&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;吴劳译本（上海译文）20 万人、8.5 分；鲁羊译本（浙江文艺，2017）2 万人、8.9 分；黄源深译本（译林）5000 多人、8.7 分。读的人最多的老译本，分数反而比几个新译本低。&lt;/p&gt;
-
-&lt;p&gt;差评比例在这本书上差得最大：李继宏译本 1~2 星占 23.7%，评分 6.3，其余译本都在 2% 以下。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://wanshutiaoyi.com/translations/1064275?utm_source=blog&amp;utm_campaign=translations&quot;&gt;《老人与海》全部译本对比&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2&gt;罪与罚：新老译本都在 9 分以上&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/translations/1003650.jpg&quot; width=&quot;800px&quot; alt=&quot;《罪与罚》译本对比&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;岳麟译本（上海译文）是读者最多的，分散在几个版本里，合计近 7 万人，9.3~9.4 分。朱海观、王汶译本（人民文学）2 万人、9.1 分。近几年出的汝龙译本（译林）和曾思艺译本（浙江文艺）分别是 9.4 和 9.5 分，各有一两万人评价。陀思妥耶夫斯基的书篇幅长，译本之间差异会更明显，这本值得花几分钟对比一下再买。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://wanshutiaoyi.com/translations/1858568?utm_source=blog&amp;utm_campaign=translations&quot;&gt;《罪与罚》全部译本对比&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2&gt;一九八四：董乐山译本&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/img/posts/wanshutiaoyi/translations/1031726.jpg&quot; width=&quot;800px&quot; alt=&quot;《一九八四》译本对比&quot;&gt; &lt;/img&gt;&lt;/p&gt;
-
-&lt;p&gt;董乐山译本（上海译文）10 万人、9.4 分，其余译本里人数最多的孙仲旭译本也只有 5000 多人。孙仲旭、刘绍铭、傅霞、唐建清等译本分数都在 9.3~9.5，差距很小。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://wanshutiaoyi.com/translations/3815131?utm_source=blog&amp;utm_campaign=translations&quot;&gt;《一九八四》全部译本对比&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2&gt;从这 10 本书里看到的几件事&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;读的人最多的，几乎都是老牌出版社的老译本。&lt;/strong&gt; 马振骋、傅惟慈、柳鸣九、荣如德、吴劳、董乐山，这些译本出得早，又长期在书店主推，读者基数大，评价人数自然遥遥领先。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;新译本的分数常常更高，但要打折看。&lt;/strong&gt; 黄荭的《小王子》、鲁羊的《老人与海》、曾思艺的《罪与罚》都比老译本高零点几分。不过新译本的读者里，有不少是特意去找新译本的人，评价人数也少得多，这零点几分不一定能说明译文更好。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;差评比例比评分更有用。&lt;/strong&gt; 绝大多数译本的 1~2 星都在 1% 上下，真有问题的译本会在这里露出来：《老人与海》的一个译本 23.7%，《局外人》和《瓦尔登湖》各有一个译本超过 12%。买书前看一眼差评比例，比看评分差零点几分更能避开坑。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;同一部作品，不同译本的分数差异通常不大。&lt;/strong&gt; 把差评明显偏高的个别译本放到一边，人数过千的译本之间，大多数作品的分差在 0.5 分以内。如果你喜欢的版本封面、开本、注释都合心意，不必为了零点几分纠结。&lt;/p&gt;
-
-&lt;h2&gt;怎么查你想读的书&lt;/h2&gt;
-
-&lt;p&gt;在万书挑一打开任意一本外国书的详情页，有多个中译本时会显示「N 个译本」，点「对比全部译本」就能看到这样的对比表，可以按评价人数或评分排序。目前收录了 5287 部有两个以上译本的作品。&lt;/p&gt;
-
-&lt;p&gt;归并是按原作名和原作者自动做的，同一本书译名差别太大的（比如《飘》和《乱世佳人》）不会归到一起，偶尔也会有漏。发现问题可以在站内反馈告诉我。&lt;/p&gt;
-
-&lt;p&gt;入口：&lt;a href=&quot;https://wanshutiaoyi.com?utm_source=blog&amp;utm_campaign=translations&quot;&gt;万书挑一&lt;/a&gt;&lt;/p&gt;
 </description>
       </item>
     
